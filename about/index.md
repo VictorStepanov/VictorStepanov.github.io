@@ -1,17 +1,15 @@
 ---
 layout: page
 current: about
-title: About
+title: About Me
 navigation: true
 logo: 'assets/images/ghost.png'
 class: page-template
 subclass: 'post page'
 ---
 
-Ghost is professional publishing platform designed for modern journalism. This is a demo site of a basic Ghost install to give you a general sense of what a new Ghost site looks like when set up for the first time.
+<img src="{{ site.baseurl }}assets/images/vstepano.png" width="269" height="277" />Hi, my name is Victor Stepanov, and I am a Game Tools Developer. I am passionate about making fellow game developers more productive and happy in their work.
 
-> If you'd like to set up a site like this for yourself, head over to [Ghost.org](https://ghost.org/) and start a free 14 day trial to give Ghost a try!
+I work as the Lead Tools Programmer at Wargaming St. Petersburg where I spend my time improving tools and workflows with an excellent team of programmers and QA engineers. 
 
-If you're a developer: Ghost is a completely open source (MIT) Node.js application built on a JSON API with an Ember.js admin client. It works with MySQL and SQLite, and is publicly available [on Github](https://github.com/TryGhost/ghost).
-
-If you need help with using Ghost, you'll find a ton of useful articles on [our knowledgebase](https://help.ghost.org/), as well as extensive [developer documentation](https://docs.ghost.org/).
+For more information about my skills visit [my LinkedIn page](https://www.linkedin.com/in/victor-stepanov-673aa18b/).
