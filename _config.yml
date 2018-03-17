@@ -5,8 +5,9 @@ paginate: 100 # it will paginate after this number
 language: 'en-uk'
 
 # edit baseurl to simply '/' if using as your personal page (instead of a project page)
-# baseurl: https://victorstepanov.github.io/
-baseurl: /
+# run JEKYLL_ENV=production bundle exec jekyll serve
+baseurl: https://victorstepanov.github.io/
+# baseurl: /
 
 # Website info
 title: Victor Stepanov
