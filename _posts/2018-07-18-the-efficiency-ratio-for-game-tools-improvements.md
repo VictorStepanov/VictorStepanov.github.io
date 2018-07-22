@@ -12,6 +12,8 @@ comments: true
 author: vstepano
 ---
 
+_Last Update on July 22nd, 2018_
+
 ## Game Tools as an investment
 
 Having a Game Tools Development Team (GTDT) is an investment and when you are investing you want to get as much Return On Investment (ROI) as you possibly can. This means the GTDT should be working on the "right" issues of the production pipeline. It is not always clear what the "right" issues are.
@@ -60,11 +62,11 @@ Depending on the process used for developing improvements in the tools the ratio
 
 If an improvement will take longer to implement than the total time saved - it doesn't mean that the improvement isn't worth implementing. It just means that there might be another improvement that will be more efficient to implement in the current circumstance. This might be due to the fact that there are not enough users that can benefit from the improvement. 
 
-Another thing to consider is the sanity of the user of the tool. [Anders Elfgren](https://twitter.com/srekel) brought up this point in one of the many interesting conversations in the [Toolsmiths Slack](http://thetoolsmiths.org/join_slack_team). ![the efficiency ratio](assets/images/sanity.png) Even if it isn't efficient to implement the improvement, helping save the user's mental state is something to keep in mind when deciding what to do. 
+Another thing to consider is the sanity of the user of the tool. [Anders Elfgren](https://twitter.com/srekel) brought up this point in one of the many interesting conversations in the [Toolsmiths Slack](http://thetoolsmiths.org/join_slack_team). ![don't forget about the sanity](assets/images/sanity.png) Even if it isn't efficient to implement the improvement, helping save the user's mental state is something to keep in mind when deciding what to do. 
 
 ## Game Tools UX angle 
 
-It may seem that saving a second or two is not that much. However, when an operation is performed by many users a hundred times per day the savings can be significant over the lifetime of the production or tool. Robin-Yann Storm touches on this point at his [GDC UX micro talk](https://www.gdcvault.com/play/1025287/Tools-Tutorial-Day-UX-Microtalks)[3], where he explores the UX features of an editor Gizmo. The Gizmo is one of the most day-to-day used features of any Level Editor. 
+It may seem that saving a second or two is not that much. However, when an operation is performed by many users a hundred times per day the savings can be significant over the lifetime of the production or tool. [Robin-Yann Storm](https://twitter.com/RYStorm) touches on this point at his [GDC UX micro talk](https://www.gdcvault.com/play/1025287/Tools-Tutorial-Day-UX-Microtalks)[3], where he explores the UX features of an editor Gizmo. The Gizmo is one of the most day-to-day used features of any Level Editor. 
 
 
 Every second counts when it comes to optimizing commonly used tool functionality. If you don't believe me, you can use the Human Factors ["Increased productivity ROI calculator"](http://www.humanfactors.com/coolstuff/roi_increase_productivity.asp)[2, 4] where you can see how even the smallest savings in time can save a lot of money for the production.
@@ -92,6 +94,13 @@ The primary variables in the spreadsheet are:
 
 ![Location on the spreadsheet that can be edited](assets/images/editing_the_roi_table.png)
 
+## Update 07/22/2018
+Some insightful comments from the [Toolsmiths](http://thetoolsmiths.org/join_slack_team):
+- [Anders Elfgren](https://twitter.com/srekel) writes:
+![Toolsmiths Slack post comment 1](assets/images/efficiency_ratio_comment1.png)
+
+- [Robin-Yann Storm](https://twitter.com/RYStorm) writes:
+![Toolsmiths Slack post comment 2](assets/images/efficiency_ratio_comment2.png)
 
 ## References
 1. [Is It Worth the Time?, xkcd, Randall Munroe](https://xkcd.com/1205/?utm_source=feedly)
