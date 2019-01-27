@@ -4,7 +4,7 @@ current: post
 cover:  assets/images/posts/tool_development_roles/roles_main.jpg
 navigation: True
 title: Roles in Game Tools Development
-date: 2019-01-01 01:00:00
+date: 2019-01-25 01:00:00
 tags: Game_Tools_Dev Roles
 class: post-template
 subclass: 'post'
