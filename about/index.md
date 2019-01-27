@@ -12,6 +12,8 @@ subclass: 'post page'
 
 I work as a Tools Engineer at Infinity Ward as part of a highly skilled and highly passionate Tools Team.
 
-I worked as a Tools Programmer and then as a Lead Tools Programmer at Wargaming St. Petersburg. 
+Previously I worked as a Tools Programmer and then as a Lead Tools Programmer at Wargaming St. Petersburg. 
 
 For more information about my skills visit [my LinkedIn page](https://www.linkedin.com/in/victor-stepanov-673aa18b/).
+
+Opinions expressed on this blog are solely my own and do not express the views or opinions of my past or present employers.
