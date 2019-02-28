@@ -8,6 +8,38 @@
     
       
       <item>
+        <title>The origin of the path</title>
+        
+          <description>&lt;p&gt;After finishing the work on the first draft of the &lt;a href=&quot;http://thetoolsmiths.org/codex/learning_paths/tools_engineer_learning_path&quot;&gt;Tools Engineer Learning Path&lt;/a&gt;, I decided to write a short story behind the learning path and the thought process I went through when I was creating this resource.&lt;/p&gt;
+
+&lt;p&gt;When I got into game development as a TE (Tools Engineer), I didn’t have a special education to suit the needs of this profession. I was hungry for knowledge and trying to find as much information I could, about tools and game development in general. It wasn’t easy to find information about tools in games. Maybe I wasn’t searching for the right things. Anyway, about one or two years into my career in games one of my colleagues introduced me to the &lt;a href=&quot;http://thetoolsmiths.org&quot;&gt;Toolsmiths website&lt;/a&gt; and the &lt;a href=&quot;http://thetoolsmiths.org/join_slack_team&quot;&gt;Toolsmiths Slack channel&lt;/a&gt;. I was thrilled with the amount of information I got from the &lt;a href=&quot;http://thetoolsmiths.org/archive&quot;&gt;Toolsmiths blog archive&lt;/a&gt; and the Slack conversations.&lt;/p&gt;
+
+&lt;p&gt;One day while I was exploring the Toolsmiths website I found out that &lt;a href=&quot;https://twitter.com/gorlak&quot;&gt;Geoff Evans&lt;/a&gt; and &lt;a href=&quot;https://twitter.com/davidlightbown&quot;&gt;David Lightbown&lt;/a&gt; did &lt;a href=&quot;http://thetoolsmiths.org/podcast&quot;&gt;Toolsmiths podcast&lt;/a&gt;. On one of the episodes, Geoff was talking about the GDC Tools Roundtable that he hosted. He talked about starting a number of initiatives for the Toolsmiths community, one which was a Game Tools Development Wiki that would contain information, links to articles and videos about game tools development. To say that I was excited would be an understatement especially knowing that this podcast aired four years ago. I was thinking that someone was working on this treasure trove of information for four years. Not long after I found out that no one executed on starting to gather knowledge into this Wiki. I thought to myself that this would be an excellent opportunity to help the tools community and learn at the same time. Around this time Geoff was porting the Toolsmiths’s website from some other blogging framework (I believe it was WordPress) to the GitHub static pages. Geoff finished the port and published it on &lt;a href=&quot;https://github.com/TheToolsmiths/TheToolsmiths.github.io&quot;&gt;GitHub&lt;/a&gt;. I started to help him with the website. The default theme of the to Toolsmiths website was lost during the port, and I decided to bring back the original look of the site. When I was done with that, I decided to start working on the Toolsmiths Wiki which is now known as the to &lt;a href=&quot;http://thetoolsmiths.org/codex/&quot;&gt;Toolsmiths Codex&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;Finishing the first version of the &lt;a href=&quot;http://thetoolsmiths.org/2018/03/16/toolsmiths-codex-launch/&quot;&gt;Codex about a year ago&lt;/a&gt;. I wasn’t 100% satisfied with it. I was feeling that something was missing. The Codex was a big collection of interesting articles videos and GDC links, but they were organized only by a couple of categories. While going through the recruiting process at Infinity Ward, I learned of Geoff’s &lt;a href=&quot;http://software.gorlak.org/recruiting/2018/07/13/tools-engineer-faq&quot;&gt;recruiting FAQ&lt;/a&gt; and the &lt;a href=&quot;https://gist.github.com/gorlak/1a0747efe88c5e3998144c5787d090ec&quot;&gt;Tools Engineer Checklist&lt;/a&gt;. Geoff divided the Tool Engineering role into three main disciplines: Content Editing Workflow, Content Build Pipeline, Reliability &amp;amp; Infrastructure. He had also created the Tools Engineering Checklist that contains subjects of interest that TEs should pursue to become masters of their trade. This got me thinking about which parts of the Codex and which parts of the checklist would map to which TE discipline. I started to create a mind map of all of the skills that a TE would need. The main categories  included: core software development skills, core computer science skills, core game developer skills, and core game tools development skills. This list of subjects would make the base of what a TE would need. Connecting all of these dots formed the first draft of the &lt;a href=&quot;http://thetoolsmiths.org/codex/learning_paths/tools_engineer_learning_path&quot;&gt;Tools Engineer Learning Path&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;I plan to continue to updated polish it and improve it over the following years to create the ultimate resource for TEs. I’m sure that a TE at any level can find interesting nuggets of information that would help them become a better version of themselves.&lt;/p&gt;
+
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;links&quot;&gt;Links&lt;/h2&gt;
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;http://thetoolsmiths.org/codex/learning_paths/tools_engineer_learning_path&quot;&gt;Tools Engineer Learning Path&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;http://software.gorlak.org/recruiting/2018/07/13/tools-engineer-faq&quot;&gt;Tools Engineer Recruiting FAQ&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://gist.github.com/gorlak/1a0747efe88c5e3998144c5787d090ec&quot;&gt;Tools Engineer Checklist&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;http://thetoolsmiths.org/2018/03/16/toolsmiths-codex-launch/&quot;&gt;The Toolsmiths Codex&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+        
+        <pubDate>Thu, 28 Feb 2019 01:00:00 +0000</pubDate>
+        <link>
+        /origin-of-the-path</link>
+        <guid isPermaLink="true">/origin-of-the-path</guid>
+      </item>
+      
+    
+      
+      <item>
         <title>Roles in Game Tools Development</title>
         
           <description>&lt;p&gt;Today in Game Development there are several roles that take part in creating new Game Tools and developing the existing ones. Depending on the number of people in a Game Development team multiple roles may be assigned to one responsible person. It would be challenging if not impossible to find a studio/company that has a dedicated person assigned to each of the roles listed. In this post, I will list the main roles and give them a short definition.&lt;/p&gt;
