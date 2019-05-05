@@ -11,7 +11,7 @@
 
 
 
-    <title>Roles in Game Tools Development</title>
+    <title>Notes for "Pipeline Support for Feature Branches in 'Destiny'" GDC2019</title>
     <meta name="HandheldFriendly" content="True" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <!-- Styles'n'Scripts -->
@@ -24,30 +24,30 @@
     <!-- This tag outputs SEO meta+structured data and other important settings -->
     <meta name="description" content="Passionate about making game developers more productive" />
     <link rel="shortcut icon" href="https://victorstepanov.github.io/assets/images/favicon.png" type="image/png" />
-    <link rel="canonical" href="https://victorstepanov.github.io/tool-development-roles" />
+    <link rel="canonical" href="https://victorstepanov.github.io/gdc2019-pipeline-support-for-feature-branches-in-destiny" />
     <meta name="referrer" content="no-referrer-when-downgrade" />
 
      <!--title below is coming from _includes/dynamic_title-->
     <meta property="og:site_name" content="Victor Stepanov" />
     <meta property="og:type" content="website" />
-    <meta property="og:title" content="Roles in Game Tools Development" />
-    <meta property="og:description" content="Today in Game Development there are several roles that take part in creating new Game Tools and developing the existing ones. Depending on the number of people in a Game Development team multiple roles may be assigned to one responsible person. It would be challenging if not impossible to find" />
-    <meta property="og:url" content="https://victorstepanov.github.io/tool-development-roles" />
-    <meta property="og:image" content="https://victorstepanov.github.io/assets/images/posts/tool_development_roles/roles_main.jpg" />
+    <meta property="og:title" content="Notes for "Pipeline Support for Feature Branches in 'Destiny'" GDC2019" />
+    <meta property="og:description" content="TLDW Summary: How Bungie created an ecosystem of tools and workflows to allow small teams to quickly iterate on changes without worrying about breaking and blocking other teams. Topics Game data merging Version control system Integration between branches Intro Each P4 branch is about 4 Tb Up to 350 content" />
+    <meta property="og:url" content="https://victorstepanov.github.io/gdc2019-pipeline-support-for-feature-branches-in-destiny" />
+    <meta property="og:image" content="https://victorstepanov.github.io/assets/images/posts/blank-composition-desk-gdc2019.jpg" />
     <meta property="article:publisher" content="https://www.facebook.com/" />
     <meta property="article:author" content="https://www.facebook.com/" />
-    <meta property="article:published_time" content="2019-01-24T17:00:00-08:00" />
-    <meta property="article:modified_time" content="2019-01-24T17:00:00-08:00" />
-    <meta property="article:tag" content="Game_tools_dev" />
+    <meta property="article:published_time" content="2019-05-04T18:00:00-07:00" />
+    <meta property="article:modified_time" content="2019-05-04T18:00:00-07:00" />
+    <meta property="article:tag" content="Gdc" />
     <meta name="twitter:card" content="summary_large_image" />
-    <meta name="twitter:title" content="Roles in Game Tools Development" />
-    <meta name="twitter:description" content="Today in Game Development there are several roles that take part in creating new Game Tools and developing the existing ones. Depending on the number of people in a Game Development team multiple roles may be assigned to one responsible person. It would be challenging if not impossible to find" />
+    <meta name="twitter:title" content="Notes for "Pipeline Support for Feature Branches in 'Destiny'" GDC2019" />
+    <meta name="twitter:description" content="TLDW Summary: How Bungie created an ecosystem of tools and workflows to allow small teams to quickly iterate on changes without worrying about breaking and blocking other teams. Topics Game data merging Version control system Integration between branches Intro Each P4 branch is about 4 Tb Up to 350 content" />
     <meta name="twitter:url" content="https://victorstepanov.github.io/" />
-    <meta name="twitter:image" content="https://victorstepanov.github.io/assets/images/posts/tool_development_roles/roles_main.jpg" />
+    <meta name="twitter:image" content="https://victorstepanov.github.io/assets/images/posts/blank-composition-desk-gdc2019.jpg" />
     <meta name="twitter:label1" content="Written by" />
     <meta name="twitter:data1" content="Victor Stepanov" />
     <meta name="twitter:label2" content="Filed under" />
-    <meta name="twitter:data2" content="Game_tools_dev" />
+    <meta name="twitter:data2" content="Gdc" />
     <meta name="twitter:site" content="@VictorStepanov" />
     <meta name="twitter:creator" content="@VictorStepanov" />
     <meta property="og:image:width" content="1400" />
@@ -62,18 +62,18 @@
         "name": "Victor Stepanov",
         "logo": "https://victorstepanov.github.io/assets/images/blog-icon.png"
     },
-    "url": "https://victorstepanov.github.io/tool-development-roles",
+    "url": "https://victorstepanov.github.io/gdc2019-pipeline-support-for-feature-branches-in-destiny",
     "image": {
         "@type": "ImageObject",
-        "url": "https://victorstepanov.github.io/assets/images/posts/tool_development_roles/roles_main.jpg",
+        "url": "https://victorstepanov.github.io/assets/images/posts/blank-composition-desk-gdc2019.jpg",
         "width": 2000,
         "height": 666
     },
     "mainEntityOfPage": {
         "@type": "WebPage",
-        "@id": "https://victorstepanov.github.io/tool-development-roles"
+        "@id": "https://victorstepanov.github.io/gdc2019-pipeline-support-for-feature-branches-in-destiny"
     },
-    "description": "Today in Game Development there are several roles that take part in creating new Game Tools and developing the existing ones. Depending on the number of people in a Game Development team multiple roles may be assigned to one responsible person. It would be challenging if not impossible to find"
+    "description": "TLDW Summary: How Bungie created an ecosystem of tools and workflows to allow small teams to quickly iterate on changes without worrying about breaking and blocking other teams. Topics Game data merging Version control system Integration between branches Intro Each P4 branch is about 4 Tb Up to 350 content"
 }
     </script>
 
@@ -86,7 +86,7 @@
     </script> -->
 
     <meta name="generator" content="Jekyll 3.6.2" />
-    <link rel="alternate" type="application/rss+xml" title="Roles in Game Tools Development" href="https://victorstepanov.github.io/feed.xml" />
+    <link rel="alternate" type="application/rss+xml" title="Notes for "Pipeline Support for Feature Branches in 'Destiny'" GDC2019" href="https://victorstepanov.github.io/feed.xml" />
 
 
 </head>
@@ -143,128 +143,232 @@ into the {body} of the default.hbs template -->
 
             <header class="post-full-header">
                 <section class="post-full-meta">
-                    <time class="post-full-meta-date" datetime="25 January 2019">25 January 2019</time>
+                    <time class="post-full-meta-date" datetime=" 5 May 2019"> 5 May 2019</time>
                     
                         <span class="date-divider">/</span>
                         
                             
-                               <a href='https://victorstepanov.github.io/tag/game_tools_dev/'>GAME_TOOLS_DEV</a>,
+                               <a href='https://victorstepanov.github.io/tag/gdc/'>GDC</a>,
                             
                         
                             
-                               <a href='https://victorstepanov.github.io/tag/roles/'>ROLES</a>
+                               <a href='https://victorstepanov.github.io/tag/version_control/'>VERSION_CONTROL</a>,
+                            
+                        
+                            
+                               <a href='https://victorstepanov.github.io/tag/game_data_merging/'>GAME_DATA_MERGING</a>
                             
                         
                     
                 </section>
-                <h1 class="post-full-title">Roles in Game Tools Development</h1>
+                <h1 class="post-full-title">Notes for "Pipeline Support for Feature Branches in 'Destiny'" GDC2019</h1>
             </header>
 
             
-            <figure class="post-full-image" style="background-image: url(https://victorstepanov.github.io/assets/images/posts/tool_development_roles/roles_main.jpg)">
+            <figure class="post-full-image" style="background-image: url(https://victorstepanov.github.io/assets/images/posts/blank-composition-desk-gdc2019.jpg)">
             </figure>
             
 
             <section class="post-full-content">
                 <div class="kg-card-markdown">
-                    <p>Today in Game Development there are several roles that take part in creating new Game Tools and developing the existing ones. Depending on the number of people in a Game Development team multiple roles may be assigned to one responsible person. It would be challenging if not impossible to find a studio/company that has a dedicated person assigned to each of the roles listed. In this post, I will list the main roles and give them a short definition.</p>
+                    <h2 id="tldw-summary">TLDW Summary:</h2>
+<p>How Bungie created an ecosystem of tools and workflows to allow small teams to quickly iterate on changes without worrying about breaking and blocking other teams.</p>
 
-<div style="background-color:#FFFF94;border-left: 6px solid #ffff48;"> 
-DISCLAIMER: definitions in this post were produced from personal experience, GDC talks, blog posts, looking at job postings and talking with experts. They might differ from your own definitions. 
+<h2 id="topics">Topics</h2>
+<ul>
+  <li>Game data merging</li>
+  <li>Version control system</li>
+  <li>Integration between branches</li>
+</ul>
+
+<h2 id="intro">Intro</h2>
+<ul>
+  <li>Each P4 branch is about 4 Tb</li>
+  <li>Up to 350 content creators, designers, and engineers working in one branch</li>
+  <li>They use a pre-commit build pipeline - “the Gauntlet”
+    <ul>
+      <li>Pete Kugler did a talk at <a href="https://drive.google.com/file/d/1FeZGA-MeuI31Wan9ZVlXmSZ-JrSLgIL2/view?usp=sharing">GDC2016: Developing a pipeline for managing game stability</a>
+        <ul>
+          <li>Pipeline for managing game stability</li>
+          <li>Describes the reason they put the pre-commit system in place</li>
+        </ul>
+      </li>
+    </ul>
+  </li>
+  <li>They pick stability over iteration speed
+    <ul>
+      <li><img src="assets/images/posts/pipeline-support-for-feature-branches/initial-destiny-2-challenges.jpg" alt="slide: initial Destiny 2 challenges" width="700" /></li>
+    </ul>
+  </li>
+  <li>Had technical limitations of just simply adding more feature branches
+    <ul>
+      <li>Not supported by tools</li>
+      <li>More pressure on integration</li>
+      <li>More pressure on build pipeline</li>
+      <li>Couldn’t merge game data</li>
+    </ul>
+  </li>
+  <li>Definition <strong>“Feature Branch”</strong> - Branch created for teams to work in without interfering with the stability of the main branch</li>
+  <li>Definition <strong>“Small Team”</strong> -  group of cross-discipline developer working collaboratively on shared features (strike teams? )</li>
+  <li>The development team was in an environment that would not allow risky feature prototype and development
+    <ul>
+      <li>Long pre-commit build pipeline throughput</li>
+      <li>Thurow QA testing</li>
+      <li>Fear of creating blockers</li>
+    </ul>
+  </li>
+  <li>Vision
+    <ul>
+      <li><img src="assets/images/posts/pipeline-support-for-feature-branches/auto-integration.jpg" alt="slide: auto-integration" width="400" /></li>
+      <li><img src="assets/images/posts/pipeline-support-for-feature-branches/small-team-development-vision.jpg" alt="slide: small team development vision" width="700" /></li>
+      <li>QA had the option to use stabilization branch to shield from the auto integrations that were happening</li>
+    </ul>
+  </li>
+  <li>Had 3 main challenges:
+    <ul>
+      <li><img src="assets/images/posts/pipeline-support-for-feature-branches/achieving-the-development-vision.jpg" alt="slide: achieving the development vision" width="700" />
+        <ul>
+          <li>Focused on semantically merge content to make the lives of content creators easier</li>
+          <li>Focused on making a simple as possible to keep branches in-sync and stable (management tools)</li>
+        </ul>
+      </li>
+    </ul>
+  </li>
+  <li>Developers became accustomed to workflow build around having multiple branches per workspace
+    <ul>
+      <li>Because of the release cycles (having multiple features in progress)</li>
+      <li>Expected to have immediate access to things that are mapped in the workspace</li>
+    </ul>
+  </li>
+  <li>Source <a href="http://thetoolsmiths.org/codex/glossary/">DCC</a> assets in the same location as the game data
+    <ul>
+      <li>This made for build branches</li>
+    </ul>
+  </li>
+  <li>Moving to a streamed depot was a risk that the dev team didn’t want to take
+    <ul>
+      <li>Compromise by adapting the current system to behave like Streams</li>
+      <li>Had plans to move to Streams for next project</li>
+    </ul>
+  </li>
+</ul>
+
+<h2 id="scaling-the-infrastructure">Scaling the Infrastructure</h2>
+<ul>
+  <li>Needed to implement Centralized Branch Authority
+    <ul>
+      <li>Which was available as part P4 Stream</li>
+      <li>Used the build farm DB to be the Branch Authority</li>
+    </ul>
+  </li>
+  <li>Needed to implement a way to make the branches available on the build farm machines</li>
+  <li>Asset pipeline changes
+    <ul>
+      <li>For details checkout Brandon Moro’s talk: <a href="https://www.gdcvault.com/play/1025430/Tools-Tutorial-Day-Bungie-s">GDC 2018 Tools Tutorial Day: Bungie’s Asset Pipeline: ‘Destiny 2’ and Beyond</a></li>
+      <li>Need to enable the scaling of the Asset Cache
+        <ul>
+          <li>Used to be one/two machine(s) per branch</li>
+          <li>Decoupled storage HW from the service HW</li>
+          <li>The service was made stateless
+            <ul>
+              <li>So service could handle different branches</li>
+              <li>The state management was moved into Redis</li>
+              <li>Logging was moved into elasticsearch</li>
+            </ul>
+          </li>
+        </ul>
+      </li>
+    </ul>
+  </li>
+  <li>To setup, branch used a lazy copy of that branch
+    <ul>
+      <li>The branch was 4 Tb</li>
+      <li>On the backend use deduplication to not store the same data</li>
+    </ul>
+  </li>
+</ul>
+
+<h2 id="implementing-content-merging">Implementing Content Merging</h2>
+
+<ul>
+  <li>Propper game data merging
+    <ul>
+      <li>Needs to know the semantics of the data</li>
+      <li>Used C# for the content merge tool (some screenshots <a href="https://www.gdcvault.com/play/1025992/Pipeline-Support-for-Feature-Branches">at min 40</a>)
+        <ul>
+          <li><img src="assets/images/posts/pipeline-support-for-feature-branches/content-merge-tool.jpg" alt="slide: content merge tool" width="400" /></li>
+        </ul>
+      </li>
+      <li>Tracked auto-resolve\ conflict ratio</li>
+      <li>Used TDD and recorded mergers that produced conflict to analyze</li>
+    </ul>
+  </li>
+  <li><a href="https://www.gdcvault.com/play/1025992/Pipeline-Support-for-Feature-Branches">at min 31</a> notes on how to implement merging of game data</li>
+  <li>Were able to reach 80% auto-conflict resolution rate</li>
+</ul>
+
+<h2 id="flow-of-changes">Flow of changes</h2>
+<ul>
+  <li>Created custom tool “Team Sync” to view of a users branch state
+    <ul>
+      <li><img src="assets/images/posts/pipeline-support-for-feature-branches/team-sync.jpg" alt="slide: Team Sync tool" width="400" /></li>
+      <li>Shows
+        <ul>
+          <li>Check-ins</li>
+          <li>Bugs</li>
+          <li>Builds in progress/finished</li>
+        </ul>
+      </li>
+      <li>For more info see <a href="https://www.gdcvault.com/browse/gdc-19/play/1025807">GDC 2019 Tools Tutorial Day: Tooling for Small Team Workflows</a></li>
+    </ul>
+  </li>
+  <li>Had a special process for automatically integrating into the main branch
+    <ul>
+      <li>Via a build farm worker</li>
+      <li>Had a special local conflict resolution workflow (when conflicts happened during an integration)</li>
+      <li>After conflict resolution, automated testing would occur
+        <ul>
+          <li>If something was broken, the team had the ability to login to a remote worker and fix the issue
+            <ul>
+              <li>The worker would have all the dev tools ready</li>
+            </ul>
+          </li>
+        </ul>
+      </li>
+    </ul>
+  </li>
+  <li>All in all, Pete says that this was a great investment for the dev team</li>
+</ul>
+
+<div style="background-color:#FFFF94;border-left: 6px solid #ffff48;">
+<p></p>
+These notes are just the main ideas of the talk. They don’t contain anecdotes and examples. If you like these ideas, I would advise watching the talk on the <a href="https://www.gdcvault.com/play/1025992/Pipeline-Support-for-Feature-Branches">GDC Vault</a>.
+<p></p>
 </div>
 
-<h2 id="game-tools-engineering">Game Tools Engineering</h2>
-<p>The roles involved in creating and maintaining the internal implementations of in-house digital content creation (DCC) tools, the content build pipeline, and the studio infrastructure. Usually, the work that these roles do doesn’t leave the studio’s walls.</p>
+<h2 id="the-toolsmiths">The Toolsmiths</h2>
+<p><img src="http://thetoolsmiths.org/assets/thetoolsmiths_cover_1000x2881.png" alt="The Toolsmiths logo" width="700" /></p>
 
-<p><img src="assets/images/posts/tool_development_roles/tool_engineer_roles.jpg" alt="Tools Engineering Roles" /></p>
+<p>I took these notes as part of our little “Book Club” for GDC Vault Videos <a href="http://thetoolsmiths.org/vault_club">The Toolsmiths #vault club</a></p>
 
-<p><i>Generalist Engine Programmer</i> - in a small team setting the Generalist Engine Programmer knows the engine best and this is the best person to know how to integrate DCC tools and set up the pipeline.</p>
+<p><strong>Pete Kugler</strong> is a member of the <a href="http://thetoolsmiths.org/">Toolsmiths</a> community. The Toolsmiths are a community of Game Tool Developers that are passionate about improving the way people make games.</p>
 
-<p><i>Tools Engineer</i> - dedicated engineering role responsible for maintaining the tools and pipelines that the game development team uses.</p>
+<p>Join us on <a href="http://thetoolsmiths.org/join_slack_team">Slack</a>.</p>
 
-<p><i>Pipeline Engineer</i> - responsible for maintaining/evolving the tools and technologies part of the content development pipeline. Collaborating with Technical Artists to create the user-facing parts of the pipeline.</p>
-
-<p><i>Infrastructure Tools Engineer</i> - responsible for maintaining/evolving studio services part of Continuous Integration, database health, Version Control and workstation configuration.</p>
-
-<p><i>DCC Tools Engineer</i> - responsible for maintaining/evolving the Game Engine Toolset. Working with Content Creators, Tech Artists, Tech Designers, and the Tool UX team to create the most optimal workflows possible.</p>
-
-<p><i>Tools Support Specialist</i> / <i>Production Engineer</i> - first-line support for tool/pipeline user issues. Knowledge base of known issues, best practises and issue workarounds. The firefighter of game development.</p>
-
-<h2 id="technical-art">Technical Art</h2>
-<p>The part of the Game Development Team that bridges the gap between Engineering and Art.</p>
-
-<p><img src="assets/images/posts/tool_development_roles/tech_art_team_roles.jpg" alt="Tech Art Roles" /></p>
-
-<p><i>Technical Artist</i> - Responsible for tackling technical challenges that an art team can come across. Enables the artists to focus on creating art and not solving technical problems. Use great communication skills to bridge the gap between engineering and art.</p>
-
-<p><i>VFX Technical Artist</i> - Technical artist that focuses on helping the VFX team with VFX tools and workflows. Masters of real-time effects, lighting, and shaders. Coordinates with the Tools User Experience team to provide the best experience possible. Provides feedback to the Render Team.</p>
-
-<p><i>Pipeline Technical Artist</i> - Works on streamlining the content build pipeline and workflows within the pipeline. Closely coordinates with the Tools Team to set up efficient asset creation processes.</p>
-
-<p><i>Technical Animator</i> - Tech Artist that specializes in development and support of rigging and animation technologies. Closely works with the Tools User Experience team to improve workflows and efficiency.</p>
-
-<h2 id="technical-design">Technical Design</h2>
-<p>The part of the Game Development Team that bridges the gap between Engineering and Design.</p>
-
-<p><img src="assets/images/posts/tool_development_roles/tech_design_team_roles.jpg" alt="Tech Design Roles" /></p>
-
-<p><i>Tech Designer</i> - the tech-savvy designer that helps bridge the gap between design and code. Help define pipelines and workflows for developing game mechanic related content. Talor tool feature request to better suit the non-technical designers.</p>
-
-<p><i>Tech UI/UX Designer</i> - Technical Designer that focuses on helping the UI team tackle technical problems of creating menus, navigation, and HUD.</p>
-
-<p><i>Tech Audio Designer</i> - Technical Designer that is focused on helping the audio team maintain and develop the audio system of the game engine. Coordinates with the Tools User Experience team to provide the best experience in the audio tools.</p>
-
-<p><i>Tech Level Designer</i> - work closely with the Level Design, Tools and Tools UX Teams to create a sublime level editing experience in the engine level editor.</p>
-
-<h2 id="game-tools-uiux-and-design">Game Tools UI/UX and Design</h2>
-
-<p>The part of the Tools Team that make the Engineers/ Tech Designers/Tech Artists more efficient, the Artist/Designers happier and budget have fewer drains.</p>
-
-<p><img src="assets/images/posts/tool_development_roles/ux_team_roles.jpg" alt="UI/UX and Design Roles" /></p>
-
-<p><i>Tools Designer</i> - Helping the Tools Team concentrate on the engineering side of the tools and pipeline. Spending time at users desks analyzing workflows and pointing out the “best bang for the buck” improvements to the Tools Engineers, Tech Designers, and Tech Artists.</p>
-
-<p><i>User Experience Designer</i> - create and design UI/Workflows for in-house tools. Collaborate with Users and Tech Artists/Tech Designers/Tools Engineers to make the best UX possible.</p>
-
-<p><i>User Researcher</i> - design and conduct research studies on experience and workflow for in-house tools. Outline, communicate research results and provide recommendations.</p>
-
-<p><i>Tools UI Designer</i> - responsibilities include: work on the design of Tool UIs; Maintain the Tools UI style guide; Verify that the style guide is properly implemented;</p>
-
-<p><i>Tech Writer</i> - the keeper of the studios knowledge base. Enabling quick new hire ramp ups.</p>
-
-<p><i>Data Analytics Engineer / Tools Analytics</i> - responsible for setting up Tool statistic gathering and statistical data analysis of tool usage. Coordinates with User Researcher to understand the reasons behind the user’s behaviors and actions.</p>
-
-<h2 id="ad-hoc-tool-development">Ad-hoc Tool Development</h2>
-<p>There is always a lot of work to go around when it comes to tools. When there aren’t enough resources in the Tools/Tech Design/Tech Art Teams other programmers come to help. 
-<img src="assets/images/posts/tool_development_roles/ad_hoc_team_roles.jpg" alt="Ad-hoc Tools Roles" /></p>
-
-<div style="background-color:#FFFF94;border-left: 6px solid #ffff48;"> 
- Some might think Ad-hoc Tool Development is always a bad thing with issues like coordination/communication, redundant work, bus factor, new tool frameworks to support... But I would disagree. If this is done <b>right</b> these issues can be avoided and this can be a <b>big help</b> to the Tools/Tech Design/Tech Art Teams. 
-</div>
-
-<p><br /></p>
-
-<h2 id="summary">Summary</h2>
-
-<p>This turned out a bit of a laundry list. Anyway, this is a good high-level overview of the game development roles that are involved in creating tools for building amazing interactive experiences. I believe this could be an excellent reference for people that are just starting out in the industry.</p>
-
-<p><br /></p>
+<p>Join us on <a href="https://twitter.com/thetoolsmiths">Twitter</a>.</p>
 
 <h2 id="links">Links</h2>
 <ul>
-  <li><a href="https://gorlak.dev/recruiting/2018/07/13/tools-engineer-faq">Tools Engineer Recruiting FAQ</a></li>
-  <li><a href="http://wiki.polycount.com/wiki/Technical_Art">Polycount wiki - Technical Art</a></li>
-  <li><a href="https://www.gdcvault.com/play/1022337/Tools-Development-at-Ubisoft-Building">GDC 2015: Tools Development at Ubisoft: Building a Shared Vision to Improve the User Experience</a></li>
-  <li><a href="http://thetoolsmiths.org/2009/02/03/the-problem-with-ad-hoc-tools-teams/">The Problem With Ad-Hoc Tools Teams</a></li>
-  <li><a href="http://thetoolsmiths.org/2009/02/16/best-of-comments-ad-hoc-and-gdc/">Best of Comments: Ad-hoc and GDC</a></li>
-  <li><a href="https://www.gdcvault.com/play/1014087/How-to-Train-your-Technical">GDC 2010: How to Train your Technical Artist</a></li>
-  <li><a href="https://technicalgamedesign.blogspot.com/2012/07/what-is-technical-game-designer.html">What is a technical game designer?</a></li>
+  <li><a href="https://www.gdcvault.com/play/1025992/Pipeline-Support-for-Feature-Branches">GDC 2019 Pipeline Support for Feature Branches in ‘Destiny’</a></li>
+  <li>2016 talk by Pete Kugler - <a href="https://drive.google.com/file/d/1FeZGA-MeuI31Wan9ZVlXmSZ-JrSLgIL2/view?usp=sharing">GDC 2016 Developing a pipeline for managing game stability</a></li>
+  <li><a href="https://www.gdcvault.com/browse/gdc-19/play/1025807">GDC 2019 Tools Tutorial Day: Tooling for Small Team Workflows</a></li>
+  <li><a href="https://www.gdcvault.com/play/1025380/Tools-Tutorial-Day-Shipping-Call">GDC 2018 Tools Tutorial Day: Shipping ‘Call of Duty’</a></li>
+  <li><a href="https://www.gdcvault.com/play/1025430/Tools-Tutorial-Day-Bungie-s">GDC 2018 Tools Tutorial Day: Bungie’s Asset Pipeline: ‘Destiny 2’ and Beyond</a></li>
+  <li><a href="https://www.youtube.com/watch?v=7KXVox0-7lU">HandmadeCon 2016 - Asset Systems and Scalability</a></li>
+  <li><a href="https://www.gdcvault.com/play/1025970/Bungie-s-Force-Multipliers-Production">GDC 2019 Bungie’s Force Multipliers: Production Engineers</a></li>
+  <li><a href="https://www.gdcvault.com/browse/gdc-18/play/1025252/Teams-Are-Stronger-Than-Heroes">GDC 2018 Teams Are Stronger Than Heroes: Bungie Development Evolved</a></li>
+  <li><a href="https://www.gdcvault.com/browse/gdc-18/play/1025116/Epic-Sync-Wrangling-the-Work">GDC 2018 Epic Sync: Wrangling the Work of Highly Interdependent Dev Teams at Bungie</a></li>
 </ul>
-
-<h2 id="ps">P.S.</h2>
-
-<p>If you have a better definition to any of the above or you think I missed a role. Please feel free to DM me on <a href="https://twitter.com/VictorStepanov">twitter</a> or leave a commnet here.</p>
-
 
                 </div>
             </section>
@@ -339,7 +443,7 @@ DISCLAIMER: definitions in this post were produced from personal experience, GDC
                         <header class="read-next-card-header">
                             <small class="read-next-card-header-sitetitle">&mdash; Victor Stepanov &mdash;</small>
                             
-                                <h3 class="read-next-card-header-title"><a href="https://victorstepanov.github.io/tag/game_tools_dev/">Game_tools_dev</a></h3>
+                                <h3 class="read-next-card-header-title"><a href="https://victorstepanov.github.io/tag/gdc/">Gdc</a></h3>
                             
                         </header>
                         <div class="read-next-divider"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 14.5s2 3 5 3 5.5-2.463 5.5-5.5S21 6.5 18 6.5c-5 0-7 11-12 11C2.962 17.5.5 15.037.5 12S3 6.5 6 6.5s4.5 3.5 4.5 3.5"/></svg>
@@ -349,6 +453,12 @@ DISCLAIMER: definitions in this post were produced from personal experience, GDC
                                 
                                 
                                   
+                                    
+                                  
+                                
+                                  
+                                
+                                  
                                 
                                   
                                 
@@ -356,15 +466,9 @@ DISCLAIMER: definitions in this post were produced from personal experience, GDC
                                     
                                         
                                         
-                                            <li><a href="https://victorstepanov.github.io/origin-of-the-path">The origin of the path</a></li>
+                                            <li><a href="https://victorstepanov.github.io/tools-tutorial-day-a-tale-of-three-data-schemas">Notes for "A Tale of Three Data Schemas"</a></li>
                                         
                                     
-                                  
-                                
-                                  
-                                    
-                                  
-                                
                                   
                                 
                                   
@@ -376,7 +480,7 @@ DISCLAIMER: definitions in this post were produced from personal experience, GDC
                             </ul>
                         </div>
                         <footer class="read-next-card-footer">
-                            <a href="https://victorstepanov.github.io/tag/game_tools_dev/">
+                            <a href="https://victorstepanov.github.io/tag/gdc/">
                                 
                                     See all 1 posts  →
                                 
@@ -388,79 +492,28 @@ DISCLAIMER: definitions in this post were produced from personal experience, GDC
 
             <!-- If there's a next post, display it using the same markup included from - partials/post-card.hbs -->
             
-                
-    <article class="post-card post-template">
-        
-            <a class="post-card-image-link" href="https://victorstepanov.github.io/origin-of-the-path">
-                <div class="post-card-image" style="background-image: url(https://victorstepanov.github.io/assets/images/posts/origin-of-the-path.jpeg)"></div>
-            </a>
-        
-        <div class="post-card-content">
-            <a class="post-card-content-link" href="https://victorstepanov.github.io/origin-of-the-path">
-                <header class="post-card-header">
-                    
-                        
-                            
-                                <span class="post-card-tags">Game_tools_dev</span>
-                            
-                        
-                    
-
-                    <h2 class="post-card-title">The origin of the path</h2>
-                </header>
-                <section class="post-card-excerpt">
-                    <p>After finishing the work on the first draft of the [Tools Engineer Learning Path](http://thetoolsmiths.org/codex/learning_paths/tools_engineer_learning_path), I decided to write a short story behind the learning path and the thought process I went through when</p>
-                </section>
-            </a>
-            <footer class="post-card-meta">
-                
-                    
-                        
-                        <img class="author-profile-image" src="https://victorstepanov.github.io/assets/images/vstepano.png" alt="Victor Stepanov" />
-                        
-                        <span class="post-card-author">
-                            <a href="https://victorstepanov.github.io/author/vstepano/">Victor Stepanov</a>
-                        </span>
-                    
-                
-            </footer>
-        </div>
-    </article>
-
-            
 
             <!-- If there's a previous post, display it using the same markup included from - partials/post-card.hbs -->
             
                 
     <article class="post-card post-template">
         
-            <a class="post-card-image-link" href="https://victorstepanov.github.io/tools-tutorial-day-a-tale-of-three-data-schemas">
-                <div class="post-card-image" style="background-image: url(https://victorstepanov.github.io/assets/images/posts/blank-composition-desk-gdc18_small.jpg)"></div>
+            <a class="post-card-image-link" href="https://victorstepanov.github.io/toolsmiths-gdc-2019-guide">
+                <div class="post-card-image" style="background-image: url(https://victorstepanov.github.io/assets/images/posts/toolsmiths-gdc-2019-guide.jpg)"></div>
             </a>
         
         <div class="post-card-content">
-            <a class="post-card-content-link" href="https://victorstepanov.github.io/tools-tutorial-day-a-tale-of-three-data-schemas">
+            <a class="post-card-content-link" href="https://victorstepanov.github.io/toolsmiths-gdc-2019-guide">
                 <header class="post-card-header">
                     
-                        
-                            
-                               <span class="post-card-tags">Gdc</span>
-                            
-                        
-                            
-                               <span class="post-card-tags">Tools_tutorial_day</span>
-                            
-                        
-                            
-                                <span class="post-card-tags">Data</span>
-                            
-                        
-                    
 
-                    <h2 class="post-card-title">Notes for "A Tale of Three Data Schemas"</h2>
+                    <h2 class="post-card-title">Toolsmiths GDC 2019 Guide</h2>
                 </header>
                 <section class="post-card-excerpt">
-                    <p>GDC 2018, Tools Tutorial Day, Ludovic Chabant, Senior Software Engineer @ Electronic Arts Vancouver shared the know-how of the Frostbite engine team when it comes to designing the game’s data. These are my</p>
+                    <p>I went over many sessions for this year’s GDC and created a list talks that would peek the interest of a Game Tools Developer.
+
+This guide can be found here.
+</p>
                 </section>
             </a>
             <footer class="post-card-meta">
@@ -495,13 +548,13 @@ DISCLAIMER: definitions in this post were produced from personal experience, GDC
         </a>
     </div>
     <span class="floating-header-divider">&mdash;</span>
-    <div class="floating-header-title">Roles in Game Tools Development</div>
+    <div class="floating-header-title">Notes for "Pipeline Support for Feature Branches in 'Destiny'" GDC2019</div>
     <div class="floating-header-share">
         <div class="floating-header-share-label">Share this <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
     <path d="M7.5 15.5V4a1.5 1.5 0 1 1 3 0v4.5h2a1 1 0 0 1 1 1h2a1 1 0 0 1 1 1H18a1.5 1.5 0 0 1 1.5 1.5v3.099c0 .929-.13 1.854-.385 2.748L17.5 23.5h-9c-1.5-2-5.417-8.673-5.417-8.673a1.2 1.2 0 0 1 1.76-1.605L7.5 15.5zm6-6v2m-3-3.5v3.5m6-1v2"/>
 </svg>
 </div>
-        <a class="floating-header-share-tw" href="https://twitter.com/share?text=Roles+in+Game+Tools+Development&amp;url=https://VictorStepanov.github.io/tool-development-roles"
+        <a class="floating-header-share-tw" href="https://twitter.com/share?text=Notes+for+%22Pipeline+Support+for+Feature+Branches+in+%27Destiny%27%22+GDC2019&amp;url=https://VictorStepanov.github.io/gdc2019-pipeline-support-for-feature-branches-in-destiny"
             onclick="window.open(this.href, 'share-twitter', 'width=550,height=235');return false;">
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32"><path d="M30.063 7.313c-.813 1.125-1.75 2.125-2.875 2.938v.75c0 1.563-.188 3.125-.688 4.625a15.088 15.088 0 0 1-2.063 4.438c-.875 1.438-2 2.688-3.25 3.813a15.015 15.015 0 0 1-4.625 2.563c-1.813.688-3.75 1-5.75 1-3.25 0-6.188-.875-8.875-2.625.438.063.875.125 1.375.125 2.688 0 5.063-.875 7.188-2.5-1.25 0-2.375-.375-3.375-1.125s-1.688-1.688-2.063-2.875c.438.063.813.125 1.125.125.5 0 1-.063 1.5-.25-1.313-.25-2.438-.938-3.313-1.938a5.673 5.673 0 0 1-1.313-3.688v-.063c.813.438 1.688.688 2.625.688a5.228 5.228 0 0 1-1.875-2c-.5-.875-.688-1.813-.688-2.75 0-1.063.25-2.063.75-2.938 1.438 1.75 3.188 3.188 5.25 4.25s4.313 1.688 6.688 1.813a5.579 5.579 0 0 1 1.5-5.438c1.125-1.125 2.5-1.688 4.125-1.688s3.063.625 4.188 1.813a11.48 11.48 0 0 0 3.688-1.375c-.438 1.375-1.313 2.438-2.563 3.188 1.125-.125 2.188-.438 3.313-.875z"/></svg>
 

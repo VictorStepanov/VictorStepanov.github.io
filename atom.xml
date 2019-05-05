@@ -8,6 +8,217 @@
     
       
       <item>
+        <title>Notes for &quot;Pipeline Support for Feature Branches in 'Destiny'&quot; GDC2019</title>
+        
+          <description>&lt;h2 id=&quot;tldw-summary&quot;&gt;TLDW Summary:&lt;/h2&gt;
+&lt;p&gt;How Bungie created an ecosystem of tools and workflows to allow small teams to quickly iterate on changes without worrying about breaking and blocking other teams.&lt;/p&gt;
+
+&lt;h2 id=&quot;topics&quot;&gt;Topics&lt;/h2&gt;
+&lt;ul&gt;
+  &lt;li&gt;Game data merging&lt;/li&gt;
+  &lt;li&gt;Version control system&lt;/li&gt;
+  &lt;li&gt;Integration between branches&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;intro&quot;&gt;Intro&lt;/h2&gt;
+&lt;ul&gt;
+  &lt;li&gt;Each P4 branch is about 4 Tb&lt;/li&gt;
+  &lt;li&gt;Up to 350 content creators, designers, and engineers working in one branch&lt;/li&gt;
+  &lt;li&gt;They use a pre-commit build pipeline - “the Gauntlet”
+    &lt;ul&gt;
+      &lt;li&gt;Pete Kugler did a talk at &lt;a href=&quot;https://drive.google.com/file/d/1FeZGA-MeuI31Wan9ZVlXmSZ-JrSLgIL2/view?usp=sharing&quot;&gt;GDC2016: Developing a pipeline for managing game stability&lt;/a&gt;
+        &lt;ul&gt;
+          &lt;li&gt;Pipeline for managing game stability&lt;/li&gt;
+          &lt;li&gt;Describes the reason they put the pre-commit system in place&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;They pick stability over iteration speed
+    &lt;ul&gt;
+      &lt;li&gt;&lt;img src=&quot;assets/images/posts/pipeline-support-for-feature-branches/initial-destiny-2-challenges.jpg&quot; alt=&quot;slide: initial Destiny 2 challenges&quot; width=&quot;700&quot; /&gt;&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;Had technical limitations of just simply adding more feature branches
+    &lt;ul&gt;
+      &lt;li&gt;Not supported by tools&lt;/li&gt;
+      &lt;li&gt;More pressure on integration&lt;/li&gt;
+      &lt;li&gt;More pressure on build pipeline&lt;/li&gt;
+      &lt;li&gt;Couldn’t merge game data&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;Definition &lt;strong&gt;“Feature Branch”&lt;/strong&gt; - Branch created for teams to work in without interfering with the stability of the main branch&lt;/li&gt;
+  &lt;li&gt;Definition &lt;strong&gt;“Small Team”&lt;/strong&gt; -  group of cross-discipline developer working collaboratively on shared features (strike teams? )&lt;/li&gt;
+  &lt;li&gt;The development team was in an environment that would not allow risky feature prototype and development
+    &lt;ul&gt;
+      &lt;li&gt;Long pre-commit build pipeline throughput&lt;/li&gt;
+      &lt;li&gt;Thurow QA testing&lt;/li&gt;
+      &lt;li&gt;Fear of creating blockers&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;Vision
+    &lt;ul&gt;
+      &lt;li&gt;&lt;img src=&quot;assets/images/posts/pipeline-support-for-feature-branches/auto-integration.jpg&quot; alt=&quot;slide: auto-integration&quot; width=&quot;400&quot; /&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;img src=&quot;assets/images/posts/pipeline-support-for-feature-branches/small-team-development-vision.jpg&quot; alt=&quot;slide: small team development vision&quot; width=&quot;700&quot; /&gt;&lt;/li&gt;
+      &lt;li&gt;QA had the option to use stabilization branch to shield from the auto integrations that were happening&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;Had 3 main challenges:
+    &lt;ul&gt;
+      &lt;li&gt;&lt;img src=&quot;assets/images/posts/pipeline-support-for-feature-branches/achieving-the-development-vision.jpg&quot; alt=&quot;slide: achieving the development vision&quot; width=&quot;700&quot; /&gt;
+        &lt;ul&gt;
+          &lt;li&gt;Focused on semantically merge content to make the lives of content creators easier&lt;/li&gt;
+          &lt;li&gt;Focused on making a simple as possible to keep branches in-sync and stable (management tools)&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;Developers became accustomed to workflow build around having multiple branches per workspace
+    &lt;ul&gt;
+      &lt;li&gt;Because of the release cycles (having multiple features in progress)&lt;/li&gt;
+      &lt;li&gt;Expected to have immediate access to things that are mapped in the workspace&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;Source &lt;a href=&quot;http://thetoolsmiths.org/codex/glossary/&quot;&gt;DCC&lt;/a&gt; assets in the same location as the game data
+    &lt;ul&gt;
+      &lt;li&gt;This made for build branches&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;Moving to a streamed depot was a risk that the dev team didn’t want to take
+    &lt;ul&gt;
+      &lt;li&gt;Compromise by adapting the current system to behave like Streams&lt;/li&gt;
+      &lt;li&gt;Had plans to move to Streams for next project&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;scaling-the-infrastructure&quot;&gt;Scaling the Infrastructure&lt;/h2&gt;
+&lt;ul&gt;
+  &lt;li&gt;Needed to implement Centralized Branch Authority
+    &lt;ul&gt;
+      &lt;li&gt;Which was available as part P4 Stream&lt;/li&gt;
+      &lt;li&gt;Used the build farm DB to be the Branch Authority&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;Needed to implement a way to make the branches available on the build farm machines&lt;/li&gt;
+  &lt;li&gt;Asset pipeline changes
+    &lt;ul&gt;
+      &lt;li&gt;For details checkout Brandon Moro’s talk: &lt;a href=&quot;https://www.gdcvault.com/play/1025430/Tools-Tutorial-Day-Bungie-s&quot;&gt;GDC 2018 Tools Tutorial Day: Bungie’s Asset Pipeline: ‘Destiny 2’ and Beyond&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;Need to enable the scaling of the Asset Cache
+        &lt;ul&gt;
+          &lt;li&gt;Used to be one/two machine(s) per branch&lt;/li&gt;
+          &lt;li&gt;Decoupled storage HW from the service HW&lt;/li&gt;
+          &lt;li&gt;The service was made stateless
+            &lt;ul&gt;
+              &lt;li&gt;So service could handle different branches&lt;/li&gt;
+              &lt;li&gt;The state management was moved into Redis&lt;/li&gt;
+              &lt;li&gt;Logging was moved into elasticsearch&lt;/li&gt;
+            &lt;/ul&gt;
+          &lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;To setup, branch used a lazy copy of that branch
+    &lt;ul&gt;
+      &lt;li&gt;The branch was 4 Tb&lt;/li&gt;
+      &lt;li&gt;On the backend use deduplication to not store the same data&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;implementing-content-merging&quot;&gt;Implementing Content Merging&lt;/h2&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Propper game data merging
+    &lt;ul&gt;
+      &lt;li&gt;Needs to know the semantics of the data&lt;/li&gt;
+      &lt;li&gt;Used C# for the content merge tool (some screenshots &lt;a href=&quot;https://www.gdcvault.com/play/1025992/Pipeline-Support-for-Feature-Branches&quot;&gt;at min 40&lt;/a&gt;)
+        &lt;ul&gt;
+          &lt;li&gt;&lt;img src=&quot;assets/images/posts/pipeline-support-for-feature-branches/content-merge-tool.jpg&quot; alt=&quot;slide: content merge tool&quot; width=&quot;400&quot; /&gt;&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+      &lt;li&gt;Tracked auto-resolve\ conflict ratio&lt;/li&gt;
+      &lt;li&gt;Used TDD and recorded mergers that produced conflict to analyze&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://www.gdcvault.com/play/1025992/Pipeline-Support-for-Feature-Branches&quot;&gt;at min 31&lt;/a&gt; notes on how to implement merging of game data&lt;/li&gt;
+  &lt;li&gt;Were able to reach 80% auto-conflict resolution rate&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;flow-of-changes&quot;&gt;Flow of changes&lt;/h2&gt;
+&lt;ul&gt;
+  &lt;li&gt;Created custom tool “Team Sync” to view of a users branch state
+    &lt;ul&gt;
+      &lt;li&gt;&lt;img src=&quot;assets/images/posts/pipeline-support-for-feature-branches/team-sync.jpg&quot; alt=&quot;slide: Team Sync tool&quot; width=&quot;400&quot; /&gt;&lt;/li&gt;
+      &lt;li&gt;Shows
+        &lt;ul&gt;
+          &lt;li&gt;Check-ins&lt;/li&gt;
+          &lt;li&gt;Bugs&lt;/li&gt;
+          &lt;li&gt;Builds in progress/finished&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+      &lt;li&gt;For more info see &lt;a href=&quot;https://www.gdcvault.com/browse/gdc-19/play/1025807&quot;&gt;GDC 2019 Tools Tutorial Day: Tooling for Small Team Workflows&lt;/a&gt;&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;Had a special process for automatically integrating into the main branch
+    &lt;ul&gt;
+      &lt;li&gt;Via a build farm worker&lt;/li&gt;
+      &lt;li&gt;Had a special local conflict resolution workflow (when conflicts happened during an integration)&lt;/li&gt;
+      &lt;li&gt;After conflict resolution, automated testing would occur
+        &lt;ul&gt;
+          &lt;li&gt;If something was broken, the team had the ability to login to a remote worker and fix the issue
+            &lt;ul&gt;
+              &lt;li&gt;The worker would have all the dev tools ready&lt;/li&gt;
+            &lt;/ul&gt;
+          &lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;All in all, Pete says that this was a great investment for the dev team&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;div style=&quot;background-color:#FFFF94;border-left: 6px solid #ffff48;&quot;&gt;
+&lt;p&gt;&lt;/p&gt;
+These notes are just the main ideas of the talk. They don’t contain anecdotes and examples. If you like these ideas, I would advise watching the talk on the &lt;a href=&quot;https://www.gdcvault.com/play/1025992/Pipeline-Support-for-Feature-Branches&quot;&gt;GDC Vault&lt;/a&gt;.
+&lt;p&gt;&lt;/p&gt;
+&lt;/div&gt;
+
+&lt;h2 id=&quot;the-toolsmiths&quot;&gt;The Toolsmiths&lt;/h2&gt;
+&lt;p&gt;&lt;img src=&quot;http://thetoolsmiths.org/assets/thetoolsmiths_cover_1000x2881.png&quot; alt=&quot;The Toolsmiths logo&quot; width=&quot;700&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;I took these notes as part of our little “Book Club” for GDC Vault Videos &lt;a href=&quot;http://thetoolsmiths.org/vault_club&quot;&gt;The Toolsmiths #vault club&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Pete Kugler&lt;/strong&gt; is a member of the &lt;a href=&quot;http://thetoolsmiths.org/&quot;&gt;Toolsmiths&lt;/a&gt; community. The Toolsmiths are a community of Game Tool Developers that are passionate about improving the way people make games.&lt;/p&gt;
+
+&lt;p&gt;Join us on &lt;a href=&quot;http://thetoolsmiths.org/join_slack_team&quot;&gt;Slack&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;Join us on &lt;a href=&quot;https://twitter.com/thetoolsmiths&quot;&gt;Twitter&lt;/a&gt;.&lt;/p&gt;
+
+&lt;h2 id=&quot;links&quot;&gt;Links&lt;/h2&gt;
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;https://www.gdcvault.com/play/1025992/Pipeline-Support-for-Feature-Branches&quot;&gt;GDC 2019 Pipeline Support for Feature Branches in ‘Destiny’&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;2016 talk by Pete Kugler - &lt;a href=&quot;https://drive.google.com/file/d/1FeZGA-MeuI31Wan9ZVlXmSZ-JrSLgIL2/view?usp=sharing&quot;&gt;GDC 2016 Developing a pipeline for managing game stability&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://www.gdcvault.com/browse/gdc-19/play/1025807&quot;&gt;GDC 2019 Tools Tutorial Day: Tooling for Small Team Workflows&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://www.gdcvault.com/play/1025380/Tools-Tutorial-Day-Shipping-Call&quot;&gt;GDC 2018 Tools Tutorial Day: Shipping ‘Call of Duty’&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://www.gdcvault.com/play/1025430/Tools-Tutorial-Day-Bungie-s&quot;&gt;GDC 2018 Tools Tutorial Day: Bungie’s Asset Pipeline: ‘Destiny 2’ and Beyond&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://www.youtube.com/watch?v=7KXVox0-7lU&quot;&gt;HandmadeCon 2016 - Asset Systems and Scalability&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://www.gdcvault.com/play/1025970/Bungie-s-Force-Multipliers-Production&quot;&gt;GDC 2019 Bungie’s Force Multipliers: Production Engineers&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://www.gdcvault.com/browse/gdc-18/play/1025252/Teams-Are-Stronger-Than-Heroes&quot;&gt;GDC 2018 Teams Are Stronger Than Heroes: Bungie Development Evolved&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://www.gdcvault.com/browse/gdc-18/play/1025116/Epic-Sync-Wrangling-the-Work&quot;&gt;GDC 2018 Epic Sync: Wrangling the Work of Highly Interdependent Dev Teams at Bungie&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+        
+        <pubDate>Sun, 05 May 2019 01:00:00 +0000</pubDate>
+        <link>
+        /gdc2019-pipeline-support-for-feature-branches-in-destiny</link>
+        <guid isPermaLink="true">/gdc2019-pipeline-support-for-feature-branches-in-destiny</guid>
+      </item>
+      
+    
+      
+      <item>
         <title>Toolsmiths GDC 2019 Guide</title>
         
           <description>There are around 760+ sessions/tutorials/events at GDC 2019, finding the sessions that a tools developer would be interested in takes time. Below you will find a list of sessions that can become the base for your tools developer GDC 2019 experience, whether you plan on attending or you will be viewing post-factum.</description>
@@ -140,7 +351,7 @@ DISCLAIMER: definitions in this post were produced from personal experience, GDC
 
 &lt;h2 id=&quot;links&quot;&gt;Links&lt;/h2&gt;
 &lt;ul&gt;
-  &lt;li&gt;&lt;a href=&quot;http://software.gorlak.org/recruiting/2018/07/13/tools-engineer-faq&quot;&gt;Tools Engineer Recruiting FAQ&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://gorlak.dev/recruiting/2018/07/13/tools-engineer-faq&quot;&gt;Tools Engineer Recruiting FAQ&lt;/a&gt;&lt;/li&gt;
   &lt;li&gt;&lt;a href=&quot;http://wiki.polycount.com/wiki/Technical_Art&quot;&gt;Polycount wiki - Technical Art&lt;/a&gt;&lt;/li&gt;
   &lt;li&gt;&lt;a href=&quot;https://www.gdcvault.com/play/1022337/Tools-Development-at-Ubisoft-Building&quot;&gt;GDC 2015: Tools Development at Ubisoft: Building a Shared Vision to Improve the User Experience&lt;/a&gt;&lt;/li&gt;
   &lt;li&gt;&lt;a href=&quot;http://thetoolsmiths.org/2009/02/03/the-problem-with-ad-hoc-tools-teams/&quot;&gt;The Problem With Ad-Hoc Tools Teams&lt;/a&gt;&lt;/li&gt;
