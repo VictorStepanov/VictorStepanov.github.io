@@ -101,7 +101,7 @@ This turned out a bit of a laundry list. Anyway, this is a good high-level overv
 
 
 ## Links
-* [Tools Engineer Recruiting FAQ](http://software.gorlak.org/recruiting/2018/07/13/tools-engineer-faq)
+* [Tools Engineer Recruiting FAQ](https://gorlak.dev/recruiting/2018/07/13/tools-engineer-faq)
 * [Polycount wiki - Technical Art](http://wiki.polycount.com/wiki/Technical_Art)
 * [GDC 2015: Tools Development at Ubisoft: Building a Shared Vision to Improve the User Experience](https://www.gdcvault.com/play/1022337/Tools-Development-at-Ubisoft-Building)
 * [The Problem With Ad-Hoc Tools Teams](http://thetoolsmiths.org/2009/02/03/the-problem-with-ad-hoc-tools-teams/)
