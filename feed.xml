@@ -1,4 +1,172 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.6.2">Jekyll</generator><link href="/https://victorstepanov.github.io/feed.xml" rel="self" type="application/atom+xml" /><link href="/https://victorstepanov.github.io/" rel="alternate" type="text/html" /><updated>2019-05-05T12:20:47-07:00</updated><id>/https://victorstepanov.github.io/</id><title type="html">Victor Stepanov</title><subtitle>Passionate about making game developers more productive</subtitle><entry><title type="html">Notes for “Pipeline Support for Feature Branches in ‘Destiny’” GDC2019</title><link href="/https://victorstepanov.github.io/gdc2019-pipeline-support-for-feature-branches-in-destiny" rel="alternate" type="text/html" title="Notes for &quot;Pipeline Support for Feature Branches in 'Destiny'&quot; GDC2019" /><published>2019-05-04T18:00:00-07:00</published><updated>2019-05-04T18:00:00-07:00</updated><id>/https://victorstepanov.github.io/gdc2019-pipeline-support-for-feature-branches-in-destiny</id><content type="html" xml:base="/https://victorstepanov.github.io/gdc2019-pipeline-support-for-feature-branches-in-destiny">&lt;h2 id=&quot;tldw-summary&quot;&gt;TLDW Summary:&lt;/h2&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.6.2">Jekyll</generator><link href="/https://victorstepanov.github.io/feed.xml" rel="self" type="application/atom+xml" /><link href="/https://victorstepanov.github.io/" rel="alternate" type="text/html" /><updated>2019-05-26T12:44:04-07:00</updated><id>/https://victorstepanov.github.io/</id><title type="html">Victor Stepanov</title><subtitle>Passionate about making game developers more productive</subtitle><entry><title type="html">Notes for “Bungie’s Force Multipliers - Production Engineers” GDC2019</title><link href="/https://victorstepanov.github.io/gdc2019-bungie-s-force-multipliers-production-engineers" rel="alternate" type="text/html" title="Notes for &quot;Bungie's Force Multipliers - Production Engineers&quot; GDC2019" /><published>2019-05-25T18:00:00-07:00</published><updated>2019-05-25T18:00:00-07:00</updated><id>/https://victorstepanov.github.io/gdc2019-bungie-s-force-multipliers-production-engineers</id><content type="html" xml:base="/https://victorstepanov.github.io/gdc2019-bungie-s-force-multipliers-production-engineers">&lt;p&gt;&lt;strong&gt;TLDW Summary&lt;/strong&gt;: How Bungie organized a dedicated task force of engineers to stay on top of production challenges, blocking issues and shielding Tech-Artists and Engineers from random support requests.&lt;/p&gt;
+
+&lt;h2 id=&quot;topics&quot;&gt;Topics&lt;/h2&gt;
+&lt;ul&gt;
+  &lt;li&gt;support&lt;/li&gt;
+  &lt;li&gt;tools role&lt;/li&gt;
+  &lt;li&gt;production&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;presentation-table-of-contents&quot;&gt;Presentation Table of Contents&lt;/h2&gt;
+&lt;p&gt;&lt;img src=&quot;assets/images/posts/Bungie-s-Force-Multipliers-Production/toc.jpg&quot; alt=&quot;slide: achieving the development vision&quot; width=&quot;700&quot; /&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;presentation-timestamps&quot;&gt;Presentation Timestamps&lt;/h2&gt;
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;https://www.gdcvault.com/play/1025970/Bungie-s-Force-Multipliers-Production&quot;&gt;at min 1&lt;/a&gt; What is a Production Engineer (PE)?&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://www.gdcvault.com/play/1025970/Bungie-s-Force-Multipliers-Production&quot;&gt;at min 6&lt;/a&gt; History&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://www.gdcvault.com/play/1025970/Bungie-s-Force-Multipliers-Production&quot;&gt;at min 10&lt;/a&gt; Training &amp;amp; Specializations&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://www.gdcvault.com/play/1025970/Bungie-s-Force-Multipliers-Production&quot;&gt;at min 13&lt;/a&gt; Day-to-Day&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://www.gdcvault.com/play/1025970/Bungie-s-Force-Multipliers-Production&quot;&gt;at min 33&lt;/a&gt; Hiring a Production Engineer&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://www.gdcvault.com/play/1025970/Bungie-s-Force-Multipliers-Production&quot;&gt;at min 37&lt;/a&gt; Conclusion &amp;amp; Takeaways&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://www.gdcvault.com/play/1025970/Bungie-s-Force-Multipliers-Production&quot;&gt;at min 38&lt;/a&gt; Q&amp;amp;A&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;what-is-a-production-engineer-pe&quot;&gt;What is a Production Engineer (PE)?&lt;/h2&gt;
+&lt;p&gt;&lt;em&gt;timestamp: 1 min into the presentation&lt;/em&gt;&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;PE is a dedicated engineering role that comes to the rescue when a content creator hits an issue that blocks his/her work.&lt;/li&gt;
+  &lt;li&gt;PEs also track down the root cause of an issue and bring the issue up to the teams that can fix it.&lt;/li&gt;
+  &lt;li&gt;PEs are aware of all of the current issues that are blocking developers in the studio
+    &lt;ul&gt;
+      &lt;li&gt;they know how to fix the issue&lt;/li&gt;
+      &lt;li&gt;they know how to work around the issue&lt;/li&gt;
+      &lt;li&gt;they know who is fixing the issue&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;The skill set of a PE is a combination of an Engineer, Tech Artis, Tester, and a Producer&lt;/li&gt;
+  &lt;li&gt;PEs look for possible inefficiencies in the workflows of devs that are getting blocked&lt;/li&gt;
+  &lt;li&gt;PEs spot workflow automation potential&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;history&quot;&gt;History&lt;/h2&gt;
+&lt;p&gt;&lt;em&gt;timestamp: 6 min into the presentation&lt;/em&gt;&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;the PE role was formed from a need to have a dedicated person help with random technical issues on the development team&lt;/li&gt;
+  &lt;li&gt;there were several gaps in the production knowledge base:
+    &lt;ul&gt;
+      &lt;li&gt;missing tools documentation&lt;/li&gt;
+      &lt;li&gt;missing workflow documentation&lt;/li&gt;
+      &lt;li&gt;&lt;img src=&quot;assets/images/posts/Bungie-s-Force-Multipliers-Production/no-docs-for-tools.jpg&quot; alt=&quot;slide: Gap: No Docs for tools&quot; width=&quot;700&quot; /&gt;&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;when the PE team was formed there were about 3-4 PEs&lt;/li&gt;
+  &lt;li&gt;Bungie tries to keep the PE ratio to 1:20 users&lt;/li&gt;
+  &lt;li&gt;PEs should have the following traits
+    &lt;ul&gt;
+      &lt;li&gt;&lt;img src=&quot;assets/images/posts/Bungie-s-Force-Multipliers-Production/unique-experiences.jpg&quot; alt=&quot;slide: Unique Experiences&quot; width=&quot;700&quot; /&gt;&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;Diverse Backgrounds
+    &lt;ul&gt;
+      &lt;li&gt;&lt;img src=&quot;assets/images/posts/Bungie-s-Force-Multipliers-Production/diverse-background-sills.jpg&quot; alt=&quot;slide: diverse background sills&quot; width=&quot;700&quot; /&gt;&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;training--specializations&quot;&gt;Training &amp;amp; Specializations&lt;/h2&gt;
+&lt;p&gt;&lt;em&gt;timestamp: 10 min into the presentation&lt;/em&gt;&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;PEs have a training regimen for new hires
+    &lt;ul&gt;
+      &lt;li&gt;a PEs from different teams train the new hire&lt;/li&gt;
+      &lt;li&gt;&lt;img src=&quot;assets/images/posts/Bungie-s-Force-Multipliers-Production/pe-training.jpg&quot; alt=&quot;slide: pe training&quot; width=&quot;700&quot; /&gt;&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;a PE is a generalist but usually will specialize in a particular area of the game production&lt;/li&gt;
+  &lt;li&gt;PEs are also responsible for bringing up to speed new hires in the “users” team&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;day-to-day&quot;&gt;Day-to-Day&lt;/h2&gt;
+&lt;p&gt;&lt;em&gt;timestamp: 13 min into the presentation&lt;/em&gt;&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;there is usually a PE in walking distance from a Content Creator&lt;/li&gt;
+  &lt;li&gt;details on managing Special Email Support list and issue tickets &lt;a href=&quot;https://www.gdcvault.com/play/1025970/Bungie-s-Force-Multipliers-Production&quot;&gt;at min 15&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;about 15% of issues need to be escalated beyond the PE team&lt;/li&gt;
+  &lt;li&gt;PEs help Tech-Artists and Engineers focus on their primary work duties, thus maximize the effectiveness of those teams
+    &lt;ul&gt;
+      &lt;li&gt;&lt;img src=&quot;assets/images/posts/Bungie-s-Force-Multipliers-Production/a-tas-time.jpg&quot; alt=&quot;slide: a TA's time&quot; width=&quot;700&quot; /&gt;&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;PEs can temporarily act as a substitute of a Content Creator and step into that role knowing the process and workflows&lt;/li&gt;
+  &lt;li&gt;PEs are in a constant search for the underlying issue
+    &lt;ul&gt;
+      &lt;li&gt;is it workflow related?&lt;/li&gt;
+      &lt;li&gt;is it tool related?&lt;/li&gt;
+      &lt;li&gt;is there enough staff?&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;20% of a PE’s time is spent in projects that solve small to mid-sized issues that the engineers don’t have time to address
+    &lt;ul&gt;
+      &lt;li&gt;examples:
+        &lt;ul&gt;
+          &lt;li&gt;BungieLauncher&lt;/li&gt;
+          &lt;li&gt;Cleanup of old and not used content&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;hiring-a-production-engineer&quot;&gt;Hiring a Production Engineer&lt;/h2&gt;
+&lt;p&gt;&lt;em&gt;timestamp: 33 min into the presentation&lt;/em&gt;&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;key skills
+    &lt;ul&gt;
+      &lt;li&gt;&lt;img src=&quot;assets/images/posts/Bungie-s-Force-Multipliers-Production/what-to-look-for-when-hiring-a-pe.jpg&quot; alt=&quot;slide: what to look for when hiring a pe&quot; width=&quot;700&quot; /&gt;&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;“foot in the door” type of a position - not a bad thing&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;qa&quot;&gt;Q&amp;amp;A&lt;/h2&gt;
+&lt;p&gt;&lt;em&gt;timestamp: 38 min into the presentation&lt;/em&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;it is part of a PE’s job to drive cultural change
+    &lt;ul&gt;
+      &lt;li&gt;like documentation&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;when the PE team was set up the hiring was done internally&lt;/li&gt;
+  &lt;li&gt;PE’s time is organized depending on the situation&lt;/li&gt;
+  &lt;li&gt;it is vital for a PE to attend retrospectives&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;div style=&quot;background-color:#FFFF94;border-left: 6px solid #ffff48;&quot;&gt;
+&lt;p&gt;&lt;/p&gt;
+These notes are just the main ideas of the talk. They don’t contain anecdotes and examples. If you like these ideas, I would advise watching the talk on the &lt;a href=&quot;https://www.gdcvault.com/play/1025970/Bungie-s-Force-Multipliers-Production&quot;&gt;GDC Vault&lt;/a&gt;.
+&lt;p&gt;&lt;/p&gt;
+&lt;/div&gt;
+
+&lt;h2 id=&quot;the-toolsmiths&quot;&gt;The Toolsmiths&lt;/h2&gt;
+&lt;p&gt;&lt;img src=&quot;http://thetoolsmiths.org/assets/thetoolsmiths_cover_1000x2881.png&quot; alt=&quot;The Toolsmiths logo&quot; width=&quot;700&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;I took these notes as part of our little “Book Club” for GDC Vault Videos &lt;a href=&quot;http://thetoolsmiths.org/vault_club&quot;&gt;The Toolsmiths #vault club&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Jo King-Yost&lt;/strong&gt; is a member of the &lt;a href=&quot;http://thetoolsmiths.org/&quot;&gt;Toolsmiths&lt;/a&gt; community. The Toolsmiths are a community of Game Tool Developers that are passionate about improving the way people make games.&lt;/p&gt;
+
+&lt;p&gt;Join us on &lt;a href=&quot;http://thetoolsmiths.org/join_slack_team&quot;&gt;Slack&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;Join us on &lt;a href=&quot;https://twitter.com/thetoolsmiths&quot;&gt;Twitter&lt;/a&gt;.&lt;/p&gt;
+
+&lt;h2 id=&quot;links&quot;&gt;Links&lt;/h2&gt;
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;https://www.gdcvault.com/play/1025970/Bungie-s-Force-Multipliers-Production&quot;&gt;GDC 2019 Bungie’s Force Multipliers: Production Engineers&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;Slides for &lt;a href=&quot;https://www.gdcvault.com/play/1026530/Bungie-s-Force-Multipliers-Production&quot;&gt;GDC 2019 Bungie’s Force Multipliers: Production Engineers&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;related-blog-links&quot;&gt;Related Blog Links&lt;/h2&gt;
+&lt;ul&gt;
+  &lt;li&gt;Notes for &lt;a href=&quot;https://victorstepanov.github.io//gdc2019-pipeline-support-for-feature-branches-in-destiny&quot;&gt;GDC 2019 Pipeline Support for Feature Branches in ‘Destiny’&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;related-talks&quot;&gt;Related talks&lt;/h2&gt;
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;https://www.gdcvault.com/play/1025992/Pipeline-Support-for-Feature-Branches&quot;&gt;GDC 2019 Pipeline Support for Feature Branches in ‘Destiny’&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://www.gdcvault.com/browse/gdc-19/play/1025807&quot;&gt;GDC 2019 Tools Tutorial Day: Tooling for Small Team Workflows&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://www.gdcvault.com/browse/gdc-18/play/1025252/Teams-Are-Stronger-Than-Heroes&quot;&gt;GDC 2018 Teams Are Stronger Than Heroes: Bungie Development Evolved&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://www.gdcvault.com/browse/gdc-18/play/1025116/Epic-Sync-Wrangling-the-Work&quot;&gt;GDC 2018 Epic Sync: Wrangling the Work of Highly Interdependent Dev Teams at Bungie&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;</content><author><name>Victor Stepanov</name></author><category term="GDC" /><category term="Roles" /><category term="Support" /><category term="Production" /><summary type="html">TLDW Summary: How Bungie organized a dedicated task force of engineers to stay on top of production challenges, blocking issues and shielding Tech-Artists and Engineers from random support requests. Topics support tools role production Presentation Table of Contents Presentation Timestamps at min 1 What is a Production Engineer (PE)? at min 6 History at min 10 Training &amp;amp; Specializations at min 13 Day-to-Day at min 33 Hiring a Production Engineer at min 37 Conclusion &amp;amp; Takeaways at min 38 Q&amp;amp;A What is a Production Engineer (PE)? timestamp: 1 min into the presentation PE is a dedicated engineering role that comes to the rescue when a content creator hits an issue that blocks his/her work. PEs also track down the root cause of an issue and bring the issue up to the teams that can fix it. PEs are aware of all of the current issues that are blocking developers in the studio they know how to fix the issue they know how to work around the issue they know who is fixing the issue The skill set of a PE is a combination of an Engineer, Tech Artis, Tester, and a Producer PEs look for possible inefficiencies in the workflows of devs that are getting blocked PEs spot workflow automation potential History timestamp: 6 min into the presentation the PE role was formed from a need to have a dedicated person help with random technical issues on the development team there were several gaps in the production knowledge base: missing tools documentation missing workflow documentation when the PE team was formed there were about 3-4 PEs Bungie tries to keep the PE ratio to 1:20 users PEs should have the following traits Diverse Backgrounds Training &amp;amp; Specializations timestamp: 10 min into the presentation PEs have a training regimen for new hires a PEs from different teams train the new hire a PE is a generalist but usually will specialize in a particular area of the game production PEs are also responsible for bringing up to speed new hires in the “users” team Day-to-Day timestamp: 13 min into the presentation there is usually a PE in walking distance from a Content Creator details on managing Special Email Support list and issue tickets at min 15 about 15% of issues need to be escalated beyond the PE team PEs help Tech-Artists and Engineers focus on their primary work duties, thus maximize the effectiveness of those teams PEs can temporarily act as a substitute of a Content Creator and step into that role knowing the process and workflows PEs are in a constant search for the underlying issue is it workflow related? is it tool related? is there enough staff? 20% of a PE’s time is spent in projects that solve small to mid-sized issues that the engineers don’t have time to address examples: BungieLauncher Cleanup of old and not used content Hiring a Production Engineer timestamp: 33 min into the presentation key skills “foot in the door” type of a position - not a bad thing Q&amp;amp;A timestamp: 38 min into the presentation it is part of a PE’s job to drive cultural change like documentation when the PE team was set up the hiring was done internally PE’s time is organized depending on the situation it is vital for a PE to attend retrospectives These notes are just the main ideas of the talk. They don’t contain anecdotes and examples. If you like these ideas, I would advise watching the talk on the GDC Vault. The Toolsmiths I took these notes as part of our little “Book Club” for GDC Vault Videos The Toolsmiths #vault club Jo King-Yost is a member of the Toolsmiths community. The Toolsmiths are a community of Game Tool Developers that are passionate about improving the way people make games. Join us on Slack. Join us on Twitter. Links GDC 2019 Bungie’s Force Multipliers: Production Engineers Slides for GDC 2019 Bungie’s Force Multipliers: Production Engineers Related Blog Links Notes for GDC 2019 Pipeline Support for Feature Branches in ‘Destiny’ Related talks GDC 2019 Pipeline Support for Feature Branches in ‘Destiny’ GDC 2019 Tools Tutorial Day: Tooling for Small Team Workflows GDC 2018 Teams Are Stronger Than Heroes: Bungie Development Evolved GDC 2018 Epic Sync: Wrangling the Work of Highly Interdependent Dev Teams at Bungie</summary></entry><entry><title type="html">Notes for “Pipeline Support for Feature Branches in ‘Destiny’” GDC2019</title><link href="/https://victorstepanov.github.io/gdc2019-pipeline-support-for-feature-branches-in-destiny" rel="alternate" type="text/html" title="Notes for &quot;Pipeline Support for Feature Branches in 'Destiny'&quot; GDC2019" /><published>2019-05-04T18:00:00-07:00</published><updated>2019-05-04T18:00:00-07:00</updated><id>/https://victorstepanov.github.io/gdc2019-pipeline-support-for-feature-branches-in-destiny</id><content type="html" xml:base="/https://victorstepanov.github.io/gdc2019-pipeline-support-for-feature-branches-in-destiny">&lt;h2 id=&quot;tldw-summary&quot;&gt;TLDW Summary:&lt;/h2&gt;
 &lt;p&gt;How Bungie created an ecosystem of tools and workflows to allow small teams to quickly iterate on changes without worrying about breaking and blocking other teams.&lt;/p&gt;
 
 &lt;h2 id=&quot;topics&quot;&gt;Topics&lt;/h2&gt;
@@ -187,6 +355,15 @@ These notes are just the main ideas of the talk. They don’t contain anecdotes 
 &lt;h2 id=&quot;links&quot;&gt;Links&lt;/h2&gt;
 &lt;ul&gt;
   &lt;li&gt;&lt;a href=&quot;https://www.gdcvault.com/play/1025992/Pipeline-Support-for-Feature-Branches&quot;&gt;GDC 2019 Pipeline Support for Feature Branches in ‘Destiny’&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;related-blog-links&quot;&gt;Related Blog Links&lt;/h2&gt;
+&lt;ul&gt;
+  &lt;li&gt;Notes for &lt;a href=&quot;https://victorstepanov.github.io//gdc2019-bungie-s-force-multipliers-production-engineers&quot;&gt;GDC 2019 Bungie’s Force Multipliers: Production Engineers&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;related-talks&quot;&gt;Related talks&lt;/h2&gt;
+&lt;ul&gt;
   &lt;li&gt;2016 talk by Pete Kugler - &lt;a href=&quot;https://drive.google.com/file/d/1FeZGA-MeuI31Wan9ZVlXmSZ-JrSLgIL2/view?usp=sharing&quot;&gt;GDC 2016 Developing a pipeline for managing game stability&lt;/a&gt;&lt;/li&gt;
   &lt;li&gt;&lt;a href=&quot;https://www.gdcvault.com/browse/gdc-19/play/1025807&quot;&gt;GDC 2019 Tools Tutorial Day: Tooling for Small Team Workflows&lt;/a&gt;&lt;/li&gt;
   &lt;li&gt;&lt;a href=&quot;https://www.gdcvault.com/play/1025380/Tools-Tutorial-Day-Shipping-Call&quot;&gt;GDC 2018 Tools Tutorial Day: Shipping ‘Call of Duty’&lt;/a&gt;&lt;/li&gt;
@@ -195,7 +372,7 @@ These notes are just the main ideas of the talk. They don’t contain anecdotes 
   &lt;li&gt;&lt;a href=&quot;https://www.gdcvault.com/play/1025970/Bungie-s-Force-Multipliers-Production&quot;&gt;GDC 2019 Bungie’s Force Multipliers: Production Engineers&lt;/a&gt;&lt;/li&gt;
   &lt;li&gt;&lt;a href=&quot;https://www.gdcvault.com/browse/gdc-18/play/1025252/Teams-Are-Stronger-Than-Heroes&quot;&gt;GDC 2018 Teams Are Stronger Than Heroes: Bungie Development Evolved&lt;/a&gt;&lt;/li&gt;
   &lt;li&gt;&lt;a href=&quot;https://www.gdcvault.com/browse/gdc-18/play/1025116/Epic-Sync-Wrangling-the-Work&quot;&gt;GDC 2018 Epic Sync: Wrangling the Work of Highly Interdependent Dev Teams at Bungie&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;</content><author><name>Victor Stepanov</name></author><category term="GDC" /><category term="version_control" /><category term="game_data_merging" /><summary type="html">TLDW Summary: How Bungie created an ecosystem of tools and workflows to allow small teams to quickly iterate on changes without worrying about breaking and blocking other teams. Topics Game data merging Version control system Integration between branches Intro Each P4 branch is about 4 Tb Up to 350 content creators, designers, and engineers working in one branch They use a pre-commit build pipeline - “the Gauntlet” Pete Kugler did a talk at GDC2016: Developing a pipeline for managing game stability Pipeline for managing game stability Describes the reason they put the pre-commit system in place They pick stability over iteration speed Had technical limitations of just simply adding more feature branches Not supported by tools More pressure on integration More pressure on build pipeline Couldn’t merge game data Definition “Feature Branch” - Branch created for teams to work in without interfering with the stability of the main branch Definition “Small Team” - group of cross-discipline developer working collaboratively on shared features (strike teams? ) The development team was in an environment that would not allow risky feature prototype and development Long pre-commit build pipeline throughput Thurow QA testing Fear of creating blockers Vision QA had the option to use stabilization branch to shield from the auto integrations that were happening Had 3 main challenges: Focused on semantically merge content to make the lives of content creators easier Focused on making a simple as possible to keep branches in-sync and stable (management tools) Developers became accustomed to workflow build around having multiple branches per workspace Because of the release cycles (having multiple features in progress) Expected to have immediate access to things that are mapped in the workspace Source DCC assets in the same location as the game data This made for build branches Moving to a streamed depot was a risk that the dev team didn’t want to take Compromise by adapting the current system to behave like Streams Had plans to move to Streams for next project Scaling the Infrastructure Needed to implement Centralized Branch Authority Which was available as part P4 Stream Used the build farm DB to be the Branch Authority Needed to implement a way to make the branches available on the build farm machines Asset pipeline changes For details checkout Brandon Moro’s talk: GDC 2018 Tools Tutorial Day: Bungie’s Asset Pipeline: ‘Destiny 2’ and Beyond Need to enable the scaling of the Asset Cache Used to be one/two machine(s) per branch Decoupled storage HW from the service HW The service was made stateless So service could handle different branches The state management was moved into Redis Logging was moved into elasticsearch To setup, branch used a lazy copy of that branch The branch was 4 Tb On the backend use deduplication to not store the same data Implementing Content Merging Propper game data merging Needs to know the semantics of the data Used C# for the content merge tool (some screenshots at min 40) Tracked auto-resolve\ conflict ratio Used TDD and recorded mergers that produced conflict to analyze at min 31 notes on how to implement merging of game data Were able to reach 80% auto-conflict resolution rate Flow of changes Created custom tool “Team Sync” to view of a users branch state Shows Check-ins Bugs Builds in progress/finished For more info see GDC 2019 Tools Tutorial Day: Tooling for Small Team Workflows Had a special process for automatically integrating into the main branch Via a build farm worker Had a special local conflict resolution workflow (when conflicts happened during an integration) After conflict resolution, automated testing would occur If something was broken, the team had the ability to login to a remote worker and fix the issue The worker would have all the dev tools ready All in all, Pete says that this was a great investment for the dev team These notes are just the main ideas of the talk. They don’t contain anecdotes and examples. If you like these ideas, I would advise watching the talk on the GDC Vault. The Toolsmiths I took these notes as part of our little “Book Club” for GDC Vault Videos The Toolsmiths #vault club Pete Kugler is a member of the Toolsmiths community. The Toolsmiths are a community of Game Tool Developers that are passionate about improving the way people make games. Join us on Slack. Join us on Twitter. Links GDC 2019 Pipeline Support for Feature Branches in ‘Destiny’ 2016 talk by Pete Kugler - GDC 2016 Developing a pipeline for managing game stability GDC 2019 Tools Tutorial Day: Tooling for Small Team Workflows GDC 2018 Tools Tutorial Day: Shipping ‘Call of Duty’ GDC 2018 Tools Tutorial Day: Bungie’s Asset Pipeline: ‘Destiny 2’ and Beyond HandmadeCon 2016 - Asset Systems and Scalability GDC 2019 Bungie’s Force Multipliers: Production Engineers GDC 2018 Teams Are Stronger Than Heroes: Bungie Development Evolved GDC 2018 Epic Sync: Wrangling the Work of Highly Interdependent Dev Teams at Bungie</summary></entry><entry><title type="html">Toolsmiths GDC 2019 Guide</title><link href="/https://victorstepanov.github.io/toolsmiths-gdc-2019-guide" rel="alternate" type="text/html" title="Toolsmiths GDC 2019 Guide" /><published>2019-03-06T02:00:00-08:00</published><updated>2019-03-06T02:00:00-08:00</updated><id>/https://victorstepanov.github.io/toolsmiths-gdc-2019-guide</id><content type="html" xml:base="/https://victorstepanov.github.io/toolsmiths-gdc-2019-guide">&lt;p&gt;I went over many sessions for this year’s GDC and created a list talks that would peek the interest of a Game Tools Developer.&lt;/p&gt;
+&lt;/ul&gt;</content><author><name>Victor Stepanov</name></author><category term="GDC" /><category term="version_control" /><category term="game_data_merging" /><summary type="html">TLDW Summary: How Bungie created an ecosystem of tools and workflows to allow small teams to quickly iterate on changes without worrying about breaking and blocking other teams. Topics Game data merging Version control system Integration between branches Intro Each P4 branch is about 4 Tb Up to 350 content creators, designers, and engineers working in one branch They use a pre-commit build pipeline - “the Gauntlet” Pete Kugler did a talk at GDC2016: Developing a pipeline for managing game stability Pipeline for managing game stability Describes the reason they put the pre-commit system in place They pick stability over iteration speed Had technical limitations of just simply adding more feature branches Not supported by tools More pressure on integration More pressure on build pipeline Couldn’t merge game data Definition “Feature Branch” - Branch created for teams to work in without interfering with the stability of the main branch Definition “Small Team” - group of cross-discipline developer working collaboratively on shared features (strike teams? ) The development team was in an environment that would not allow risky feature prototype and development Long pre-commit build pipeline throughput Thurow QA testing Fear of creating blockers Vision QA had the option to use stabilization branch to shield from the auto integrations that were happening Had 3 main challenges: Focused on semantically merge content to make the lives of content creators easier Focused on making a simple as possible to keep branches in-sync and stable (management tools) Developers became accustomed to workflow build around having multiple branches per workspace Because of the release cycles (having multiple features in progress) Expected to have immediate access to things that are mapped in the workspace Source DCC assets in the same location as the game data This made for build branches Moving to a streamed depot was a risk that the dev team didn’t want to take Compromise by adapting the current system to behave like Streams Had plans to move to Streams for next project Scaling the Infrastructure Needed to implement Centralized Branch Authority Which was available as part P4 Stream Used the build farm DB to be the Branch Authority Needed to implement a way to make the branches available on the build farm machines Asset pipeline changes For details checkout Brandon Moro’s talk: GDC 2018 Tools Tutorial Day: Bungie’s Asset Pipeline: ‘Destiny 2’ and Beyond Need to enable the scaling of the Asset Cache Used to be one/two machine(s) per branch Decoupled storage HW from the service HW The service was made stateless So service could handle different branches The state management was moved into Redis Logging was moved into elasticsearch To setup, branch used a lazy copy of that branch The branch was 4 Tb On the backend use deduplication to not store the same data Implementing Content Merging Propper game data merging Needs to know the semantics of the data Used C# for the content merge tool (some screenshots at min 40) Tracked auto-resolve\ conflict ratio Used TDD and recorded mergers that produced conflict to analyze at min 31 notes on how to implement merging of game data Were able to reach 80% auto-conflict resolution rate Flow of changes Created custom tool “Team Sync” to view of a users branch state Shows Check-ins Bugs Builds in progress/finished For more info see GDC 2019 Tools Tutorial Day: Tooling for Small Team Workflows Had a special process for automatically integrating into the main branch Via a build farm worker Had a special local conflict resolution workflow (when conflicts happened during an integration) After conflict resolution, automated testing would occur If something was broken, the team had the ability to login to a remote worker and fix the issue The worker would have all the dev tools ready All in all, Pete says that this was a great investment for the dev team These notes are just the main ideas of the talk. They don’t contain anecdotes and examples. If you like these ideas, I would advise watching the talk on the GDC Vault. The Toolsmiths I took these notes as part of our little “Book Club” for GDC Vault Videos The Toolsmiths #vault club Pete Kugler is a member of the Toolsmiths community. The Toolsmiths are a community of Game Tool Developers that are passionate about improving the way people make games. Join us on Slack. Join us on Twitter. Links GDC 2019 Pipeline Support for Feature Branches in ‘Destiny’ Related Blog Links Notes for GDC 2019 Bungie’s Force Multipliers: Production Engineers Related talks 2016 talk by Pete Kugler - GDC 2016 Developing a pipeline for managing game stability GDC 2019 Tools Tutorial Day: Tooling for Small Team Workflows GDC 2018 Tools Tutorial Day: Shipping ‘Call of Duty’ GDC 2018 Tools Tutorial Day: Bungie’s Asset Pipeline: ‘Destiny 2’ and Beyond HandmadeCon 2016 - Asset Systems and Scalability GDC 2019 Bungie’s Force Multipliers: Production Engineers GDC 2018 Teams Are Stronger Than Heroes: Bungie Development Evolved GDC 2018 Epic Sync: Wrangling the Work of Highly Interdependent Dev Teams at Bungie</summary></entry><entry><title type="html">Toolsmiths GDC 2019 Guide</title><link href="/https://victorstepanov.github.io/toolsmiths-gdc-2019-guide" rel="alternate" type="text/html" title="Toolsmiths GDC 2019 Guide" /><published>2019-03-06T02:00:00-08:00</published><updated>2019-03-06T02:00:00-08:00</updated><id>/https://victorstepanov.github.io/toolsmiths-gdc-2019-guide</id><content type="html" xml:base="/https://victorstepanov.github.io/toolsmiths-gdc-2019-guide">&lt;p&gt;I went over many sessions for this year’s GDC and created a list talks that would peek the interest of a Game Tools Developer.&lt;/p&gt;
 
 &lt;p&gt;This guide can be found &lt;a href=&quot;http://thetoolsmiths.org/2019/03/06/gdc-2019-toolsmiths-guide/&quot;&gt;here&lt;/a&gt;.&lt;/p&gt;</content><author><name>Victor Stepanov</name></author><summary type="html">There are around 760+ sessions/tutorials/events at GDC 2019, finding the sessions that a tools developer would be interested in takes time. Below you will find a list of sessions that can become the base for your tools developer GDC 2019 experience, whether you plan on attending or you will be viewing post-factum.</summary></entry><entry><title type="html">The origin of the path</title><link href="/https://victorstepanov.github.io/origin-of-the-path" rel="alternate" type="text/html" title="The origin of the path" /><published>2019-02-27T17:00:00-08:00</published><updated>2019-02-27T17:00:00-08:00</updated><id>/https://victorstepanov.github.io/origin-of-the-path</id><content type="html" xml:base="/https://victorstepanov.github.io/origin-of-the-path">&lt;p&gt;After finishing the work on the first draft of the &lt;a href=&quot;http://thetoolsmiths.org/codex/learning_paths/tools_engineer_learning_path&quot;&gt;Tools Engineer Learning Path&lt;/a&gt;, I decided to write a short story behind the learning path and the thought process I went through when I was creating this resource.&lt;/p&gt;
 

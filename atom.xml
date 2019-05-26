@@ -8,6 +8,188 @@
     
       
       <item>
+        <title>Notes for &quot;Bungie's Force Multipliers - Production Engineers&quot; GDC2019</title>
+        
+          <description>&lt;p&gt;&lt;strong&gt;TLDW Summary&lt;/strong&gt;: How Bungie organized a dedicated task force of engineers to stay on top of production challenges, blocking issues and shielding Tech-Artists and Engineers from random support requests.&lt;/p&gt;
+
+&lt;h2 id=&quot;topics&quot;&gt;Topics&lt;/h2&gt;
+&lt;ul&gt;
+  &lt;li&gt;support&lt;/li&gt;
+  &lt;li&gt;tools role&lt;/li&gt;
+  &lt;li&gt;production&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;presentation-table-of-contents&quot;&gt;Presentation Table of Contents&lt;/h2&gt;
+&lt;p&gt;&lt;img src=&quot;assets/images/posts/Bungie-s-Force-Multipliers-Production/toc.jpg&quot; alt=&quot;slide: achieving the development vision&quot; width=&quot;700&quot; /&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;presentation-timestamps&quot;&gt;Presentation Timestamps&lt;/h2&gt;
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;https://www.gdcvault.com/play/1025970/Bungie-s-Force-Multipliers-Production&quot;&gt;at min 1&lt;/a&gt; What is a Production Engineer (PE)?&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://www.gdcvault.com/play/1025970/Bungie-s-Force-Multipliers-Production&quot;&gt;at min 6&lt;/a&gt; History&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://www.gdcvault.com/play/1025970/Bungie-s-Force-Multipliers-Production&quot;&gt;at min 10&lt;/a&gt; Training &amp;amp; Specializations&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://www.gdcvault.com/play/1025970/Bungie-s-Force-Multipliers-Production&quot;&gt;at min 13&lt;/a&gt; Day-to-Day&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://www.gdcvault.com/play/1025970/Bungie-s-Force-Multipliers-Production&quot;&gt;at min 33&lt;/a&gt; Hiring a Production Engineer&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://www.gdcvault.com/play/1025970/Bungie-s-Force-Multipliers-Production&quot;&gt;at min 37&lt;/a&gt; Conclusion &amp;amp; Takeaways&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://www.gdcvault.com/play/1025970/Bungie-s-Force-Multipliers-Production&quot;&gt;at min 38&lt;/a&gt; Q&amp;amp;A&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;what-is-a-production-engineer-pe&quot;&gt;What is a Production Engineer (PE)?&lt;/h2&gt;
+&lt;p&gt;&lt;em&gt;timestamp: 1 min into the presentation&lt;/em&gt;&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;PE is a dedicated engineering role that comes to the rescue when a content creator hits an issue that blocks his/her work.&lt;/li&gt;
+  &lt;li&gt;PEs also track down the root cause of an issue and bring the issue up to the teams that can fix it.&lt;/li&gt;
+  &lt;li&gt;PEs are aware of all of the current issues that are blocking developers in the studio
+    &lt;ul&gt;
+      &lt;li&gt;they know how to fix the issue&lt;/li&gt;
+      &lt;li&gt;they know how to work around the issue&lt;/li&gt;
+      &lt;li&gt;they know who is fixing the issue&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;The skill set of a PE is a combination of an Engineer, Tech Artis, Tester, and a Producer&lt;/li&gt;
+  &lt;li&gt;PEs look for possible inefficiencies in the workflows of devs that are getting blocked&lt;/li&gt;
+  &lt;li&gt;PEs spot workflow automation potential&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;history&quot;&gt;History&lt;/h2&gt;
+&lt;p&gt;&lt;em&gt;timestamp: 6 min into the presentation&lt;/em&gt;&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;the PE role was formed from a need to have a dedicated person help with random technical issues on the development team&lt;/li&gt;
+  &lt;li&gt;there were several gaps in the production knowledge base:
+    &lt;ul&gt;
+      &lt;li&gt;missing tools documentation&lt;/li&gt;
+      &lt;li&gt;missing workflow documentation&lt;/li&gt;
+      &lt;li&gt;&lt;img src=&quot;assets/images/posts/Bungie-s-Force-Multipliers-Production/no-docs-for-tools.jpg&quot; alt=&quot;slide: Gap: No Docs for tools&quot; width=&quot;700&quot; /&gt;&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;when the PE team was formed there were about 3-4 PEs&lt;/li&gt;
+  &lt;li&gt;Bungie tries to keep the PE ratio to 1:20 users&lt;/li&gt;
+  &lt;li&gt;PEs should have the following traits
+    &lt;ul&gt;
+      &lt;li&gt;&lt;img src=&quot;assets/images/posts/Bungie-s-Force-Multipliers-Production/unique-experiences.jpg&quot; alt=&quot;slide: Unique Experiences&quot; width=&quot;700&quot; /&gt;&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;Diverse Backgrounds
+    &lt;ul&gt;
+      &lt;li&gt;&lt;img src=&quot;assets/images/posts/Bungie-s-Force-Multipliers-Production/diverse-background-sills.jpg&quot; alt=&quot;slide: diverse background sills&quot; width=&quot;700&quot; /&gt;&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;training--specializations&quot;&gt;Training &amp;amp; Specializations&lt;/h2&gt;
+&lt;p&gt;&lt;em&gt;timestamp: 10 min into the presentation&lt;/em&gt;&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;PEs have a training regimen for new hires
+    &lt;ul&gt;
+      &lt;li&gt;a PEs from different teams train the new hire&lt;/li&gt;
+      &lt;li&gt;&lt;img src=&quot;assets/images/posts/Bungie-s-Force-Multipliers-Production/pe-training.jpg&quot; alt=&quot;slide: pe training&quot; width=&quot;700&quot; /&gt;&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;a PE is a generalist but usually will specialize in a particular area of the game production&lt;/li&gt;
+  &lt;li&gt;PEs are also responsible for bringing up to speed new hires in the “users” team&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;day-to-day&quot;&gt;Day-to-Day&lt;/h2&gt;
+&lt;p&gt;&lt;em&gt;timestamp: 13 min into the presentation&lt;/em&gt;&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;there is usually a PE in walking distance from a Content Creator&lt;/li&gt;
+  &lt;li&gt;details on managing Special Email Support list and issue tickets &lt;a href=&quot;https://www.gdcvault.com/play/1025970/Bungie-s-Force-Multipliers-Production&quot;&gt;at min 15&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;about 15% of issues need to be escalated beyond the PE team&lt;/li&gt;
+  &lt;li&gt;PEs help Tech-Artists and Engineers focus on their primary work duties, thus maximize the effectiveness of those teams
+    &lt;ul&gt;
+      &lt;li&gt;&lt;img src=&quot;assets/images/posts/Bungie-s-Force-Multipliers-Production/a-tas-time.jpg&quot; alt=&quot;slide: a TA's time&quot; width=&quot;700&quot; /&gt;&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;PEs can temporarily act as a substitute of a Content Creator and step into that role knowing the process and workflows&lt;/li&gt;
+  &lt;li&gt;PEs are in a constant search for the underlying issue
+    &lt;ul&gt;
+      &lt;li&gt;is it workflow related?&lt;/li&gt;
+      &lt;li&gt;is it tool related?&lt;/li&gt;
+      &lt;li&gt;is there enough staff?&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;20% of a PE’s time is spent in projects that solve small to mid-sized issues that the engineers don’t have time to address
+    &lt;ul&gt;
+      &lt;li&gt;examples:
+        &lt;ul&gt;
+          &lt;li&gt;BungieLauncher&lt;/li&gt;
+          &lt;li&gt;Cleanup of old and not used content&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;hiring-a-production-engineer&quot;&gt;Hiring a Production Engineer&lt;/h2&gt;
+&lt;p&gt;&lt;em&gt;timestamp: 33 min into the presentation&lt;/em&gt;&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;key skills
+    &lt;ul&gt;
+      &lt;li&gt;&lt;img src=&quot;assets/images/posts/Bungie-s-Force-Multipliers-Production/what-to-look-for-when-hiring-a-pe.jpg&quot; alt=&quot;slide: what to look for when hiring a pe&quot; width=&quot;700&quot; /&gt;&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;“foot in the door” type of a position - not a bad thing&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;qa&quot;&gt;Q&amp;amp;A&lt;/h2&gt;
+&lt;p&gt;&lt;em&gt;timestamp: 38 min into the presentation&lt;/em&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;it is part of a PE’s job to drive cultural change
+    &lt;ul&gt;
+      &lt;li&gt;like documentation&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;when the PE team was set up the hiring was done internally&lt;/li&gt;
+  &lt;li&gt;PE’s time is organized depending on the situation&lt;/li&gt;
+  &lt;li&gt;it is vital for a PE to attend retrospectives&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;div style=&quot;background-color:#FFFF94;border-left: 6px solid #ffff48;&quot;&gt;
+&lt;p&gt;&lt;/p&gt;
+These notes are just the main ideas of the talk. They don’t contain anecdotes and examples. If you like these ideas, I would advise watching the talk on the &lt;a href=&quot;https://www.gdcvault.com/play/1025970/Bungie-s-Force-Multipliers-Production&quot;&gt;GDC Vault&lt;/a&gt;.
+&lt;p&gt;&lt;/p&gt;
+&lt;/div&gt;
+
+&lt;h2 id=&quot;the-toolsmiths&quot;&gt;The Toolsmiths&lt;/h2&gt;
+&lt;p&gt;&lt;img src=&quot;http://thetoolsmiths.org/assets/thetoolsmiths_cover_1000x2881.png&quot; alt=&quot;The Toolsmiths logo&quot; width=&quot;700&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;I took these notes as part of our little “Book Club” for GDC Vault Videos &lt;a href=&quot;http://thetoolsmiths.org/vault_club&quot;&gt;The Toolsmiths #vault club&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Jo King-Yost&lt;/strong&gt; is a member of the &lt;a href=&quot;http://thetoolsmiths.org/&quot;&gt;Toolsmiths&lt;/a&gt; community. The Toolsmiths are a community of Game Tool Developers that are passionate about improving the way people make games.&lt;/p&gt;
+
+&lt;p&gt;Join us on &lt;a href=&quot;http://thetoolsmiths.org/join_slack_team&quot;&gt;Slack&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;Join us on &lt;a href=&quot;https://twitter.com/thetoolsmiths&quot;&gt;Twitter&lt;/a&gt;.&lt;/p&gt;
+
+&lt;h2 id=&quot;links&quot;&gt;Links&lt;/h2&gt;
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;https://www.gdcvault.com/play/1025970/Bungie-s-Force-Multipliers-Production&quot;&gt;GDC 2019 Bungie’s Force Multipliers: Production Engineers&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;Slides for &lt;a href=&quot;https://www.gdcvault.com/play/1026530/Bungie-s-Force-Multipliers-Production&quot;&gt;GDC 2019 Bungie’s Force Multipliers: Production Engineers&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;related-blog-links&quot;&gt;Related Blog Links&lt;/h2&gt;
+&lt;ul&gt;
+  &lt;li&gt;Notes for &lt;a href=&quot;https://victorstepanov.github.io//gdc2019-pipeline-support-for-feature-branches-in-destiny&quot;&gt;GDC 2019 Pipeline Support for Feature Branches in ‘Destiny’&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;related-talks&quot;&gt;Related talks&lt;/h2&gt;
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;https://www.gdcvault.com/play/1025992/Pipeline-Support-for-Feature-Branches&quot;&gt;GDC 2019 Pipeline Support for Feature Branches in ‘Destiny’&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://www.gdcvault.com/browse/gdc-19/play/1025807&quot;&gt;GDC 2019 Tools Tutorial Day: Tooling for Small Team Workflows&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://www.gdcvault.com/browse/gdc-18/play/1025252/Teams-Are-Stronger-Than-Heroes&quot;&gt;GDC 2018 Teams Are Stronger Than Heroes: Bungie Development Evolved&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://www.gdcvault.com/browse/gdc-18/play/1025116/Epic-Sync-Wrangling-the-Work&quot;&gt;GDC 2018 Epic Sync: Wrangling the Work of Highly Interdependent Dev Teams at Bungie&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+        
+        <pubDate>Sun, 26 May 2019 01:00:00 +0000</pubDate>
+        <link>
+        /gdc2019-bungie-s-force-multipliers-production-engineers</link>
+        <guid isPermaLink="true">/gdc2019-bungie-s-force-multipliers-production-engineers</guid>
+      </item>
+      
+    
+      
+      <item>
         <title>Notes for &quot;Pipeline Support for Feature Branches in 'Destiny'&quot; GDC2019</title>
         
           <description>&lt;h2 id=&quot;tldw-summary&quot;&gt;TLDW Summary:&lt;/h2&gt;
@@ -199,6 +381,15 @@ These notes are just the main ideas of the talk. They don’t contain anecdotes 
 &lt;h2 id=&quot;links&quot;&gt;Links&lt;/h2&gt;
 &lt;ul&gt;
   &lt;li&gt;&lt;a href=&quot;https://www.gdcvault.com/play/1025992/Pipeline-Support-for-Feature-Branches&quot;&gt;GDC 2019 Pipeline Support for Feature Branches in ‘Destiny’&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;related-blog-links&quot;&gt;Related Blog Links&lt;/h2&gt;
+&lt;ul&gt;
+  &lt;li&gt;Notes for &lt;a href=&quot;https://victorstepanov.github.io//gdc2019-bungie-s-force-multipliers-production-engineers&quot;&gt;GDC 2019 Bungie’s Force Multipliers: Production Engineers&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;related-talks&quot;&gt;Related talks&lt;/h2&gt;
+&lt;ul&gt;
   &lt;li&gt;2016 talk by Pete Kugler - &lt;a href=&quot;https://drive.google.com/file/d/1FeZGA-MeuI31Wan9ZVlXmSZ-JrSLgIL2/view?usp=sharing&quot;&gt;GDC 2016 Developing a pipeline for managing game stability&lt;/a&gt;&lt;/li&gt;
   &lt;li&gt;&lt;a href=&quot;https://www.gdcvault.com/browse/gdc-19/play/1025807&quot;&gt;GDC 2019 Tools Tutorial Day: Tooling for Small Team Workflows&lt;/a&gt;&lt;/li&gt;
   &lt;li&gt;&lt;a href=&quot;https://www.gdcvault.com/play/1025380/Tools-Tutorial-Day-Shipping-Call&quot;&gt;GDC 2018 Tools Tutorial Day: Shipping ‘Call of Duty’&lt;/a&gt;&lt;/li&gt;
