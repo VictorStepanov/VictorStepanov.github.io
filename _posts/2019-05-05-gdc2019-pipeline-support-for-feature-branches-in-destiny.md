@@ -124,6 +124,11 @@ Join us on [Twitter](https://twitter.com/thetoolsmiths).
 
 ## Links
 * [GDC 2019 Pipeline Support for Feature Branches in 'Destiny'](https://www.gdcvault.com/play/1025992/Pipeline-Support-for-Feature-Branches)
+
+## Related Blog Links
+* Notes for [GDC 2019 Bungie's Force Multipliers: Production Engineers]({{site.baseurl}}/gdc2019-bungie-s-force-multipliers-production-engineers)
+
+## Related talks
 * 2016 talk by Pete Kugler - [GDC 2016 Developing a pipeline for managing game stability](https://drive.google.com/file/d/1FeZGA-MeuI31Wan9ZVlXmSZ-JrSLgIL2/view?usp=sharing)
 * [GDC 2019 Tools Tutorial Day: Tooling for Small Team Workflows](https://www.gdcvault.com/browse/gdc-19/play/1025807)
 * [GDC 2018 Tools Tutorial Day: Shipping 'Call of Duty'](https://www.gdcvault.com/play/1025380/Tools-Tutorial-Day-Shipping-Call)
