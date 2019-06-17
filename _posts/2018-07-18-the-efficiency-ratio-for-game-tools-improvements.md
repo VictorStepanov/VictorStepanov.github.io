@@ -10,6 +10,7 @@ class: post-template
 subclass: 'post'
 comments: true
 author: vstepano
+read_time: 6
 ---
 
 _Last Update on July 22nd, 2018_

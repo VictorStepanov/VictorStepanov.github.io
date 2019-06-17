@@ -12,15 +12,37 @@ comments: true
 author: vstepano
 future: true
 published : ture
+read_time: 3
 ---
 
 __TLDW Summary__: How Bungie organized a dedicated task force of engineers to stay on top of production challenges, blocking issues and shielding Tech-Artists and Engineers from random support requests.
 
 
-## Topics
-- support
-- tools role
-- production
+## Keywords
+<div class="keyword-container">
+<ul class="keyword-container">
+<li>Support</li>
+<li>Tools Role</li>
+<li>Production</li>
+</ul>
+<style>
+    .keyword-container > ul
+    {
+        font-size: 16px;
+        list-style-type: none;
+        padding:15px;
+    }
+    .keyword-container > li
+    {
+        background-color:#f3f3f3;
+        display : inline;
+        padding:5px;
+        margin:2px;
+        margin-bottom: 100px;
+        border-radius: 5px;
+    }
+</style>
+</div>
 
 ## Presentation Table of Contents
 <img src="assets/images/posts/Bungie-s-Force-Multipliers-Production/toc.jpg" alt="slide: achieving the development vision" width="700"/>
@@ -104,9 +126,9 @@ _timestamp: 38 min into the presentation_
 - it is vital for a PE to attend retrospectives 
 
 
-<div style="background-color:#FFFF94;border-left: 6px solid #ffff48;">
+<div style="background-color:#FFFF94;border-left: 18px solid #ffff48;padding-left: 50px;">
 <p></p>
-These notes are just the main ideas of the talk. They don’t contain anecdotes and examples. If you like these ideas, I would advise watching the talk on the <a href="https://www.gdcvault.com/play/1025970/Bungie-s-Force-Multipliers-Production">GDC Vault</a>.
+<p>These notes are just the main ideas of the talk. They don’t contain anecdotes and examples. If you want to learn more, I would advise watching the talk on the <a href="https://www.gdcvault.com/play/1025969/The-Future-of-Scene-Description">GDC Vault</a>.</p>
 <p></p>
 </div>
 

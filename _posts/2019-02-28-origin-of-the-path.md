@@ -12,6 +12,7 @@ comments: true
 author: vstepano
 future: true
 published : ture
+read_time: 3
 ---
 
 After finishing the work on the first draft of the [Tools Engineer Learning Path](http://thetoolsmiths.org/codex/learning_paths/tools_engineer_learning_path), I decided to write a short story behind the learning path and the thought process I went through when I was creating this resource.

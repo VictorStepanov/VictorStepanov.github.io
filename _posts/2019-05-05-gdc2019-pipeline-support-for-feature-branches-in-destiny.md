@@ -12,15 +12,37 @@ comments: true
 author: vstepano
 future: true
 published : ture
+read_time: 3
 ---
 
 ## TLDW Summary:
 How Bungie created an ecosystem of tools and workflows to allow small teams to quickly iterate on changes without worrying about breaking and blocking other teams.
 
-## Topics 
-- Game data merging 
-- Version control system
-- Integration between branches
+## Keywords
+<div class="keyword-container">
+<ul class="keyword-container">
+<li>Game Data Merging</li>
+<li>Version Control System</li>
+<li>Branch Integration </li>
+</ul>
+<style>
+    .keyword-container > ul
+    {
+        font-size: 16px;
+        list-style-type: none;
+        padding:15px;
+    }
+    .keyword-container > li
+    {
+        background-color:#f3f3f3;
+        display : inline;
+        padding:5px;
+        margin:2px;
+        margin-bottom: 100px;
+        border-radius: 5px;
+    }
+</style>
+</div>
 
 ## Intro
 - Each P4 branch is about 4 Tb 
@@ -105,9 +127,9 @@ How Bungie created an ecosystem of tools and workflows to allow small teams to q
             - The worker would have all the dev tools ready
 - All in all, Pete says that this was a great investment for the dev team
 
-<div style="background-color:#FFFF94;border-left: 6px solid #ffff48;">
+<div style="background-color:#FFFF94;border-left: 18px solid #ffff48;padding-left: 50px;">
 <p></p>
-These notes are just the main ideas of the talk. They don’t contain anecdotes and examples. If you like these ideas, I would advise watching the talk on the <a href="https://www.gdcvault.com/play/1025992/Pipeline-Support-for-Feature-Branches">GDC Vault</a>.
+<p>These notes are just the main ideas of the talk. They don’t contain anecdotes and examples. If you want to learn more, I would advise watching the talk on the <a href="https://www.gdcvault.com/play/1025969/The-Future-of-Scene-Description">GDC Vault</a>.</p>
 <p></p>
 </div>
 

@@ -212,4 +212,5 @@ Join us on [Twitter](https://twitter.com/thetoolsmiths).
 * [GDC Vault Video: A Tale of Three Data Schemas](https://www.gdcvault.com/play/1025284/Tools-Tutorial-Day-A-Tale)
 * [Ludovic Chabant on Twitter](https://twitter.com/ludovicchabant?lang=en)
 
-
+## Related Blog Links
+* Notes for [GDC2019 "The Future of Scene Description on 'God of War'"]({{site.baseurl}}/2019-06-16-gdc2019-the-future-of-scene-description-on-god-of-war)

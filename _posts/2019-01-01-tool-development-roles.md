@@ -12,6 +12,7 @@ comments: true
 author: vstepano
 future: true
 published : ture
+read_time: 6
 ---
 
 Today in Game Development there are several roles that take part in creating new Game Tools and developing the existing ones. Depending on the number of people in a Game Development team multiple roles may be assigned to one responsible person. It would be challenging if not impossible to find a studio/company that has a dedicated person assigned to each of the roles listed. In this post, I will list the main roles and give them a short definition.
