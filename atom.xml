@@ -8,16 +8,300 @@
     
       
       <item>
+        <title>Notes for &quot;The Future of Scene Description on 'God of War'&quot; GDC2019</title>
+        
+          <description>&lt;p&gt;&lt;strong&gt;TLDW Summary&lt;/strong&gt;: This talk sheds light on the decisions that were made by the Santa Monica Studio’s engine team while tackling the problems of time and complexity in transforming source data into game-ready data.&lt;/p&gt;
+
+&lt;h2 id=&quot;keywords&quot;&gt;Keywords&lt;/h2&gt;
+&lt;div class=&quot;keyword-container&quot;&gt;
+&lt;ul class=&quot;keyword-container&quot;&gt;
+&lt;li&gt;Data Design&lt;/li&gt;
+&lt;li&gt;Data Duality&lt;/li&gt;
+&lt;li&gt;Scene Description&lt;/li&gt;
+&lt;li&gt;Data Definition Language (DDL)&lt;/li&gt;
+&lt;li&gt;Nondeterminism&lt;/li&gt;
+&lt;/ul&gt;
+&lt;style&gt;
+    .keyword-container &gt; ul
+    {
+        font-size: 16px;
+        list-style-type: none;
+        padding:15px;
+    }
+    .keyword-container &gt; li
+    {
+        background-color:#f3f3f3;
+        display : inline;
+        padding:5px;
+        margin:2px;
+        margin-bottom: 100px;
+        border-radius: 5px;
+    }
+&lt;/style&gt;
+&lt;/div&gt;
+
+&lt;h2 id=&quot;presentation-time-stamps&quot;&gt;Presentation Time Stamps&lt;/h2&gt;
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;https://www.gdcvault.com/play/1025969/The-Future-of-Scene-Description&quot;&gt;at min 1&lt;/a&gt; Backgound: Game Content Pipeline&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://www.gdcvault.com/play/1025969/The-Future-of-Scene-Description&quot;&gt;at min 16&lt;/a&gt; Past: Redefining SmSchema&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://www.gdcvault.com/play/1025969/The-Future-of-Scene-Description&quot;&gt;at min 20&lt;/a&gt; Present: A view after years of investment&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://www.gdcvault.com/play/1025969/The-Future-of-Scene-Description&quot;&gt;at min 27&lt;/a&gt; Present: Connecting the parts of the design into one&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://www.gdcvault.com/play/1025969/The-Future-of-Scene-Description&quot;&gt;at min 37&lt;/a&gt; Looking into the future: many opportunities still remain&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://www.gdcvault.com/play/1025969/The-Future-of-Scene-Description&quot;&gt;at min 41&lt;/a&gt; Lessons we’ve learned&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://www.gdcvault.com/play/1025969/The-Future-of-Scene-Description&quot;&gt;at min 43&lt;/a&gt; Q&amp;amp;A&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;backgound-game-content-pipeline&quot;&gt;Backgound: Game Content Pipeline&lt;/h2&gt;
+&lt;p&gt;&lt;em&gt;timestamp: 1 min into the presentation&lt;/em&gt;&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;God of War data breakdown
+&lt;img src=&quot;assets/images/posts/the-future-of-scene-description-on-god-of-war\god-of-War-data-breakdown.jpg&quot; alt=&quot;slide: God of War data breakdown&quot; width=&quot;700&quot; /&gt;&lt;/li&gt;
+  &lt;li&gt;What Source Data and Run-time data have in common
+&lt;img src=&quot;assets/images/posts/the-future-of-scene-description-on-god-of-war\source-data-n-production-data.jpg&quot; alt=&quot;slide: What Source Data and Run-time data have in common&quot; width=&quot;700&quot; /&gt;&lt;/li&gt;
+  &lt;li&gt;The design philosophy was inspired by the scene description from the film industry&lt;/li&gt;
+  &lt;li&gt;Patch size was a common enemy
+    &lt;ul&gt;
+      &lt;li&gt;Nondeterminism made patch sizes huge
+        &lt;ul&gt;
+          &lt;li&gt;Patching was always an afterthought.&lt;/li&gt;
+          &lt;li&gt;Parts of the run-time was an afterthought.&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;Exploring data formats to find a better way&lt;/li&gt;
+  &lt;li&gt;2 types of explicit data formats
+    &lt;ul&gt;
+      &lt;li&gt;Low level: FlatBuffers, ProtocolBuffers&lt;/li&gt;
+      &lt;li&gt;Higher level: COLLADA and USD&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;None satisfied the requirements
+    &lt;ul&gt;
+      &lt;li&gt;This was the catalyst for the SmSchema Data Definition Language&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;The SmSchema proof of concept had 3 main parts
+    &lt;ul&gt;
+      &lt;li&gt;The definition itself&lt;/li&gt;
+      &lt;li&gt;C++ code generation with (Jinja Python)&lt;/li&gt;
+      &lt;li&gt;Sterilization into JSON&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;The first attempt to apply it to a real-world problem showed that the mental model that they had envisioned had missing parts
+&lt;img src=&quot;assets/images/posts/the-future-of-scene-description-on-god-of-war\smschema-interconnected-technologies.jpg&quot; alt=&quot;slide: missing interconnected technologies&quot; width=&quot;700&quot; /&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;past-redefining-smschema&quot;&gt;Past: Redefining SmSchema&lt;/h2&gt;
+&lt;p&gt;&lt;em&gt;timestamp: 16 min into the presentation&lt;/em&gt;&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;Decided to use the serialization as an anchor point to design around&lt;/li&gt;
+  &lt;li&gt;The redesign started with laying down the foundation with &lt;a href=&quot;https://fs.blog/2018/04/first-principles/&quot;&gt;first-prenciples&lt;/a&gt;
+&lt;img src=&quot;assets/images/posts/the-future-of-scene-description-on-god-of-war\first-principles.jpg&quot; alt=&quot;slide: first-prenciples used in the design&quot; width=&quot;700&quot; /&gt;&lt;/li&gt;
+  &lt;li&gt;Wanted to get away from a JSON-based Language&lt;/li&gt;
+  &lt;li&gt;Issues with Maya scalability brought more questions that needed answers
+&lt;img src=&quot;assets/images/posts/the-future-of-scene-description-on-god-of-war\new-insight.jpg&quot; alt=&quot;slide: questions that needed answers&quot; width=&quot;700&quot; /&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;present-a-view-after-years-of-investment&quot;&gt;Present: A view after years of investment&lt;/h2&gt;
+&lt;p&gt;&lt;em&gt;timestamp: 20 min into the presentation&lt;/em&gt;&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;&lt;img src=&quot;assets/images/posts/the-future-of-scene-description-on-god-of-war\smschema-interconnected-technologies-2.jpg&quot; alt=&quot;slide: SmSchema architecture high level&quot; width=&quot;700&quot; /&gt;&lt;/li&gt;
+  &lt;li&gt;The DDL was inspired by &lt;a href=&quot;https://gdcvault.com/play/1015531/Developing-Imperfect-Software-How-to&quot;&gt;Insomniac’s DDL&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;Used &lt;a href=&quot;https://www.antlr.org/&quot;&gt;ANTLR&lt;/a&gt; for language definition&lt;/li&gt;
+  &lt;li&gt;Process of code generation
+    &lt;ul&gt;
+      &lt;li&gt;Used special Compile-Time Type Info (CTTI) to decouple the DDL and the code generation&lt;/li&gt;
+      &lt;li&gt;Used a functional approach to make it easier to generate code to any current or future target&lt;/li&gt;
+      &lt;li&gt;Used special metadata in the form of annotations to enable user-driven code generation without making changes in the parser&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;&lt;img src=&quot;assets/images/posts/the-future-of-scene-description-on-god-of-war\code-gen-1.jpg&quot; alt=&quot;slide: Code Generation with CTTI info&quot; width=&quot;700&quot; /&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;img src=&quot;assets/images/posts/the-future-of-scene-description-on-god-of-war\code-gen-2.jpg&quot; alt=&quot;slide: Code Generation with CTTI flexibility&quot; width=&quot;700&quot; /&gt;&lt;/li&gt;
+  &lt;li&gt;Serialization formats
+    &lt;ul&gt;
+      &lt;li&gt;JSON - Human readable for merging, diffing and fixing issues
+        &lt;ul&gt;
+          &lt;li&gt;Leverage open source tools and libs&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+      &lt;li&gt;Binary - For performance &amp;amp; compression&lt;/li&gt;
+      &lt;li&gt;Experimenting with MsgPack to encode large assets&lt;/li&gt;
+      &lt;li&gt;X3D scene loader increased performance by an order of magnitude while saving and loading&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;present-connecting-the-parts-of-the-design-into-one&quot;&gt;Present: connecting the parts of the design into one&lt;/h2&gt;
+&lt;p&gt;&lt;em&gt;timestamp: 27 min into the presentation&lt;/em&gt;&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;The defining structure of SmSchema that brings all of the parts together is called the document.&lt;/li&gt;
+  &lt;li&gt;The Document is a “Section of data with a header”
+    &lt;ul&gt;
+      &lt;li&gt;Defining the semantics of pointers used in the referencing solution. Used to reference other documents.&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;Pointers was a common request for SmSchema
+    &lt;ul&gt;
+      &lt;li&gt;See details on the implementation of pointer @ min 28&lt;/li&gt;
+      &lt;li&gt;The pointer had to provide
+        &lt;ul&gt;
+          &lt;li&gt;Ownership semantics: unique, weak&lt;/li&gt;
+          &lt;li&gt;Locality semantics: local, section, external&lt;/li&gt;
+          &lt;li&gt;Used Frozen/Alive concept to determine if the reference is loaded&lt;/li&gt;
+          &lt;li&gt;The concept of the section was introduced to SmSchema
+            &lt;ul&gt;
+              &lt;li&gt;A document is segmented into several memory blocks&lt;/li&gt;
+              &lt;li&gt;These memory blocks are called sections and are used for storing things like debug data or GPU data&lt;/li&gt;
+            &lt;/ul&gt;
+          &lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;&lt;img src=&quot;assets/images/posts/the-future-of-scene-description-on-god-of-war\sections.jpg&quot; alt=&quot;slide: Sections of the SmSchema Doc&quot; width=&quot;700&quot; /&gt;&lt;/li&gt;
+  &lt;li&gt;With the Document structure, they were able to design workflows with a minimum amount of transformations from the source data to the run-time data
+    &lt;ul&gt;
+      &lt;li&gt;The document could be
+        &lt;ul&gt;
+          &lt;li&gt;Shipping streaming resource&lt;/li&gt;
+          &lt;li&gt;A string hash look-up table&lt;/li&gt;
+          &lt;li&gt;A source X3D scene graph&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;&lt;img src=&quot;assets/images/posts/the-future-of-scene-description-on-god-of-war\data-transform.jpg&quot; alt=&quot;slide: Transforming data from source to run-time&quot; width=&quot;700&quot; /&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;looking-into-the-future-many-opportunities-still-remain&quot;&gt;Looking into the future: many opportunities still remain&lt;/h2&gt;
+&lt;p&gt;&lt;em&gt;timestamp: 37 min into the presentation&lt;/em&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Current and future research
+&lt;img src=&quot;assets/images/posts/the-future-of-scene-description-on-god-of-war\wip.jpg&quot; alt=&quot;slide: SmSchema architecture high level Final&quot; width=&quot;700&quot; /&gt;&lt;/li&gt;
+  &lt;li&gt;Challenges with external pointer resolution
+    &lt;ul&gt;
+      &lt;li&gt;Who is responsible for resolving? 
+&lt;img src=&quot;assets/images/posts/the-future-of-scene-description-on-god-of-war\external-pointers.jpg&quot; alt=&quot;slide: Frozen external pointers&quot; width=&quot;700&quot; /&gt;&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;This led to the creation of a data structure for arbitrating external pointer resolution called the “document store”
+    &lt;ul&gt;
+      &lt;li&gt;The document arbitration takes a form of transaction
+&lt;img src=&quot;assets/images/posts/the-future-of-scene-description-on-god-of-war\document-store.jpg&quot; alt=&quot;slide: Document store transactions&quot; width=&quot;700&quot; /&gt;&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;The combination of the Document Store and Streaming Policies could produce complex decision-making behavior for streaming resources&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;div style=&quot;font-style: normal;font-size: 26px;margin-left: 32px;font-family: Consolas, 'Times New Roman', Verdana;border-left: 4px solid #3a5ebf;padding-left: 20px;&quot;&gt;
+&lt;p&gt;&lt;/p&gt;
+&quot;Solutions have to be driven by use case, introduced with scrutiny, and solve a domain of problems evidently and clearly.&quot;
+&lt;p&gt;&lt;/p&gt;
+&lt;/div&gt;
+
+&lt;h2 id=&quot;lessons-weve-learned&quot;&gt;Lessons we’ve learned&lt;/h2&gt;
+&lt;p&gt;&lt;em&gt;timestamp: 41 min into the presentation&lt;/em&gt;&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;While answering what is the future of Scene Description on “God of War”
+    &lt;ul&gt;
+      &lt;li&gt;They understood that there are other questions that they need to answer before answering the original question
+        &lt;ul&gt;
+          &lt;li&gt;What are the primitives used in the design of
+            &lt;ul&gt;
+              &lt;li&gt;The engine&lt;/li&gt;
+              &lt;li&gt;The workflows&lt;/li&gt;
+              &lt;li&gt;The formats&lt;/li&gt;
+            &lt;/ul&gt;
+          &lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;div style=&quot;font-style: normal;font-size: 26px;margin-left: 32px;font-family: Consolas, 'Times New Roman', Verdana;border-left: 4px solid #3a5ebf;padding-left: 20px;&quot;&gt;
+&lt;p&gt;&lt;/p&gt;
+&quot;Our goal was never to predispose ourselves to a particulate design. The future of scene description is not a data structure, it’s not a design pattern; it’s a set of questions that we need to be able to answer about our content.&quot;
+&lt;p&gt;&lt;/p&gt;
+&lt;/div&gt;
+
+&lt;p&gt;&lt;img src=&quot;assets/images/posts/the-future-of-scene-description-on-god-of-war\takeaway.jpg&quot; alt=&quot;slide: takeaway&quot; width=&quot;700&quot; /&gt;&lt;/p&gt;
+
+&lt;div style=&quot;background-color:#FFFF94;border-left: 18px solid #ffff48;padding-left: 50px;&quot;&gt;
+&lt;p&gt;&lt;/p&gt;
+&lt;p&gt;These notes are just the main ideas of the talk. They don’t contain anecdotes and examples. If you want to learn more, I would advise watching the talk on the &lt;a href=&quot;https://www.gdcvault.com/play/1025969/The-Future-of-Scene-Description&quot;&gt;GDC Vault&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;&lt;/p&gt;
+&lt;/div&gt;
+
+&lt;h2 id=&quot;the-toolsmiths&quot;&gt;The Toolsmiths&lt;/h2&gt;
+&lt;p&gt;&lt;img src=&quot;http://thetoolsmiths.org/assets/thetoolsmiths_cover_1000x2881.png&quot; alt=&quot;The Toolsmiths logo&quot; width=&quot;700&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;I took these notes as part of our little “Book Club” for GDC Vault Videos &lt;a href=&quot;http://thetoolsmiths.org/vault_club&quot;&gt;The Toolsmiths #vault club&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Koray Hagen&lt;/strong&gt; is a member of the &lt;a href=&quot;http://thetoolsmiths.org/&quot;&gt;Toolsmiths&lt;/a&gt; community. The Toolsmiths are a community of Game Tool Developers that are passionate about improving the way people make games.&lt;/p&gt;
+
+&lt;p&gt;Join us on &lt;a href=&quot;http://thetoolsmiths.org/join_slack_team&quot;&gt;Slack&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;Join us on &lt;a href=&quot;https://twitter.com/thetoolsmiths&quot;&gt;Twitter&lt;/a&gt;.&lt;/p&gt;
+
+&lt;h2 id=&quot;links&quot;&gt;Links&lt;/h2&gt;
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;https://www.gdcvault.com/play/1025969/The-Future-of-Scene-Description&quot;&gt;The Future of Scene Description on ‘God of War’&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;Slides for &lt;a href=&quot;https://www.gdcvault.com/play/1026345/The-Future-of-Scene-Description&quot;&gt;The Future of Scene Description on ‘God of War’&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;related-blog-links&quot;&gt;Related Blog Links&lt;/h2&gt;
+&lt;ul&gt;
+  &lt;li&gt;Notes for &lt;a href=&quot;https://victorstepanov.github.io//2018-10-07-tools-tutorial-day-a-tale-of-three-data-schemas&quot;&gt;GDC 2018 Tools Tutorial Day: A Tale of Three Data Schemas&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;related-talks&quot;&gt;Related talks&lt;/h2&gt;
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;https://www.gdcvault.com/play/1025284/Tools-Tutorial-Day-A-Tale&quot;&gt;GDC 2018 Tools Tutorial Day: A Tale of Three Data Schemas&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://gdcvault.com/play/1015531/Developing-Imperfect-Software-How-to&quot;&gt;GDC 2012 Developing Imperfect Software: How to Prepare for Development Pipeline Failure&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+        
+        <pubDate>Sun, 16 Jun 2019 01:00:00 +0000</pubDate>
+        <link>
+        /gdc2019-the-future-of-scene-description-on-god-of-war</link>
+        <guid isPermaLink="true">/gdc2019-the-future-of-scene-description-on-god-of-war</guid>
+      </item>
+      
+    
+      
+      <item>
         <title>Notes for &quot;Bungie's Force Multipliers - Production Engineers&quot; GDC2019</title>
         
           <description>&lt;p&gt;&lt;strong&gt;TLDW Summary&lt;/strong&gt;: How Bungie organized a dedicated task force of engineers to stay on top of production challenges, blocking issues and shielding Tech-Artists and Engineers from random support requests.&lt;/p&gt;
 
-&lt;h2 id=&quot;topics&quot;&gt;Topics&lt;/h2&gt;
-&lt;ul&gt;
-  &lt;li&gt;support&lt;/li&gt;
-  &lt;li&gt;tools role&lt;/li&gt;
-  &lt;li&gt;production&lt;/li&gt;
+&lt;h2 id=&quot;keywords&quot;&gt;Keywords&lt;/h2&gt;
+&lt;div class=&quot;keyword-container&quot;&gt;
+&lt;ul class=&quot;keyword-container&quot;&gt;
+&lt;li&gt;Support&lt;/li&gt;
+&lt;li&gt;Tools Role&lt;/li&gt;
+&lt;li&gt;Production&lt;/li&gt;
 &lt;/ul&gt;
+&lt;style&gt;
+    .keyword-container &gt; ul
+    {
+        font-size: 16px;
+        list-style-type: none;
+        padding:15px;
+    }
+    .keyword-container &gt; li
+    {
+        background-color:#f3f3f3;
+        display : inline;
+        padding:5px;
+        margin:2px;
+        margin-bottom: 100px;
+        border-radius: 5px;
+    }
+&lt;/style&gt;
+&lt;/div&gt;
 
 &lt;h2 id=&quot;presentation-table-of-contents&quot;&gt;Presentation Table of Contents&lt;/h2&gt;
 &lt;p&gt;&lt;img src=&quot;assets/images/posts/Bungie-s-Force-Multipliers-Production/toc.jpg&quot; alt=&quot;slide: achieving the development vision&quot; width=&quot;700&quot; /&gt;&lt;/p&gt;
@@ -144,9 +428,9 @@
   &lt;li&gt;it is vital for a PE to attend retrospectives&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;div style=&quot;background-color:#FFFF94;border-left: 6px solid #ffff48;&quot;&gt;
+&lt;div style=&quot;background-color:#FFFF94;border-left: 18px solid #ffff48;padding-left: 50px;&quot;&gt;
 &lt;p&gt;&lt;/p&gt;
-These notes are just the main ideas of the talk. They don’t contain anecdotes and examples. If you like these ideas, I would advise watching the talk on the &lt;a href=&quot;https://www.gdcvault.com/play/1025970/Bungie-s-Force-Multipliers-Production&quot;&gt;GDC Vault&lt;/a&gt;.
+&lt;p&gt;These notes are just the main ideas of the talk. They don’t contain anecdotes and examples. If you want to learn more, I would advise watching the talk on the &lt;a href=&quot;https://www.gdcvault.com/play/1025969/The-Future-of-Scene-Description&quot;&gt;GDC Vault&lt;/a&gt;.&lt;/p&gt;
 &lt;p&gt;&lt;/p&gt;
 &lt;/div&gt;
 
@@ -195,12 +479,31 @@ These notes are just the main ideas of the talk. They don’t contain anecdotes 
           <description>&lt;h2 id=&quot;tldw-summary&quot;&gt;TLDW Summary:&lt;/h2&gt;
 &lt;p&gt;How Bungie created an ecosystem of tools and workflows to allow small teams to quickly iterate on changes without worrying about breaking and blocking other teams.&lt;/p&gt;
 
-&lt;h2 id=&quot;topics&quot;&gt;Topics&lt;/h2&gt;
-&lt;ul&gt;
-  &lt;li&gt;Game data merging&lt;/li&gt;
-  &lt;li&gt;Version control system&lt;/li&gt;
-  &lt;li&gt;Integration between branches&lt;/li&gt;
+&lt;h2 id=&quot;keywords&quot;&gt;Keywords&lt;/h2&gt;
+&lt;div class=&quot;keyword-container&quot;&gt;
+&lt;ul class=&quot;keyword-container&quot;&gt;
+&lt;li&gt;Game Data Merging&lt;/li&gt;
+&lt;li&gt;Version Control System&lt;/li&gt;
+&lt;li&gt;Branch Integration &lt;/li&gt;
 &lt;/ul&gt;
+&lt;style&gt;
+    .keyword-container &gt; ul
+    {
+        font-size: 16px;
+        list-style-type: none;
+        padding:15px;
+    }
+    .keyword-container &gt; li
+    {
+        background-color:#f3f3f3;
+        display : inline;
+        padding:5px;
+        margin:2px;
+        margin-bottom: 100px;
+        border-radius: 5px;
+    }
+&lt;/style&gt;
+&lt;/div&gt;
 
 &lt;h2 id=&quot;intro&quot;&gt;Intro&lt;/h2&gt;
 &lt;ul&gt;
@@ -361,9 +664,9 @@ These notes are just the main ideas of the talk. They don’t contain anecdotes 
   &lt;li&gt;All in all, Pete says that this was a great investment for the dev team&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;div style=&quot;background-color:#FFFF94;border-left: 6px solid #ffff48;&quot;&gt;
+&lt;div style=&quot;background-color:#FFFF94;border-left: 18px solid #ffff48;padding-left: 50px;&quot;&gt;
 &lt;p&gt;&lt;/p&gt;
-These notes are just the main ideas of the talk. They don’t contain anecdotes and examples. If you like these ideas, I would advise watching the talk on the &lt;a href=&quot;https://www.gdcvault.com/play/1025992/Pipeline-Support-for-Feature-Branches&quot;&gt;GDC Vault&lt;/a&gt;.
+&lt;p&gt;These notes are just the main ideas of the talk. They don’t contain anecdotes and examples. If you want to learn more, I would advise watching the talk on the &lt;a href=&quot;https://www.gdcvault.com/play/1025969/The-Future-of-Scene-Description&quot;&gt;GDC Vault&lt;/a&gt;.&lt;/p&gt;
 &lt;p&gt;&lt;/p&gt;
 &lt;/div&gt;
 
@@ -807,6 +1110,10 @@ it the most expensive to change, because it is persistent
   &lt;li&gt;&lt;a href=&quot;https://twitter.com/ludovicchabant?lang=en&quot;&gt;Ludovic Chabant on Twitter&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 
+&lt;h2 id=&quot;related-blog-links&quot;&gt;Related Blog Links&lt;/h2&gt;
+&lt;ul&gt;
+  &lt;li&gt;Notes for &lt;a href=&quot;https://victorstepanov.github.io//2019-06-16-gdc2019-the-future-of-scene-description-on-god-of-war&quot;&gt;GDC2019 “The Future of Scene Description on ‘God of War’”&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
 </description>
         
         <pubDate>Sun, 07 Oct 2018 01:00:00 +0000</pubDate>

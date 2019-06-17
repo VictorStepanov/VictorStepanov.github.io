@@ -1,11 +1,281 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.6.2">Jekyll</generator><link href="/https://victorstepanov.github.io/feed.xml" rel="self" type="application/atom+xml" /><link href="/https://victorstepanov.github.io/" rel="alternate" type="text/html" /><updated>2019-05-26T12:44:04-07:00</updated><id>/https://victorstepanov.github.io/</id><title type="html">Victor Stepanov</title><subtitle>Passionate about making game developers more productive</subtitle><entry><title type="html">Notes for “Bungie’s Force Multipliers - Production Engineers” GDC2019</title><link href="/https://victorstepanov.github.io/gdc2019-bungie-s-force-multipliers-production-engineers" rel="alternate" type="text/html" title="Notes for &quot;Bungie's Force Multipliers - Production Engineers&quot; GDC2019" /><published>2019-05-25T18:00:00-07:00</published><updated>2019-05-25T18:00:00-07:00</updated><id>/https://victorstepanov.github.io/gdc2019-bungie-s-force-multipliers-production-engineers</id><content type="html" xml:base="/https://victorstepanov.github.io/gdc2019-bungie-s-force-multipliers-production-engineers">&lt;p&gt;&lt;strong&gt;TLDW Summary&lt;/strong&gt;: How Bungie organized a dedicated task force of engineers to stay on top of production challenges, blocking issues and shielding Tech-Artists and Engineers from random support requests.&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.6.2">Jekyll</generator><link href="/https://victorstepanov.github.io/feed.xml" rel="self" type="application/atom+xml" /><link href="/https://victorstepanov.github.io/" rel="alternate" type="text/html" /><updated>2019-06-16T19:48:21-07:00</updated><id>/https://victorstepanov.github.io/</id><title type="html">Victor Stepanov</title><subtitle>Passionate about making game developers more productive</subtitle><entry><title type="html">Notes for “The Future of Scene Description on ‘God of War’” GDC2019</title><link href="/https://victorstepanov.github.io/gdc2019-the-future-of-scene-description-on-god-of-war" rel="alternate" type="text/html" title="Notes for &quot;The Future of Scene Description on 'God of War'&quot; GDC2019" /><published>2019-06-15T18:00:00-07:00</published><updated>2019-06-15T18:00:00-07:00</updated><id>/https://victorstepanov.github.io/gdc2019-the-future-of-scene-description-on-god-of-war</id><content type="html" xml:base="/https://victorstepanov.github.io/gdc2019-the-future-of-scene-description-on-god-of-war">&lt;p&gt;&lt;strong&gt;TLDW Summary&lt;/strong&gt;: This talk sheds light on the decisions that were made by the Santa Monica Studio’s engine team while tackling the problems of time and complexity in transforming source data into game-ready data.&lt;/p&gt;
 
-&lt;h2 id=&quot;topics&quot;&gt;Topics&lt;/h2&gt;
-&lt;ul&gt;
-  &lt;li&gt;support&lt;/li&gt;
-  &lt;li&gt;tools role&lt;/li&gt;
-  &lt;li&gt;production&lt;/li&gt;
+&lt;h2 id=&quot;keywords&quot;&gt;Keywords&lt;/h2&gt;
+&lt;div class=&quot;keyword-container&quot;&gt;
+&lt;ul class=&quot;keyword-container&quot;&gt;
+&lt;li&gt;Data Design&lt;/li&gt;
+&lt;li&gt;Data Duality&lt;/li&gt;
+&lt;li&gt;Scene Description&lt;/li&gt;
+&lt;li&gt;Data Definition Language (DDL)&lt;/li&gt;
+&lt;li&gt;Nondeterminism&lt;/li&gt;
 &lt;/ul&gt;
+&lt;style&gt;
+    .keyword-container &gt; ul
+    {
+        font-size: 16px;
+        list-style-type: none;
+        padding:15px;
+    }
+    .keyword-container &gt; li
+    {
+        background-color:#f3f3f3;
+        display : inline;
+        padding:5px;
+        margin:2px;
+        margin-bottom: 100px;
+        border-radius: 5px;
+    }
+&lt;/style&gt;
+&lt;/div&gt;
+
+&lt;h2 id=&quot;presentation-time-stamps&quot;&gt;Presentation Time Stamps&lt;/h2&gt;
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;https://www.gdcvault.com/play/1025969/The-Future-of-Scene-Description&quot;&gt;at min 1&lt;/a&gt; Backgound: Game Content Pipeline&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://www.gdcvault.com/play/1025969/The-Future-of-Scene-Description&quot;&gt;at min 16&lt;/a&gt; Past: Redefining SmSchema&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://www.gdcvault.com/play/1025969/The-Future-of-Scene-Description&quot;&gt;at min 20&lt;/a&gt; Present: A view after years of investment&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://www.gdcvault.com/play/1025969/The-Future-of-Scene-Description&quot;&gt;at min 27&lt;/a&gt; Present: Connecting the parts of the design into one&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://www.gdcvault.com/play/1025969/The-Future-of-Scene-Description&quot;&gt;at min 37&lt;/a&gt; Looking into the future: many opportunities still remain&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://www.gdcvault.com/play/1025969/The-Future-of-Scene-Description&quot;&gt;at min 41&lt;/a&gt; Lessons we’ve learned&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://www.gdcvault.com/play/1025969/The-Future-of-Scene-Description&quot;&gt;at min 43&lt;/a&gt; Q&amp;amp;A&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;backgound-game-content-pipeline&quot;&gt;Backgound: Game Content Pipeline&lt;/h2&gt;
+&lt;p&gt;&lt;em&gt;timestamp: 1 min into the presentation&lt;/em&gt;&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;God of War data breakdown
+&lt;img src=&quot;assets/images/posts/the-future-of-scene-description-on-god-of-war\god-of-War-data-breakdown.jpg&quot; alt=&quot;slide: God of War data breakdown&quot; width=&quot;700&quot; /&gt;&lt;/li&gt;
+  &lt;li&gt;What Source Data and Run-time data have in common
+&lt;img src=&quot;assets/images/posts/the-future-of-scene-description-on-god-of-war\source-data-n-production-data.jpg&quot; alt=&quot;slide: What Source Data and Run-time data have in common&quot; width=&quot;700&quot; /&gt;&lt;/li&gt;
+  &lt;li&gt;The design philosophy was inspired by the scene description from the film industry&lt;/li&gt;
+  &lt;li&gt;Patch size was a common enemy
+    &lt;ul&gt;
+      &lt;li&gt;Nondeterminism made patch sizes huge
+        &lt;ul&gt;
+          &lt;li&gt;Patching was always an afterthought.&lt;/li&gt;
+          &lt;li&gt;Parts of the run-time was an afterthought.&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;Exploring data formats to find a better way&lt;/li&gt;
+  &lt;li&gt;2 types of explicit data formats
+    &lt;ul&gt;
+      &lt;li&gt;Low level: FlatBuffers, ProtocolBuffers&lt;/li&gt;
+      &lt;li&gt;Higher level: COLLADA and USD&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;None satisfied the requirements
+    &lt;ul&gt;
+      &lt;li&gt;This was the catalyst for the SmSchema Data Definition Language&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;The SmSchema proof of concept had 3 main parts
+    &lt;ul&gt;
+      &lt;li&gt;The definition itself&lt;/li&gt;
+      &lt;li&gt;C++ code generation with (Jinja Python)&lt;/li&gt;
+      &lt;li&gt;Sterilization into JSON&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;The first attempt to apply it to a real-world problem showed that the mental model that they had envisioned had missing parts
+&lt;img src=&quot;assets/images/posts/the-future-of-scene-description-on-god-of-war\smschema-interconnected-technologies.jpg&quot; alt=&quot;slide: missing interconnected technologies&quot; width=&quot;700&quot; /&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;past-redefining-smschema&quot;&gt;Past: Redefining SmSchema&lt;/h2&gt;
+&lt;p&gt;&lt;em&gt;timestamp: 16 min into the presentation&lt;/em&gt;&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;Decided to use the serialization as an anchor point to design around&lt;/li&gt;
+  &lt;li&gt;The redesign started with laying down the foundation with &lt;a href=&quot;https://fs.blog/2018/04/first-principles/&quot;&gt;first-prenciples&lt;/a&gt;
+&lt;img src=&quot;assets/images/posts/the-future-of-scene-description-on-god-of-war\first-principles.jpg&quot; alt=&quot;slide: first-prenciples used in the design&quot; width=&quot;700&quot; /&gt;&lt;/li&gt;
+  &lt;li&gt;Wanted to get away from a JSON-based Language&lt;/li&gt;
+  &lt;li&gt;Issues with Maya scalability brought more questions that needed answers
+&lt;img src=&quot;assets/images/posts/the-future-of-scene-description-on-god-of-war\new-insight.jpg&quot; alt=&quot;slide: questions that needed answers&quot; width=&quot;700&quot; /&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;present-a-view-after-years-of-investment&quot;&gt;Present: A view after years of investment&lt;/h2&gt;
+&lt;p&gt;&lt;em&gt;timestamp: 20 min into the presentation&lt;/em&gt;&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;&lt;img src=&quot;assets/images/posts/the-future-of-scene-description-on-god-of-war\smschema-interconnected-technologies-2.jpg&quot; alt=&quot;slide: SmSchema architecture high level&quot; width=&quot;700&quot; /&gt;&lt;/li&gt;
+  &lt;li&gt;The DDL was inspired by &lt;a href=&quot;https://gdcvault.com/play/1015531/Developing-Imperfect-Software-How-to&quot;&gt;Insomniac’s DDL&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;Used &lt;a href=&quot;https://www.antlr.org/&quot;&gt;ANTLR&lt;/a&gt; for language definition&lt;/li&gt;
+  &lt;li&gt;Process of code generation
+    &lt;ul&gt;
+      &lt;li&gt;Used special Compile-Time Type Info (CTTI) to decouple the DDL and the code generation&lt;/li&gt;
+      &lt;li&gt;Used a functional approach to make it easier to generate code to any current or future target&lt;/li&gt;
+      &lt;li&gt;Used special metadata in the form of annotations to enable user-driven code generation without making changes in the parser&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;&lt;img src=&quot;assets/images/posts/the-future-of-scene-description-on-god-of-war\code-gen-1.jpg&quot; alt=&quot;slide: Code Generation with CTTI info&quot; width=&quot;700&quot; /&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;img src=&quot;assets/images/posts/the-future-of-scene-description-on-god-of-war\code-gen-2.jpg&quot; alt=&quot;slide: Code Generation with CTTI flexibility&quot; width=&quot;700&quot; /&gt;&lt;/li&gt;
+  &lt;li&gt;Serialization formats
+    &lt;ul&gt;
+      &lt;li&gt;JSON - Human readable for merging, diffing and fixing issues
+        &lt;ul&gt;
+          &lt;li&gt;Leverage open source tools and libs&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+      &lt;li&gt;Binary - For performance &amp;amp; compression&lt;/li&gt;
+      &lt;li&gt;Experimenting with MsgPack to encode large assets&lt;/li&gt;
+      &lt;li&gt;X3D scene loader increased performance by an order of magnitude while saving and loading&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;present-connecting-the-parts-of-the-design-into-one&quot;&gt;Present: connecting the parts of the design into one&lt;/h2&gt;
+&lt;p&gt;&lt;em&gt;timestamp: 27 min into the presentation&lt;/em&gt;&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;The defining structure of SmSchema that brings all of the parts together is called the document.&lt;/li&gt;
+  &lt;li&gt;The Document is a “Section of data with a header”
+    &lt;ul&gt;
+      &lt;li&gt;Defining the semantics of pointers used in the referencing solution. Used to reference other documents.&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;Pointers was a common request for SmSchema
+    &lt;ul&gt;
+      &lt;li&gt;See details on the implementation of pointer @ min 28&lt;/li&gt;
+      &lt;li&gt;The pointer had to provide
+        &lt;ul&gt;
+          &lt;li&gt;Ownership semantics: unique, weak&lt;/li&gt;
+          &lt;li&gt;Locality semantics: local, section, external&lt;/li&gt;
+          &lt;li&gt;Used Frozen/Alive concept to determine if the reference is loaded&lt;/li&gt;
+          &lt;li&gt;The concept of the section was introduced to SmSchema
+            &lt;ul&gt;
+              &lt;li&gt;A document is segmented into several memory blocks&lt;/li&gt;
+              &lt;li&gt;These memory blocks are called sections and are used for storing things like debug data or GPU data&lt;/li&gt;
+            &lt;/ul&gt;
+          &lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;&lt;img src=&quot;assets/images/posts/the-future-of-scene-description-on-god-of-war\sections.jpg&quot; alt=&quot;slide: Sections of the SmSchema Doc&quot; width=&quot;700&quot; /&gt;&lt;/li&gt;
+  &lt;li&gt;With the Document structure, they were able to design workflows with a minimum amount of transformations from the source data to the run-time data
+    &lt;ul&gt;
+      &lt;li&gt;The document could be
+        &lt;ul&gt;
+          &lt;li&gt;Shipping streaming resource&lt;/li&gt;
+          &lt;li&gt;A string hash look-up table&lt;/li&gt;
+          &lt;li&gt;A source X3D scene graph&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;&lt;img src=&quot;assets/images/posts/the-future-of-scene-description-on-god-of-war\data-transform.jpg&quot; alt=&quot;slide: Transforming data from source to run-time&quot; width=&quot;700&quot; /&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;looking-into-the-future-many-opportunities-still-remain&quot;&gt;Looking into the future: many opportunities still remain&lt;/h2&gt;
+&lt;p&gt;&lt;em&gt;timestamp: 37 min into the presentation&lt;/em&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Current and future research
+&lt;img src=&quot;assets/images/posts/the-future-of-scene-description-on-god-of-war\wip.jpg&quot; alt=&quot;slide: SmSchema architecture high level Final&quot; width=&quot;700&quot; /&gt;&lt;/li&gt;
+  &lt;li&gt;Challenges with external pointer resolution
+    &lt;ul&gt;
+      &lt;li&gt;Who is responsible for resolving? 
+&lt;img src=&quot;assets/images/posts/the-future-of-scene-description-on-god-of-war\external-pointers.jpg&quot; alt=&quot;slide: Frozen external pointers&quot; width=&quot;700&quot; /&gt;&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;This led to the creation of a data structure for arbitrating external pointer resolution called the “document store”
+    &lt;ul&gt;
+      &lt;li&gt;The document arbitration takes a form of transaction
+&lt;img src=&quot;assets/images/posts/the-future-of-scene-description-on-god-of-war\document-store.jpg&quot; alt=&quot;slide: Document store transactions&quot; width=&quot;700&quot; /&gt;&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;The combination of the Document Store and Streaming Policies could produce complex decision-making behavior for streaming resources&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;div style=&quot;font-style: normal;font-size: 26px;margin-left: 32px;font-family: Consolas, 'Times New Roman', Verdana;border-left: 4px solid #3a5ebf;padding-left: 20px;&quot;&gt;
+&lt;p&gt;&lt;/p&gt;
+&quot;Solutions have to be driven by use case, introduced with scrutiny, and solve a domain of problems evidently and clearly.&quot;
+&lt;p&gt;&lt;/p&gt;
+&lt;/div&gt;
+
+&lt;h2 id=&quot;lessons-weve-learned&quot;&gt;Lessons we’ve learned&lt;/h2&gt;
+&lt;p&gt;&lt;em&gt;timestamp: 41 min into the presentation&lt;/em&gt;&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;While answering what is the future of Scene Description on “God of War”
+    &lt;ul&gt;
+      &lt;li&gt;They understood that there are other questions that they need to answer before answering the original question
+        &lt;ul&gt;
+          &lt;li&gt;What are the primitives used in the design of
+            &lt;ul&gt;
+              &lt;li&gt;The engine&lt;/li&gt;
+              &lt;li&gt;The workflows&lt;/li&gt;
+              &lt;li&gt;The formats&lt;/li&gt;
+            &lt;/ul&gt;
+          &lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;div style=&quot;font-style: normal;font-size: 26px;margin-left: 32px;font-family: Consolas, 'Times New Roman', Verdana;border-left: 4px solid #3a5ebf;padding-left: 20px;&quot;&gt;
+&lt;p&gt;&lt;/p&gt;
+&quot;Our goal was never to predispose ourselves to a particulate design. The future of scene description is not a data structure, it’s not a design pattern; it’s a set of questions that we need to be able to answer about our content.&quot;
+&lt;p&gt;&lt;/p&gt;
+&lt;/div&gt;
+
+&lt;p&gt;&lt;img src=&quot;assets/images/posts/the-future-of-scene-description-on-god-of-war\takeaway.jpg&quot; alt=&quot;slide: takeaway&quot; width=&quot;700&quot; /&gt;&lt;/p&gt;
+
+&lt;div style=&quot;background-color:#FFFF94;border-left: 18px solid #ffff48;padding-left: 50px;&quot;&gt;
+&lt;p&gt;&lt;/p&gt;
+&lt;p&gt;These notes are just the main ideas of the talk. They don’t contain anecdotes and examples. If you want to learn more, I would advise watching the talk on the &lt;a href=&quot;https://www.gdcvault.com/play/1025969/The-Future-of-Scene-Description&quot;&gt;GDC Vault&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;&lt;/p&gt;
+&lt;/div&gt;
+
+&lt;h2 id=&quot;the-toolsmiths&quot;&gt;The Toolsmiths&lt;/h2&gt;
+&lt;p&gt;&lt;img src=&quot;http://thetoolsmiths.org/assets/thetoolsmiths_cover_1000x2881.png&quot; alt=&quot;The Toolsmiths logo&quot; width=&quot;700&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;I took these notes as part of our little “Book Club” for GDC Vault Videos &lt;a href=&quot;http://thetoolsmiths.org/vault_club&quot;&gt;The Toolsmiths #vault club&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Koray Hagen&lt;/strong&gt; is a member of the &lt;a href=&quot;http://thetoolsmiths.org/&quot;&gt;Toolsmiths&lt;/a&gt; community. The Toolsmiths are a community of Game Tool Developers that are passionate about improving the way people make games.&lt;/p&gt;
+
+&lt;p&gt;Join us on &lt;a href=&quot;http://thetoolsmiths.org/join_slack_team&quot;&gt;Slack&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;Join us on &lt;a href=&quot;https://twitter.com/thetoolsmiths&quot;&gt;Twitter&lt;/a&gt;.&lt;/p&gt;
+
+&lt;h2 id=&quot;links&quot;&gt;Links&lt;/h2&gt;
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;https://www.gdcvault.com/play/1025969/The-Future-of-Scene-Description&quot;&gt;The Future of Scene Description on ‘God of War’&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;Slides for &lt;a href=&quot;https://www.gdcvault.com/play/1026345/The-Future-of-Scene-Description&quot;&gt;The Future of Scene Description on ‘God of War’&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;related-blog-links&quot;&gt;Related Blog Links&lt;/h2&gt;
+&lt;ul&gt;
+  &lt;li&gt;Notes for &lt;a href=&quot;https://victorstepanov.github.io//2018-10-07-tools-tutorial-day-a-tale-of-three-data-schemas&quot;&gt;GDC 2018 Tools Tutorial Day: A Tale of Three Data Schemas&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;related-talks&quot;&gt;Related talks&lt;/h2&gt;
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;https://www.gdcvault.com/play/1025284/Tools-Tutorial-Day-A-Tale&quot;&gt;GDC 2018 Tools Tutorial Day: A Tale of Three Data Schemas&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://gdcvault.com/play/1015531/Developing-Imperfect-Software-How-to&quot;&gt;GDC 2012 Developing Imperfect Software: How to Prepare for Development Pipeline Failure&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;</content><author><name>Victor Stepanov</name></author><category term="GDC" /><category term="data" /><category term="determinism" /><category term="ddl" /><summary type="html">TLDW Summary: This talk sheds light on the decisions that were made by the Santa Monica Studio’s engine team while tackling the problems of time and complexity in transforming source data into game-ready data. Keywords Data Design Data Duality Scene Description Data Definition Language (DDL) Nondeterminism Presentation Time Stamps at min 1 Backgound: Game Content Pipeline at min 16 Past: Redefining SmSchema at min 20 Present: A view after years of investment at min 27 Present: Connecting the parts of the design into one at min 37 Looking into the future: many opportunities still remain at min 41 Lessons we’ve learned at min 43 Q&amp;amp;A Backgound: Game Content Pipeline timestamp: 1 min into the presentation God of War data breakdown What Source Data and Run-time data have in common The design philosophy was inspired by the scene description from the film industry Patch size was a common enemy Nondeterminism made patch sizes huge Patching was always an afterthought. Parts of the run-time was an afterthought. Exploring data formats to find a better way 2 types of explicit data formats Low level: FlatBuffers, ProtocolBuffers Higher level: COLLADA and USD None satisfied the requirements This was the catalyst for the SmSchema Data Definition Language The SmSchema proof of concept had 3 main parts The definition itself C++ code generation with (Jinja Python) Sterilization into JSON The first attempt to apply it to a real-world problem showed that the mental model that they had envisioned had missing parts Past: Redefining SmSchema timestamp: 16 min into the presentation Decided to use the serialization as an anchor point to design around The redesign started with laying down the foundation with first-prenciples Wanted to get away from a JSON-based Language Issues with Maya scalability brought more questions that needed answers Present: A view after years of investment timestamp: 20 min into the presentation The DDL was inspired by Insomniac’s DDL Used ANTLR for language definition Process of code generation Used special Compile-Time Type Info (CTTI) to decouple the DDL and the code generation Used a functional approach to make it easier to generate code to any current or future target Used special metadata in the form of annotations to enable user-driven code generation without making changes in the parser Serialization formats JSON - Human readable for merging, diffing and fixing issues Leverage open source tools and libs Binary - For performance &amp;amp; compression Experimenting with MsgPack to encode large assets X3D scene loader increased performance by an order of magnitude while saving and loading Present: connecting the parts of the design into one timestamp: 27 min into the presentation The defining structure of SmSchema that brings all of the parts together is called the document. The Document is a “Section of data with a header” Defining the semantics of pointers used in the referencing solution. Used to reference other documents. Pointers was a common request for SmSchema See details on the implementation of pointer @ min 28 The pointer had to provide Ownership semantics: unique, weak Locality semantics: local, section, external Used Frozen/Alive concept to determine if the reference is loaded The concept of the section was introduced to SmSchema A document is segmented into several memory blocks These memory blocks are called sections and are used for storing things like debug data or GPU data With the Document structure, they were able to design workflows with a minimum amount of transformations from the source data to the run-time data The document could be Shipping streaming resource A string hash look-up table A source X3D scene graph Looking into the future: many opportunities still remain timestamp: 37 min into the presentation Current and future research Challenges with external pointer resolution Who is responsible for resolving? This led to the creation of a data structure for arbitrating external pointer resolution called the “document store” The document arbitration takes a form of transaction The combination of the Document Store and Streaming Policies could produce complex decision-making behavior for streaming resources &quot;Solutions have to be driven by use case, introduced with scrutiny, and solve a domain of problems evidently and clearly.&quot; Lessons we’ve learned timestamp: 41 min into the presentation While answering what is the future of Scene Description on “God of War” They understood that there are other questions that they need to answer before answering the original question What are the primitives used in the design of The engine The workflows The formats &quot;Our goal was never to predispose ourselves to a particulate design. The future of scene description is not a data structure, it’s not a design pattern; it’s a set of questions that we need to be able to answer about our content.&quot; These notes are just the main ideas of the talk. They don’t contain anecdotes and examples. If you want to learn more, I would advise watching the talk on the GDC Vault. The Toolsmiths I took these notes as part of our little “Book Club” for GDC Vault Videos The Toolsmiths #vault club Koray Hagen is a member of the Toolsmiths community. The Toolsmiths are a community of Game Tool Developers that are passionate about improving the way people make games. Join us on Slack. Join us on Twitter. Links The Future of Scene Description on ‘God of War’ Slides for The Future of Scene Description on ‘God of War’ Related Blog Links Notes for GDC 2018 Tools Tutorial Day: A Tale of Three Data Schemas Related talks GDC 2018 Tools Tutorial Day: A Tale of Three Data Schemas GDC 2012 Developing Imperfect Software: How to Prepare for Development Pipeline Failure</summary></entry><entry><title type="html">Notes for “Bungie’s Force Multipliers - Production Engineers” GDC2019</title><link href="/https://victorstepanov.github.io/gdc2019-bungie-s-force-multipliers-production-engineers" rel="alternate" type="text/html" title="Notes for &quot;Bungie's Force Multipliers - Production Engineers&quot; GDC2019" /><published>2019-05-25T18:00:00-07:00</published><updated>2019-05-25T18:00:00-07:00</updated><id>/https://victorstepanov.github.io/gdc2019-bungie-s-force-multipliers-production-engineers</id><content type="html" xml:base="/https://victorstepanov.github.io/gdc2019-bungie-s-force-multipliers-production-engineers">&lt;p&gt;&lt;strong&gt;TLDW Summary&lt;/strong&gt;: How Bungie organized a dedicated task force of engineers to stay on top of production challenges, blocking issues and shielding Tech-Artists and Engineers from random support requests.&lt;/p&gt;
+
+&lt;h2 id=&quot;keywords&quot;&gt;Keywords&lt;/h2&gt;
+&lt;div class=&quot;keyword-container&quot;&gt;
+&lt;ul class=&quot;keyword-container&quot;&gt;
+&lt;li&gt;Support&lt;/li&gt;
+&lt;li&gt;Tools Role&lt;/li&gt;
+&lt;li&gt;Production&lt;/li&gt;
+&lt;/ul&gt;
+&lt;style&gt;
+    .keyword-container &gt; ul
+    {
+        font-size: 16px;
+        list-style-type: none;
+        padding:15px;
+    }
+    .keyword-container &gt; li
+    {
+        background-color:#f3f3f3;
+        display : inline;
+        padding:5px;
+        margin:2px;
+        margin-bottom: 100px;
+        border-radius: 5px;
+    }
+&lt;/style&gt;
+&lt;/div&gt;
 
 &lt;h2 id=&quot;presentation-table-of-contents&quot;&gt;Presentation Table of Contents&lt;/h2&gt;
 &lt;p&gt;&lt;img src=&quot;assets/images/posts/Bungie-s-Force-Multipliers-Production/toc.jpg&quot; alt=&quot;slide: achieving the development vision&quot; width=&quot;700&quot; /&gt;&lt;/p&gt;
@@ -132,9 +402,9 @@
   &lt;li&gt;it is vital for a PE to attend retrospectives&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;div style=&quot;background-color:#FFFF94;border-left: 6px solid #ffff48;&quot;&gt;
+&lt;div style=&quot;background-color:#FFFF94;border-left: 18px solid #ffff48;padding-left: 50px;&quot;&gt;
 &lt;p&gt;&lt;/p&gt;
-These notes are just the main ideas of the talk. They don’t contain anecdotes and examples. If you like these ideas, I would advise watching the talk on the &lt;a href=&quot;https://www.gdcvault.com/play/1025970/Bungie-s-Force-Multipliers-Production&quot;&gt;GDC Vault&lt;/a&gt;.
+&lt;p&gt;These notes are just the main ideas of the talk. They don’t contain anecdotes and examples. If you want to learn more, I would advise watching the talk on the &lt;a href=&quot;https://www.gdcvault.com/play/1025969/The-Future-of-Scene-Description&quot;&gt;GDC Vault&lt;/a&gt;.&lt;/p&gt;
 &lt;p&gt;&lt;/p&gt;
 &lt;/div&gt;
 
@@ -166,15 +436,34 @@ These notes are just the main ideas of the talk. They don’t contain anecdotes 
   &lt;li&gt;&lt;a href=&quot;https://www.gdcvault.com/browse/gdc-19/play/1025807&quot;&gt;GDC 2019 Tools Tutorial Day: Tooling for Small Team Workflows&lt;/a&gt;&lt;/li&gt;
   &lt;li&gt;&lt;a href=&quot;https://www.gdcvault.com/browse/gdc-18/play/1025252/Teams-Are-Stronger-Than-Heroes&quot;&gt;GDC 2018 Teams Are Stronger Than Heroes: Bungie Development Evolved&lt;/a&gt;&lt;/li&gt;
   &lt;li&gt;&lt;a href=&quot;https://www.gdcvault.com/browse/gdc-18/play/1025116/Epic-Sync-Wrangling-the-Work&quot;&gt;GDC 2018 Epic Sync: Wrangling the Work of Highly Interdependent Dev Teams at Bungie&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;</content><author><name>Victor Stepanov</name></author><category term="GDC" /><category term="Roles" /><category term="Support" /><category term="Production" /><summary type="html">TLDW Summary: How Bungie organized a dedicated task force of engineers to stay on top of production challenges, blocking issues and shielding Tech-Artists and Engineers from random support requests. Topics support tools role production Presentation Table of Contents Presentation Timestamps at min 1 What is a Production Engineer (PE)? at min 6 History at min 10 Training &amp;amp; Specializations at min 13 Day-to-Day at min 33 Hiring a Production Engineer at min 37 Conclusion &amp;amp; Takeaways at min 38 Q&amp;amp;A What is a Production Engineer (PE)? timestamp: 1 min into the presentation PE is a dedicated engineering role that comes to the rescue when a content creator hits an issue that blocks his/her work. PEs also track down the root cause of an issue and bring the issue up to the teams that can fix it. PEs are aware of all of the current issues that are blocking developers in the studio they know how to fix the issue they know how to work around the issue they know who is fixing the issue The skill set of a PE is a combination of an Engineer, Tech Artis, Tester, and a Producer PEs look for possible inefficiencies in the workflows of devs that are getting blocked PEs spot workflow automation potential History timestamp: 6 min into the presentation the PE role was formed from a need to have a dedicated person help with random technical issues on the development team there were several gaps in the production knowledge base: missing tools documentation missing workflow documentation when the PE team was formed there were about 3-4 PEs Bungie tries to keep the PE ratio to 1:20 users PEs should have the following traits Diverse Backgrounds Training &amp;amp; Specializations timestamp: 10 min into the presentation PEs have a training regimen for new hires a PEs from different teams train the new hire a PE is a generalist but usually will specialize in a particular area of the game production PEs are also responsible for bringing up to speed new hires in the “users” team Day-to-Day timestamp: 13 min into the presentation there is usually a PE in walking distance from a Content Creator details on managing Special Email Support list and issue tickets at min 15 about 15% of issues need to be escalated beyond the PE team PEs help Tech-Artists and Engineers focus on their primary work duties, thus maximize the effectiveness of those teams PEs can temporarily act as a substitute of a Content Creator and step into that role knowing the process and workflows PEs are in a constant search for the underlying issue is it workflow related? is it tool related? is there enough staff? 20% of a PE’s time is spent in projects that solve small to mid-sized issues that the engineers don’t have time to address examples: BungieLauncher Cleanup of old and not used content Hiring a Production Engineer timestamp: 33 min into the presentation key skills “foot in the door” type of a position - not a bad thing Q&amp;amp;A timestamp: 38 min into the presentation it is part of a PE’s job to drive cultural change like documentation when the PE team was set up the hiring was done internally PE’s time is organized depending on the situation it is vital for a PE to attend retrospectives These notes are just the main ideas of the talk. They don’t contain anecdotes and examples. If you like these ideas, I would advise watching the talk on the GDC Vault. The Toolsmiths I took these notes as part of our little “Book Club” for GDC Vault Videos The Toolsmiths #vault club Jo King-Yost is a member of the Toolsmiths community. The Toolsmiths are a community of Game Tool Developers that are passionate about improving the way people make games. Join us on Slack. Join us on Twitter. Links GDC 2019 Bungie’s Force Multipliers: Production Engineers Slides for GDC 2019 Bungie’s Force Multipliers: Production Engineers Related Blog Links Notes for GDC 2019 Pipeline Support for Feature Branches in ‘Destiny’ Related talks GDC 2019 Pipeline Support for Feature Branches in ‘Destiny’ GDC 2019 Tools Tutorial Day: Tooling for Small Team Workflows GDC 2018 Teams Are Stronger Than Heroes: Bungie Development Evolved GDC 2018 Epic Sync: Wrangling the Work of Highly Interdependent Dev Teams at Bungie</summary></entry><entry><title type="html">Notes for “Pipeline Support for Feature Branches in ‘Destiny’” GDC2019</title><link href="/https://victorstepanov.github.io/gdc2019-pipeline-support-for-feature-branches-in-destiny" rel="alternate" type="text/html" title="Notes for &quot;Pipeline Support for Feature Branches in 'Destiny'&quot; GDC2019" /><published>2019-05-04T18:00:00-07:00</published><updated>2019-05-04T18:00:00-07:00</updated><id>/https://victorstepanov.github.io/gdc2019-pipeline-support-for-feature-branches-in-destiny</id><content type="html" xml:base="/https://victorstepanov.github.io/gdc2019-pipeline-support-for-feature-branches-in-destiny">&lt;h2 id=&quot;tldw-summary&quot;&gt;TLDW Summary:&lt;/h2&gt;
+&lt;/ul&gt;</content><author><name>Victor Stepanov</name></author><category term="GDC" /><category term="Roles" /><category term="Support" /><category term="Production" /><summary type="html">TLDW Summary: How Bungie organized a dedicated task force of engineers to stay on top of production challenges, blocking issues and shielding Tech-Artists and Engineers from random support requests. Keywords Support Tools Role Production Presentation Table of Contents Presentation Timestamps at min 1 What is a Production Engineer (PE)? at min 6 History at min 10 Training &amp;amp; Specializations at min 13 Day-to-Day at min 33 Hiring a Production Engineer at min 37 Conclusion &amp;amp; Takeaways at min 38 Q&amp;amp;A What is a Production Engineer (PE)? timestamp: 1 min into the presentation PE is a dedicated engineering role that comes to the rescue when a content creator hits an issue that blocks his/her work. PEs also track down the root cause of an issue and bring the issue up to the teams that can fix it. PEs are aware of all of the current issues that are blocking developers in the studio they know how to fix the issue they know how to work around the issue they know who is fixing the issue The skill set of a PE is a combination of an Engineer, Tech Artis, Tester, and a Producer PEs look for possible inefficiencies in the workflows of devs that are getting blocked PEs spot workflow automation potential History timestamp: 6 min into the presentation the PE role was formed from a need to have a dedicated person help with random technical issues on the development team there were several gaps in the production knowledge base: missing tools documentation missing workflow documentation when the PE team was formed there were about 3-4 PEs Bungie tries to keep the PE ratio to 1:20 users PEs should have the following traits Diverse Backgrounds Training &amp;amp; Specializations timestamp: 10 min into the presentation PEs have a training regimen for new hires a PEs from different teams train the new hire a PE is a generalist but usually will specialize in a particular area of the game production PEs are also responsible for bringing up to speed new hires in the “users” team Day-to-Day timestamp: 13 min into the presentation there is usually a PE in walking distance from a Content Creator details on managing Special Email Support list and issue tickets at min 15 about 15% of issues need to be escalated beyond the PE team PEs help Tech-Artists and Engineers focus on their primary work duties, thus maximize the effectiveness of those teams PEs can temporarily act as a substitute of a Content Creator and step into that role knowing the process and workflows PEs are in a constant search for the underlying issue is it workflow related? is it tool related? is there enough staff? 20% of a PE’s time is spent in projects that solve small to mid-sized issues that the engineers don’t have time to address examples: BungieLauncher Cleanup of old and not used content Hiring a Production Engineer timestamp: 33 min into the presentation key skills “foot in the door” type of a position - not a bad thing Q&amp;amp;A timestamp: 38 min into the presentation it is part of a PE’s job to drive cultural change like documentation when the PE team was set up the hiring was done internally PE’s time is organized depending on the situation it is vital for a PE to attend retrospectives These notes are just the main ideas of the talk. They don’t contain anecdotes and examples. If you want to learn more, I would advise watching the talk on the GDC Vault. The Toolsmiths I took these notes as part of our little “Book Club” for GDC Vault Videos The Toolsmiths #vault club Jo King-Yost is a member of the Toolsmiths community. The Toolsmiths are a community of Game Tool Developers that are passionate about improving the way people make games. Join us on Slack. Join us on Twitter. Links GDC 2019 Bungie’s Force Multipliers: Production Engineers Slides for GDC 2019 Bungie’s Force Multipliers: Production Engineers Related Blog Links Notes for GDC 2019 Pipeline Support for Feature Branches in ‘Destiny’ Related talks GDC 2019 Pipeline Support for Feature Branches in ‘Destiny’ GDC 2019 Tools Tutorial Day: Tooling for Small Team Workflows GDC 2018 Teams Are Stronger Than Heroes: Bungie Development Evolved GDC 2018 Epic Sync: Wrangling the Work of Highly Interdependent Dev Teams at Bungie</summary></entry><entry><title type="html">Notes for “Pipeline Support for Feature Branches in ‘Destiny’” GDC2019</title><link href="/https://victorstepanov.github.io/gdc2019-pipeline-support-for-feature-branches-in-destiny" rel="alternate" type="text/html" title="Notes for &quot;Pipeline Support for Feature Branches in 'Destiny'&quot; GDC2019" /><published>2019-05-04T18:00:00-07:00</published><updated>2019-05-04T18:00:00-07:00</updated><id>/https://victorstepanov.github.io/gdc2019-pipeline-support-for-feature-branches-in-destiny</id><content type="html" xml:base="/https://victorstepanov.github.io/gdc2019-pipeline-support-for-feature-branches-in-destiny">&lt;h2 id=&quot;tldw-summary&quot;&gt;TLDW Summary:&lt;/h2&gt;
 &lt;p&gt;How Bungie created an ecosystem of tools and workflows to allow small teams to quickly iterate on changes without worrying about breaking and blocking other teams.&lt;/p&gt;
 
-&lt;h2 id=&quot;topics&quot;&gt;Topics&lt;/h2&gt;
-&lt;ul&gt;
-  &lt;li&gt;Game data merging&lt;/li&gt;
-  &lt;li&gt;Version control system&lt;/li&gt;
-  &lt;li&gt;Integration between branches&lt;/li&gt;
+&lt;h2 id=&quot;keywords&quot;&gt;Keywords&lt;/h2&gt;
+&lt;div class=&quot;keyword-container&quot;&gt;
+&lt;ul class=&quot;keyword-container&quot;&gt;
+&lt;li&gt;Game Data Merging&lt;/li&gt;
+&lt;li&gt;Version Control System&lt;/li&gt;
+&lt;li&gt;Branch Integration &lt;/li&gt;
 &lt;/ul&gt;
+&lt;style&gt;
+    .keyword-container &gt; ul
+    {
+        font-size: 16px;
+        list-style-type: none;
+        padding:15px;
+    }
+    .keyword-container &gt; li
+    {
+        background-color:#f3f3f3;
+        display : inline;
+        padding:5px;
+        margin:2px;
+        margin-bottom: 100px;
+        border-radius: 5px;
+    }
+&lt;/style&gt;
+&lt;/div&gt;
 
 &lt;h2 id=&quot;intro&quot;&gt;Intro&lt;/h2&gt;
 &lt;ul&gt;
@@ -335,9 +624,9 @@ These notes are just the main ideas of the talk. They don’t contain anecdotes 
   &lt;li&gt;All in all, Pete says that this was a great investment for the dev team&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;div style=&quot;background-color:#FFFF94;border-left: 6px solid #ffff48;&quot;&gt;
+&lt;div style=&quot;background-color:#FFFF94;border-left: 18px solid #ffff48;padding-left: 50px;&quot;&gt;
 &lt;p&gt;&lt;/p&gt;
-These notes are just the main ideas of the talk. They don’t contain anecdotes and examples. If you like these ideas, I would advise watching the talk on the &lt;a href=&quot;https://www.gdcvault.com/play/1025992/Pipeline-Support-for-Feature-Branches&quot;&gt;GDC Vault&lt;/a&gt;.
+&lt;p&gt;These notes are just the main ideas of the talk. They don’t contain anecdotes and examples. If you want to learn more, I would advise watching the talk on the &lt;a href=&quot;https://www.gdcvault.com/play/1025969/The-Future-of-Scene-Description&quot;&gt;GDC Vault&lt;/a&gt;.&lt;/p&gt;
 &lt;p&gt;&lt;/p&gt;
 &lt;/div&gt;
 
@@ -372,7 +661,7 @@ These notes are just the main ideas of the talk. They don’t contain anecdotes 
   &lt;li&gt;&lt;a href=&quot;https://www.gdcvault.com/play/1025970/Bungie-s-Force-Multipliers-Production&quot;&gt;GDC 2019 Bungie’s Force Multipliers: Production Engineers&lt;/a&gt;&lt;/li&gt;
   &lt;li&gt;&lt;a href=&quot;https://www.gdcvault.com/browse/gdc-18/play/1025252/Teams-Are-Stronger-Than-Heroes&quot;&gt;GDC 2018 Teams Are Stronger Than Heroes: Bungie Development Evolved&lt;/a&gt;&lt;/li&gt;
   &lt;li&gt;&lt;a href=&quot;https://www.gdcvault.com/browse/gdc-18/play/1025116/Epic-Sync-Wrangling-the-Work&quot;&gt;GDC 2018 Epic Sync: Wrangling the Work of Highly Interdependent Dev Teams at Bungie&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;</content><author><name>Victor Stepanov</name></author><category term="GDC" /><category term="version_control" /><category term="game_data_merging" /><summary type="html">TLDW Summary: How Bungie created an ecosystem of tools and workflows to allow small teams to quickly iterate on changes without worrying about breaking and blocking other teams. Topics Game data merging Version control system Integration between branches Intro Each P4 branch is about 4 Tb Up to 350 content creators, designers, and engineers working in one branch They use a pre-commit build pipeline - “the Gauntlet” Pete Kugler did a talk at GDC2016: Developing a pipeline for managing game stability Pipeline for managing game stability Describes the reason they put the pre-commit system in place They pick stability over iteration speed Had technical limitations of just simply adding more feature branches Not supported by tools More pressure on integration More pressure on build pipeline Couldn’t merge game data Definition “Feature Branch” - Branch created for teams to work in without interfering with the stability of the main branch Definition “Small Team” - group of cross-discipline developer working collaboratively on shared features (strike teams? ) The development team was in an environment that would not allow risky feature prototype and development Long pre-commit build pipeline throughput Thurow QA testing Fear of creating blockers Vision QA had the option to use stabilization branch to shield from the auto integrations that were happening Had 3 main challenges: Focused on semantically merge content to make the lives of content creators easier Focused on making a simple as possible to keep branches in-sync and stable (management tools) Developers became accustomed to workflow build around having multiple branches per workspace Because of the release cycles (having multiple features in progress) Expected to have immediate access to things that are mapped in the workspace Source DCC assets in the same location as the game data This made for build branches Moving to a streamed depot was a risk that the dev team didn’t want to take Compromise by adapting the current system to behave like Streams Had plans to move to Streams for next project Scaling the Infrastructure Needed to implement Centralized Branch Authority Which was available as part P4 Stream Used the build farm DB to be the Branch Authority Needed to implement a way to make the branches available on the build farm machines Asset pipeline changes For details checkout Brandon Moro’s talk: GDC 2018 Tools Tutorial Day: Bungie’s Asset Pipeline: ‘Destiny 2’ and Beyond Need to enable the scaling of the Asset Cache Used to be one/two machine(s) per branch Decoupled storage HW from the service HW The service was made stateless So service could handle different branches The state management was moved into Redis Logging was moved into elasticsearch To setup, branch used a lazy copy of that branch The branch was 4 Tb On the backend use deduplication to not store the same data Implementing Content Merging Propper game data merging Needs to know the semantics of the data Used C# for the content merge tool (some screenshots at min 40) Tracked auto-resolve\ conflict ratio Used TDD and recorded mergers that produced conflict to analyze at min 31 notes on how to implement merging of game data Were able to reach 80% auto-conflict resolution rate Flow of changes Created custom tool “Team Sync” to view of a users branch state Shows Check-ins Bugs Builds in progress/finished For more info see GDC 2019 Tools Tutorial Day: Tooling for Small Team Workflows Had a special process for automatically integrating into the main branch Via a build farm worker Had a special local conflict resolution workflow (when conflicts happened during an integration) After conflict resolution, automated testing would occur If something was broken, the team had the ability to login to a remote worker and fix the issue The worker would have all the dev tools ready All in all, Pete says that this was a great investment for the dev team These notes are just the main ideas of the talk. They don’t contain anecdotes and examples. If you like these ideas, I would advise watching the talk on the GDC Vault. The Toolsmiths I took these notes as part of our little “Book Club” for GDC Vault Videos The Toolsmiths #vault club Pete Kugler is a member of the Toolsmiths community. The Toolsmiths are a community of Game Tool Developers that are passionate about improving the way people make games. Join us on Slack. Join us on Twitter. Links GDC 2019 Pipeline Support for Feature Branches in ‘Destiny’ Related Blog Links Notes for GDC 2019 Bungie’s Force Multipliers: Production Engineers Related talks 2016 talk by Pete Kugler - GDC 2016 Developing a pipeline for managing game stability GDC 2019 Tools Tutorial Day: Tooling for Small Team Workflows GDC 2018 Tools Tutorial Day: Shipping ‘Call of Duty’ GDC 2018 Tools Tutorial Day: Bungie’s Asset Pipeline: ‘Destiny 2’ and Beyond HandmadeCon 2016 - Asset Systems and Scalability GDC 2019 Bungie’s Force Multipliers: Production Engineers GDC 2018 Teams Are Stronger Than Heroes: Bungie Development Evolved GDC 2018 Epic Sync: Wrangling the Work of Highly Interdependent Dev Teams at Bungie</summary></entry><entry><title type="html">Toolsmiths GDC 2019 Guide</title><link href="/https://victorstepanov.github.io/toolsmiths-gdc-2019-guide" rel="alternate" type="text/html" title="Toolsmiths GDC 2019 Guide" /><published>2019-03-06T02:00:00-08:00</published><updated>2019-03-06T02:00:00-08:00</updated><id>/https://victorstepanov.github.io/toolsmiths-gdc-2019-guide</id><content type="html" xml:base="/https://victorstepanov.github.io/toolsmiths-gdc-2019-guide">&lt;p&gt;I went over many sessions for this year’s GDC and created a list talks that would peek the interest of a Game Tools Developer.&lt;/p&gt;
+&lt;/ul&gt;</content><author><name>Victor Stepanov</name></author><category term="GDC" /><category term="version_control" /><category term="game_data_merging" /><summary type="html">TLDW Summary: How Bungie created an ecosystem of tools and workflows to allow small teams to quickly iterate on changes without worrying about breaking and blocking other teams. Keywords Game Data Merging Version Control System Branch Integration Intro Each P4 branch is about 4 Tb Up to 350 content creators, designers, and engineers working in one branch They use a pre-commit build pipeline - “the Gauntlet” Pete Kugler did a talk at GDC2016: Developing a pipeline for managing game stability Pipeline for managing game stability Describes the reason they put the pre-commit system in place They pick stability over iteration speed Had technical limitations of just simply adding more feature branches Not supported by tools More pressure on integration More pressure on build pipeline Couldn’t merge game data Definition “Feature Branch” - Branch created for teams to work in without interfering with the stability of the main branch Definition “Small Team” - group of cross-discipline developer working collaboratively on shared features (strike teams? ) The development team was in an environment that would not allow risky feature prototype and development Long pre-commit build pipeline throughput Thurow QA testing Fear of creating blockers Vision QA had the option to use stabilization branch to shield from the auto integrations that were happening Had 3 main challenges: Focused on semantically merge content to make the lives of content creators easier Focused on making a simple as possible to keep branches in-sync and stable (management tools) Developers became accustomed to workflow build around having multiple branches per workspace Because of the release cycles (having multiple features in progress) Expected to have immediate access to things that are mapped in the workspace Source DCC assets in the same location as the game data This made for build branches Moving to a streamed depot was a risk that the dev team didn’t want to take Compromise by adapting the current system to behave like Streams Had plans to move to Streams for next project Scaling the Infrastructure Needed to implement Centralized Branch Authority Which was available as part P4 Stream Used the build farm DB to be the Branch Authority Needed to implement a way to make the branches available on the build farm machines Asset pipeline changes For details checkout Brandon Moro’s talk: GDC 2018 Tools Tutorial Day: Bungie’s Asset Pipeline: ‘Destiny 2’ and Beyond Need to enable the scaling of the Asset Cache Used to be one/two machine(s) per branch Decoupled storage HW from the service HW The service was made stateless So service could handle different branches The state management was moved into Redis Logging was moved into elasticsearch To setup, branch used a lazy copy of that branch The branch was 4 Tb On the backend use deduplication to not store the same data Implementing Content Merging Propper game data merging Needs to know the semantics of the data Used C# for the content merge tool (some screenshots at min 40) Tracked auto-resolve\ conflict ratio Used TDD and recorded mergers that produced conflict to analyze at min 31 notes on how to implement merging of game data Were able to reach 80% auto-conflict resolution rate Flow of changes Created custom tool “Team Sync” to view of a users branch state Shows Check-ins Bugs Builds in progress/finished For more info see GDC 2019 Tools Tutorial Day: Tooling for Small Team Workflows Had a special process for automatically integrating into the main branch Via a build farm worker Had a special local conflict resolution workflow (when conflicts happened during an integration) After conflict resolution, automated testing would occur If something was broken, the team had the ability to login to a remote worker and fix the issue The worker would have all the dev tools ready All in all, Pete says that this was a great investment for the dev team These notes are just the main ideas of the talk. They don’t contain anecdotes and examples. If you want to learn more, I would advise watching the talk on the GDC Vault. The Toolsmiths I took these notes as part of our little “Book Club” for GDC Vault Videos The Toolsmiths #vault club Pete Kugler is a member of the Toolsmiths community. The Toolsmiths are a community of Game Tool Developers that are passionate about improving the way people make games. Join us on Slack. Join us on Twitter. Links GDC 2019 Pipeline Support for Feature Branches in ‘Destiny’ Related Blog Links Notes for GDC 2019 Bungie’s Force Multipliers: Production Engineers Related talks 2016 talk by Pete Kugler - GDC 2016 Developing a pipeline for managing game stability GDC 2019 Tools Tutorial Day: Tooling for Small Team Workflows GDC 2018 Tools Tutorial Day: Shipping ‘Call of Duty’ GDC 2018 Tools Tutorial Day: Bungie’s Asset Pipeline: ‘Destiny 2’ and Beyond HandmadeCon 2016 - Asset Systems and Scalability GDC 2019 Bungie’s Force Multipliers: Production Engineers GDC 2018 Teams Are Stronger Than Heroes: Bungie Development Evolved GDC 2018 Epic Sync: Wrangling the Work of Highly Interdependent Dev Teams at Bungie</summary></entry><entry><title type="html">Toolsmiths GDC 2019 Guide</title><link href="/https://victorstepanov.github.io/toolsmiths-gdc-2019-guide" rel="alternate" type="text/html" title="Toolsmiths GDC 2019 Guide" /><published>2019-03-06T02:00:00-08:00</published><updated>2019-03-06T02:00:00-08:00</updated><id>/https://victorstepanov.github.io/toolsmiths-gdc-2019-guide</id><content type="html" xml:base="/https://victorstepanov.github.io/toolsmiths-gdc-2019-guide">&lt;p&gt;I went over many sessions for this year’s GDC and created a list talks that would peek the interest of a Game Tools Developer.&lt;/p&gt;
 
 &lt;p&gt;This guide can be found &lt;a href=&quot;http://thetoolsmiths.org/2019/03/06/gdc-2019-toolsmiths-guide/&quot;&gt;here&lt;/a&gt;.&lt;/p&gt;</content><author><name>Victor Stepanov</name></author><summary type="html">There are around 760+ sessions/tutorials/events at GDC 2019, finding the sessions that a tools developer would be interested in takes time. Below you will find a list of sessions that can become the base for your tools developer GDC 2019 experience, whether you plan on attending or you will be viewing post-factum.</summary></entry><entry><title type="html">The origin of the path</title><link href="/https://victorstepanov.github.io/origin-of-the-path" rel="alternate" type="text/html" title="The origin of the path" /><published>2019-02-27T17:00:00-08:00</published><updated>2019-02-27T17:00:00-08:00</updated><id>/https://victorstepanov.github.io/origin-of-the-path</id><content type="html" xml:base="/https://victorstepanov.github.io/origin-of-the-path">&lt;p&gt;After finishing the work on the first draft of the &lt;a href=&quot;http://thetoolsmiths.org/codex/learning_paths/tools_engineer_learning_path&quot;&gt;Tools Engineer Learning Path&lt;/a&gt;, I decided to write a short story behind the learning path and the thought process I went through when I was creating this resource.&lt;/p&gt;
 
@@ -725,7 +1014,12 @@ it the most expensive to change, because it is persistent
   &lt;li&gt;&lt;a href=&quot;https://www.ea.com/frostbite/news/a-tale-of-three-data-schemas&quot;&gt;Slides: A Tale of Three Data Schemas&lt;/a&gt;&lt;/li&gt;
   &lt;li&gt;&lt;a href=&quot;https://www.gdcvault.com/play/1025284/Tools-Tutorial-Day-A-Tale&quot;&gt;GDC Vault Video: A Tale of Three Data Schemas&lt;/a&gt;&lt;/li&gt;
   &lt;li&gt;&lt;a href=&quot;https://twitter.com/ludovicchabant?lang=en&quot;&gt;Ludovic Chabant on Twitter&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;</content><author><name>Victor Stepanov</name></author><category term="GDC" /><category term="Tools_Tutorial_Day" /><category term="data" /><summary type="html">GDC 2018, Tools Tutorial Day, Ludovic Chabant, Senior Software Engineer @ Electronic Arts Vancouver shared the know-how of the Frostbite engine team when it comes to designing the game’s data. These are my notes that I wrote down from watching Ludovic's presentation. If you like what you read I hight recommend getting a GDC Vault subscription and watching the full talk link to talk. Main Takeaway The same data is used in different ways. Optimizing the data’s logical representation for different usage scenarios is key in achieving great performance, efficient use of storage and a sublime user experience. The way that an artist thinks of the data that he or she sees in the editor window might not be the best way to represent the data to load it as fast as possible into the game or might not be the best way to store it on disk. Different data consumption scenarios demand different optimization. Off course maintaining more than one data layout isn’t free but it is worth the investment. a picture of a side from Ludovic Chabant's GDC 2018 presentation Data Schema Definition: a data schema is the formal description of the structures a system is working with. Examples of data schemas Public properties of script components in Unity Decorated public properties of a UClass in Unreal Engine Blind Data in Maya Table columns in a database management system Frostbite DDF (Data Definition Format) Basic idea A data schema is a for communicating about the existence of a type of something which has: properties like ints floats etc. references to other types Usage scenarios A data schema is used to: display a type’s properties in an editor context. store the type on disk. load the type at runtime. Designing a data schema a picture of a side from Ludovic Chabant's GDC 2018 presentation If you design a data schema with a programmer bias you will get a data schema that will be great for loading at runtime. It will be: flat and packed optimized for loading unintelligible for designers and artists If you design a data schema with a content creator bias you will get a data schema that will be great for human understanding and iteration. It will be: easy to use and edit by multiple people not cache friendly not efficiently laid out in memory Three different data schemas a picture of a side from Ludovic Chabant's GDC 2018 presentation Runtime data schema used by the game for loading the data into memory the programmers in the code purpose performance patching loading nicely packed in memory optimized for reading Storage data schema the tools backend a.k.a disk version Tools usually use this to save what the user is working on (the logical peace of data). Not to be confused with a data format like XML, JSON or YAML. used by tools to save users work on some form of persistent storage purpose can be versioned and easily merged in revision control can be used by tools for automation supports multi-user editing (splitting into different parts) for example, the runtime data schema doesn’t need this optimized for writing to disk Tool data schema the tools frontend How the content creators see it in their minds. How the game data is displayed in an editor as a graph, property grid or a gizmo. You can think of this as a subset of UX. Usually, very Object Oriented. used by content creators for content creation engineers for analysis and decision making tools developers for creating a great editing experience purpose better understanding by humans better UX workflow and iteration oriented optimized for editing iteration Frostbite Engine tails Ludovic brings up 4 tails about how the 3 data schemas are used in the Frostbite Engine. The main points of the tails: Use a more user-friendly data schema for user editing, but keep an eye out for where you do the conversion from one data schema to another. Use different data schemas to solve different problems, and optimize for different use cases. UX and Data Schemas have a strong relationship. Changing one might affect the other. Use conditional compilation to include tools/storage data schemas in the runtime data schemas. Conditionally include appropriate pipeline code in the runtime to transform data on the fly during live-edit. The most important Data Schema The Storage Data Schema is the most important Data Schema. It is only Data Schema that is persistent. it the most expensive to change, because it is persistent Designing Data Schemas Start with designing the Storage Data Schema Build your Tools around the Storage Data Schema Implement your Runtime Code around the Storage Data Schema if it is obvious that the Storage Schema is not performant enough go to the next subsection to find out how to deal with it Dealing with performance issues If the Runtime Data Schema is not performant enough Adjust the Runtime Data Schema and the code Write the pipeline code to convert from the Storage Schema to the Runtime Schema Mixing Data Schemas If your engine does not formally support different types of data schemas, use conditional compilation to have ways to remove the Tools/Storage Data Schemas from the production build. What we have learned There are different ways to organize the same logical data (Tools, Storage, Runtime) Use more user-friendly data organization for the users of your Tools and a more performant way of data organization for your Runtime With this way of organizing data, you can solve different problems without a lot of sacrifices Always remember that a change in a Data Schema can lead to a change in the UX of a tool and vice versa Have a pipeline in place to convert from the Storage Schema to the Runtime Schema Personal notes This reminded me of Mike Acton’s Data-Oriented Design talk where every problem in programming is a data transformation problem. Mindmap / Mental Representation Click to see it in fullscreen Link to mindmap source You can open the file with XMind The Toolsmiths Ludovic Chabant is a member of the Toolsmiths community. The Toolsmiths are a community of Game Tool Developers that are passionate about improving the way people make games. Join us on Slack. Join us on Twitter. Links Slides: A Tale of Three Data Schemas GDC Vault Video: A Tale of Three Data Schemas Ludovic Chabant on Twitter</summary></entry><entry><title type="html">The efficiency ratio for game tools improvements</title><link href="/https://victorstepanov.github.io/the-efficiency-ratio-for-game-tools-improvements" rel="alternate" type="text/html" title="The efficiency ratio for game tools improvements" /><published>2018-07-17T18:00:00-07:00</published><updated>2018-07-17T18:00:00-07:00</updated><id>/https://victorstepanov.github.io/the-efficiency-ratio-for-game-tools-improvements</id><content type="html" xml:base="/https://victorstepanov.github.io/the-efficiency-ratio-for-game-tools-improvements">&lt;p&gt;&lt;em&gt;Last Update on July 22nd, 2018&lt;/em&gt;&lt;/p&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;related-blog-links&quot;&gt;Related Blog Links&lt;/h2&gt;
+&lt;ul&gt;
+  &lt;li&gt;Notes for &lt;a href=&quot;https://victorstepanov.github.io//2019-06-16-gdc2019-the-future-of-scene-description-on-god-of-war&quot;&gt;GDC2019 “The Future of Scene Description on ‘God of War’”&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;</content><author><name>Victor Stepanov</name></author><category term="GDC" /><category term="Tools_Tutorial_Day" /><category term="data" /><summary type="html">GDC 2018, Tools Tutorial Day, Ludovic Chabant, Senior Software Engineer @ Electronic Arts Vancouver shared the know-how of the Frostbite engine team when it comes to designing the game’s data. These are my notes that I wrote down from watching Ludovic's presentation. If you like what you read I hight recommend getting a GDC Vault subscription and watching the full talk link to talk. Main Takeaway The same data is used in different ways. Optimizing the data’s logical representation for different usage scenarios is key in achieving great performance, efficient use of storage and a sublime user experience. The way that an artist thinks of the data that he or she sees in the editor window might not be the best way to represent the data to load it as fast as possible into the game or might not be the best way to store it on disk. Different data consumption scenarios demand different optimization. Off course maintaining more than one data layout isn’t free but it is worth the investment. a picture of a side from Ludovic Chabant's GDC 2018 presentation Data Schema Definition: a data schema is the formal description of the structures a system is working with. Examples of data schemas Public properties of script components in Unity Decorated public properties of a UClass in Unreal Engine Blind Data in Maya Table columns in a database management system Frostbite DDF (Data Definition Format) Basic idea A data schema is a for communicating about the existence of a type of something which has: properties like ints floats etc. references to other types Usage scenarios A data schema is used to: display a type’s properties in an editor context. store the type on disk. load the type at runtime. Designing a data schema a picture of a side from Ludovic Chabant's GDC 2018 presentation If you design a data schema with a programmer bias you will get a data schema that will be great for loading at runtime. It will be: flat and packed optimized for loading unintelligible for designers and artists If you design a data schema with a content creator bias you will get a data schema that will be great for human understanding and iteration. It will be: easy to use and edit by multiple people not cache friendly not efficiently laid out in memory Three different data schemas a picture of a side from Ludovic Chabant's GDC 2018 presentation Runtime data schema used by the game for loading the data into memory the programmers in the code purpose performance patching loading nicely packed in memory optimized for reading Storage data schema the tools backend a.k.a disk version Tools usually use this to save what the user is working on (the logical peace of data). Not to be confused with a data format like XML, JSON or YAML. used by tools to save users work on some form of persistent storage purpose can be versioned and easily merged in revision control can be used by tools for automation supports multi-user editing (splitting into different parts) for example, the runtime data schema doesn’t need this optimized for writing to disk Tool data schema the tools frontend How the content creators see it in their minds. How the game data is displayed in an editor as a graph, property grid or a gizmo. You can think of this as a subset of UX. Usually, very Object Oriented. used by content creators for content creation engineers for analysis and decision making tools developers for creating a great editing experience purpose better understanding by humans better UX workflow and iteration oriented optimized for editing iteration Frostbite Engine tails Ludovic brings up 4 tails about how the 3 data schemas are used in the Frostbite Engine. The main points of the tails: Use a more user-friendly data schema for user editing, but keep an eye out for where you do the conversion from one data schema to another. Use different data schemas to solve different problems, and optimize for different use cases. UX and Data Schemas have a strong relationship. Changing one might affect the other. Use conditional compilation to include tools/storage data schemas in the runtime data schemas. Conditionally include appropriate pipeline code in the runtime to transform data on the fly during live-edit. The most important Data Schema The Storage Data Schema is the most important Data Schema. It is only Data Schema that is persistent. it the most expensive to change, because it is persistent Designing Data Schemas Start with designing the Storage Data Schema Build your Tools around the Storage Data Schema Implement your Runtime Code around the Storage Data Schema if it is obvious that the Storage Schema is not performant enough go to the next subsection to find out how to deal with it Dealing with performance issues If the Runtime Data Schema is not performant enough Adjust the Runtime Data Schema and the code Write the pipeline code to convert from the Storage Schema to the Runtime Schema Mixing Data Schemas If your engine does not formally support different types of data schemas, use conditional compilation to have ways to remove the Tools/Storage Data Schemas from the production build. What we have learned There are different ways to organize the same logical data (Tools, Storage, Runtime) Use more user-friendly data organization for the users of your Tools and a more performant way of data organization for your Runtime With this way of organizing data, you can solve different problems without a lot of sacrifices Always remember that a change in a Data Schema can lead to a change in the UX of a tool and vice versa Have a pipeline in place to convert from the Storage Schema to the Runtime Schema Personal notes This reminded me of Mike Acton’s Data-Oriented Design talk where every problem in programming is a data transformation problem. Mindmap / Mental Representation Click to see it in fullscreen Link to mindmap source You can open the file with XMind The Toolsmiths Ludovic Chabant is a member of the Toolsmiths community. The Toolsmiths are a community of Game Tool Developers that are passionate about improving the way people make games. Join us on Slack. Join us on Twitter. Links Slides: A Tale of Three Data Schemas GDC Vault Video: A Tale of Three Data Schemas Ludovic Chabant on Twitter Related Blog Links Notes for GDC2019 “The Future of Scene Description on ‘God of War’”</summary></entry><entry><title type="html">The efficiency ratio for game tools improvements</title><link href="/https://victorstepanov.github.io/the-efficiency-ratio-for-game-tools-improvements" rel="alternate" type="text/html" title="The efficiency ratio for game tools improvements" /><published>2018-07-17T18:00:00-07:00</published><updated>2018-07-17T18:00:00-07:00</updated><id>/https://victorstepanov.github.io/the-efficiency-ratio-for-game-tools-improvements</id><content type="html" xml:base="/https://victorstepanov.github.io/the-efficiency-ratio-for-game-tools-improvements">&lt;p&gt;&lt;em&gt;Last Update on July 22nd, 2018&lt;/em&gt;&lt;/p&gt;
 
 &lt;h2 id=&quot;game-tools-as-an-investment&quot;&gt;Game Tools as an investment&lt;/h2&gt;
 
