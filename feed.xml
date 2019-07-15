@@ -1,4 +1,260 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.6.2">Jekyll</generator><link href="/https://victorstepanov.github.io/feed.xml" rel="self" type="application/atom+xml" /><link href="/https://victorstepanov.github.io/" rel="alternate" type="text/html" /><updated>2019-06-16T19:48:21-07:00</updated><id>/https://victorstepanov.github.io/</id><title type="html">Victor Stepanov</title><subtitle>Passionate about making game developers more productive</subtitle><entry><title type="html">Notes for “The Future of Scene Description on ‘God of War’” GDC2019</title><link href="/https://victorstepanov.github.io/gdc2019-the-future-of-scene-description-on-god-of-war" rel="alternate" type="text/html" title="Notes for &quot;The Future of Scene Description on 'God of War'&quot; GDC2019" /><published>2019-06-15T18:00:00-07:00</published><updated>2019-06-15T18:00:00-07:00</updated><id>/https://victorstepanov.github.io/gdc2019-the-future-of-scene-description-on-god-of-war</id><content type="html" xml:base="/https://victorstepanov.github.io/gdc2019-the-future-of-scene-description-on-god-of-war">&lt;p&gt;&lt;strong&gt;TLDW Summary&lt;/strong&gt;: This talk sheds light on the decisions that were made by the Santa Monica Studio’s engine team while tackling the problems of time and complexity in transforming source data into game-ready data.&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.6.2">Jekyll</generator><link href="/https://victorstepanov.github.io/feed.xml" rel="self" type="application/atom+xml" /><link href="/https://victorstepanov.github.io/" rel="alternate" type="text/html" /><updated>2019-07-14T18:12:35-07:00</updated><id>/https://victorstepanov.github.io/</id><title type="html">Victor Stepanov</title><subtitle>Passionate about making game developers more productive</subtitle><entry><title type="html">Notes for “Tools for ‘Marvel’s Spider-Man’ Editing with Immutable Data” GDC2019</title><link href="/https://victorstepanov.github.io/gdc2019-tools-for-marvels-spider-man-editing-with-immutable-data" rel="alternate" type="text/html" title="Notes for &quot;Tools for 'Marvel's Spider-Man' Editing with Immutable Data&quot; GDC2019" /><published>2019-07-13T18:00:00-07:00</published><updated>2019-07-13T18:00:00-07:00</updated><id>/https://victorstepanov.github.io/gdc2019-tools-for-marvels-spider-man-editing-with-immutable-data</id><content type="html" xml:base="/https://victorstepanov.github.io/gdc2019-tools-for-marvels-spider-man-editing-with-immutable-data">&lt;p&gt;&lt;strong&gt;TLDW Summary&lt;/strong&gt;: This talk is a tour of the technologies that Insomniac Games developed to transition from their web based tools to their new desktop tools. Highlighting what challenges they encountered when replacing the tool chain in mid production.&lt;/p&gt;
+
+&lt;h2 id=&quot;keywords&quot;&gt;Keywords&lt;/h2&gt;
+&lt;div class=&quot;keyword-container&quot;&gt;
+&lt;ul class=&quot;keyword-container&quot;&gt;
+&lt;li&gt;Data Design&lt;/li&gt;
+&lt;li&gt;Immutable Data&lt;/li&gt;
+&lt;li&gt;Mid Production&lt;/li&gt;
+&lt;li&gt;Data Definition Language (DDL)&lt;/li&gt;
+&lt;li&gt;Porting&lt;/li&gt;
+&lt;/ul&gt;
+&lt;style&gt;
+    .keyword-container &gt; ul
+    {
+        font-size: 16px;
+        list-style-type: none;
+        padding:15px;
+    }
+    .keyword-container &gt; li
+    {
+        background-color:#f3f3f3;
+        display : inline;
+        padding:5px;
+        margin:2px;
+        margin-bottom: 100px;
+        border-radius: 5px;
+    }
+&lt;/style&gt;
+&lt;/div&gt;
+
+&lt;h2 id=&quot;presentation-time-stamps&quot;&gt;Presentation Time Stamps&lt;/h2&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;https://www.gdcvault.com/play/1026080/Tools-for-Marvel-s-Spider&quot;&gt;at min 1&lt;/a&gt; Background&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://www.gdcvault.com/play/1026080/Tools-for-Marvel-s-Spider&quot;&gt;at min 2&lt;/a&gt; Making Changes&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://www.gdcvault.com/play/1026080/Tools-for-Marvel-s-Spider&quot;&gt;at min 6&lt;/a&gt; Mission Directive&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://www.gdcvault.com/play/1026080/Tools-for-Marvel-s-Spider&quot;&gt;at min 15&lt;/a&gt; Implicitly shared data with Copy-on-write&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://www.gdcvault.com/play/1026080/Tools-for-Marvel-s-Spider&quot;&gt;at min 29&lt;/a&gt; Immutable Data&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://www.gdcvault.com/play/1026080/Tools-for-Marvel-s-Spider&quot;&gt;at min 32&lt;/a&gt; The Edit Loop&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://www.gdcvault.com/play/1026080/Tools-for-Marvel-s-Spider&quot;&gt;at min 41&lt;/a&gt; Hazards Encountered&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://www.gdcvault.com/play/1026080/Tools-for-Marvel-s-Spider&quot;&gt;at min 45&lt;/a&gt; Conclusion&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://www.gdcvault.com/play/1026080/Tools-for-Marvel-s-Spider&quot;&gt;at min 47&lt;/a&gt; Q&amp;amp;A&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h1 id=&quot;background&quot;&gt;Background&lt;/h1&gt;
+&lt;ul&gt;
+  &lt;li&gt;Insomniac Games started to develop Web-Based Tools in 2010 (written in JavaScript)
+    &lt;ul&gt;
+      &lt;li&gt;This lead to some issues and the engine team decided to go back to the regular desktop tools
+        &lt;ul&gt;
+          &lt;li&gt;for more see &lt;a href=&quot;http://www.gdcvault.com/play/1024465/Insomniac-s-Web-Tools-A&quot;&gt;GDC 2017 “Insomniac’s Web Tools: A Postmortem”&lt;/a&gt;&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+      &lt;li&gt;Insomniac Games  shipped 6 games with the web tools&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;This talk is about what happened after the “Insomniac’s Web Tools: A Postmortem”&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h1 id=&quot;making-changes&quot;&gt;Making Changes&lt;/h1&gt;
+&lt;p&gt;&lt;em&gt;timestamp: 2 min into the presentation&lt;/em&gt;&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;In 2015 the work started on the transition from JavaScript to C++ Qt with a 4 man team&lt;/li&gt;
+  &lt;li&gt;The refactoring had to be done while the tools were still in use&lt;/li&gt;
+  &lt;li&gt;Sunset Overdrive pushed the JS world editor to its limits and ‘Marvel’s Spider-Man’ Manhattan would be even bigger
+    &lt;ul&gt;
+      &lt;li&gt;&lt;img src=&quot;assets/images/posts/tools-for-marvels-spider-man-editing-with-immutable-data/map-scale.jpg&quot; alt=&quot;slide: takeaway&quot; width=&quot;700&quot; /&gt;&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;the team needed to port 12 editors from JS
+    &lt;ul&gt;
+      &lt;li&gt;&lt;img src=&quot;assets/images/posts/tools-for-marvels-spider-man-editing-with-immutable-data/world-editor.jpg&quot; alt=&quot;slide: takeaway&quot; width=&quot;700&quot; /&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;img src=&quot;assets/images/posts/tools-for-marvels-spider-man-editing-with-immutable-data/animation-editor.jpg&quot; alt=&quot;slide: takeaway&quot; width=&quot;700&quot; /&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;img src=&quot;assets/images/posts/tools-for-marvels-spider-man-editing-with-immutable-data/cinematics-editor.jpg&quot; alt=&quot;slide: takeaway&quot; width=&quot;700&quot; /&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;img src=&quot;assets/images/posts/tools-for-marvels-spider-man-editing-with-immutable-data/vfx-editor.jpg&quot; alt=&quot;slide: takeaway&quot; width=&quot;700&quot; /&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;img src=&quot;assets/images/posts/tools-for-marvels-spider-man-editing-with-immutable-data/12-editors.jpg&quot; alt=&quot;slide: takeaway&quot; width=&quot;700&quot; /&gt;&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;the goals of the refactoring were
+    &lt;ul&gt;
+      &lt;li&gt;performance (being able to work with large data sets)
+        &lt;ul&gt;
+          &lt;li&gt;multi-threading support&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+      &lt;li&gt;easier to maintain&lt;/li&gt;
+      &lt;li&gt;type safety (JS “Uncaught TypeError: undefined is not a function”)&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h1 id=&quot;mission-directive&quot;&gt;Mission Directive&lt;/h1&gt;
+&lt;p&gt;&lt;em&gt;timestamp: 6 min into the presentation&lt;/em&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;the tool porting was planned to be done when a significant part of the content would have been created with the old tools
+    &lt;ul&gt;
+      &lt;li&gt;needed to provide an upgrade path or data compatibility&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;the C++ tools need to have the same UX and UI as the JS tools to make the switching between the tools as seamless as possible.
+    &lt;ul&gt;
+      &lt;li&gt;no feature requests were accepted to make it possible to finish on time&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;The tools were 100% data compatible
+    &lt;ul&gt;
+      &lt;li&gt;this enabled the users to fall back to the JS tools when they hit an issue with the C++ version&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;the JS tools were using a local client/server model
+    &lt;ul&gt;
+      &lt;li&gt;the local server was called LunaServer
+        &lt;ul&gt;
+          &lt;li&gt;for more check out the GDC2012 talk about &lt;a href=&quot;https://gdcvault.com/play/1015531/Developing-Imperfect-Software-How-to&quot;&gt;Developing Imperfect Software: How to Prepare for Development Pipeline Failure&lt;/a&gt;&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+      &lt;li&gt;LunaServer
+        &lt;ul&gt;
+          &lt;li&gt;stores its state in MongoDB&lt;/li&gt;
+          &lt;li&gt;responsible for file system IO&lt;/li&gt;
+          &lt;li&gt;responsible for Perforce operations&lt;/li&gt;
+          &lt;li&gt;sync changes to assets between tools&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;their own in-house DDL
+    &lt;ul&gt;
+      &lt;li&gt;made JSON type safe with a DDL compiler (ToolsDDL) that would compile the DDL into C++ code (set/get)&lt;/li&gt;
+      &lt;li&gt;tools use in memory JSON representation (to reduce complexity and the need to convert between C++ object)modification&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;to represent a game object, they use JSON trees which are the same as hash table of hash tables&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h1 id=&quot;implicitly-shared-data-with-copy-on-write&quot;&gt;Implicitly shared data with Copy-on-write&lt;/h1&gt;
+&lt;p&gt;&lt;em&gt;timestamp: 15 min into the presentation&lt;/em&gt;&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;a detailed explanation of the Implicitly shared data with Copy-on-write pattern at @ 15-36&lt;/li&gt;
+  &lt;li&gt;basic idea
+    &lt;ul&gt;
+      &lt;li&gt;a global state is implicitly shared between modules&lt;/li&gt;
+      &lt;li&gt;&lt;img src=&quot;assets/images/posts/tools-for-marvels-spider-man-editing-with-immutable-data/modify_worldNode_0.jpg&quot; alt=&quot;slide: takeaway&quot; width=&quot;700&quot; /&gt;&lt;/li&gt;
+      &lt;li&gt;when a module wants to update the global state, a copy is made&lt;/li&gt;
+      &lt;li&gt;&lt;img src=&quot;assets/images/posts/tools-for-marvels-spider-man-editing-with-immutable-data/modify_worldNode.jpg&quot; alt=&quot;slide: takeaway&quot; width=&quot;700&quot; /&gt;&lt;/li&gt;
+      &lt;li&gt;after the modification is done the rest of the modules get notified to fetch the pointer to the new object&lt;/li&gt;
+      &lt;li&gt;&lt;img src=&quot;assets/images/posts/tools-for-marvels-spider-man-editing-with-immutable-data/modify_worldNode_2.jpg&quot; alt=&quot;slide: takeaway&quot; width=&quot;700&quot; /&gt;&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;implicit sharing makes it easy to compute the diff of 2 JSON trees
+    &lt;ul&gt;
+      &lt;li&gt;this is because as soon as 2 subtrees point to the same shared subtree, you don’t need to traverse that part of the tree any further.&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h1 id=&quot;immutable-data&quot;&gt;Immutable Data&lt;/h1&gt;
+&lt;p&gt;&lt;em&gt;timestamp: 29 min into the presentation&lt;/em&gt;&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;the same idea of Implicitly shared data &lt;strong&gt;without&lt;/strong&gt; Copy-on-write
+    &lt;ul&gt;
+      &lt;li&gt;no setters&lt;/li&gt;
+      &lt;li&gt;&lt;img src=&quot;assets/images/posts/tools-for-marvels-spider-man-editing-with-immutable-data/Immutable_Data.jpg&quot; alt=&quot;slide: takeaway&quot; width=&quot;700&quot; /&gt;&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;this makes it easier to reason about the code&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;div style=&quot;font-style: normal;font-size: 26px;margin-left: 32px;font-family: Consolas, 'Times New Roman', Verdana;border-left: 4px solid #3a5ebf;padding-left: 20px;&quot;&gt;
+&lt;p&gt;&lt;/p&gt;
+&quot;Immutable is not const. const only controls access, immutable is a guarantee.&quot;
+&lt;p&gt;&lt;/p&gt;
+&lt;/div&gt;
+&lt;p&gt;&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;they like to think about this as a step towards functional programming&lt;/li&gt;
+  &lt;li&gt;designing an API that is like a function that returns a new value based on the old value
+    &lt;ul&gt;
+      &lt;li&gt;without any
+        &lt;ul&gt;
+          &lt;li&gt;side effects&lt;/li&gt;
+          &lt;li&gt;preconditions&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h1 id=&quot;the-edit-loop&quot;&gt;The Edit Loop&lt;/h1&gt;
+&lt;p&gt;&lt;em&gt;timestamp: 32 min into the presentation&lt;/em&gt;&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;LunaEdit is the module that is responsible for editing asset
+    &lt;ul&gt;
+      &lt;li&gt;creating a new object from an object that was passed in&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;LunaEdit is also responsible for
+    &lt;ul&gt;
+      &lt;li&gt;handling Perforce checkout&lt;/li&gt;
+      &lt;li&gt;handling the undo system&lt;/li&gt;
+      &lt;li&gt;sending updates to the LunaServer (updating the DB and files on disk)&lt;/li&gt;
+      &lt;li&gt;broadcast changes all of the modules in the system (change/update)&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;all of the complexity of working with the data format is hidden in one place -  the LunaEdit module&lt;/li&gt;
+  &lt;li&gt;&lt;img src=&quot;assets/images/posts/tools-for-marvels-spider-man-editing-with-immutable-data/edit_loop.jpg&quot; alt=&quot;slide: takeaway&quot; width=&quot;700&quot; /&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h1 id=&quot;hazards-encountered&quot;&gt;Hazards Encountered&lt;/h1&gt;
+&lt;p&gt;&lt;em&gt;timestamp: 41 min into the presentation&lt;/em&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;copying wide (flat) hash tables is expensive
+    &lt;ul&gt;
+      &lt;li&gt;prefer deep hash tables&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;don’t use QJsonObject
+    &lt;ul&gt;
+      &lt;li&gt;strings are stored as 8-bit and returned as 16-bit&lt;/li&gt;
+      &lt;li&gt;strings are not shared (issue with identical keys)&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;with multiple versions of data in flight
+    &lt;ul&gt;
+      &lt;li&gt;a module wants to change a piece of data that is in the process of being updated.&lt;/li&gt;
+      &lt;li&gt;this wasn’t an issue because the main thread is the only thread that can request a change&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;div style=&quot;background-color:#FFFF94;border-left: 18px solid #ffff48;padding-left: 50px;&quot;&gt;
+&lt;p&gt;&lt;/p&gt;
+&lt;p&gt;These notes are just the main ideas of the talk. They don’t contain anecdotes and examples. If you want to learn more, I would advise watching the talk on the &lt;a href=&quot;https://www.gdcvault.com/play/1026080/Tools-for-Marvel-s-Spider&quot;&gt;GDC Vault&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;&lt;/p&gt;
+&lt;/div&gt;
+
+&lt;h2 id=&quot;the-toolsmiths&quot;&gt;The Toolsmiths&lt;/h2&gt;
+&lt;p&gt;&lt;img src=&quot;http://thetoolsmiths.org/assets/thetoolsmiths_cover_1000x2881.png&quot; alt=&quot;The Toolsmiths logo&quot; width=&quot;700&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;I took these notes as part of our little “Book Club” for GDC Vault Videos &lt;a href=&quot;http://thetoolsmiths.org/vault_club&quot;&gt;The Toolsmiths #vault club&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;Join us on &lt;a href=&quot;http://thetoolsmiths.org/join_slack_team&quot;&gt;Slack&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;Join us on &lt;a href=&quot;https://twitter.com/thetoolsmiths&quot;&gt;Twitter&lt;/a&gt;.&lt;/p&gt;
+
+&lt;h2 id=&quot;links&quot;&gt;Links&lt;/h2&gt;
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;https://www.gdcvault.com/play/1026080/Tools-for-Marvel-s-Spider&quot;&gt;Tools for ‘Marvel’s Spider-Man’ Editing with Immutable Data&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;related-talks&quot;&gt;Related talks&lt;/h2&gt;
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;http://www.gdcvault.com/play/1024465/Insomniac-s-Web-Tools-A&quot;&gt;GDC 2017 “Insomniac’s Web Tools: A Postmortem”&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://gdcvault.com/play/1015531/Developing-Imperfect-Software-How-to&quot;&gt;GDC 2012 Developing Imperfect Software: How to Prepare for Development Pipeline Failure&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;</content><author><name>Victor Stepanov</name></author><category term="GDC" /><category term="data" /><category term="ddl" /><category term="edit" /><category term="web" /><summary type="html">TLDW Summary: This talk is a tour of the technologies that Insomniac Games developed to transition from their web based tools to their new desktop tools. Highlighting what challenges they encountered when replacing the tool chain in mid production. Keywords Data Design Immutable Data Mid Production Data Definition Language (DDL) Porting Presentation Time Stamps at min 1 Background at min 2 Making Changes at min 6 Mission Directive at min 15 Implicitly shared data with Copy-on-write at min 29 Immutable Data at min 32 The Edit Loop at min 41 Hazards Encountered at min 45 Conclusion at min 47 Q&amp;amp;A Background Insomniac Games started to develop Web-Based Tools in 2010 (written in JavaScript) This lead to some issues and the engine team decided to go back to the regular desktop tools for more see GDC 2017 “Insomniac’s Web Tools: A Postmortem” Insomniac Games shipped 6 games with the web tools This talk is about what happened after the “Insomniac’s Web Tools: A Postmortem” Making Changes timestamp: 2 min into the presentation In 2015 the work started on the transition from JavaScript to C++ Qt with a 4 man team The refactoring had to be done while the tools were still in use Sunset Overdrive pushed the JS world editor to its limits and ‘Marvel’s Spider-Man’ Manhattan would be even bigger the team needed to port 12 editors from JS the goals of the refactoring were performance (being able to work with large data sets) multi-threading support easier to maintain type safety (JS “Uncaught TypeError: undefined is not a function”) Mission Directive timestamp: 6 min into the presentation the tool porting was planned to be done when a significant part of the content would have been created with the old tools needed to provide an upgrade path or data compatibility the C++ tools need to have the same UX and UI as the JS tools to make the switching between the tools as seamless as possible. no feature requests were accepted to make it possible to finish on time The tools were 100% data compatible this enabled the users to fall back to the JS tools when they hit an issue with the C++ version the JS tools were using a local client/server model the local server was called LunaServer for more check out the GDC2012 talk about Developing Imperfect Software: How to Prepare for Development Pipeline Failure LunaServer stores its state in MongoDB responsible for file system IO responsible for Perforce operations sync changes to assets between tools their own in-house DDL made JSON type safe with a DDL compiler (ToolsDDL) that would compile the DDL into C++ code (set/get) tools use in memory JSON representation (to reduce complexity and the need to convert between C++ object)modification to represent a game object, they use JSON trees which are the same as hash table of hash tables Implicitly shared data with Copy-on-write timestamp: 15 min into the presentation a detailed explanation of the Implicitly shared data with Copy-on-write pattern at @ 15-36 basic idea a global state is implicitly shared between modules when a module wants to update the global state, a copy is made after the modification is done the rest of the modules get notified to fetch the pointer to the new object implicit sharing makes it easy to compute the diff of 2 JSON trees this is because as soon as 2 subtrees point to the same shared subtree, you don’t need to traverse that part of the tree any further. Immutable Data timestamp: 29 min into the presentation the same idea of Implicitly shared data without Copy-on-write no setters this makes it easier to reason about the code &quot;Immutable is not const. const only controls access, immutable is a guarantee.&quot; they like to think about this as a step towards functional programming designing an API that is like a function that returns a new value based on the old value without any side effects preconditions The Edit Loop timestamp: 32 min into the presentation LunaEdit is the module that is responsible for editing asset creating a new object from an object that was passed in LunaEdit is also responsible for handling Perforce checkout handling the undo system sending updates to the LunaServer (updating the DB and files on disk) broadcast changes all of the modules in the system (change/update) all of the complexity of working with the data format is hidden in one place - the LunaEdit module Hazards Encountered timestamp: 41 min into the presentation copying wide (flat) hash tables is expensive prefer deep hash tables don’t use QJsonObject strings are stored as 8-bit and returned as 16-bit strings are not shared (issue with identical keys) with multiple versions of data in flight a module wants to change a piece of data that is in the process of being updated. this wasn’t an issue because the main thread is the only thread that can request a change These notes are just the main ideas of the talk. They don’t contain anecdotes and examples. If you want to learn more, I would advise watching the talk on the GDC Vault. The Toolsmiths I took these notes as part of our little “Book Club” for GDC Vault Videos The Toolsmiths #vault club Join us on Slack. Join us on Twitter. Links Tools for ‘Marvel’s Spider-Man’ Editing with Immutable Data Related talks GDC 2017 “Insomniac’s Web Tools: A Postmortem” GDC 2012 Developing Imperfect Software: How to Prepare for Development Pipeline Failure</summary></entry><entry><title type="html">Notes for “The Future of Scene Description on ‘God of War’” GDC2019</title><link href="/https://victorstepanov.github.io/gdc2019-the-future-of-scene-description-on-god-of-war" rel="alternate" type="text/html" title="Notes for &quot;The Future of Scene Description on 'God of War'&quot; GDC2019" /><published>2019-06-15T18:00:00-07:00</published><updated>2019-06-15T18:00:00-07:00</updated><id>/https://victorstepanov.github.io/gdc2019-the-future-of-scene-description-on-god-of-war</id><content type="html" xml:base="/https://victorstepanov.github.io/gdc2019-the-future-of-scene-description-on-god-of-war">&lt;p&gt;&lt;strong&gt;TLDW Summary&lt;/strong&gt;: This talk sheds light on the decisions that were made by the Santa Monica Studio’s engine team while tackling the problems of time and complexity in transforming source data into game-ready data.&lt;/p&gt;
 
 &lt;h2 id=&quot;keywords&quot;&gt;Keywords&lt;/h2&gt;
 &lt;div class=&quot;keyword-container&quot;&gt;
@@ -1121,6 +1377,4 @@ I'll make some assumptions:
 
 &lt;p&gt;Link to blog post on the Toolsmiths website can be found &lt;a href=&quot;http://thetoolsmiths.org/2018/03/16/toolsmiths-codex-launch&quot;&gt;here&lt;/a&gt;.&lt;/p&gt;
 
-&lt;p&gt;This codex can be found &lt;a href=&quot;http://thetoolsmiths.org/codex/&quot;&gt;here&lt;/a&gt;.&lt;/p&gt;</content><author><name>Victor Stepanov</name></author><summary type="html">It’s not always easy to find information regarding Game Tools Development on the Internet. There isn't just one place where you can go and find information regarding a particular topic. With the insight and knowledge of The Toolsmiths Community, with developers from around the world, we have made an excellent online resource for Game Tools Developers, and it is called The Toolsmiths Codex.</summary></entry><entry><title type="html">Toolsmiths GDC 2018 Guide</title><link href="/https://victorstepanov.github.io/toolsmiths-gdc-2018-guide" rel="alternate" type="text/html" title="Toolsmiths GDC 2018 Guide" /><published>2018-02-25T02:00:00-08:00</published><updated>2018-02-25T02:00:00-08:00</updated><id>/https://victorstepanov.github.io/toolsmiths-gdc-2018-guide</id><content type="html" xml:base="/https://victorstepanov.github.io/toolsmiths-gdc-2018-guide">&lt;p&gt;I went over many sessions for this year’s GDC and created a list talks that would peek the interest of a Game Tools Developer.&lt;/p&gt;
-
-&lt;p&gt;This guide can be found &lt;a href=&quot;http://thetoolsmiths.org/2018/02/26/gdc-2018-toolsmiths-guide/&quot;&gt;here&lt;/a&gt;.&lt;/p&gt;</content><author><name>Victor Stepanov</name></author><summary type="html">There are around 650+ sessions at this year's GDC, and it isn't easy to find sessions that you as a tools developer might enjoy. I have tried to find and collect most of the talks that a tools developer would be interested in attending or watching after the fact.</summary></entry></feed>
+&lt;p&gt;This codex can be found &lt;a href=&quot;http://thetoolsmiths.org/codex/&quot;&gt;here&lt;/a&gt;.&lt;/p&gt;</content><author><name>Victor Stepanov</name></author><summary type="html">It’s not always easy to find information regarding Game Tools Development on the Internet. There isn't just one place where you can go and find information regarding a particular topic. With the insight and knowledge of The Toolsmiths Community, with developers from around the world, we have made an excellent online resource for Game Tools Developers, and it is called The Toolsmiths Codex.</summary></entry></feed>
