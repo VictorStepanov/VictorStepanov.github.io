@@ -8,6 +8,355 @@
     
       
       <item>
+        <title>Notes for &quot;Procedural World Generation of 'Far Cry 5'&quot; GDC2018</title>
+        
+          <description>&lt;p&gt;&lt;strong&gt;TLDW Summary&lt;/strong&gt;: This talk is about how FC5 developers created a pipeline for generating a realistic game world using procedural recipes. The talk contains a high-level overview of the pipeline with two deep dives into the details of the tools.&lt;/p&gt;
+
+&lt;h2 id=&quot;key-terms&quot;&gt;Key Terms&lt;/h2&gt;
+&lt;div class=&quot;keyword-container&quot;&gt;
+&lt;ul class=&quot;keyword-container&quot;&gt;
+&lt;li&gt;procedural workflow&lt;/li&gt;
+&lt;li&gt;an ecosystem of procedural tools&lt;/li&gt;
+&lt;li&gt;Houdini Engine&lt;/li&gt;
+&lt;li&gt;biome recipes&lt;/li&gt;
+&lt;li&gt;determinism&lt;/li&gt;
+&lt;li&gt;terrain&lt;/li&gt;
+&lt;li&gt;2d mask&lt;/li&gt;
+&lt;/ul&gt;
+&lt;style&gt;
+    .keyword-container &gt; ul
+    {
+        font-size: 16px;
+        list-style-type: none;
+        padding:15px;
+    }
+    .keyword-container &gt; li
+    {
+        background-color:#f3f3f3;
+        display : inline;
+        padding:5px;
+        margin:2px;
+        margin-bottom: 100px;
+        border-radius: 5px;
+    }
+&lt;/style&gt;
+&lt;/div&gt;
+
+&lt;h2 id=&quot;presentation-time-stamps&quot;&gt;Presentation Time Stamps&lt;/h2&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;https://www.gdcvault.com/play/1025215/Procedural-World-Generation-of-Far&quot; target=&quot;_blank&quot;&gt;at minute 2&lt;/a&gt; Introduction&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://www.gdcvault.com/play/1025215/Procedural-World-Generation-of-Far&quot; target=&quot;_blank&quot;&gt;at minute 2&lt;/a&gt; The goals of the procedural pipeline&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://www.gdcvault.com/play/1025215/Procedural-World-Generation-of-Far&quot; target=&quot;_blank&quot;&gt;at minute 6&lt;/a&gt; The tools that were developed&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://www.gdcvault.com/play/1025215/Procedural-World-Generation-of-Far&quot; target=&quot;_blank&quot;&gt;at minute 15&lt;/a&gt; The system from the user’s point of view&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://www.gdcvault.com/play/1025215/Procedural-World-Generation-of-Far&quot; target=&quot;_blank&quot;&gt;at minute 12&lt;/a&gt; How the pipeline is working under the hood&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://www.gdcvault.com/play/1025215/Procedural-World-Generation-of-Far&quot; target=&quot;_blank&quot;&gt;at minute 16&lt;/a&gt; The Cliff generation tool&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://www.gdcvault.com/play/1025215/Procedural-World-Generation-of-Far&quot; target=&quot;_blank&quot;&gt;at minute 25&lt;/a&gt; The Biome generation tool&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://www.gdcvault.com/play/1025215/Procedural-World-Generation-of-Far&quot; target=&quot;_blank&quot;&gt;at minute 46&lt;/a&gt; What changed during development&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://www.gdcvault.com/play/1025215/Procedural-World-Generation-of-Far&quot; target=&quot;_blank&quot;&gt;at minute 49&lt;/a&gt; Conclusion&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://www.gdcvault.com/play/1025215/Procedural-World-Generation-of-Far&quot; target=&quot;_blank&quot;&gt;at minute 52&lt;/a&gt; Q&amp;amp;A&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;key-concepts&quot;&gt;Key Concepts&lt;/h2&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;strong&gt;biome&lt;/strong&gt; : an area of a game world with distinct terrain, vegetation, and animal life.
+&lt;img src=&quot;assets/images/posts/gdc2018-procedural-world-generation-of-far-cry-5/slide_71_sub_biome.png&quot; alt=&quot;slide 71 sub biome&quot; width=&quot;700&quot; style=&quot;margin: .1em auto&quot; /&gt;
+    &lt;p style=&quot;font-size:50%&quot;&gt;Carrier, Etienne. &lt;i&gt;Procedural World Generation of 'Far Cry 5'&lt;/i&gt;. Mar. 2018, GDC, &lt;a target=&quot;_blank&quot; href=&quot;https://www.gdcvault.com/play/1025557/Procedural-World-Generation-of-Far&quot;&gt; GDC Vault Slide Location&lt;/a&gt;. Presentation Slide #71.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;map&lt;/strong&gt; : parts of a game &lt;em&gt;world&lt;/em&gt; that are not loaded at the same time&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;section&lt;/strong&gt; : a part of a &lt;em&gt;map&lt;/em&gt; (256m X 256m)&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;sector&lt;/strong&gt; : a part of a &lt;em&gt;section&lt;/em&gt; (64m X 64m), the smallest part of a world that can be &lt;em&gt;baked&lt;/em&gt;
+&lt;img src=&quot;assets/images/posts/gdc2018-procedural-world-generation-of-far-cry-5/slide_34_sector.png&quot; alt=&quot;slide 34 sector&quot; width=&quot;700&quot; style=&quot;margin: .1em auto&quot; /&gt;
+    &lt;p style=&quot;font-size:50%&quot;&gt;Carrier, Etienne. &lt;i&gt;Procedural World Generation of 'Far Cry 5'&lt;/i&gt;. Mar. 2018, GDC, &lt;a target=&quot;_blank&quot; href=&quot;https://www.gdcvault.com/play/1025557/Procedural-World-Generation-of-Far&quot;&gt; GDC Vault Slide Location&lt;/a&gt;. Presentation Slide #34.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;recipe&lt;/strong&gt; : a set of rules that given a set of inputs determines what &lt;em&gt;entities&lt;/em&gt; need to be placed at a given location&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;points of interest&lt;/strong&gt; : a &lt;em&gt;map&lt;/em&gt; &lt;em&gt;location&lt;/em&gt; reserved for user input and editing&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h1 id=&quot;the-problemschallenges&quot;&gt;The Problems/Challenges&lt;/h1&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Filling up empty space is easy, but filling it up so it looks &lt;em&gt;natural&lt;/em&gt; is a big challenge.&lt;/li&gt;
+  &lt;li&gt;The workflow required to fill up large open spaces beautifully, quickly, while maintaining the &lt;em&gt;flexibility&lt;/em&gt; for applying user input.
+    &lt;ul&gt;
+      &lt;li&gt;The workflow had to allow fine-tuning of smaller &lt;em&gt;locations&lt;/em&gt; to deliver &lt;em&gt;tight gameplay experiences&lt;/em&gt;.&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;&lt;em&gt;Terraforming&lt;/em&gt; can’t be locked at the start of the project
+    &lt;ul&gt;
+      &lt;li&gt;The terrain of the game would be constantly changing, and the &lt;em&gt;biomes&lt;/em&gt; would need to be constantly updated. Updating the biomes by hand wasn’t an option.&lt;/li&gt;
+      &lt;li&gt;The asset placement needs to be consistent with the terrain topology.&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;The pipeline needs to run without human intervention to regenerate the content in a &lt;em&gt;build farm&lt;/em&gt; setting.&lt;/li&gt;
+  &lt;li&gt;The pipeline needs to generate small &lt;em&gt;sections&lt;/em&gt; of the world separately.&lt;/li&gt;
+  &lt;li&gt;The parts of the world should be generated &lt;em&gt;deterministically&lt;/em&gt; to enable stitching parts together.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h1 id=&quot;propositions&quot;&gt;Propositions&lt;/h1&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;The biomes procedural system should be able to simulate &lt;em&gt;natural phenomena&lt;/em&gt;.
+&lt;img src=&quot;assets/images/posts/gdc2018-procedural-world-generation-of-far-cry-5/slide_80_natural.png&quot; alt=&quot;slide 80 natural phenomena&quot; width=&quot;700&quot; style=&quot;margin: .1em auto&quot; /&gt;
+    &lt;p style=&quot;font-size:50%&quot;&gt;Carrier, Etienne. &lt;i&gt;Procedural World Generation of 'Far Cry 5'&lt;/i&gt;. Mar. 2018, GDC, &lt;a target=&quot;_blank&quot; href=&quot;https://www.gdcvault.com/play/1025557/Procedural-World-Generation-of-Far&quot;&gt; GDC Vault Slide Location&lt;/a&gt;. Presentation Slide #80.&lt;/p&gt;
+    &lt;p&gt;&lt;img src=&quot;assets/images/posts/gdc2018-procedural-world-generation-of-far-cry-5/slide_99_canopy.png&quot; alt=&quot;slide 99 natural phenomena&quot; width=&quot;700&quot; style=&quot;margin: .1em auto&quot; /&gt;&lt;/p&gt;
+    &lt;p style=&quot;font-size:50%&quot;&gt;Carrier, Etienne. &lt;i&gt;Procedural World Generation of 'Far Cry 5'&lt;/i&gt;. Mar. 2018, GDC, &lt;a target=&quot;_blank&quot; href=&quot;https://www.gdcvault.com/play/1025557/Procedural-World-Generation-of-Far&quot;&gt; GDC Vault Slide Location&lt;/a&gt;. Presentation Slide #99.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;Build &lt;em&gt;biome recipes&lt;/em&gt; that react to the physical features of the land to ensure &lt;em&gt;coherence&lt;/em&gt; throughout the world
+&lt;img src=&quot;assets/images/posts/gdc2018-procedural-world-generation-of-far-cry-5/slide_89_physical_features.png&quot; alt=&quot;slide 89 natural phenomena&quot; width=&quot;700&quot; style=&quot;margin: .1em auto&quot; /&gt;
+    &lt;p style=&quot;font-size:50%&quot;&gt;Carrier, Etienne. &lt;i&gt;Procedural World Generation of 'Far Cry 5'&lt;/i&gt;. Mar. 2018, GDC, &lt;a target=&quot;_blank&quot; href=&quot;https://www.gdcvault.com/play/1025557/Procedural-World-Generation-of-Far&quot;&gt; GDC Vault Slide Location&lt;/a&gt;. Presentation Slide #89.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;The iterative process is vital to the quality of the game&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;Use Houdini Engine to run the full map generation in a nightly build&lt;/li&gt;
+  &lt;li&gt;&lt;em&gt;same input&lt;/em&gt; = &lt;em&gt;same result&lt;/em&gt; (determinism matters)&lt;/li&gt;
+  &lt;li&gt;The ecosystem of tools needs to be user friendly
+    &lt;ul&gt;
+      &lt;li&gt;shelf tools&lt;/li&gt;
+      &lt;li&gt;be able to override procedural results&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;User must be able to bake data as they work&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h1 id=&quot;key-points&quot;&gt;Key Points&lt;/h1&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;They developed a sophisticated procedural pipeline for creating a realistic game world using Houdini and Houdini Engine&lt;/li&gt;
+  &lt;li&gt;Originally they just wanted to develop the &lt;em&gt;biome tool&lt;/em&gt;, but they ended up developing a suite of tools.&lt;/li&gt;
+  &lt;li&gt;The &lt;em&gt;heart&lt;/em&gt; of the pipeline is the &lt;em&gt;data exchange&lt;/em&gt; between the Houdini Engine and the Game Engine
+&lt;img src=&quot;assets/images/posts/gdc2018-procedural-world-generation-of-far-cry-5/slide_70_import_2d_data.png&quot; alt=&quot;slide 70 importing 2d data&quot; width=&quot;700&quot; style=&quot;margin: .1em auto&quot; /&gt;
+    &lt;p style=&quot;font-size:50%&quot;&gt;Carrier, Etienne. &lt;i&gt;Procedural World Generation of 'Far Cry 5'&lt;/i&gt;. Mar. 2018, GDC, &lt;a target=&quot;_blank&quot; href=&quot;https://www.gdcvault.com/play/1025557/Procedural-World-Generation-of-Far&quot;&gt; GDC Vault Slide Location&lt;/a&gt;. Presentation Slide #70.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;They developed an &lt;em&gt;ecosystem of procedural tools&lt;/em&gt;, where one tool would provide the input to the next tool
+&lt;img src=&quot;assets/images/posts/gdc2018-procedural-world-generation-of-far-cry-5/slide_38_the_pipeline.png&quot; alt=&quot;slide 38 high-level pipeline overview&quot; width=&quot;700&quot; style=&quot;margin: .1em auto&quot; /&gt;
+    &lt;p style=&quot;font-size:50%&quot;&gt;Carrier, Etienne. &lt;i&gt;Procedural World Generation of 'Far Cry 5'&lt;/i&gt;. Mar. 2018, GDC, &lt;a target=&quot;_blank&quot; href=&quot;https://www.gdcvault.com/play/1025557/Procedural-World-Generation-of-Far&quot;&gt; GDC Vault Slide Location&lt;/a&gt;. Presentation Slide #38.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;They regenerate the entire game world every night on special &lt;em&gt;build machines&lt;/em&gt;.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h1 id=&quot;user-iteration-workflow&quot;&gt;User Iteration Workflow&lt;/h1&gt;
+&lt;p&gt;&lt;em&gt;timestamp: 6 minutes into the presentation&lt;/em&gt;&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;Terraforming pass&lt;/li&gt;
+  &lt;li&gt;Define freshwater
+  &lt;img src=&quot;assets/images/posts/gdc2018-procedural-world-generation-of-far-cry-5/slide_22_fresh_water.png&quot; alt=&quot;slide 22 high-level pipeline overview&quot; width=&quot;700&quot; style=&quot;margin: .1em auto&quot; /&gt;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p style=&quot;font-size:50%&quot;&gt;Carrier, Etienne. &lt;i&gt;Procedural World Generation of 'Far Cry 5'&lt;/i&gt;. Mar. 2018, GDC, &lt;a target=&quot;_blank&quot; href=&quot;https://www.gdcvault.com/play/1025557/Procedural-World-Generation-of-Far&quot;&gt; GDC Vault Slide Location&lt;/a&gt;. Presentation Slide #22.&lt;/p&gt;
+&lt;ol&gt;
+  &lt;li&gt;Run the &lt;em&gt;cliff generation tool&lt;/em&gt; to create cliffs on steep terrain&lt;/li&gt;
+  &lt;li&gt;Use &lt;em&gt;Biome painter&lt;/em&gt; and run procedural generation to spawn the vegetation&lt;/li&gt;
+  &lt;li&gt;Setting up &lt;em&gt;Points of Interest&lt;/em&gt; (a.k.a. location)
+ &lt;img src=&quot;assets/images/posts/gdc2018-procedural-world-generation-of-far-cry-5/slide_26_point_of_interest.png&quot; alt=&quot;slide 26 high-level pipeline overview&quot; width=&quot;700&quot; style=&quot;margin: .1em auto&quot; /&gt;
+    &lt;p style=&quot;font-size:50%&quot;&gt;Carrier, Etienne. &lt;i&gt;Procedural World Generation of 'Far Cry 5'&lt;/i&gt;. Mar. 2018, GDC, &lt;a target=&quot;_blank&quot; href=&quot;https://www.gdcvault.com/play/1025557/Procedural-World-Generation-of-Far&quot;&gt; GDC Vault Slide Location&lt;/a&gt;. Presentation Slide #26.&lt;/p&gt;
+    &lt;ol&gt;
+      &lt;li&gt;Paint an area with the grass Biome&lt;/li&gt;
+      &lt;li&gt;Laying down a road spline&lt;/li&gt;
+      &lt;li&gt;Bake roads and refresh biome&lt;/li&gt;
+      &lt;li&gt;Add buildings, props&lt;/li&gt;
+      &lt;li&gt;Apply terrain texture&lt;/li&gt;
+      &lt;li&gt;Add more Trees with the forest sub-biome&lt;/li&gt;
+      &lt;li&gt;Bake/refresh biome&lt;/li&gt;
+      &lt;li&gt;Add fence spline&lt;/li&gt;
+      &lt;li&gt;Add power line spline
+        &lt;ol&gt;
+          &lt;li&gt;Snap power line connector to house&lt;/li&gt;
+          &lt;li&gt;Bake/refresh biome&lt;/li&gt;
+        &lt;/ol&gt;
+      &lt;/li&gt;
+    &lt;/ol&gt;
+  &lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;h2 id=&quot;user-non-destructive-workflow&quot;&gt;User Non-Destructive Workflow&lt;/h2&gt;
+&lt;p&gt;&lt;em&gt;timestamp: 11 minutes into the presentation&lt;/em&gt;&lt;/p&gt;
+&lt;ol&gt;
+  &lt;li&gt;Update level of terrain&lt;/li&gt;
+  &lt;li&gt;Bake/refresh biome
+ &lt;img src=&quot;assets/images/posts/gdc2018-procedural-world-generation-of-far-cry-5/slide_35_bake.png&quot; alt=&quot;slide 35 high-level pipeline overview&quot; width=&quot;700&quot; style=&quot;margin: .1em auto&quot; /&gt;
+    &lt;p style=&quot;font-size:50%&quot;&gt;Carrier, Etienne. &lt;i&gt;Procedural World Generation of 'Far Cry 5'&lt;/i&gt;. Mar. 2018, GDC, &lt;a target=&quot;_blank&quot; href=&quot;https://www.gdcvault.com/play/1025557/Procedural-World-Generation-of-Far&quot;&gt; GDC Vault Slide Location&lt;/a&gt;. Presentation Slide #35.&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;h1 id=&quot;how-the-pipeline-is-working-under-the-hood&quot;&gt;How the pipeline is working under the hood&lt;/h1&gt;
+&lt;p&gt;&lt;em&gt;timestamp: 12 minutes into the presentation&lt;/em&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;At the heart of the pipeline is the data exchange between the Houdini Engine and the Game Engine&lt;/li&gt;
+  &lt;li&gt;Inputs for the pipeline are sent from the Game Engine to Houdini via a Python Script
+    &lt;ul&gt;
+      &lt;li&gt;world information&lt;/li&gt;
+      &lt;li&gt;spline &amp;amp; shapes&lt;/li&gt;
+      &lt;li&gt;file paths&lt;/li&gt;
+      &lt;li&gt;Terrain Sectors (Main input that the generation is linked to)&lt;/li&gt;
+      &lt;li&gt;heightmaps&lt;/li&gt;
+      &lt;li&gt;Biome painter&lt;/li&gt;
+      &lt;li&gt;2D terrain masks&lt;/li&gt;
+      &lt;li&gt;Houdini Geometry (that might have been generated by another procedural tool)&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;Outputs of Houdini
+    &lt;ul&gt;
+      &lt;li&gt;List of outputs
+        &lt;ul&gt;
+          &lt;li&gt;Entity point could
+  &lt;img src=&quot;assets/images/posts/gdc2018-procedural-world-generation-of-far-cry-5/slide_37_entity_point_cloud.png&quot; alt=&quot;slide 37 high-level pipeline overview&quot; width=&quot;700&quot; style=&quot;margin: .1em auto&quot; /&gt;&lt;/li&gt;
+        &lt;/ul&gt;
+        &lt;p style=&quot;font-size:50%&quot;&gt;Carrier, Etienne. &lt;i&gt;Procedural World Generation of 'Far Cry 5'&lt;/i&gt;. Mar. 2018, GDC, &lt;a target=&quot;_blank&quot; href=&quot;https://www.gdcvault.com/play/1025557/Procedural-World-Generation-of-Far&quot;&gt; GDC Vault Slide Location&lt;/a&gt;. Presentation Slide #37.&lt;/p&gt;
+        &lt;ul&gt;
+          &lt;li&gt;Terrain texture layers&lt;/li&gt;
+          &lt;li&gt;Terrain heightmap layers&lt;/li&gt;
+          &lt;li&gt;2D terrain data&lt;/li&gt;
+          &lt;li&gt;Geometry&lt;/li&gt;
+          &lt;li&gt;Terrain logic zones&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+      &lt;li&gt;The data is saved onto a disk using temp “buffers”&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;The output of one tool influences the output of another tool
+    &lt;ul&gt;
+      &lt;li&gt;The tools use masks to communicate with each other&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h1 id=&quot;examples-of-tools&quot;&gt;Examples of tools&lt;/h1&gt;
+
+&lt;h2 id=&quot;cliffs-tool&quot;&gt;Cliffs tool&lt;/h2&gt;
+&lt;p&gt;&lt;em&gt;timestamp: 16 minutes into the presentation&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;assets/images/posts/gdc2018-procedural-world-generation-of-far-cry-5/slide_65_cliff_tool.png&quot; alt=&quot;slide 65 cliff tool&quot; width=&quot;700&quot; style=&quot;margin: .1em auto&quot; /&gt;&lt;/p&gt;
+&lt;p style=&quot;font-size:50%&quot;&gt;Carrier, Etienne. &lt;i&gt;Procedural World Generation of 'Far Cry 5'&lt;/i&gt;. Mar. 2018, GDC, &lt;a target=&quot;_blank&quot; href=&quot;https://www.gdcvault.com/play/1025557/Procedural-World-Generation-of-Far&quot;&gt; GDC Vault Slide Location&lt;/a&gt;. Presentation Slide #65.&lt;/p&gt;
+
+&lt;h2 id=&quot;biomes-tool&quot;&gt;Biomes Tool&lt;/h2&gt;
+&lt;p&gt;&lt;em&gt;timestamp: 25 minutes into the presentation&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;assets/images/posts/gdc2018-procedural-world-generation-of-far-cry-5/slide_69_biome_tool.png&quot; alt=&quot;slide 69 biome tool&quot; width=&quot;700&quot; style=&quot;margin: .1em auto&quot; /&gt;&lt;/p&gt;
+&lt;p style=&quot;font-size:50%&quot;&gt;Carrier, Etienne. &lt;i&gt;Procedural World Generation of 'Far Cry 5'&lt;/i&gt;. Mar. 2018, GDC, &lt;a target=&quot;_blank&quot; href=&quot;https://www.gdcvault.com/play/1025557/Procedural-World-Generation-of-Far&quot;&gt; GDC Vault Slide Location&lt;/a&gt;. Presentation Slide #69.&lt;/p&gt;
+
+&lt;h1 id=&quot;lessons-learned&quot;&gt;Lessons Learned&lt;/h1&gt;
+&lt;p&gt;&lt;em&gt;timestamp: 46 minutes into the presentation&lt;/em&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Making the steps of the &lt;em&gt;pipeline simple&lt;/em&gt;. Don’t require knowledge of when the underlying data is generated or how it affects the &lt;em&gt;downstream tasks&lt;/em&gt;.&lt;/li&gt;
+  &lt;li&gt;The &lt;em&gt;blending of biomes&lt;/em&gt; is a complicated feature for the users to use and the developers to debug.&lt;/li&gt;
+  &lt;li&gt;This level of customization and generation at this scale &lt;em&gt;can impact the gameplay&lt;/em&gt;.&lt;/li&gt;
+  &lt;li&gt;This is just a taste of what is possible to produce using this type of &lt;em&gt;procedural technology&lt;/em&gt;.&lt;/li&gt;
+  &lt;li&gt;You won’t get it right on your first try. Keep iterating and simplifying the pipeline. Be flexible - plans and requirements change.&lt;/li&gt;
+  &lt;li&gt;&lt;em&gt;Pay attention&lt;/em&gt; to how the users use the tools. If you think a feature will be useful it doesn’t mean that the users will use it.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;solved-problemschallenges&quot;&gt;Solved Problems/Challenges&lt;/h2&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;They shipped FC5&lt;/li&gt;
+  &lt;li&gt;They developed:
+    &lt;ul&gt;
+      &lt;li&gt;The freshwater tool&lt;/li&gt;
+      &lt;li&gt;Fences &amp;amp; power line tool&lt;/li&gt;
+      &lt;li&gt;Cliff generation tool&lt;/li&gt;
+      &lt;li&gt;Biome tool (to spawn vegetation)&lt;/li&gt;
+      &lt;li&gt;Fog tool&lt;/li&gt;
+      &lt;li&gt;World map tool (scatter trees on the world map)&lt;/li&gt;
+      &lt;li&gt;Power line tool
+        &lt;ul&gt;
+          &lt;li&gt;Auto snapping if a user made an error (with-in a given threshold distance)&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;The workflow allowed for quick &lt;strong&gt;iteration&lt;/strong&gt; and the ability to &lt;em&gt;“bake as you work”&lt;/em&gt;&lt;/li&gt;
+  &lt;li&gt;Use &lt;em&gt;biome recipes&lt;/em&gt; to define what vegetation will be placed in different parts of the map (near water, near cliffs, at high altitude)&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;practical-truths&quot;&gt;Practical Truths&lt;/h2&gt;
+
+&lt;p&gt;&lt;em&gt;General Tools Development Wisdom&lt;/em&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;strong&gt;“At first you won’t understand the problem.”&lt;/strong&gt; - You won’t get a system design “right” from the first attempt.&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;“You are not your users.”&lt;/strong&gt; - If you think something is a good feature, it doesn’t mean that the users will think so.&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;“Users don’t have to know the implementation details”.&lt;/strong&gt; - Users will not remember complicated cause-and-effect scenarios.&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;“Hidden Cascade Effect”&lt;/strong&gt; - In a fully automated system, a user might not see/ suspect that their changes are affecting another system that is out of view.&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;“The speed of iteration is vital to the quality of the game.”&lt;/strong&gt; - Don’t let the tools be the bottleneck of the iteration process.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;practical-principles&quot;&gt;Practical Principles&lt;/h2&gt;
+
+&lt;p&gt;&lt;em&gt;General Tools Development Principles&lt;/em&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Enable user input and &lt;em&gt;customization&lt;/em&gt; inside a procedural generation system.&lt;/li&gt;
+  &lt;li&gt;&lt;em&gt;Observe users&lt;/em&gt; to understand what is important for them.&lt;/li&gt;
+  &lt;li&gt;&lt;em&gt;K.I.S.S.&lt;/em&gt;: Keep It Stupid Simple&lt;/li&gt;
+  &lt;li&gt;Search for the balance between &lt;em&gt;control&lt;/em&gt; and &lt;em&gt;automation&lt;/em&gt;.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;questions-that-came-to-mind&quot;&gt;Questions that came to mind&lt;/h2&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;What are some websites/resources about good &lt;em&gt;Digital Content Creation tool&lt;/em&gt; architecture/patterns? Maybe even some checklists?
+    &lt;ul&gt;
+      &lt;li&gt;Like :
+        &lt;ul&gt;
+          &lt;li&gt;“Don’t forget to make a headless client for your tool”&lt;/li&gt;
+          &lt;li&gt;“Don’t forget to add python scripting”&lt;/li&gt;
+          &lt;li&gt;“Don’t forget to think about determinism when saving&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;Is there any alternative to Houdini? (not counting &lt;strong&gt;rolling your own&lt;/strong&gt;)&lt;/li&gt;
+  &lt;li&gt;How do they edit the road network that spans multiple &lt;strong&gt;maps&lt;/strong&gt; (parts of the &lt;strong&gt;world&lt;/strong&gt;)?&lt;/li&gt;
+  &lt;li&gt;How long into the future when level art for &lt;strong&gt;second class&lt;/strong&gt; points of interest will be fully defined by recipes? When will it be mainstream?&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;div style=&quot;background-color:#FFFF94;border-left: 18px solid #ffff48;padding-left: 50px;&quot;&gt;
+&lt;p&gt;&lt;/p&gt;
+&lt;p&gt;These notes are just the main ideas of the talk. They don’t contain anecdotes and examples. If you want to learn more, I would advise watching the talk on the &lt;a target=&quot;_blank&quot; href=&quot;https://www.gdcvault.com/play/1025215/Procedural-World-Generation-of-Far&quot;&gt;GDC Vault&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;&lt;/p&gt;
+&lt;/div&gt;
+
+&lt;h2 id=&quot;the-toolsmiths&quot;&gt;The Toolsmiths&lt;/h2&gt;
+&lt;p&gt;&lt;img src=&quot;http://thetoolsmiths.org/assets/thetoolsmiths_cover_1000x2881.png&quot; alt=&quot;The Toolsmiths logo&quot; width=&quot;700&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;I took these notes as part of our little “Book Club” for GDC Vault Videos &lt;a href=&quot;http://thetoolsmiths.org/vault_club&quot; target=&quot;_blank&quot;&gt;The Toolsmiths #vault club&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;Join us on &lt;a href=&quot;http://thetoolsmiths.org/join_slack_team&quot; target=&quot;_blank&quot;&gt;Slack&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;Join us on &lt;a href=&quot;https://twitter.com/thetoolsmiths&quot; target=&quot;_blank&quot;&gt;Twitter&lt;/a&gt;.&lt;/p&gt;
+
+&lt;h2 id=&quot;links&quot;&gt;Links&lt;/h2&gt;
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;https://www.gdcvault.com/play/1025557/Procedural-World-Generation-of-Far&quot; target=&quot;_blank&quot;&gt;Slides: 	Procedural World Generation of ‘Far Cry 5’&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;related-talksvideos&quot;&gt;Related Talks\Videos&lt;/h2&gt;
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;https://www.gdcvault.com/play/1024029/-Ghost-Recon-Wildlands-Terrain&quot; target=&quot;_blank&quot;&gt;GDC 2017 ‘Ghost Recon Wildlands’: Terrain Tools and Technology&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://www.gdcvault.com/browse/gdc-18/play/1025261/Terrain-Rendering-in-Far-Cry&quot; target=&quot;_blank&quot;&gt;GDC 2018 Terrain Rendering in ‘Far Cry 5’&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://www.gdcvault.com/browse/gdc-18/play/1025264/The-Asset-Build-System-of&quot; target=&quot;_blank&quot;&gt;GDC 2018 The Asset Build System of ‘Far Cry 5’&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://www.youtube.com/watch?v=OklvMqMCkc4&amp;amp;feature=youtu.be&quot; target=&quot;_blank&quot;&gt;GAT #69: River - 2k19 Edition&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;credits&quot;&gt;Credits&lt;/h2&gt;
+
+&lt;p&gt;Post cover image by &lt;a href=&quot;https://pixabay.com/users/Pexels-2286921/?utm_source=link-attribution&amp;amp;utm_medium=referral&amp;amp;utm_campaign=image&amp;amp;utm_content=1852955&quot;&gt;Pexels&lt;/a&gt; from &lt;a href=&quot;https://pixabay.com/?utm_source=link-attribution&amp;amp;utm_medium=referral&amp;amp;utm_campaign=image&amp;amp;utm_content=1852955&quot;&gt;Pixabay&lt;/a&gt;&lt;/p&gt;
+</description>
+        
+        <pubDate>Sun, 02 Aug 2020 01:00:00 +0000</pubDate>
+        <link>
+        /gdc2018-procedural-world-generation-of-far-cry-5</link>
+        <guid isPermaLink="true">/gdc2018-procedural-world-generation-of-far-cry-5</guid>
+      </item>
+      
+    
+      
+      <item>
         <title>Notes for &quot;Tools for 'Marvel's Spider-Man' Editing with Immutable Data&quot; GDC2019</title>
         
           <description>&lt;p&gt;&lt;strong&gt;TLDW Summary&lt;/strong&gt;: This talk is a tour of the technologies that Insomniac Games developed to transition from their web based tools to their new desktop tools. Highlighting what challenges they encountered when replacing the tool chain in mid production.&lt;/p&gt;
@@ -76,16 +425,16 @@
   &lt;li&gt;The refactoring had to be done while the tools were still in use&lt;/li&gt;
   &lt;li&gt;Sunset Overdrive pushed the JS world editor to its limits and ‘Marvel’s Spider-Man’ Manhattan would be even bigger
     &lt;ul&gt;
-      &lt;li&gt;&lt;img src=&quot;assets/images/posts/tools-for-marvels-spider-man-editing-with-immutable-data/map-scale.jpg&quot; alt=&quot;slide: takeaway&quot; width=&quot;700&quot; /&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;img src=&quot;assets/images/posts/tools-for-marvels-spider-man-editing-with-immutable-data/map-scale.jpg&quot; alt=&quot;slide: Sunset Overdrive vs'Marvel's Spider-Man' Manhattan size&quot; width=&quot;700&quot; /&gt;&lt;/li&gt;
     &lt;/ul&gt;
   &lt;/li&gt;
   &lt;li&gt;the team needed to port 12 editors from JS
     &lt;ul&gt;
-      &lt;li&gt;&lt;img src=&quot;assets/images/posts/tools-for-marvels-spider-man-editing-with-immutable-data/world-editor.jpg&quot; alt=&quot;slide: takeaway&quot; width=&quot;700&quot; /&gt;&lt;/li&gt;
-      &lt;li&gt;&lt;img src=&quot;assets/images/posts/tools-for-marvels-spider-man-editing-with-immutable-data/animation-editor.jpg&quot; alt=&quot;slide: takeaway&quot; width=&quot;700&quot; /&gt;&lt;/li&gt;
-      &lt;li&gt;&lt;img src=&quot;assets/images/posts/tools-for-marvels-spider-man-editing-with-immutable-data/cinematics-editor.jpg&quot; alt=&quot;slide: takeaway&quot; width=&quot;700&quot; /&gt;&lt;/li&gt;
-      &lt;li&gt;&lt;img src=&quot;assets/images/posts/tools-for-marvels-spider-man-editing-with-immutable-data/vfx-editor.jpg&quot; alt=&quot;slide: takeaway&quot; width=&quot;700&quot; /&gt;&lt;/li&gt;
-      &lt;li&gt;&lt;img src=&quot;assets/images/posts/tools-for-marvels-spider-man-editing-with-immutable-data/12-editors.jpg&quot; alt=&quot;slide: takeaway&quot; width=&quot;700&quot; /&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;img src=&quot;assets/images/posts/tools-for-marvels-spider-man-editing-with-immutable-data/world-editor.jpg&quot; alt=&quot;slide: world editor&quot; width=&quot;700&quot; /&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;img src=&quot;assets/images/posts/tools-for-marvels-spider-man-editing-with-immutable-data/animation-editor.jpg&quot; alt=&quot;slide: animation editor&quot; width=&quot;700&quot; /&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;img src=&quot;assets/images/posts/tools-for-marvels-spider-man-editing-with-immutable-data/cinematics-editor.jpg&quot; alt=&quot;slide: cinematics editor&quot; width=&quot;700&quot; /&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;img src=&quot;assets/images/posts/tools-for-marvels-spider-man-editing-with-immutable-data/vfx-editor.jpg&quot; alt=&quot;slide: vfx editor&quot; width=&quot;700&quot; /&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;img src=&quot;assets/images/posts/tools-for-marvels-spider-man-editing-with-immutable-data/12-editors.jpg&quot; alt=&quot;slide: 12 editors&quot; width=&quot;700&quot; /&gt;&lt;/li&gt;
     &lt;/ul&gt;
   &lt;/li&gt;
   &lt;li&gt;the goals of the refactoring were
@@ -153,11 +502,11 @@
   &lt;li&gt;basic idea
     &lt;ul&gt;
       &lt;li&gt;a global state is implicitly shared between modules&lt;/li&gt;
-      &lt;li&gt;&lt;img src=&quot;assets/images/posts/tools-for-marvels-spider-man-editing-with-immutable-data/modify_worldNode_0.jpg&quot; alt=&quot;slide: takeaway&quot; width=&quot;700&quot; /&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;img src=&quot;assets/images/posts/tools-for-marvels-spider-man-editing-with-immutable-data/modify_worldNode_0.jpg&quot; alt=&quot;slide: modify worldNode step one&quot; width=&quot;700&quot; /&gt;&lt;/li&gt;
       &lt;li&gt;when a module wants to update the global state, a copy is made&lt;/li&gt;
-      &lt;li&gt;&lt;img src=&quot;assets/images/posts/tools-for-marvels-spider-man-editing-with-immutable-data/modify_worldNode.jpg&quot; alt=&quot;slide: takeaway&quot; width=&quot;700&quot; /&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;img src=&quot;assets/images/posts/tools-for-marvels-spider-man-editing-with-immutable-data/modify_worldNode.jpg&quot; alt=&quot;slide: modify worldNode step two&quot; width=&quot;700&quot; /&gt;&lt;/li&gt;
       &lt;li&gt;after the modification is done the rest of the modules get notified to fetch the pointer to the new object&lt;/li&gt;
-      &lt;li&gt;&lt;img src=&quot;assets/images/posts/tools-for-marvels-spider-man-editing-with-immutable-data/modify_worldNode_2.jpg&quot; alt=&quot;slide: takeaway&quot; width=&quot;700&quot; /&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;img src=&quot;assets/images/posts/tools-for-marvels-spider-man-editing-with-immutable-data/modify_worldNode_2.jpg&quot; alt=&quot;slide: modify worldNode step three&quot; width=&quot;700&quot; /&gt;&lt;/li&gt;
     &lt;/ul&gt;
   &lt;/li&gt;
   &lt;li&gt;implicit sharing makes it easy to compute the diff of 2 JSON trees
@@ -173,7 +522,7 @@
   &lt;li&gt;the same idea of Implicitly shared data &lt;strong&gt;without&lt;/strong&gt; Copy-on-write
     &lt;ul&gt;
       &lt;li&gt;no setters&lt;/li&gt;
-      &lt;li&gt;&lt;img src=&quot;assets/images/posts/tools-for-marvels-spider-man-editing-with-immutable-data/Immutable_Data.jpg&quot; alt=&quot;slide: takeaway&quot; width=&quot;700&quot; /&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;img src=&quot;assets/images/posts/tools-for-marvels-spider-man-editing-with-immutable-data/Immutable_Data.jpg&quot; alt=&quot;slide: Immutable Data class&quot; width=&quot;700&quot; /&gt;&lt;/li&gt;
     &lt;/ul&gt;
   &lt;/li&gt;
   &lt;li&gt;this makes it easier to reason about the code&lt;/li&gt;
@@ -216,7 +565,7 @@
     &lt;/ul&gt;
   &lt;/li&gt;
   &lt;li&gt;all of the complexity of working with the data format is hidden in one place -  the LunaEdit module&lt;/li&gt;
-  &lt;li&gt;&lt;img src=&quot;assets/images/posts/tools-for-marvels-spider-man-editing-with-immutable-data/edit_loop.jpg&quot; alt=&quot;slide: takeaway&quot; width=&quot;700&quot; /&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;img src=&quot;assets/images/posts/tools-for-marvels-spider-man-editing-with-immutable-data/edit_loop.jpg&quot; alt=&quot;slide: The Edit Loop&quot; width=&quot;700&quot; /&gt;&lt;/li&gt;
 &lt;/ul&gt;
 
 &lt;h1 id=&quot;hazards-encountered&quot;&gt;Hazards Encountered&lt;/h1&gt;

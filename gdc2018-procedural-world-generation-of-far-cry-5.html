@@ -1,0 +1,914 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+    <!-- Document Settings -->
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+    <!-- Base Meta -->
+    <!-- dynamically fixing the title for tag/author pages -->
+
+
+
+    <title>Notes for "Procedural World Generation of 'Far Cry 5'" GDC2018</title>
+    <meta name="HandheldFriendly" content="True" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Styles'n'Scripts -->
+    <link rel="stylesheet" type="text/css" href="https://victorstepanov.github.io/assets/built/screen.css" />
+    <link rel="stylesheet" type="text/css" href="https://victorstepanov.github.io/assets/built/screen.edited.css" />
+    <!-- highlight.js -->
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/default.min.css">
+    <style>.hljs { background: none; }</style>
+
+    <!-- This tag outputs SEO meta+structured data and other important settings -->
+    <meta name="description" content="Passionate about making game developers more productive" />
+    <link rel="shortcut icon" href="https://victorstepanov.github.io/assets/images/favicon.png" type="image/png" />
+    <link rel="canonical" href="https://victorstepanov.github.io/gdc2018-procedural-world-generation-of-far-cry-5" />
+    <meta name="referrer" content="no-referrer-when-downgrade" />
+
+     <!--title below is coming from _includes/dynamic_title-->
+    <meta property="og:site_name" content="Victor Stepanov" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Notes for "Procedural World Generation of 'Far Cry 5'" GDC2018" />
+    <meta property="og:description" content="TLDW Summary: This talk is about how FC5 developers created a pipeline for generating a realistic game world using procedural recipes. The talk contains a high-level overview of the pipeline with two deep dives into the details of the tools. Key Terms procedural workflow an ecosystem of procedural tools Houdini" />
+    <meta property="og:url" content="https://victorstepanov.github.io/gdc2018-procedural-world-generation-of-far-cry-5" />
+    <meta property="og:image" content="https://victorstepanov.github.io/assets/images/posts/gdc2018-procedural-world-generation-of-far-cry-5/clouds-1852955_1280.jpg" />
+    <meta property="article:publisher" content="https://www.facebook.com/" />
+    <meta property="article:author" content="https://www.facebook.com/" />
+    <meta property="article:published_time" content="2020-08-01T18:00:00-07:00" />
+    <meta property="article:modified_time" content="2020-08-01T18:00:00-07:00" />
+    <meta property="article:tag" content="Gdc" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Notes for "Procedural World Generation of 'Far Cry 5'" GDC2018" />
+    <meta name="twitter:description" content="TLDW Summary: This talk is about how FC5 developers created a pipeline for generating a realistic game world using procedural recipes. The talk contains a high-level overview of the pipeline with two deep dives into the details of the tools. Key Terms procedural workflow an ecosystem of procedural tools Houdini" />
+    <meta name="twitter:url" content="https://victorstepanov.github.io/" />
+    <meta name="twitter:image" content="https://victorstepanov.github.io/assets/images/posts/gdc2018-procedural-world-generation-of-far-cry-5/clouds-1852955_1280.jpg" />
+    <meta name="twitter:label1" content="Written by" />
+    <meta name="twitter:data1" content="Victor Stepanov" />
+    <meta name="twitter:label2" content="Filed under" />
+    <meta name="twitter:data2" content="Gdc" />
+    <meta name="twitter:site" content="@VictorStepanov" />
+    <meta name="twitter:creator" content="@VictorStepanov" />
+    <meta property="og:image:width" content="1400" />
+    <meta property="og:image:height" content="933" />
+
+    <script type="application/ld+json">
+{
+    "@context": "https://schema.org",
+    "@type": "Website",
+    "publisher": {
+        "@type": "Organization",
+        "name": "Victor Stepanov",
+        "logo": "https://victorstepanov.github.io/assets/images/blog-icon.png"
+    },
+    "url": "https://victorstepanov.github.io/gdc2018-procedural-world-generation-of-far-cry-5",
+    "image": {
+        "@type": "ImageObject",
+        "url": "https://victorstepanov.github.io/assets/images/posts/gdc2018-procedural-world-generation-of-far-cry-5/clouds-1852955_1280.jpg",
+        "width": 2000,
+        "height": 666
+    },
+    "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": "https://victorstepanov.github.io/gdc2018-procedural-world-generation-of-far-cry-5"
+    },
+    "description": "TLDW Summary: This talk is about how FC5 developers created a pipeline for generating a realistic game world using procedural recipes. The talk contains a high-level overview of the pipeline with two deep dives into the details of the tools. Key Terms procedural workflow an ecosystem of procedural tools Houdini"
+}
+    </script>
+
+    <!-- <script type="text/javascript" src="https://demo.ghost.io/public/ghost-sdk.min.js?v=724281a32e"></script>
+    <script type="text/javascript">
+    ghost.init({
+    	clientId: "ghost-frontend",
+    	clientSecret: "f84a07a72b17"
+    });
+    </script> -->
+
+    <meta name="generator" content="Jekyll 3.6.2" />
+    <link rel="alternate" type="application/rss+xml" title="Notes for "Procedural World Generation of 'Far Cry 5'" GDC2018" href="https://victorstepanov.github.io/feed.xml" />
+
+
+</head>
+<body class="post-template">
+
+    <div class="site-wrapper">
+        <!-- All the main content gets inserted here, index.hbs, post.hbs, etc -->
+        <!-- default -->
+
+<!-- The tag above means: insert everything in this file
+into the {body} of the default.hbs template -->
+
+<header class="site-header outer">
+    <div class="inner">
+        <nav class="site-nav">
+    <div class="site-nav-left">
+        
+            
+                <a class="site-nav-logo" href="https://victorstepanov.github.io/"><img src="https://victorstepanov.github.io/assets/images/blog-icon.png" alt="Victor Stepanov" /></a>
+            
+        
+        
+            <ul class="nav" role="menu">
+    <li class="nav-home" role="menuitem"><a href="https://victorstepanov.github.io/">Home</a></li>
+    <li class="nav-projects" role="menuitem"><a href="https://victorstepanov.github.io/projects/">Projects</a></li>
+    <li class="nav-about" role="menuitem"><a href="https://victorstepanov.github.io/about/">About</a></li>
+</ul>
+
+        
+    </div>
+    <div class="site-nav-right">
+        <div class="social-links">
+            
+            
+                <a class="social-link social-link-tw" href="https://twitter.com/VictorStepanov" target="_blank" rel="noopener"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32"><path d="M30.063 7.313c-.813 1.125-1.75 2.125-2.875 2.938v.75c0 1.563-.188 3.125-.688 4.625a15.088 15.088 0 0 1-2.063 4.438c-.875 1.438-2 2.688-3.25 3.813a15.015 15.015 0 0 1-4.625 2.563c-1.813.688-3.75 1-5.75 1-3.25 0-6.188-.875-8.875-2.625.438.063.875.125 1.375.125 2.688 0 5.063-.875 7.188-2.5-1.25 0-2.375-.375-3.375-1.125s-1.688-1.688-2.063-2.875c.438.063.813.125 1.125.125.5 0 1-.063 1.5-.25-1.313-.25-2.438-.938-3.313-1.938a5.673 5.673 0 0 1-1.313-3.688v-.063c.813.438 1.688.688 2.625.688a5.228 5.228 0 0 1-1.875-2c-.5-.875-.688-1.813-.688-2.75 0-1.063.25-2.063.75-2.938 1.438 1.75 3.188 3.188 5.25 4.25s4.313 1.688 6.688 1.813a5.579 5.579 0 0 1 1.5-5.438c1.125-1.125 2.5-1.688 4.125-1.688s3.063.625 4.188 1.813a11.48 11.48 0 0 0 3.688-1.375c-.438 1.375-1.313 2.438-2.563 3.188 1.125-.125 2.188-.438 3.313-.875z"/></svg>
+</a>
+                <a class="social-link social-link-tw" href="https://www.linkedin.com/in/victor-stepanov-673aa18b/" target="_blank" rel="noopener"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M0 0v24h24v-24h-24zm8 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.397-2.586 7-2.777 7 2.476v6.759z"/></svg></a>
+            
+        </div>
+        
+    </div>
+</nav>
+
+    </div>
+</header>
+
+<!-- Everything inside the #post tags pulls data from the post -->
+<!-- #post -->
+
+<main id="site-main" class="site-main outer" role="main">
+    <div class="inner">
+
+        <article class="post-full post ">
+
+            <header class="post-full-header">
+                <section class="post-full-meta">
+                    <time class="post-full-meta-date" datetime=" 2 August 2020"> 2 August 2020</time>
+                    
+                        <span class="date-divider">/</span>
+                        
+                            
+                               <a href='https://victorstepanov.github.io/tag/gdc/'>GDC</a>,
+                            
+                        
+                            
+                               <a href='https://victorstepanov.github.io/tag/procedural/'>PROCEDURAL</a>,
+                            
+                        
+                            
+                               <a href='https://victorstepanov.github.io/tag/visual-arts/'>VISUAL-ARTS</a>,
+                            
+                        
+                            
+                               <a href='https://victorstepanov.github.io/tag/level-art/'>LEVEL-ART</a>,
+                            
+                        
+                            
+                               <a href='https://victorstepanov.github.io/tag/level-design/'>LEVEL-DESIGN</a>
+                            
+                        
+                    
+                </section>
+                <h1 class="post-full-title">Notes for "Procedural World Generation of 'Far Cry 5'" GDC2018</h1>
+                <p></p>
+                <section class="author-card-content"><p>Reading time: 6 minutes</p></section>
+            </header>
+
+            
+            <figure class="post-full-image" style="background-image: url(https://victorstepanov.github.io/assets/images/posts/gdc2018-procedural-world-generation-of-far-cry-5/clouds-1852955_1280.jpg)">
+            </figure>
+            
+
+            <section class="post-full-content">
+                <div class="kg-card-markdown">
+                    <p><strong>TLDW Summary</strong>: This talk is about how FC5 developers created a pipeline for generating a realistic game world using procedural recipes. The talk contains a high-level overview of the pipeline with two deep dives into the details of the tools.</p>
+
+<h2 id="key-terms">Key Terms</h2>
+<div class="keyword-container">
+<ul class="keyword-container">
+<li>procedural workflow</li>
+<li>an ecosystem of procedural tools</li>
+<li>Houdini Engine</li>
+<li>biome recipes</li>
+<li>determinism</li>
+<li>terrain</li>
+<li>2d mask</li>
+</ul>
+<style>
+    .keyword-container > ul
+    {
+        font-size: 16px;
+        list-style-type: none;
+        padding:15px;
+    }
+    .keyword-container > li
+    {
+        background-color:#f3f3f3;
+        display : inline;
+        padding:5px;
+        margin:2px;
+        margin-bottom: 100px;
+        border-radius: 5px;
+    }
+</style>
+</div>
+
+<h2 id="presentation-time-stamps">Presentation Time Stamps</h2>
+
+<ul>
+  <li><a href="https://www.gdcvault.com/play/1025215/Procedural-World-Generation-of-Far" target="_blank">at minute 2</a> Introduction</li>
+  <li><a href="https://www.gdcvault.com/play/1025215/Procedural-World-Generation-of-Far" target="_blank">at minute 2</a> The goals of the procedural pipeline</li>
+  <li><a href="https://www.gdcvault.com/play/1025215/Procedural-World-Generation-of-Far" target="_blank">at minute 6</a> The tools that were developed</li>
+  <li><a href="https://www.gdcvault.com/play/1025215/Procedural-World-Generation-of-Far" target="_blank">at minute 15</a> The system from the user’s point of view</li>
+  <li><a href="https://www.gdcvault.com/play/1025215/Procedural-World-Generation-of-Far" target="_blank">at minute 12</a> How the pipeline is working under the hood</li>
+  <li><a href="https://www.gdcvault.com/play/1025215/Procedural-World-Generation-of-Far" target="_blank">at minute 16</a> The Cliff generation tool</li>
+  <li><a href="https://www.gdcvault.com/play/1025215/Procedural-World-Generation-of-Far" target="_blank">at minute 25</a> The Biome generation tool</li>
+  <li><a href="https://www.gdcvault.com/play/1025215/Procedural-World-Generation-of-Far" target="_blank">at minute 46</a> What changed during development</li>
+  <li><a href="https://www.gdcvault.com/play/1025215/Procedural-World-Generation-of-Far" target="_blank">at minute 49</a> Conclusion</li>
+  <li><a href="https://www.gdcvault.com/play/1025215/Procedural-World-Generation-of-Far" target="_blank">at minute 52</a> Q&amp;A</li>
+</ul>
+
+<h2 id="key-concepts">Key Concepts</h2>
+
+<ul>
+  <li><strong>biome</strong> : an area of a game world with distinct terrain, vegetation, and animal life.
+<img src="assets/images/posts/gdc2018-procedural-world-generation-of-far-cry-5/slide_71_sub_biome.png" alt="slide 71 sub biome" width="700" style="margin: .1em auto" />
+    <p style="font-size:50%">Carrier, Etienne. <i>Procedural World Generation of 'Far Cry 5'</i>. Mar. 2018, GDC, <a target="_blank" href="https://www.gdcvault.com/play/1025557/Procedural-World-Generation-of-Far"> GDC Vault Slide Location</a>. Presentation Slide #71.</p>
+  </li>
+  <li><strong>map</strong> : parts of a game <em>world</em> that are not loaded at the same time</li>
+  <li><strong>section</strong> : a part of a <em>map</em> (256m X 256m)</li>
+  <li><strong>sector</strong> : a part of a <em>section</em> (64m X 64m), the smallest part of a world that can be <em>baked</em>
+<img src="assets/images/posts/gdc2018-procedural-world-generation-of-far-cry-5/slide_34_sector.png" alt="slide 34 sector" width="700" style="margin: .1em auto" />
+    <p style="font-size:50%">Carrier, Etienne. <i>Procedural World Generation of 'Far Cry 5'</i>. Mar. 2018, GDC, <a target="_blank" href="https://www.gdcvault.com/play/1025557/Procedural-World-Generation-of-Far"> GDC Vault Slide Location</a>. Presentation Slide #34.</p>
+  </li>
+  <li><strong>recipe</strong> : a set of rules that given a set of inputs determines what <em>entities</em> need to be placed at a given location</li>
+  <li><strong>points of interest</strong> : a <em>map</em> <em>location</em> reserved for user input and editing</li>
+</ul>
+
+<h1 id="the-problemschallenges">The Problems/Challenges</h1>
+
+<ul>
+  <li>Filling up empty space is easy, but filling it up so it looks <em>natural</em> is a big challenge.</li>
+  <li>The workflow required to fill up large open spaces beautifully, quickly, while maintaining the <em>flexibility</em> for applying user input.
+    <ul>
+      <li>The workflow had to allow fine-tuning of smaller <em>locations</em> to deliver <em>tight gameplay experiences</em>.</li>
+    </ul>
+  </li>
+  <li><em>Terraforming</em> can’t be locked at the start of the project
+    <ul>
+      <li>The terrain of the game would be constantly changing, and the <em>biomes</em> would need to be constantly updated. Updating the biomes by hand wasn’t an option.</li>
+      <li>The asset placement needs to be consistent with the terrain topology.</li>
+    </ul>
+  </li>
+  <li>The pipeline needs to run without human intervention to regenerate the content in a <em>build farm</em> setting.</li>
+  <li>The pipeline needs to generate small <em>sections</em> of the world separately.</li>
+  <li>The parts of the world should be generated <em>deterministically</em> to enable stitching parts together.</li>
+</ul>
+
+<h1 id="propositions">Propositions</h1>
+
+<ul>
+  <li>The biomes procedural system should be able to simulate <em>natural phenomena</em>.
+<img src="assets/images/posts/gdc2018-procedural-world-generation-of-far-cry-5/slide_80_natural.png" alt="slide 80 natural phenomena" width="700" style="margin: .1em auto" />
+    <p style="font-size:50%">Carrier, Etienne. <i>Procedural World Generation of 'Far Cry 5'</i>. Mar. 2018, GDC, <a target="_blank" href="https://www.gdcvault.com/play/1025557/Procedural-World-Generation-of-Far"> GDC Vault Slide Location</a>. Presentation Slide #80.</p>
+    <p><img src="assets/images/posts/gdc2018-procedural-world-generation-of-far-cry-5/slide_99_canopy.png" alt="slide 99 natural phenomena" width="700" style="margin: .1em auto" /></p>
+    <p style="font-size:50%">Carrier, Etienne. <i>Procedural World Generation of 'Far Cry 5'</i>. Mar. 2018, GDC, <a target="_blank" href="https://www.gdcvault.com/play/1025557/Procedural-World-Generation-of-Far"> GDC Vault Slide Location</a>. Presentation Slide #99.</p>
+  </li>
+  <li>Build <em>biome recipes</em> that react to the physical features of the land to ensure <em>coherence</em> throughout the world
+<img src="assets/images/posts/gdc2018-procedural-world-generation-of-far-cry-5/slide_89_physical_features.png" alt="slide 89 natural phenomena" width="700" style="margin: .1em auto" />
+    <p style="font-size:50%">Carrier, Etienne. <i>Procedural World Generation of 'Far Cry 5'</i>. Mar. 2018, GDC, <a target="_blank" href="https://www.gdcvault.com/play/1025557/Procedural-World-Generation-of-Far"> GDC Vault Slide Location</a>. Presentation Slide #89.</p>
+  </li>
+  <li>
+    <p>The iterative process is vital to the quality of the game</p>
+  </li>
+  <li>Use Houdini Engine to run the full map generation in a nightly build</li>
+  <li><em>same input</em> = <em>same result</em> (determinism matters)</li>
+  <li>The ecosystem of tools needs to be user friendly
+    <ul>
+      <li>shelf tools</li>
+      <li>be able to override procedural results</li>
+    </ul>
+  </li>
+  <li>User must be able to bake data as they work</li>
+</ul>
+
+<h1 id="key-points">Key Points</h1>
+
+<ul>
+  <li>They developed a sophisticated procedural pipeline for creating a realistic game world using Houdini and Houdini Engine</li>
+  <li>Originally they just wanted to develop the <em>biome tool</em>, but they ended up developing a suite of tools.</li>
+  <li>The <em>heart</em> of the pipeline is the <em>data exchange</em> between the Houdini Engine and the Game Engine
+<img src="assets/images/posts/gdc2018-procedural-world-generation-of-far-cry-5/slide_70_import_2d_data.png" alt="slide 70 importing 2d data" width="700" style="margin: .1em auto" />
+    <p style="font-size:50%">Carrier, Etienne. <i>Procedural World Generation of 'Far Cry 5'</i>. Mar. 2018, GDC, <a target="_blank" href="https://www.gdcvault.com/play/1025557/Procedural-World-Generation-of-Far"> GDC Vault Slide Location</a>. Presentation Slide #70.</p>
+  </li>
+  <li>They developed an <em>ecosystem of procedural tools</em>, where one tool would provide the input to the next tool
+<img src="assets/images/posts/gdc2018-procedural-world-generation-of-far-cry-5/slide_38_the_pipeline.png" alt="slide 38 high-level pipeline overview" width="700" style="margin: .1em auto" />
+    <p style="font-size:50%">Carrier, Etienne. <i>Procedural World Generation of 'Far Cry 5'</i>. Mar. 2018, GDC, <a target="_blank" href="https://www.gdcvault.com/play/1025557/Procedural-World-Generation-of-Far"> GDC Vault Slide Location</a>. Presentation Slide #38.</p>
+  </li>
+  <li>They regenerate the entire game world every night on special <em>build machines</em>.</li>
+</ul>
+
+<h1 id="user-iteration-workflow">User Iteration Workflow</h1>
+<p><em>timestamp: 6 minutes into the presentation</em></p>
+
+<ol>
+  <li>Terraforming pass</li>
+  <li>Define freshwater
+  <img src="assets/images/posts/gdc2018-procedural-world-generation-of-far-cry-5/slide_22_fresh_water.png" alt="slide 22 high-level pipeline overview" width="700" style="margin: .1em auto" /></li>
+</ol>
+<p style="font-size:50%">Carrier, Etienne. <i>Procedural World Generation of 'Far Cry 5'</i>. Mar. 2018, GDC, <a target="_blank" href="https://www.gdcvault.com/play/1025557/Procedural-World-Generation-of-Far"> GDC Vault Slide Location</a>. Presentation Slide #22.</p>
+<ol>
+  <li>Run the <em>cliff generation tool</em> to create cliffs on steep terrain</li>
+  <li>Use <em>Biome painter</em> and run procedural generation to spawn the vegetation</li>
+  <li>Setting up <em>Points of Interest</em> (a.k.a. location)
+ <img src="assets/images/posts/gdc2018-procedural-world-generation-of-far-cry-5/slide_26_point_of_interest.png" alt="slide 26 high-level pipeline overview" width="700" style="margin: .1em auto" />
+    <p style="font-size:50%">Carrier, Etienne. <i>Procedural World Generation of 'Far Cry 5'</i>. Mar. 2018, GDC, <a target="_blank" href="https://www.gdcvault.com/play/1025557/Procedural-World-Generation-of-Far"> GDC Vault Slide Location</a>. Presentation Slide #26.</p>
+    <ol>
+      <li>Paint an area with the grass Biome</li>
+      <li>Laying down a road spline</li>
+      <li>Bake roads and refresh biome</li>
+      <li>Add buildings, props</li>
+      <li>Apply terrain texture</li>
+      <li>Add more Trees with the forest sub-biome</li>
+      <li>Bake/refresh biome</li>
+      <li>Add fence spline</li>
+      <li>Add power line spline
+        <ol>
+          <li>Snap power line connector to house</li>
+          <li>Bake/refresh biome</li>
+        </ol>
+      </li>
+    </ol>
+  </li>
+</ol>
+
+<h2 id="user-non-destructive-workflow">User Non-Destructive Workflow</h2>
+<p><em>timestamp: 11 minutes into the presentation</em></p>
+<ol>
+  <li>Update level of terrain</li>
+  <li>Bake/refresh biome
+ <img src="assets/images/posts/gdc2018-procedural-world-generation-of-far-cry-5/slide_35_bake.png" alt="slide 35 high-level pipeline overview" width="700" style="margin: .1em auto" />
+    <p style="font-size:50%">Carrier, Etienne. <i>Procedural World Generation of 'Far Cry 5'</i>. Mar. 2018, GDC, <a target="_blank" href="https://www.gdcvault.com/play/1025557/Procedural-World-Generation-of-Far"> GDC Vault Slide Location</a>. Presentation Slide #35.</p>
+  </li>
+</ol>
+
+<h1 id="how-the-pipeline-is-working-under-the-hood">How the pipeline is working under the hood</h1>
+<p><em>timestamp: 12 minutes into the presentation</em></p>
+
+<ul>
+  <li>At the heart of the pipeline is the data exchange between the Houdini Engine and the Game Engine</li>
+  <li>Inputs for the pipeline are sent from the Game Engine to Houdini via a Python Script
+    <ul>
+      <li>world information</li>
+      <li>spline &amp; shapes</li>
+      <li>file paths</li>
+      <li>Terrain Sectors (Main input that the generation is linked to)</li>
+      <li>heightmaps</li>
+      <li>Biome painter</li>
+      <li>2D terrain masks</li>
+      <li>Houdini Geometry (that might have been generated by another procedural tool)</li>
+    </ul>
+  </li>
+  <li>Outputs of Houdini
+    <ul>
+      <li>List of outputs
+        <ul>
+          <li>Entity point could
+  <img src="assets/images/posts/gdc2018-procedural-world-generation-of-far-cry-5/slide_37_entity_point_cloud.png" alt="slide 37 high-level pipeline overview" width="700" style="margin: .1em auto" /></li>
+        </ul>
+        <p style="font-size:50%">Carrier, Etienne. <i>Procedural World Generation of 'Far Cry 5'</i>. Mar. 2018, GDC, <a target="_blank" href="https://www.gdcvault.com/play/1025557/Procedural-World-Generation-of-Far"> GDC Vault Slide Location</a>. Presentation Slide #37.</p>
+        <ul>
+          <li>Terrain texture layers</li>
+          <li>Terrain heightmap layers</li>
+          <li>2D terrain data</li>
+          <li>Geometry</li>
+          <li>Terrain logic zones</li>
+        </ul>
+      </li>
+      <li>The data is saved onto a disk using temp “buffers”</li>
+    </ul>
+  </li>
+  <li>The output of one tool influences the output of another tool
+    <ul>
+      <li>The tools use masks to communicate with each other</li>
+    </ul>
+  </li>
+</ul>
+
+<h1 id="examples-of-tools">Examples of tools</h1>
+
+<h2 id="cliffs-tool">Cliffs tool</h2>
+<p><em>timestamp: 16 minutes into the presentation</em></p>
+
+<p><img src="assets/images/posts/gdc2018-procedural-world-generation-of-far-cry-5/slide_65_cliff_tool.png" alt="slide 65 cliff tool" width="700" style="margin: .1em auto" /></p>
+<p style="font-size:50%">Carrier, Etienne. <i>Procedural World Generation of 'Far Cry 5'</i>. Mar. 2018, GDC, <a target="_blank" href="https://www.gdcvault.com/play/1025557/Procedural-World-Generation-of-Far"> GDC Vault Slide Location</a>. Presentation Slide #65.</p>
+
+<h2 id="biomes-tool">Biomes Tool</h2>
+<p><em>timestamp: 25 minutes into the presentation</em></p>
+
+<p><img src="assets/images/posts/gdc2018-procedural-world-generation-of-far-cry-5/slide_69_biome_tool.png" alt="slide 69 biome tool" width="700" style="margin: .1em auto" /></p>
+<p style="font-size:50%">Carrier, Etienne. <i>Procedural World Generation of 'Far Cry 5'</i>. Mar. 2018, GDC, <a target="_blank" href="https://www.gdcvault.com/play/1025557/Procedural-World-Generation-of-Far"> GDC Vault Slide Location</a>. Presentation Slide #69.</p>
+
+<h1 id="lessons-learned">Lessons Learned</h1>
+<p><em>timestamp: 46 minutes into the presentation</em></p>
+
+<ul>
+  <li>Making the steps of the <em>pipeline simple</em>. Don’t require knowledge of when the underlying data is generated or how it affects the <em>downstream tasks</em>.</li>
+  <li>The <em>blending of biomes</em> is a complicated feature for the users to use and the developers to debug.</li>
+  <li>This level of customization and generation at this scale <em>can impact the gameplay</em>.</li>
+  <li>This is just a taste of what is possible to produce using this type of <em>procedural technology</em>.</li>
+  <li>You won’t get it right on your first try. Keep iterating and simplifying the pipeline. Be flexible - plans and requirements change.</li>
+  <li><em>Pay attention</em> to how the users use the tools. If you think a feature will be useful it doesn’t mean that the users will use it.</li>
+</ul>
+
+<h2 id="solved-problemschallenges">Solved Problems/Challenges</h2>
+
+<ul>
+  <li>They shipped FC5</li>
+  <li>They developed:
+    <ul>
+      <li>The freshwater tool</li>
+      <li>Fences &amp; power line tool</li>
+      <li>Cliff generation tool</li>
+      <li>Biome tool (to spawn vegetation)</li>
+      <li>Fog tool</li>
+      <li>World map tool (scatter trees on the world map)</li>
+      <li>Power line tool
+        <ul>
+          <li>Auto snapping if a user made an error (with-in a given threshold distance)</li>
+        </ul>
+      </li>
+    </ul>
+  </li>
+  <li>The workflow allowed for quick <strong>iteration</strong> and the ability to <em>“bake as you work”</em></li>
+  <li>Use <em>biome recipes</em> to define what vegetation will be placed in different parts of the map (near water, near cliffs, at high altitude)</li>
+</ul>
+
+<h2 id="practical-truths">Practical Truths</h2>
+
+<p><em>General Tools Development Wisdom</em></p>
+
+<ul>
+  <li><strong>“At first you won’t understand the problem.”</strong> - You won’t get a system design “right” from the first attempt.</li>
+  <li><strong>“You are not your users.”</strong> - If you think something is a good feature, it doesn’t mean that the users will think so.</li>
+  <li><strong>“Users don’t have to know the implementation details”.</strong> - Users will not remember complicated cause-and-effect scenarios.</li>
+  <li><strong>“Hidden Cascade Effect”</strong> - In a fully automated system, a user might not see/ suspect that their changes are affecting another system that is out of view.</li>
+  <li><strong>“The speed of iteration is vital to the quality of the game.”</strong> - Don’t let the tools be the bottleneck of the iteration process.</li>
+</ul>
+
+<h2 id="practical-principles">Practical Principles</h2>
+
+<p><em>General Tools Development Principles</em></p>
+
+<ul>
+  <li>Enable user input and <em>customization</em> inside a procedural generation system.</li>
+  <li><em>Observe users</em> to understand what is important for them.</li>
+  <li><em>K.I.S.S.</em>: Keep It Stupid Simple</li>
+  <li>Search for the balance between <em>control</em> and <em>automation</em>.</li>
+</ul>
+
+<h2 id="questions-that-came-to-mind">Questions that came to mind</h2>
+
+<ul>
+  <li>What are some websites/resources about good <em>Digital Content Creation tool</em> architecture/patterns? Maybe even some checklists?
+    <ul>
+      <li>Like :
+        <ul>
+          <li>“Don’t forget to make a headless client for your tool”</li>
+          <li>“Don’t forget to add python scripting”</li>
+          <li>“Don’t forget to think about determinism when saving</li>
+        </ul>
+      </li>
+    </ul>
+  </li>
+  <li>Is there any alternative to Houdini? (not counting <strong>rolling your own</strong>)</li>
+  <li>How do they edit the road network that spans multiple <strong>maps</strong> (parts of the <strong>world</strong>)?</li>
+  <li>How long into the future when level art for <strong>second class</strong> points of interest will be fully defined by recipes? When will it be mainstream?</li>
+</ul>
+
+<div style="background-color:#FFFF94;border-left: 18px solid #ffff48;padding-left: 50px;">
+<p></p>
+<p>These notes are just the main ideas of the talk. They don’t contain anecdotes and examples. If you want to learn more, I would advise watching the talk on the <a target="_blank" href="https://www.gdcvault.com/play/1025215/Procedural-World-Generation-of-Far">GDC Vault</a>.</p>
+<p></p>
+</div>
+
+<h2 id="the-toolsmiths">The Toolsmiths</h2>
+<p><img src="http://thetoolsmiths.org/assets/thetoolsmiths_cover_1000x2881.png" alt="The Toolsmiths logo" width="700" /></p>
+
+<p>I took these notes as part of our little “Book Club” for GDC Vault Videos <a href="http://thetoolsmiths.org/vault_club" target="_blank">The Toolsmiths #vault club</a></p>
+
+<p>Join us on <a href="http://thetoolsmiths.org/join_slack_team" target="_blank">Slack</a>.</p>
+
+<p>Join us on <a href="https://twitter.com/thetoolsmiths" target="_blank">Twitter</a>.</p>
+
+<h2 id="links">Links</h2>
+<ul>
+  <li><a href="https://www.gdcvault.com/play/1025557/Procedural-World-Generation-of-Far" target="_blank">Slides: 	Procedural World Generation of ‘Far Cry 5’</a></li>
+</ul>
+
+<h2 id="related-talksvideos">Related Talks\Videos</h2>
+<ul>
+  <li><a href="https://www.gdcvault.com/play/1024029/-Ghost-Recon-Wildlands-Terrain" target="_blank">GDC 2017 ‘Ghost Recon Wildlands’: Terrain Tools and Technology</a></li>
+  <li><a href="https://www.gdcvault.com/browse/gdc-18/play/1025261/Terrain-Rendering-in-Far-Cry" target="_blank">GDC 2018 Terrain Rendering in ‘Far Cry 5’</a></li>
+  <li><a href="https://www.gdcvault.com/browse/gdc-18/play/1025264/The-Asset-Build-System-of" target="_blank">GDC 2018 The Asset Build System of ‘Far Cry 5’</a></li>
+  <li><a href="https://www.youtube.com/watch?v=OklvMqMCkc4&amp;feature=youtu.be" target="_blank">GAT #69: River - 2k19 Edition</a></li>
+</ul>
+
+<h2 id="credits">Credits</h2>
+
+<p>Post cover image by <a href="https://pixabay.com/users/Pexels-2286921/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=1852955">Pexels</a> from <a href="https://pixabay.com/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=1852955">Pixabay</a></p>
+
+                </div>
+            </section>
+
+            <!-- Email subscribe form at the bottom of the page -->
+            
+
+            <footer class="post-full-footer">
+                <!-- Everything inside the #author tags pulls data from the author -->
+                <!-- #author-->
+                
+                    
+                        <section class="author-card">
+                            
+                                <img class="author-profile-image" src="https://victorstepanov.github.io/assets/images/vstepano.png" alt="vstepano" />
+                            
+                            <section class="author-card-content">
+                                <h4 class="author-card-name"><a href="https://victorstepanov.github.io/author/vstepano">Victor Stepanov</a></h4>
+                                
+                                    <p>Game Tools Developer</p>
+                                
+                            </section>
+                        </section>
+                        <div class="post-full-footer-right">
+                            <a class="author-card-button" href="https://victorstepanov.github.io/author/vstepano">Read More</a>
+                        </div>
+                    
+                
+                <!-- /author  -->
+            </footer>
+
+            <!-- If you use Disqus comments, just uncomment this block.
+            The only thing you need to change is "test-apkdzgmqhj" - which
+            should be replaced with your own Disqus site-id. -->
+            
+                <section class="post-full-comments">
+                    <div id="disqus_thread"></div>
+                    <script>
+                        var disqus_config = function () {
+                            this.page.url = 'https://victorstepanov.github.io/';
+                            this.page.identifier = 'Victor Stepanov';
+                        };
+                        (function() {
+                            var d = document, s = d.createElement('script');
+                            s.src = 'https://productivityengineer-com.disqus.com/embed.js';
+                            s.setAttribute('data-timestamp', +new Date());
+                            (d.head || d.body).appendChild(s);
+                        })();
+                    </script>
+                </section>
+            
+
+        </article>
+
+    </div>
+</main>
+
+<!-- Links to Previous/Next posts -->
+<aside class="read-next outer">
+    <div class="inner">
+        <div class="read-next-feed">
+            
+                
+                
+                
+                
+                    <article class="read-next-card"
+                        
+                            style="background-image: url(https://victorstepanov.github.io/assets/images/blog-cover.jpg)"
+                        
+                    >
+                        <header class="read-next-card-header">
+                            <small class="read-next-card-header-sitetitle">&mdash; Victor Stepanov &mdash;</small>
+                            
+                                <h3 class="read-next-card-header-title"><a href="https://victorstepanov.github.io/tag/gdc/">Gdc</a></h3>
+                            
+                        </header>
+                        <div class="read-next-divider"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 14.5s2 3 5 3 5.5-2.463 5.5-5.5S21 6.5 18 6.5c-5 0-7 11-12 11C2.962 17.5.5 15.037.5 12S3 6.5 6 6.5s4.5 3.5 4.5 3.5"/></svg>
+</div>
+                        <div class="read-next-card-content">
+                            <ul>
+                                
+                                
+                                  
+                                    
+                                  
+                                
+                                  
+                                    
+                                        
+                                        
+                                            <li><a href="https://victorstepanov.github.io/gdc2019-tools-for-marvels-spider-man-editing-with-immutable-data">Notes for "Tools for 'Marvel's Spider-Man' Editing with Immutable Data" GDC2019</a></li>
+                                        
+                                    
+                                  
+                                
+                                  
+                                    
+                                        
+                                        
+                                            <li><a href="https://victorstepanov.github.io/gdc2019-the-future-of-scene-description-on-god-of-war">Notes for "The Future of Scene Description on 'God of War'" GDC2019</a></li>
+                                        
+                                    
+                                  
+                                
+                                  
+                                    
+                                        
+                                        
+                                            <li><a href="https://victorstepanov.github.io/gdc2019-bungie-s-force-multipliers-production-engineers">Notes for "Bungie's Force Multipliers - Production Engineers" GDC2019</a></li>
+                                        
+                                    
+                                  
+                                
+                                  
+                                    
+                                        
+                                        
+                                    
+                                  
+                                
+                                  
+                                
+                                  
+                                
+                                  
+                                
+                                  
+                                    
+                                        
+                                        
+                                    
+                                  
+                                
+                                  
+                                
+                                  
+                                
+                                  
+                                
+                            </ul>
+                        </div>
+                        <footer class="read-next-card-footer">
+                            <a href="https://victorstepanov.github.io/tag/gdc/">
+                                
+                                    See all 5 posts  →
+                                
+                            </a>
+                        </footer>
+                    </article>
+                
+            
+
+            <!-- If there's a next post, display it using the same markup included from - partials/post-card.hbs -->
+            
+
+            <!-- If there's a previous post, display it using the same markup included from - partials/post-card.hbs -->
+            
+                
+    <article class="post-card post-template">
+        
+            <a class="post-card-image-link" href="https://victorstepanov.github.io/gdc2019-tools-for-marvels-spider-man-editing-with-immutable-data">
+                <div class="post-card-image" style="background-image: url(https://victorstepanov.github.io/assets/images/posts/blank-composition-desk-gdc2019.jpg)"></div>
+            </a>
+        
+        <div class="post-card-content">
+            <a class="post-card-content-link" href="https://victorstepanov.github.io/gdc2019-tools-for-marvels-spider-man-editing-with-immutable-data">
+                <header class="post-card-header">
+                    
+                        
+                            
+                               <span class="post-card-tags">Gdc</span>
+                            
+                        
+                            
+                               <span class="post-card-tags">Data</span>
+                            
+                        
+                            
+                               <span class="post-card-tags">Ddl</span>
+                            
+                        
+                            
+                               <span class="post-card-tags">Edit</span>
+                            
+                        
+                            
+                                <span class="post-card-tags">Web</span>
+                            
+                        
+                    
+
+                    <h2 class="post-card-title">Notes for "Tools for 'Marvel's Spider-Man' Editing with Immutable Data" GDC2019</h2>
+                </header>
+                <section class="post-card-excerpt">
+                    <p>TLDW Summary: This talk is a tour of the technologies that Insomniac Games developed to transition from their web based tools to their new desktop tools. Highlighting what challenges they encountered when replacing</p>
+                </section>
+            </a>
+            <footer class="post-card-meta">
+                
+                    
+                        
+                        <img class="author-profile-image" src="https://victorstepanov.github.io/assets/images/vstepano.png" alt="Victor Stepanov" />
+                        
+                        <span class="post-card-author">
+                            <a href="https://victorstepanov.github.io/author/vstepano/">Victor Stepanov</a>
+                        </span>
+                    
+                
+            </footer>
+        </div>
+    </article>
+
+            
+
+        </div>
+    </div>
+</aside>
+
+<!-- Floating header which appears on-scroll, included from includes/floating-header.hbs -->
+<div class="floating-header">
+    <div class="floating-header-logo">
+        <a href="https://victorstepanov.github.io/">
+            
+                <img src="https://victorstepanov.github.io/assets/images/favicon.png" alt="Victor Stepanov icon" />
+            
+            <span>Victor Stepanov</span>
+        </a>
+    </div>
+    <span class="floating-header-divider">&mdash;</span>
+    <div class="floating-header-title">Notes for "Procedural World Generation of 'Far Cry 5'" GDC2018</div>
+    <div class="floating-header-share">
+        <div class="floating-header-share-label">Share this <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+    <path d="M7.5 15.5V4a1.5 1.5 0 1 1 3 0v4.5h2a1 1 0 0 1 1 1h2a1 1 0 0 1 1 1H18a1.5 1.5 0 0 1 1.5 1.5v3.099c0 .929-.13 1.854-.385 2.748L17.5 23.5h-9c-1.5-2-5.417-8.673-5.417-8.673a1.2 1.2 0 0 1 1.76-1.605L7.5 15.5zm6-6v2m-3-3.5v3.5m6-1v2"/>
+</svg>
+</div>
+        <a class="floating-header-share-tw" href="https://twitter.com/share?text=Notes+for+%22Procedural+World+Generation+of+%27Far+Cry+5%27%22+GDC2018&amp;url=https://VictorStepanov.github.io/gdc2018-procedural-world-generation-of-far-cry-5"
+            onclick="window.open(this.href, 'share-twitter', 'width=550,height=235');return false;">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32"><path d="M30.063 7.313c-.813 1.125-1.75 2.125-2.875 2.938v.75c0 1.563-.188 3.125-.688 4.625a15.088 15.088 0 0 1-2.063 4.438c-.875 1.438-2 2.688-3.25 3.813a15.015 15.015 0 0 1-4.625 2.563c-1.813.688-3.75 1-5.75 1-3.25 0-6.188-.875-8.875-2.625.438.063.875.125 1.375.125 2.688 0 5.063-.875 7.188-2.5-1.25 0-2.375-.375-3.375-1.125s-1.688-1.688-2.063-2.875c.438.063.813.125 1.125.125.5 0 1-.063 1.5-.25-1.313-.25-2.438-.938-3.313-1.938a5.673 5.673 0 0 1-1.313-3.688v-.063c.813.438 1.688.688 2.625.688a5.228 5.228 0 0 1-1.875-2c-.5-.875-.688-1.813-.688-2.75 0-1.063.25-2.063.75-2.938 1.438 1.75 3.188 3.188 5.25 4.25s4.313 1.688 6.688 1.813a5.579 5.579 0 0 1 1.5-5.438c1.125-1.125 2.5-1.688 4.125-1.688s3.063.625 4.188 1.813a11.48 11.48 0 0 0 3.688-1.375c-.438 1.375-1.313 2.438-2.563 3.188 1.125-.125 2.188-.438 3.313-.875z"/></svg>
+
+        </a>
+    </div>
+    <progress class="progress" value="0">
+        <div class="progress-container">
+            <span class="progress-bar"></span>
+        </div>
+    </progress>
+</div>
+
+
+<!-- /post -->
+
+<!-- The #contentFor helper here will send everything inside it up to the matching #block helper found in default.hbs -->
+
+
+        <!-- Previous/next page links - displayed on every page -->
+        
+
+        <!-- The footer at the very bottom of the screen -->
+        <footer class="site-footer outer">
+            <div class="site-footer-content inner">
+                <section class="copyright"><a href="https://victorstepanov.github.io/">Victor Stepanov</a> &copy; 2020</section>
+                <section class="poweredby">Proudly published with <a href="https://jekyllrb.com/">Jekyll</a> &
+                    <a href="https://pages.github.com/" target="_blank" rel="noopener">GitHub Pages</a> using
+                    <a href="https://github.com/jekyller/jasper2" target="_blank" rel="noopener">Jasper2</a></section>
+                <nav class="site-footer-nav">
+                    <a href="https://victorstepanov.github.io/">Latest Posts</a>
+                    
+                    <a href="https://twitter.com/VictorStepanov" target="_blank" rel="noopener">Twitter</a>
+                    <a href="https://www.linkedin.com/in/victor-stepanov-673aa18b/" target="_blank" rel="noopener">LinkedIn</a>
+                </nav>
+            </div>
+        </footer>
+
+    </div>
+
+    <!-- The big email subscribe modal content -->
+    
+
+    <!-- highlight.js -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.10.0/components/prism-abap.min.js"></script>
+    <script>$(document).ready(function() {
+      $('pre code').each(function(i, block) {
+        hljs.highlightBlock(block);
+      });
+    });</script>
+
+    <!-- jQuery + Fitvids, which makes all video embeds responsive -->
+    <script
+        src="https://code.jquery.com/jquery-3.2.1.min.js"
+        integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+        crossorigin="anonymous">
+    </script>
+    <script type="text/javascript" src="https://victorstepanov.github.io/assets/js/jquery.fitvids.js"></script>
+    <script type="text/javascript" src="https://demo.ghost.io/assets/js/jquery.fitvids.js?v=724281a32e"></script>
+
+
+    <!-- Paginator increased to "infinit" in _config.yml -->
+    <!-- if paginator.posts  -->
+    <!-- <script>
+        var maxPages = parseInt('');
+    </script>
+    <script src="https://victorstepanov.github.io/assets/js/infinitescroll.js"></script> -->
+    <!-- /endif -->
+
+    
+
+
+    <!-- Add Google Analytics  -->
+    <!-- Google Analytics Tracking code -->
+ <script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-115002546-1', 'auto');
+  ga('send', 'pageview');
+
+ </script>
+
+
+    <!-- The #block helper will pull in data from the #contentFor other template files. In this case, there's some JavaScript which we only want to use in post.hbs, but it needs to be included down here, after jQuery has already loaded. -->
+    
+        <script>
+
+// NOTE: Scroll performance is poor in Safari
+// - this appears to be due to the events firing much more slowly in Safari.
+//   Dropping the scroll event and using only a raf loop results in smoother
+//   scrolling but continuous processing even when not scrolling
+$(document).ready(function () {
+    // Start fitVids
+    var $postContent = $(".post-full-content");
+    $postContent.fitVids();
+    // End fitVids
+
+    var progressBar = document.querySelector('progress');
+    var header = document.querySelector('.floating-header');
+    var title = document.querySelector('.post-full-title');
+
+    var lastScrollY = window.scrollY;
+    var lastWindowHeight = window.innerHeight;
+    var lastDocumentHeight = $(document).height();
+    var ticking = false;
+
+    function onScroll() {
+        lastScrollY = window.scrollY;
+        requestTick();
+    }
+
+    function onResize() {
+        lastWindowHeight = window.innerHeight;
+        lastDocumentHeight = $(document).height();
+        requestTick();
+    }
+
+    function requestTick() {
+        if (!ticking) {
+            requestAnimationFrame(update);
+        }
+        ticking = true;
+    }
+
+    function update() {
+        var trigger = title.getBoundingClientRect().top + window.scrollY;
+        var triggerOffset = title.offsetHeight + 35;
+        var progressMax = lastDocumentHeight - lastWindowHeight;
+
+        // show/hide floating header
+        if (lastScrollY >= trigger + triggerOffset) {
+            header.classList.add('floating-active');
+        } else {
+            header.classList.remove('floating-active');
+        }
+
+        progressBar.setAttribute('max', progressMax);
+        progressBar.setAttribute('value', lastScrollY);
+
+        ticking = false;
+    }
+
+    window.addEventListener('scroll', onScroll, {passive: true});
+    window.addEventListener('resize', onResize, false);
+
+    update();
+});
+</script>
+
+    
+
+    <!-- Ghost outputs important scripts and data with this tag - it should always be the very last thing before the closing body tag -->
+    <!-- ghost_foot -->
+
+</body>
+</html>
