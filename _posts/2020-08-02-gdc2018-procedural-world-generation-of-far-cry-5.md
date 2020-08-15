@@ -118,19 +118,22 @@ __TLDW Summary__: This talk is about how FC5 developers created a pipeline for g
   <p style="font-size:50%">Carrier, Etienne. <i>Procedural World Generation of 'Far Cry 5'</i>. Mar. 2018, GDC, <a target="_blank" href="https://www.gdcvault.com/play/1025557/Procedural-World-Generation-of-Far"> GDC Vault Slide Location</a>. Presentation Slide #38.</p>
 * They regenerate the entire game world every night on special _build machines_.
 
+<hr>
 
-# User Iteration Workflow
+# Notable parts of the talk
+
+<hr>
+
+## User Iteration Workflow
 _timestamp: 6 minutes into the presentation_
 
 1. Terraforming pass
 2. Define freshwater
-  ![slide 22 high-level pipeline overview](assets/images/posts/gdc2018-procedural-world-generation-of-far-cry-5/slide_22_fresh_water.png){:width="700" style="margin: .1em auto"}
-  <p style="font-size:50%">Carrier, Etienne. <i>Procedural World Generation of 'Far Cry 5'</i>. Mar. 2018, GDC, <a target="_blank" href="https://www.gdcvault.com/play/1025557/Procedural-World-Generation-of-Far"> GDC Vault Slide Location</a>. Presentation Slide #22.</p>
+  ![slide 22 high-level pipeline overview](assets/images/posts/gdc2018-procedural-world-generation-of-far-cry-5/slide_22_fresh_water.png){:width="700" style="margin: .1em auto"} <span style="font-size:50%">Carrier, Etienne. <i>Procedural World Generation of 'Far Cry 5'</i>. Mar. 2018, GDC, <a target="_blank" href="https://www.gdcvault.com/play/1025557/Procedural-World-Generation-of-Far"> GDC Vault Slide Location</a>. Presentation Slide #22.</span>
 3. Run the _cliff generation tool_ to create cliffs on steep terrain 
 4. Use _Biome painter_ and run procedural generation to spawn the vegetation 
 5. Setting up _Points of Interest_ (a.k.a. location)
-	![slide 26 high-level pipeline overview](assets/images/posts/gdc2018-procedural-world-generation-of-far-cry-5/slide_26_point_of_interest.png){:width="700" style="margin: .1em auto"}
-	<p style="font-size:50%">Carrier, Etienne. <i>Procedural World Generation of 'Far Cry 5'</i>. Mar. 2018, GDC, <a target="_blank" href="https://www.gdcvault.com/play/1025557/Procedural-World-Generation-of-Far"> GDC Vault Slide Location</a>. Presentation Slide #26.</p>
+	![slide 26 high-level pipeline overview](assets/images/posts/gdc2018-procedural-world-generation-of-far-cry-5/slide_26_point_of_interest.png){:width="700" style="margin: .1em auto"} <span style="font-size:50%">Carrier, Etienne. <i>Procedural World Generation of 'Far Cry 5'</i>. Mar. 2018, GDC, <a target="_blank" href="https://www.gdcvault.com/play/1025557/Procedural-World-Generation-of-Far"> GDC Vault Slide Location</a>. Presentation Slide #26.</span>
 	1. Paint an area with the grass Biome
 	2. Laying down a road spline
 	3. Bake roads and refresh biome
@@ -204,11 +207,18 @@ _timestamp: 46 minutes into the presentation_
 * You won't get it right on your first try. Keep iterating and simplifying the pipeline. Be flexible - plans and requirements change.
 * _Pay attention_ to how the users use the tools. If you think a feature will be useful it doesn't mean that the users will use it.
 
+<hr>
+
+# Thoughts
+
+<hr>
 
 ## Solved Problems/Challenges
 
+_Did they solve what they set out to solve?_
+
 * They shipped FC5
-* They developed:
+* They developed suite of tools:
 	* The freshwater tool
 	* Fences & power line tool
 	* Cliff generation tool 
@@ -217,6 +227,7 @@ _timestamp: 46 minutes into the presentation_
 	* World map tool (scatter trees on the world map)
 	* Power line tool
 		* Auto snapping if a user made an error (with-in a given threshold distance)
+* The pipeline is automated and runs nightly
 * The workflow allowed for quick __iteration__ and the ability to _"bake as you work"_
 * Use _biome recipes_ to define what vegetation will be placed in different parts of the map (near water, near cliffs, at high altitude)
 
@@ -225,11 +236,11 @@ _timestamp: 46 minutes into the presentation_
 
 _General Tools Development Wisdom_
 
-* **"At first you won't understand the problem."** - You won't get a system design "right" from the first attempt.
-* **"You are not your users."** - If you think something is a good feature, it doesn't mean that the users will think so. 
+* **"At first you won't understand the problem".** - You won't get a system design "right" from the first attempt.
+* **"You are not your users".** - If you think something is a good feature, it doesn't mean that the users will think so. 
 * **"Users don't have to know the implementation details".** - Users will not remember complicated cause-and-effect scenarios.
-* **"Hidden Cascade Effect"** - In a fully automated system, a user might not see/ suspect that their changes are affecting another system that is out of view.
-* **"The speed of iteration is vital to the quality of the game."** - Don't let the tools be the bottleneck of the iteration process.
+* **"Watch out for Hidden Cascade Effects".** - In a fully automated system, a user might not see/ suspect that their changes are affecting another system that is out of view.
+* **"The speed of iteration is vital to the quality of the game".** - Don't let the tools be the bottleneck of the iteration process.
 
 
 ## Practical Principles
