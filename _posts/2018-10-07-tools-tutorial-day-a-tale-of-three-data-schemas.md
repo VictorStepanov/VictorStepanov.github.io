@@ -200,7 +200,7 @@ This reminded me of [Mike Acton's Data-Oriented Design talk](https://youtu.be/rX
 You can open the file with [XMind](https://github.com/xmindltd/xmind)
 
 ## The Toolsmiths
-![The Toolsmiths logo](http://thetoolsmiths.org/assets/thetoolsmiths_cover_1000x2881.png)
+![The Toolsmiths logo]({{ site.baseurl }}assets/images/thetoolsmiths_cover_1000x2881.png)
 **Ludovic Chabant** is a member of the [Toolsmiths](http://thetoolsmiths.org/) community. The Toolsmiths are a community of Game Tool Developers that are passionate about improving the way people make games.
 
 Join us on [Slack](http://thetoolsmiths.org/join_slack_team).

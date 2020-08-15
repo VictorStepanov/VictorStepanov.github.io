@@ -134,7 +134,7 @@ How Bungie created an ecosystem of tools and workflows to allow small teams to q
 </div>
 
 ## The Toolsmiths
-<img src="http://thetoolsmiths.org/assets/thetoolsmiths_cover_1000x2881.png" alt="The Toolsmiths logo" width="700"/>
+![The Toolsmiths logo]({{ site.baseurl }}assets/images/thetoolsmiths_cover_1000x2881.png){:width="700"}
 
 I took these notes as part of our little "Book Club" for GDC Vault Videos [The Toolsmiths #vault club](http://thetoolsmiths.org/vault_club)
 

@@ -4,7 +4,7 @@ current: post
 cover:  assets/images/posts/gdc2018-procedural-world-generation-of-far-cry-5/clouds-1852955_1280.jpg
 navigation: True
 title: Notes for "Procedural World Generation of 'Far Cry 5'" GDC2018
-date: 2020-08-02 01:00:00
+date: 2020-08-09 01:00:00
 tags: GDC procedural visual-arts level-art level-design
 class: post-template
 subclass: 'post'
@@ -261,7 +261,7 @@ _General Tools Development Principles_
 </div>
 
 ## The Toolsmiths
-<img src="http://thetoolsmiths.org/assets/thetoolsmiths_cover_1000x2881.png" alt="The Toolsmiths logo" width="700"/>
+![The Toolsmiths logo]({{ site.baseurl }}assets/images/thetoolsmiths_cover_1000x2881.png){:width="700"}
 
 I took these notes as part of our little "Book Club" for GDC Vault Videos [The Toolsmiths #vault club](http://thetoolsmiths.org/vault_club){:target="_blank"}
 
