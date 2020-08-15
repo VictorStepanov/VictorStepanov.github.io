@@ -6,7 +6,7 @@ language: 'en-uk'
 
 # edit baseurl to simply '/' if using as your personal page (instead of a project page)
 # run JEKYLL_ENV=production bundle exec jekyll serve
-baseurl: https://victorstepanov.github.io/
+baseurl: https://tools.engineer/
 # baseurl: /
 
 # Website info
@@ -16,7 +16,7 @@ cover: assets/images/blog-cover.jpg
 logo: assets/images/blog-icon.png
 logo_dark: assets/images/favicon.png
 favicon: assets/images/favicon.png
-production_url: https://VictorStepanov.github.io/
+production_url: https://tools.engineer/
 source_url: https://github.com/VictorStepanov/VictorStepanov.github.io
 
 # Social info
@@ -93,3 +93,4 @@ exclude:
   - changelog.md
   - "*.Rmd"
   - .git*
+  - build_for_prod.sh
