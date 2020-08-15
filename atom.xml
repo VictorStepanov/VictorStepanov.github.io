@@ -137,21 +137,23 @@
   &lt;li&gt;They regenerate the entire game world every night on special &lt;em&gt;build machines&lt;/em&gt;.&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;h1 id=&quot;user-iteration-workflow&quot;&gt;User Iteration Workflow&lt;/h1&gt;
+&lt;hr /&gt;
+
+&lt;h1 id=&quot;notable-parts-of-the-talk&quot;&gt;Notable parts of the talk&lt;/h1&gt;
+
+&lt;hr /&gt;
+
+&lt;h2 id=&quot;user-iteration-workflow&quot;&gt;User Iteration Workflow&lt;/h2&gt;
 &lt;p&gt;&lt;em&gt;timestamp: 6 minutes into the presentation&lt;/em&gt;&lt;/p&gt;
 
 &lt;ol&gt;
   &lt;li&gt;Terraforming pass&lt;/li&gt;
   &lt;li&gt;Define freshwater
-  &lt;img src=&quot;assets/images/posts/gdc2018-procedural-world-generation-of-far-cry-5/slide_22_fresh_water.png&quot; alt=&quot;slide 22 high-level pipeline overview&quot; width=&quot;700&quot; style=&quot;margin: .1em auto&quot; /&gt;&lt;/li&gt;
-&lt;/ol&gt;
-&lt;p style=&quot;font-size:50%&quot;&gt;Carrier, Etienne. &lt;i&gt;Procedural World Generation of 'Far Cry 5'&lt;/i&gt;. Mar. 2018, GDC, &lt;a target=&quot;_blank&quot; href=&quot;https://www.gdcvault.com/play/1025557/Procedural-World-Generation-of-Far&quot;&gt; GDC Vault Slide Location&lt;/a&gt;. Presentation Slide #22.&lt;/p&gt;
-&lt;ol&gt;
+  &lt;img src=&quot;assets/images/posts/gdc2018-procedural-world-generation-of-far-cry-5/slide_22_fresh_water.png&quot; alt=&quot;slide 22 high-level pipeline overview&quot; width=&quot;700&quot; style=&quot;margin: .1em auto&quot; /&gt; &lt;span style=&quot;font-size:50%&quot;&gt;Carrier, Etienne. &lt;i&gt;Procedural World Generation of ‘Far Cry 5’&lt;/i&gt;. Mar. 2018, GDC, &lt;a target=&quot;_blank&quot; href=&quot;https://www.gdcvault.com/play/1025557/Procedural-World-Generation-of-Far&quot;&gt; GDC Vault Slide Location&lt;/a&gt;. Presentation Slide #22.&lt;/span&gt;&lt;/li&gt;
   &lt;li&gt;Run the &lt;em&gt;cliff generation tool&lt;/em&gt; to create cliffs on steep terrain&lt;/li&gt;
   &lt;li&gt;Use &lt;em&gt;Biome painter&lt;/em&gt; and run procedural generation to spawn the vegetation&lt;/li&gt;
   &lt;li&gt;Setting up &lt;em&gt;Points of Interest&lt;/em&gt; (a.k.a. location)
- &lt;img src=&quot;assets/images/posts/gdc2018-procedural-world-generation-of-far-cry-5/slide_26_point_of_interest.png&quot; alt=&quot;slide 26 high-level pipeline overview&quot; width=&quot;700&quot; style=&quot;margin: .1em auto&quot; /&gt;
-    &lt;p style=&quot;font-size:50%&quot;&gt;Carrier, Etienne. &lt;i&gt;Procedural World Generation of 'Far Cry 5'&lt;/i&gt;. Mar. 2018, GDC, &lt;a target=&quot;_blank&quot; href=&quot;https://www.gdcvault.com/play/1025557/Procedural-World-Generation-of-Far&quot;&gt; GDC Vault Slide Location&lt;/a&gt;. Presentation Slide #26.&lt;/p&gt;
+ &lt;img src=&quot;assets/images/posts/gdc2018-procedural-world-generation-of-far-cry-5/slide_26_point_of_interest.png&quot; alt=&quot;slide 26 high-level pipeline overview&quot; width=&quot;700&quot; style=&quot;margin: .1em auto&quot; /&gt; &lt;span style=&quot;font-size:50%&quot;&gt;Carrier, Etienne. &lt;i&gt;Procedural World Generation of ‘Far Cry 5’&lt;/i&gt;. Mar. 2018, GDC, &lt;a target=&quot;_blank&quot; href=&quot;https://www.gdcvault.com/play/1025557/Procedural-World-Generation-of-Far&quot;&gt; GDC Vault Slide Location&lt;/a&gt;. Presentation Slide #26.&lt;/span&gt;
     &lt;ol&gt;
       &lt;li&gt;Paint an area with the grass Biome&lt;/li&gt;
       &lt;li&gt;Laying down a road spline&lt;/li&gt;
@@ -250,11 +252,19 @@
   &lt;li&gt;&lt;em&gt;Pay attention&lt;/em&gt; to how the users use the tools. If you think a feature will be useful it doesn’t mean that the users will use it.&lt;/li&gt;
 &lt;/ul&gt;
 
+&lt;hr /&gt;
+
+&lt;h1 id=&quot;thoughts&quot;&gt;Thoughts&lt;/h1&gt;
+
+&lt;hr /&gt;
+
 &lt;h2 id=&quot;solved-problemschallenges&quot;&gt;Solved Problems/Challenges&lt;/h2&gt;
+
+&lt;p&gt;&lt;em&gt;Did they solve what they set out to solve?&lt;/em&gt;&lt;/p&gt;
 
 &lt;ul&gt;
   &lt;li&gt;They shipped FC5&lt;/li&gt;
-  &lt;li&gt;They developed:
+  &lt;li&gt;They developed suite of tools:
     &lt;ul&gt;
       &lt;li&gt;The freshwater tool&lt;/li&gt;
       &lt;li&gt;Fences &amp;amp; power line tool&lt;/li&gt;
@@ -269,6 +279,7 @@
       &lt;/li&gt;
     &lt;/ul&gt;
   &lt;/li&gt;
+  &lt;li&gt;The pipeline is automated and runs nightly&lt;/li&gt;
   &lt;li&gt;The workflow allowed for quick &lt;strong&gt;iteration&lt;/strong&gt; and the ability to &lt;em&gt;“bake as you work”&lt;/em&gt;&lt;/li&gt;
   &lt;li&gt;Use &lt;em&gt;biome recipes&lt;/em&gt; to define what vegetation will be placed in different parts of the map (near water, near cliffs, at high altitude)&lt;/li&gt;
 &lt;/ul&gt;
@@ -278,11 +289,11 @@
 &lt;p&gt;&lt;em&gt;General Tools Development Wisdom&lt;/em&gt;&lt;/p&gt;
 
 &lt;ul&gt;
-  &lt;li&gt;&lt;strong&gt;“At first you won’t understand the problem.”&lt;/strong&gt; - You won’t get a system design “right” from the first attempt.&lt;/li&gt;
-  &lt;li&gt;&lt;strong&gt;“You are not your users.”&lt;/strong&gt; - If you think something is a good feature, it doesn’t mean that the users will think so.&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;“At first you won’t understand the problem”.&lt;/strong&gt; - You won’t get a system design “right” from the first attempt.&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;“You are not your users”.&lt;/strong&gt; - If you think something is a good feature, it doesn’t mean that the users will think so.&lt;/li&gt;
   &lt;li&gt;&lt;strong&gt;“Users don’t have to know the implementation details”.&lt;/strong&gt; - Users will not remember complicated cause-and-effect scenarios.&lt;/li&gt;
-  &lt;li&gt;&lt;strong&gt;“Hidden Cascade Effect”&lt;/strong&gt; - In a fully automated system, a user might not see/ suspect that their changes are affecting another system that is out of view.&lt;/li&gt;
-  &lt;li&gt;&lt;strong&gt;“The speed of iteration is vital to the quality of the game.”&lt;/strong&gt; - Don’t let the tools be the bottleneck of the iteration process.&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;“Watch out for Hidden Cascade Effects”.&lt;/strong&gt; - In a fully automated system, a user might not see/ suspect that their changes are affecting another system that is out of view.&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;“The speed of iteration is vital to the quality of the game”.&lt;/strong&gt; - Don’t let the tools be the bottleneck of the iteration process.&lt;/li&gt;
 &lt;/ul&gt;
 
 &lt;h2 id=&quot;practical-principles&quot;&gt;Practical Principles&lt;/h2&gt;
