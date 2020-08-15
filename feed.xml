@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.6.2">Jekyll</generator><link href="/https://tools.engineer/feed.xml" rel="self" type="application/atom+xml" /><link href="/https://tools.engineer/" rel="alternate" type="text/html" /><updated>2020-08-13T08:50:47-07:00</updated><id>/https://tools.engineer/</id><title type="html">Victor Stepanov</title><subtitle>Passionate about making game developers more productive</subtitle><entry><title type="html">Notes for “Procedural World Generation of ‘Far Cry 5’” GDC2018</title><link href="/https://tools.engineer/gdc2018-procedural-world-generation-of-far-cry-5" rel="alternate" type="text/html" title="Notes for &quot;Procedural World Generation of 'Far Cry 5'&quot; GDC2018" /><published>2020-08-08T18:00:00-07:00</published><updated>2020-08-08T18:00:00-07:00</updated><id>/https://tools.engineer/gdc2018-procedural-world-generation-of-far-cry-5</id><content type="html" xml:base="/https://tools.engineer/gdc2018-procedural-world-generation-of-far-cry-5">&lt;p&gt;&lt;strong&gt;TLDW Summary&lt;/strong&gt;: This talk is about how FC5 developers created a pipeline for generating a realistic game world using procedural recipes. The talk contains a high-level overview of the pipeline with two deep dives into the details of the tools.&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.6.2">Jekyll</generator><link href="/https://tools.engineer/feed.xml" rel="self" type="application/atom+xml" /><link href="/https://tools.engineer/" rel="alternate" type="text/html" /><updated>2020-08-15T10:24:04-07:00</updated><id>/https://tools.engineer/</id><title type="html">Victor Stepanov</title><subtitle>Passionate about making game developers more productive</subtitle><entry><title type="html">Notes for “Procedural World Generation of ‘Far Cry 5’” GDC2018</title><link href="/https://tools.engineer/gdc2018-procedural-world-generation-of-far-cry-5" rel="alternate" type="text/html" title="Notes for &quot;Procedural World Generation of 'Far Cry 5'&quot; GDC2018" /><published>2020-08-08T18:00:00-07:00</published><updated>2020-08-08T18:00:00-07:00</updated><id>/https://tools.engineer/gdc2018-procedural-world-generation-of-far-cry-5</id><content type="html" xml:base="/https://tools.engineer/gdc2018-procedural-world-generation-of-far-cry-5">&lt;p&gt;&lt;strong&gt;TLDW Summary&lt;/strong&gt;: This talk is about how FC5 developers created a pipeline for generating a realistic game world using procedural recipes. The talk contains a high-level overview of the pipeline with two deep dives into the details of the tools.&lt;/p&gt;
 
 &lt;h2 id=&quot;key-terms&quot;&gt;Key Terms&lt;/h2&gt;
 &lt;div class=&quot;keyword-container&quot;&gt;
@@ -310,7 +310,7 @@
 &lt;/div&gt;
 
 &lt;h2 id=&quot;the-toolsmiths&quot;&gt;The Toolsmiths&lt;/h2&gt;
-&lt;p&gt;&lt;img src=&quot;http://thetoolsmiths.org/assets/thetoolsmiths_cover_1000x2881.png&quot; alt=&quot;The Toolsmiths logo&quot; width=&quot;700&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;https://tools.engineer/assets/images/thetoolsmiths_cover_1000x2881.png&quot; alt=&quot;The Toolsmiths logo&quot; width=&quot;700&quot; /&gt;&lt;/p&gt;
 
 &lt;p&gt;I took these notes as part of our little “Book Club” for GDC Vault Videos &lt;a href=&quot;http://thetoolsmiths.org/vault_club&quot; target=&quot;_blank&quot;&gt;The Toolsmiths #vault club&lt;/a&gt;&lt;/p&gt;
 
@@ -572,7 +572,7 @@
 &lt;/div&gt;
 
 &lt;h2 id=&quot;the-toolsmiths&quot;&gt;The Toolsmiths&lt;/h2&gt;
-&lt;p&gt;&lt;img src=&quot;http://thetoolsmiths.org/assets/thetoolsmiths_cover_1000x2881.png&quot; alt=&quot;The Toolsmiths logo&quot; width=&quot;700&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;https://tools.engineer/assets/images/thetoolsmiths_cover_1000x2881.png&quot; alt=&quot;The Toolsmiths logo&quot; width=&quot;700&quot; /&gt;&lt;/p&gt;
 
 &lt;p&gt;I took these notes as part of our little “Book Club” for GDC Vault Videos &lt;a href=&quot;http://thetoolsmiths.org/vault_club&quot;&gt;The Toolsmiths #vault club&lt;/a&gt;&lt;/p&gt;
 
@@ -815,7 +815,7 @@
 &lt;/div&gt;
 
 &lt;h2 id=&quot;the-toolsmiths&quot;&gt;The Toolsmiths&lt;/h2&gt;
-&lt;p&gt;&lt;img src=&quot;http://thetoolsmiths.org/assets/thetoolsmiths_cover_1000x2881.png&quot; alt=&quot;The Toolsmiths logo&quot; width=&quot;700&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;https://tools.engineer/assets/images/thetoolsmiths_cover_1000x2881.png&quot; alt=&quot;The Toolsmiths logo&quot; width=&quot;700&quot; /&gt;&lt;/p&gt;
 
 &lt;p&gt;I took these notes as part of our little “Book Club” for GDC Vault Videos &lt;a href=&quot;http://thetoolsmiths.org/vault_club&quot;&gt;The Toolsmiths #vault club&lt;/a&gt;&lt;/p&gt;
 
@@ -1000,7 +1000,7 @@
 &lt;/div&gt;
 
 &lt;h2 id=&quot;the-toolsmiths&quot;&gt;The Toolsmiths&lt;/h2&gt;
-&lt;p&gt;&lt;img src=&quot;http://thetoolsmiths.org/assets/thetoolsmiths_cover_1000x2881.png&quot; alt=&quot;The Toolsmiths logo&quot; width=&quot;700&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;https://tools.engineer/assets/images/thetoolsmiths_cover_1000x2881.png&quot; alt=&quot;The Toolsmiths logo&quot; width=&quot;700&quot; /&gt;&lt;/p&gt;
 
 &lt;p&gt;I took these notes as part of our little “Book Club” for GDC Vault Videos &lt;a href=&quot;http://thetoolsmiths.org/vault_club&quot;&gt;The Toolsmiths #vault club&lt;/a&gt;&lt;/p&gt;
 
@@ -1222,7 +1222,7 @@
 &lt;/div&gt;
 
 &lt;h2 id=&quot;the-toolsmiths&quot;&gt;The Toolsmiths&lt;/h2&gt;
-&lt;p&gt;&lt;img src=&quot;http://thetoolsmiths.org/assets/thetoolsmiths_cover_1000x2881.png&quot; alt=&quot;The Toolsmiths logo&quot; width=&quot;700&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;https://tools.engineer/assets/images/thetoolsmiths_cover_1000x2881.png&quot; alt=&quot;The Toolsmiths logo&quot; width=&quot;700&quot; /&gt;&lt;/p&gt;
 
 &lt;p&gt;I took these notes as part of our little “Book Club” for GDC Vault Videos &lt;a href=&quot;http://thetoolsmiths.org/vault_club&quot;&gt;The Toolsmiths #vault club&lt;/a&gt;&lt;/p&gt;
 
@@ -1593,7 +1593,7 @@ it the most expensive to change, because it is persistent
 &lt;p&gt;You can open the file with &lt;a href=&quot;https://github.com/xmindltd/xmind&quot;&gt;XMind&lt;/a&gt;&lt;/p&gt;
 
 &lt;h2 id=&quot;the-toolsmiths&quot;&gt;The Toolsmiths&lt;/h2&gt;
-&lt;p&gt;&lt;img src=&quot;http://thetoolsmiths.org/assets/thetoolsmiths_cover_1000x2881.png&quot; alt=&quot;The Toolsmiths logo&quot; /&gt;
+&lt;p&gt;&lt;img src=&quot;https://tools.engineer/assets/images/thetoolsmiths_cover_1000x2881.png&quot; alt=&quot;The Toolsmiths logo&quot; /&gt;
 &lt;strong&gt;Ludovic Chabant&lt;/strong&gt; is a member of the &lt;a href=&quot;http://thetoolsmiths.org/&quot;&gt;Toolsmiths&lt;/a&gt; community. The Toolsmiths are a community of Game Tool Developers that are passionate about improving the way people make games.&lt;/p&gt;
 
 &lt;p&gt;Join us on &lt;a href=&quot;http://thetoolsmiths.org/join_slack_team&quot;&gt;Slack&lt;/a&gt;.&lt;/p&gt;
