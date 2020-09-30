@@ -1,0 +1,1038 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+    <!-- Document Settings -->
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+    <!-- Base Meta -->
+    <!-- dynamically fixing the title for tag/author pages -->
+
+
+
+    <title>Notes for 'What is USD: A Primer' SIGGRAPH 2019</title>
+    <meta name="HandheldFriendly" content="True" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Styles'n'Scripts -->
+    <link rel="stylesheet" type="text/css" href="https://tools.engineer/assets/built/screen.css" />
+    <link rel="stylesheet" type="text/css" href="https://tools.engineer/assets/built/screen.edited.css" />
+    <!-- highlight.js -->
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/default.min.css">
+    <style>.hljs { background: none; }</style>
+
+    <!-- This tag outputs SEO meta+structured data and other important settings -->
+    <meta name="description" content="Passionate about making game developers more productive" />
+    <link rel="shortcut icon" href="https://tools.engineer/assets/images/favicon.png" type="image/png" />
+    <link rel="canonical" href="https://tools.engineer/siggraph2019-what-is-usd-a-primer" />
+    <meta name="referrer" content="no-referrer-when-downgrade" />
+
+     <!--title below is coming from _includes/dynamic_title-->
+    <meta property="og:site_name" content="Victor Stepanov" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Notes for 'What is USD: A Primer' SIGGRAPH 2019" />
+    <meta property="og:description" content="TLDW Summary: This talk is an intro to the key concepts and terminology of Universal Scene Description. The presentation shows examples of how USD is integrated into SideFX products. Key Terms Universal Scene Description Scene Graph Layer Hydra DCC Presentation Time Stamps Link to the talk on YouTube. at minute" />
+    <meta property="og:url" content="https://tools.engineer/siggraph2019-what-is-usd-a-primer" />
+    <meta property="og:image" content="https://tools.engineer/assets/images/posts/siggraph2019-what-is-usd-a-primer/colorful-182220_1920.jpg" />
+    <meta property="article:publisher" content="https://www.facebook.com/" />
+    <meta property="article:author" content="https://www.facebook.com/" />
+    <meta property="article:published_time" content="2020-09-29T18:00:00-07:00" />
+    <meta property="article:modified_time" content="2020-09-29T18:00:00-07:00" />
+    <meta property="article:tag" content="Gdc" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Notes for 'What is USD: A Primer' SIGGRAPH 2019" />
+    <meta name="twitter:description" content="TLDW Summary: This talk is an intro to the key concepts and terminology of Universal Scene Description. The presentation shows examples of how USD is integrated into SideFX products. Key Terms Universal Scene Description Scene Graph Layer Hydra DCC Presentation Time Stamps Link to the talk on YouTube. at minute" />
+    <meta name="twitter:url" content="https://tools.engineer/" />
+    <meta name="twitter:image" content="https://tools.engineer/assets/images/posts/siggraph2019-what-is-usd-a-primer/colorful-182220_1920.jpg" />
+    <meta name="twitter:label1" content="Written by" />
+    <meta name="twitter:data1" content="Victor Stepanov" />
+    <meta name="twitter:label2" content="Filed under" />
+    <meta name="twitter:data2" content="Gdc" />
+    <meta name="twitter:site" content="@VictorStepanov" />
+    <meta name="twitter:creator" content="@VictorStepanov" />
+    <meta property="og:image:width" content="1400" />
+    <meta property="og:image:height" content="933" />
+
+    <script type="application/ld+json">
+{
+    "@context": "https://schema.org",
+    "@type": "Website",
+    "publisher": {
+        "@type": "Organization",
+        "name": "Victor Stepanov",
+        "logo": "https://tools.engineer/assets/images/blog-icon.png"
+    },
+    "url": "https://tools.engineer/siggraph2019-what-is-usd-a-primer",
+    "image": {
+        "@type": "ImageObject",
+        "url": "https://tools.engineer/assets/images/posts/siggraph2019-what-is-usd-a-primer/colorful-182220_1920.jpg",
+        "width": 2000,
+        "height": 666
+    },
+    "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": "https://tools.engineer/siggraph2019-what-is-usd-a-primer"
+    },
+    "description": "TLDW Summary: This talk is an intro to the key concepts and terminology of Universal Scene Description. The presentation shows examples of how USD is integrated into SideFX products. Key Terms Universal Scene Description Scene Graph Layer Hydra DCC Presentation Time Stamps Link to the talk on YouTube. at minute"
+}
+    </script>
+
+    <!-- <script type="text/javascript" src="https://demo.ghost.io/public/ghost-sdk.min.js?v=724281a32e"></script>
+    <script type="text/javascript">
+    ghost.init({
+    	clientId: "ghost-frontend",
+    	clientSecret: "f84a07a72b17"
+    });
+    </script> -->
+
+    <meta name="generator" content="Jekyll 3.6.2" />
+    <link rel="alternate" type="application/rss+xml" title="Notes for 'What is USD: A Primer' SIGGRAPH 2019" href="https://tools.engineer/feed.xml" />
+
+
+</head>
+<body class="post-template">
+
+    <div class="site-wrapper">
+        <!-- All the main content gets inserted here, index.hbs, post.hbs, etc -->
+        <!-- default -->
+
+<!-- The tag above means: insert everything in this file
+into the {body} of the default.hbs template -->
+
+<header class="site-header outer">
+    <div class="inner">
+        <nav class="site-nav">
+    <div class="site-nav-left">
+        
+            
+                <a class="site-nav-logo" href="https://tools.engineer/"><img src="https://tools.engineer/assets/images/blog-icon.png" alt="Victor Stepanov" /></a>
+            
+        
+        
+            <ul class="nav" role="menu">
+    <li class="nav-home" role="menuitem"><a href="https://tools.engineer/">Home</a></li>
+    <li class="nav-projects" role="menuitem"><a href="https://tools.engineer/projects/">Projects</a></li>
+    <li class="nav-about" role="menuitem"><a href="https://tools.engineer/about/">About</a></li>
+</ul>
+
+        
+    </div>
+    <div class="site-nav-right">
+        <div class="social-links">
+            
+            
+                <a class="social-link social-link-tw" href="https://twitter.com/VictorStepanov" target="_blank" rel="noopener"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32"><path d="M30.063 7.313c-.813 1.125-1.75 2.125-2.875 2.938v.75c0 1.563-.188 3.125-.688 4.625a15.088 15.088 0 0 1-2.063 4.438c-.875 1.438-2 2.688-3.25 3.813a15.015 15.015 0 0 1-4.625 2.563c-1.813.688-3.75 1-5.75 1-3.25 0-6.188-.875-8.875-2.625.438.063.875.125 1.375.125 2.688 0 5.063-.875 7.188-2.5-1.25 0-2.375-.375-3.375-1.125s-1.688-1.688-2.063-2.875c.438.063.813.125 1.125.125.5 0 1-.063 1.5-.25-1.313-.25-2.438-.938-3.313-1.938a5.673 5.673 0 0 1-1.313-3.688v-.063c.813.438 1.688.688 2.625.688a5.228 5.228 0 0 1-1.875-2c-.5-.875-.688-1.813-.688-2.75 0-1.063.25-2.063.75-2.938 1.438 1.75 3.188 3.188 5.25 4.25s4.313 1.688 6.688 1.813a5.579 5.579 0 0 1 1.5-5.438c1.125-1.125 2.5-1.688 4.125-1.688s3.063.625 4.188 1.813a11.48 11.48 0 0 0 3.688-1.375c-.438 1.375-1.313 2.438-2.563 3.188 1.125-.125 2.188-.438 3.313-.875z"/></svg>
+</a>
+                <a class="social-link social-link-tw" href="https://www.linkedin.com/in/victor-stepanov-673aa18b/" target="_blank" rel="noopener"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M0 0v24h24v-24h-24zm8 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.397-2.586 7-2.777 7 2.476v6.759z"/></svg></a>
+            
+        </div>
+        
+    </div>
+</nav>
+
+    </div>
+</header>
+
+<!-- Everything inside the #post tags pulls data from the post -->
+<!-- #post -->
+
+<main id="site-main" class="site-main outer" role="main">
+    <div class="inner">
+
+        <article class="post-full post ">
+
+            <header class="post-full-header">
+                <section class="post-full-meta">
+                    <time class="post-full-meta-date" datetime="30 September 2020">30 September 2020</time>
+                    
+                        <span class="date-divider">/</span>
+                        
+                            
+                               <a href='https://tools.engineer/tag/gdc/'>GDC</a>,
+                            
+                        
+                            
+                               <a href='https://tools.engineer/tag/visual-arts/'>VISUAL-ARTS</a>,
+                            
+                        
+                            
+                               <a href='https://tools.engineer/tag/interchange/'>INTERCHANGE</a>,
+                            
+                        
+                            
+                               <a href='https://tools.engineer/tag/computer-graphics/'>COMPUTER-GRAPHICS</a>,
+                            
+                        
+                            
+                               <a href='https://tools.engineer/tag/scene-description/'>SCENE-DESCRIPTION</a>,
+                            
+                        
+                            
+                               <a href='https://tools.engineer/tag/usd/'>USD</a>,
+                            
+                        
+                            
+                               <a href='https://tools.engineer/tag/dcc/'>DCC</a>
+                            
+                        
+                    
+                </section>
+                <h1 class="post-full-title">Notes for 'What is USD: A Primer' SIGGRAPH 2019</h1>
+                <p></p>
+                <section class="author-card-content"><p>Reading time: 6 minutes</p></section>
+            </header>
+
+            
+            <figure class="post-full-image" style="background-image: url(https://tools.engineer/assets/images/posts/siggraph2019-what-is-usd-a-primer/colorful-182220_1920.jpg)">
+            </figure>
+            
+
+            <section class="post-full-content">
+                <div class="kg-card-markdown">
+                    <p><strong>TLDW Summary</strong>: This talk is an intro to the key concepts and terminology of Universal Scene Description. The presentation shows examples of how USD is integrated into SideFX products.</p>
+
+<h2 id="key-terms">Key Terms</h2>
+<div class="keyword-container">
+<ul class="keyword-container">
+<li>Universal Scene Description</li>
+<li>Scene Graph</li>
+<li>Layer</li>
+<li>Hydra</li>
+<li>DCC</li>
+</ul>
+<style>
+    .keyword-container > ul
+    {
+        font-size: 16px;
+        list-style-type: none;
+        padding:15px;
+    }
+    .keyword-container > li
+    {
+        background-color:#f3f3f3;
+        display : inline;
+        padding:5px;
+        margin:2px;
+        margin-bottom: 100px;
+        border-radius: 5px;
+    }
+</style>
+</div>
+
+<h2 id="presentation-time-stamps">Presentation Time Stamps</h2>
+
+<p><a href="https://www.youtube.com/watch?v=Yp_TRVD3wjQ" target="_blank">Link</a> to the talk on YouTube.</p>
+
+<ul>
+  <li><a href="https://youtu.be/Yp_TRVD3wjQ?t=41" target="_blank">at minute 1</a> What is USD?</li>
+  <li><a href="https://youtu.be/Yp_TRVD3wjQ?t=237" target="_blank">at minute 4</a> “Layer” term</li>
+  <li><a href="https://youtu.be/Yp_TRVD3wjQ?t=253" target="_blank">at minute 4</a> “Stage” term</li>
+  <li><a href="https://youtu.be/Yp_TRVD3wjQ?t=285" target="_blank">at minute 4</a> “Composition Arcs” term</li>
+  <li><a href="https://youtu.be/Yp_TRVD3wjQ?t=339" target="_blank">at minute 5</a> “SubLayers” term</li>
+  <li><a href="https://youtu.be/Yp_TRVD3wjQ?t=434" target="_blank">at minute 7</a> “Namespace” term</li>
+  <li><a href="https://youtu.be/Yp_TRVD3wjQ?t=542" target="_blank">at minute 9</a> “Opinions” term</li>
+  <li><a href="https://youtu.be/Yp_TRVD3wjQ?t=694" target="_blank">at minute 11</a> “Sublayering” term</li>
+  <li><a href="https://youtu.be/Yp_TRVD3wjQ?t=749" target="_blank">at minute 12</a> “References” term</li>
+  <li><a href="https://youtu.be/Yp_TRVD3wjQ?t=879" target="_blank">at minute 14</a> “Payload” term</li>
+  <li><a href="https://youtu.be/Yp_TRVD3wjQ?t=1017" target="_blank">at minute 16</a> “Instancing” term</li>
+  <li><a href="https://youtu.be/Yp_TRVD3wjQ?t=1105" target="_blank">at minute 18</a> “VariantSet” term</li>
+  <li><a href="https://youtu.be/Yp_TRVD3wjQ?t=1318" target="_blank">at minute 22</a> “Hydra” term</li>
+  <li><a href="https://youtu.be/Yp_TRVD3wjQ?t=1429" target="_blank">at minute 23</a> Q&amp;A</li>
+</ul>
+
+<h2 id="key-concepts">Key Concepts</h2>
+
+<p><em>the ‘more’ link will take you to the USD glossary</em></p>
+
+<ul>
+  <li><strong>Layer</strong>: a <em>file</em> on disk (<a href="https://graphics.pixar.com/usd/docs/USD-Glossary.html#USDGlossary-Layer">find out more</a>)</li>
+  <li><strong>Stage</strong>: the resulting composition of the <em>layers</em> (<a href="https://graphics.pixar.com/usd/docs/USD-Glossary.html#USDGlossary-Stage">find out more</a>)</li>
+  <li><strong>Composition Arcs</strong>: different ways to combine layers into a <em>stage</em> (<a href="https://graphics.pixar.com/usd/docs/USD-Glossary.html#USDGlossary-CompositionArcs">find out more</a>)</li>
+  <li><strong>SubLayers</strong>: the way to refer to other layers within a <em>layer</em> (<a href="https://graphics.pixar.com/usd/docs/USD-Glossary.html#USDGlossary-SubLayers">find out more</a>)</li>
+  <li><strong>Opinions</strong>: a system for resolving conflicts when combining <em>layers</em> (<a href="https://graphics.pixar.com/usd/docs/USD-Glossary.html#USDGlossary-Opinions">find out more</a>)</li>
+  <li><strong>Namespace</strong>: path to the primitives in the <em>scene graph</em> (<a href="https://graphics.pixar.com/usd/docs/USD-Glossary.html#USDGlossary-Namespace">find out more</a>)</li>
+</ul>
+
+<h1 id="the-problemschallenges">The Problems/Challenges</h1>
+
+<ul>
+  <li>Have a single standardized format for describing a 3D scene</li>
+  <li>The format needs to be open for multiple parties to use and extend</li>
+  <li>The format should be easy to implement</li>
+</ul>
+
+<h1 id="propositions">Propositions</h1>
+
+<ul>
+  <li>Start learning and using USD in your pipelines to take advantage of the built-in integration into popular DDC tools, commercial rendering engines, and commercial game engines.</li>
+  <li>You will need a tool to visualize how USD composes the scene graphs to get the final result.</li>
+</ul>
+
+<h1 id="arguments">Arguments</h1>
+
+<ul>
+  <li>Pixar developed USD</li>
+  <li>USD is becoming an industry standard</li>
+  <li>USD is open and actively developed</li>
+</ul>
+
+<h1 id="key-points">Key Points</h1>
+
+<ul>
+  <li>USD is for assembling scene and editing 3D data</li>
+  <li>USD is about enhancing the communication between Digital Content Creation tools</li>
+  <li>Layer == Scene Graph == USD File</li>
+  <li>USD can enable non-destructive editing of data from lower layers</li>
+  <li>The concept of splitting the scene into multiple files allows the artist not to load the whole resulting scene, a.k.a. “Stage”</li>
+  <li>Compositing USD files (referencing other USD files in a USD file) works like PhotoShop layers</li>
+  <li>“opinions” are used to resolve scene graph composition conflicts. Layer on top will have a stronger “opinion” then the layer below that</li>
+  <li>Need a standalone viewer/tool to understand how the scene is created
+    <ul>
+      <li>“This can get super confusing.”</li>
+      <li>“This can get very complicated.”</li>
+    </ul>
+  </li>
+</ul>
+
+<hr />
+
+<h1 id="notable-parts-of-the-talk">Notable parts of the talk</h1>
+
+<h2 id="enabling-multiple-artist-work">Enabling multiple artist work</h2>
+<p><em>timestamp: 2 minutes into the presentation</em></p>
+
+<ul>
+  <li>It allows multiple artists to work on the same scene
+    <ul>
+      <li>Every department can have its own USD file</li>
+    </ul>
+  </li>
+</ul>
+
+<p><img src="https://tools.engineer/assets/images/posts/siggraph2019-what-is-usd-a-primer/Screen_Shot_at_3-51.png" alt="Presentation Timestamp 3:53 USD basic structure" width="700" style="margin: .1em auto" />
+  <span style="font-size:50%;text-align:center;display:block">Rob Stauffer. <i>What is USD: A Primer</i>. July 2019, SIGGRAPH, <a target="_blank" href="https://youtu.be/Yp_TRVD3wjQ?t=233"> YouTube</a>. Presentation Timestamp 3:53.</span></p>
+
+<h2 id="composing-multiple-usd-files">Composing multiple USD files</h2>
+<p><em>timestamp: 4 minutes into the presentation</em></p>
+
+<p><img src="https://tools.engineer/assets/images/posts/siggraph2019-what-is-usd-a-primer/Screen_Shot_at_4-23.png" alt="Presentation Timestamp 4:23 term stage" width="700" style="margin: .1em auto" />
+  <span style="font-size:50%;text-align:center;display:block">Rob Stauffer. <i>What is USD: A Primer</i>. July 2019, SIGGRAPH, <a target="_blank" href="https://youtu.be/Yp_TRVD3wjQ?t=267"> YouTube</a>. Presentation Timestamp 4:23.</span></p>
+
+<h2 id="sublayering">Sublayering</h2>
+<p><em>timestamp: 5 minutes into the presentation</em></p>
+
+<ul>
+  <li>An empty root layer creates an empty stage</li>
+  <li>USD composition works by combining scene graphs (USD files/Layers)
+    <ul>
+      <li>a.k.a. sublayering</li>
+    </ul>
+  </li>
+</ul>
+
+<p><img src="https://tools.engineer/assets/images/posts/siggraph2019-what-is-usd-a-primer/Screen_Shot_at_5-53.png" alt="Presentation Timestamp 5:53 two USD files" width="700" style="margin: .1em auto" />
+  <span style="font-size:50%;text-align:center;display:block">Rob Stauffer. <i>What is USD: A Primer</i>. July 2019, SIGGRAPH, <a target="_blank" href="https://youtu.be/Yp_TRVD3wjQ?t=353"> YouTube</a>. Presentation Timestamp 5:53.</span></p>
+
+<p><img src="https://tools.engineer/assets/images/posts/siggraph2019-what-is-usd-a-primer/Screen_Shot_at_8-00.png" alt="Presentation Timestamp 8:00 two usd files" width="700" style="margin: .1em auto" />
+  <span style="font-size:50%;text-align:center;display:block">Rob Stauffer. <i>What is USD: A Primer</i>. July 2019, SIGGRAPH, <a target="_blank" href="https://youtu.be/Yp_TRVD3wjQ?t=480"> YouTube</a>. Presentation Timestamp 8:00.</span></p>
+
+<ul>
+  <li><em>opinions</em> are used to resolve conflicts between scene graphs</li>
+</ul>
+
+<p><img src="https://tools.engineer/assets/images/posts/siggraph2019-what-is-usd-a-primer/Screen_Shot_at_11-25.png" alt="Presentation Timestamp 11:25 composing USD files" width="700" style="margin: .1em auto" />
+  <span style="font-size:50%;text-align:center;display:block">Rob Stauffer. <i>What is USD: A Primer</i>. July 2019, SIGGRAPH, <a target="_blank" href="https://youtu.be/Yp_TRVD3wjQ?t=662"> YouTube</a>. Presentation Timestamp 11:25.</span></p>
+
+<h2 id="references">References</h2>
+<p><em>timestamp: 12 minutes into the presentation</em></p>
+
+<ul>
+  <li>“You reference one primitive from one file into the namespace of an existing primitive of a referencing scene graph”
+    <ul>
+      <li>You can make a primitive into a reference to a scene graph in another file</li>
+      <li>You can define root primitives as default primitives
+        <ul>
+          <li>USD will look for default primitives</li>
+        </ul>
+      </li>
+      <li>The idea is not to just graft a scene graph on top of the existing scene graph. The idea is to specify the location wherein the existing scene graph USD inserts the source scene graph.
+<img src="https://tools.engineer/assets/images/posts/siggraph2019-what-is-usd-a-primer/Screen_Shot_at_14-14.png" alt="Presentation Timestamp 14:14 referencing example" width="700" style="margin: .1em auto" />
+<span style="font-size:50%;text-align:center;display:block">Rob Stauffer. <i>What is USD: A Primer</i>. July 2019, SIGGRAPH, <a target="_blank" href="https://youtu.be/Yp_TRVD3wjQ?t=854"> YouTube</a>. Presentation Timestamp 14:14.</span></li>
+    </ul>
+  </li>
+</ul>
+
+<h2 id="payloads">Payloads</h2>
+<p><em>timestamp: 14 minutes into the presentation</em></p>
+
+<ul>
+  <li>Only load what you want
+<img src="https://tools.engineer/assets/images/posts/siggraph2019-what-is-usd-a-primer/Screen_Shot_at_15-54.png" alt="Presentation Timestamp 15-54 payload example full scene" width="700" style="margin: .1em auto" />
+<span style="font-size:50%;text-align:center;display:block">Rob Stauffer. <i>What is USD: A Primer</i>. July 2019, SIGGRAPH, <a target="_blank" href="https://youtu.be/Yp_TRVD3wjQ?t=954"> YouTube</a>. Presentation Timestamp 15-54.</span></li>
+</ul>
+
+<p><img src="https://tools.engineer/assets/images/posts/siggraph2019-what-is-usd-a-primer/Screen_Shot_at_15-57.png" alt="Presentation Timestamp 15-57 payload example full scene" width="700" style="margin: .1em auto" />
+  <span style="font-size:50%;text-align:center;display:block">Rob Stauffer. <i>What is USD: A Primer</i>. July 2019, SIGGRAPH, <a target="_blank" href="https://youtu.be/Yp_TRVD3wjQ?t=957"> YouTube</a>. Presentation Timestamp 15-57.</span></p>
+
+<h2 id="3-ways-to-compose">3 ways to compose</h2>
+
+<ul>
+  <li>There are 3 principal ways to bring a USD file into a scene graph
+    <ul>
+      <li>Layers
+        <ul>
+          <li>adding a USD file on top of an existing USD file</li>
+        </ul>
+      </li>
+      <li>Referencing
+        <ul>
+          <li>adding a select primitive of another USD file into a specific location in the base USD file</li>
+        </ul>
+      </li>
+      <li>Payload
+        <ul>
+          <li>a reference that you can load or not
+            <ul>
+              <li>done for memory management and processing time</li>
+            </ul>
+          </li>
+        </ul>
+      </li>
+    </ul>
+  </li>
+</ul>
+
+<h2 id="variantset">Variantset</h2>
+<p><em>timestamp: 18 minutes into the presentation</em></p>
+
+<ul>
+  <li>a non-destructive set of alternatives
+    <ul>
+      <li>examples:
+        <ul>
+          <li>dented models that are dented</li>
+          <li>models with different textures materials applied</li>
+          <li>models ageing over time</li>
+          <li>storing LODs</li>
+        </ul>
+      </li>
+    </ul>
+  </li>
+  <li>The alternatives are chosen non-destructively by using the “opinion” layer stack</li>
+</ul>
+
+<h2 id="hydra">Hydra</h2>
+<p><em>timestamp: 22 minutes into the presentation</em></p>
+
+<p><img src="https://tools.engineer/assets/images/posts/siggraph2019-what-is-usd-a-primer/Screen_Shot_at_23-08.png" alt="Presentation Timestamp 23-08 what is Hydra" width="700" style="margin: .1em auto" />
+  <span style="font-size:50%;text-align:center;display:block">Rob Stauffer. <i>What is USD: A Primer</i>. July 2019, SIGGRAPH, <a target="_blank" href="https://youtu.be/Yp_TRVD3wjQ?t=1388"> YouTube</a>. Presentation Timestamp 23-08.</span></p>
+
+<h2 id="notes-from-the-qa">Notes from the Q&amp;A</h2>
+<p><em>timestamp: 23 minutes into the presentation</em></p>
+
+<ul>
+  <li>in theory USD should make the interop between different DCC tools easier
+    <ul>
+      <li>it all depends on the way the given DCC supports USD</li>
+    </ul>
+  </li>
+  <li>
+    <p><em>previz</em> in Virtual Production can be defined as a USD layer</p>
+  </li>
+  <li>USD can hold geometry
+    <ul>
+      <li>You can set up a USD scene in a way where:
+        <ul>
+          <li>Some USD files will contain the Scene Description and some USD files will contain the geometry
+            <ul>
+              <li>example: <a href="https://graphics.pixar.com/usd/downloads.html">Pixar USD Kitchen set</a></li>
+            </ul>
+          </li>
+        </ul>
+      </li>
+    </ul>
+  </li>
+  <li>
+    <p>currently missing support for skeletal animation rigs</p>
+  </li>
+  <li>
+    <p>it is possible to define your own types to store different metadata</p>
+  </li>
+  <li>there isn’t a standard way to organize the USD layer files
+    <ul>
+      <li>some studios organize per department</li>
+      <li>some organize everything in a flat file</li>
+    </ul>
+  </li>
+  <li>
+    <p>you can support multiple renderers, but you might need to store multiple material definitions</p>
+  </li>
+  <li>Future work:
+    <ul>
+      <li>Making it easier to work with materials for different renderers
+        <ul>
+          <li>MaterialX</li>
+          <li>MDL Material</li>
+        </ul>
+      </li>
+      <li>Supporting shaders</li>
+    </ul>
+  </li>
+</ul>
+
+<hr />
+
+<h1 id="thoughts">Thoughts</h1>
+
+<h2 id="applications-in-game-dev">Applications in Game dev</h2>
+
+<ul>
+  <li>The possibility of leveraging third-party DCCs tools that will use the same format to save levels
+    <ul>
+      <li>a seamless workflow between proprietary studio technologies and third-party tools</li>
+    </ul>
+  </li>
+  <li>From what I understand you can use USD in 3 different ways:
+    <ul>
+      <li><code class="highlighter-rouge">interchange</code> - intermediate format to communicate between tools (buffer/temp files)
+        <ul>
+          <li><code class="highlighter-rouge">low</code> commitment to USD</li>
+        </ul>
+      </li>
+      <li><code class="highlighter-rouge">store</code> - the authoritative persistent format that all the tools use and save (all your proprietary tools save into a USD file)
+        <ul>
+          <li><code class="highlighter-rouge">medium</code> commitment to USD</li>
+        </ul>
+      </li>
+      <li><code class="highlighter-rouge">render</code> - implement the Hydra API to render from USD
+        <ul>
+          <li><code class="highlighter-rouge">high</code> commitment to USD</li>
+          <li>a third-party DCC, that supports USD, can render using your proprietary render engine ( see <a href="http://www.cgchannel.com/2020/07/see-blenders-cycles-renderer-running-in-the-houdini-viewport" target="_blank">Blender’s Cycles renderer running in the Houdini viewport</a> )</li>
+        </ul>
+      </li>
+    </ul>
+  </li>
+</ul>
+
+<h2 id="practical-truths">Practical Truths</h2>
+
+<p><em>General Tools Development Wisdom</em></p>
+
+<ul>
+  <li><strong>Layers can power non-destructive workflows.</strong> - layers are key for implementing non-destructive workflows.</li>
+  <li><strong>Communicating hierarchies is hard.</strong> - it can be a challenge for a non-technical user to grasp hierarchies, especially if merging of hierarchies is a feature.</li>
+  <li><strong>Visualization is paramount.</strong> - getting the visualization “right” can make all the difference.</li>
+</ul>
+
+<h2 id="practical-principles">Practical Principles</h2>
+
+<p><em>General Tools Development Principles</em></p>
+
+<ul>
+  <li>
+    <p>Make it easy for your users to visualize the internal data. Don’t just render the underlying data and call it a day. (see <a href="https://tools.engineer//tools-tutorial-day-a-tale-of-three-data-schemas" target="_blank">GDC 2018 Notes for “A Tale of Three Data Schemas”</a> )</p>
+  </li>
+  <li>
+    <p><em>Layers</em> are great for separating artists and department work.</p>
+  </li>
+</ul>
+
+<h2 id="questions-that-came-to-mind">Questions that came to mind</h2>
+
+<ul>
+  <li>Is there a good comparison of scene description file formats (open and not)?
+    <ul>
+      <li><a href="http://nickporcino.com/posts/last_mile_interchange.html" target="_blank">Article “Last mile interchange” by Nick Porcino</a></li>
+      <li><a href="https://all3dp.com/3d-file-format-3d-files-3d-printer-3d-cad-vrml-stl-obj/" target="_blank">The Most Common 3D File Formats (don’t have USD)</a></li>
+    </ul>
+  </li>
+  <li>Who supports USD?
+    <ul>
+      <li><a href="https://docs.blender.org/manual/en/latest/files/import_export/usd.html">Blender</a></li>
+      <li><a href="https://docs.unrealengine.com/en-US/Support/Builds/ReleaseNotes/4_24/index.html#new:liveuniversalscenedescriptionstage_beta_">Unreal</a></li>
+      <li><a href="https://blogs.unity3d.com/2019/03/28/pixars-universal-scene-description-for-unity-out-in-preview/">Unity</a></li>
+      <li><a href="https://github.com/Autodesk/maya-usd">Maya</a></li>
+    </ul>
+  </li>
+  <li>Why the “payload” functionality can’t be done via “composition arcs”?
+    <ul>
+      <li><a href="https://twitter.com/meshula" target="_blank">Nick Porcino</a> answered:
+  Composition arcs is just a graph nomenclature. The “arc” expresses the relationship.
+        <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>  level3 -&gt; is_active_in -&gt; world
+  lighting -&gt; is_referenced_by -&gt; level3
+  night_lighting -&gt; overrides -&gt; lighting
+  grunt -&gt; extends -&gt; player
+  red_costume -&gt; is_referenced_by -&gt; grunt
+</code></pre></div>        </div>
+        <p>The mesh in the costume is a payload. The lights in the night_lighting scene might be a payload. etc….</p>
+      </li>
+    </ul>
+  </li>
+</ul>
+
+<h2 id="notes-from-the-vault-club">Notes from the Vault Club</h2>
+
+<p>During the discussion in the <a href="http://thetoolsmiths.org/vault_club" target="_blank">Vault Club</a>, I learned a lot. Here are some highlights.</p>
+
+<ul>
+  <li>some game dev studios are experimenting with proof-of-concept level editor that saves the scene graph as USD</li>
+  <li>
+    <p><a href="https://twitter.com/eskilsteenberg" target="_blank">Eskil Steenberg</a> pointed out that USD is more about managing interdepartmental workflows, then about what graphics engineer would look for in a format (polygons, pixels, shaders). “USD, assumes that its part of a pipeline of large DCC applications that supports formats like Alembic, OpenEXR, OpenVDB, OpenShadingLanguage to store the actual data.”</p>
+  </li>
+  <li><a href="https://twitter.com/meshula" target="_blank">Nick Porcino</a> mentioned that one of the possible names for USD was “Layered Scene Description”. :)</li>
+  <li>The name “Hydra” - comes from the idea that you would implement your own rendering “head”.</li>
+  <li>There might be an issue with the coupling between <code class="highlighter-rouge">blind data</code> and <code class="highlighter-rouge">known data</code>. Meaning that if an application creates custom data that is based on the USD data, we might break that custom data by modifying the USD data outside the current application.</li>
+</ul>
+
+<div style="background-color:#FFFF94;border-left: 18px solid #ffff48;padding-left: 50px;">
+<p></p>
+<p>These notes are just the main ideas of the talk. They don’t contain anecdotes and examples. If you want to learn more, I would advise watching the talk on <a target="_blank" href="https://youtu.be/Yp_TRVD3wjQ">YouTube</a>.</p>
+<p></p>
+</div>
+
+<h2 id="the-toolsmiths">The Toolsmiths</h2>
+<p><img src="https://tools.engineer/assets/images/thetoolsmiths_cover_1000x2881.png" alt="The Toolsmiths logo" width="700" /></p>
+
+<p>I took these notes as part of our little “Book Club” for Game Tools related videos <a href="http://thetoolsmiths.org/vault_club" target="_blank">The Toolsmiths #vault club</a></p>
+
+<p>Join us on <a href="http://thetoolsmiths.org/join_slack_team" target="_blank">Slack</a>.</p>
+
+<p>Join us on <a href="https://twitter.com/thetoolsmiths" target="_blank">Twitter</a>.</p>
+
+<h2 id="links">Links</h2>
+<ul>
+  <li><a href="https://youtu.be/Yp_TRVD3wjQ" target="_blank">What is USD: A Primer, Rob Stauffer, SIGGRAPH 2019</a></li>
+</ul>
+
+<h2 id="related-blog-links">Related Blog Links</h2>
+<ul>
+  <li>Notes for <a href="https://tools.engineer//tools-tutorial-day-a-tale-of-three-data-schemas">GDC 2018 Notes for “A Tale of Three Data Schemas”</a></li>
+</ul>
+
+<h2 id="related-talksvideos">Related Talks\Videos</h2>
+<ul>
+  <li><a href="https://www.youtube.com/watch?v=x9ikzGQW0ys" target="_blank">SIGGRAPH 2016 Real-Time Graphics in Pixar Film Production</a></li>
+  <li><a href="https://developer.apple.com/videos/play/wwdc2017/610/" target="_blank">WWDC 2017 From Art to Engine with Model I/O</a></li>
+  <li><a href="https://www.gdcvault.com/play/1026345/The-Future-of-Scene-Description" target="_blank">GDC 2019 The Future of Scene Description on ‘God of War’</a></li>
+  <li><a href="https://www.youtube.com/playlist?list=PLNUaMVwYjKk8QDlM8gQSLbl8jxLRgc7d6" target="_blank">USD at UTS Animal Logic Academy video presentations</a></li>
+</ul>
+
+<h2 id="related-resources">Related resources</h2>
+<ul>
+  <li><a href="https://wiki.aswf.io/display/WGUSD/USD+Projects+and+Resources" target="_blank">USD Projects and Resources</a></li>
+  <li><a href="https://github.com/vfxpro99/usd-resources" target="_blank">Resources USD</a></li>
+  <li><a href="http://nickporcino.com/posts/last_mile_interchange.html" target="_blank">Article “Last mile interchange” by Nick Porcino</a></li>
+  <li><a href="http://www.cgchannel.com/2020/07/see-blenders-cycles-renderer-running-in-the-houdini-viewport" target="_blank">See Blender’s Cycles renderer running in the Houdini viewport, CG Channel</a></li>
+  <li><a href="https://marketplace.visualstudio.com/items?itemName=AnimalLogic.vscode-usda-syntax" target="_blank">VSCode USD Language support</a></li>
+  <li><a href="https://github.com/quelsolaar/HxA" target="_blank">HxA 3D asset format, Eskil Steenberg</a></li>
+  <li><a href="https://lesterbanks.com/2020/03/how-to-integrate-fx-using-usd-and-houdini-solaris" target="_blank">How to Integrate FX Using USD and Houdini Solaris - Lesterbanks</a></li>
+  <li><a href="https://www.sidefx.com/products/houdini/solaris/" target="_blank">Solaris, SideFX</a></li>
+  <li><a href="https://yoann01.github.io/blog/2019/10/01/USD.html" target="_blank">Intro to USD</a></li>
+  <li><a href="https://www.alembic.io" target="_blank">Alembic - an open computer graphics interchange framework</a></li>
+</ul>
+
+<h2 id="credits">Credits</h2>
+
+<p>Post cover image by <a target="_blank" href="https://pixabay.com/users/AlexanderStein-45237/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=182220">Alexander Stein</a> from <a target="_blank" href="https://pixabay.com/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=182220">Pixabay</a></p>
+
+                </div>
+            </section>
+
+            <!-- Email subscribe form at the bottom of the page -->
+            
+
+            <footer class="post-full-footer">
+                <!-- Everything inside the #author tags pulls data from the author -->
+                <!-- #author-->
+                
+                    
+                        <section class="author-card">
+                            
+                                <img class="author-profile-image" src="https://tools.engineer/assets/images/vstepano.png" alt="vstepano" />
+                            
+                            <section class="author-card-content">
+                                <h4 class="author-card-name"><a href="https://tools.engineer/author/vstepano">Victor Stepanov</a></h4>
+                                
+                                    <p>Game Tools Developer</p>
+                                
+                            </section>
+                        </section>
+                        <div class="post-full-footer-right">
+                            <a class="author-card-button" href="https://tools.engineer/author/vstepano">Read More</a>
+                        </div>
+                    
+                
+                <!-- /author  -->
+            </footer>
+
+            <!-- If you use Disqus comments, just uncomment this block.
+            The only thing you need to change is "test-apkdzgmqhj" - which
+            should be replaced with your own Disqus site-id. -->
+            
+                <section class="post-full-comments">
+                    <div id="disqus_thread"></div>
+                    <script>
+                        var disqus_config = function () {
+                            this.page.url = 'https://tools.engineer/';
+                            this.page.identifier = 'Victor Stepanov';
+                        };
+                        (function() {
+                            var d = document, s = d.createElement('script');
+                            s.src = 'https://productivityengineer-com.disqus.com/embed.js';
+                            s.setAttribute('data-timestamp', +new Date());
+                            (d.head || d.body).appendChild(s);
+                        })();
+                    </script>
+                </section>
+            
+
+        </article>
+
+    </div>
+</main>
+
+<!-- Links to Previous/Next posts -->
+<aside class="read-next outer">
+    <div class="inner">
+        <div class="read-next-feed">
+            
+                
+                
+                
+                
+                    <article class="read-next-card"
+                        
+                            style="background-image: url(https://tools.engineer/assets/images/blog-cover.jpg)"
+                        
+                    >
+                        <header class="read-next-card-header">
+                            <small class="read-next-card-header-sitetitle">&mdash; Victor Stepanov &mdash;</small>
+                            
+                                <h3 class="read-next-card-header-title"><a href="https://tools.engineer/tag/gdc/">Gdc</a></h3>
+                            
+                        </header>
+                        <div class="read-next-divider"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 14.5s2 3 5 3 5.5-2.463 5.5-5.5S21 6.5 18 6.5c-5 0-7 11-12 11C2.962 17.5.5 15.037.5 12S3 6.5 6 6.5s4.5 3.5 4.5 3.5"/></svg>
+</div>
+                        <div class="read-next-card-content">
+                            <ul>
+                                
+                                
+                                  
+                                    
+                                  
+                                
+                                  
+                                    
+                                        
+                                        
+                                            <li><a href="https://tools.engineer/gdc2018-procedural-world-generation-of-far-cry-5">Notes for "Procedural World Generation of 'Far Cry 5'" GDC2018</a></li>
+                                        
+                                    
+                                  
+                                
+                                  
+                                    
+                                        
+                                        
+                                            <li><a href="https://tools.engineer/gdc2019-tools-for-marvels-spider-man-editing-with-immutable-data">Notes for "Tools for 'Marvel's Spider-Man' Editing with Immutable Data" GDC2019</a></li>
+                                        
+                                    
+                                  
+                                
+                                  
+                                    
+                                        
+                                        
+                                            <li><a href="https://tools.engineer/gdc2019-the-future-of-scene-description-on-god-of-war">Notes for "The Future of Scene Description on 'God of War'" GDC2019</a></li>
+                                        
+                                    
+                                  
+                                
+                                  
+                                    
+                                        
+                                        
+                                    
+                                  
+                                
+                                  
+                                    
+                                        
+                                        
+                                    
+                                  
+                                
+                                  
+                                
+                                  
+                                
+                                  
+                                
+                                  
+                                    
+                                        
+                                        
+                                    
+                                  
+                                
+                                  
+                                
+                                  
+                                
+                                  
+                                
+                            </ul>
+                        </div>
+                        <footer class="read-next-card-footer">
+                            <a href="https://tools.engineer/tag/gdc/">
+                                
+                                    See all 6 posts  →
+                                
+                            </a>
+                        </footer>
+                    </article>
+                
+            
+
+            <!-- If there's a next post, display it using the same markup included from - partials/post-card.hbs -->
+            
+
+            <!-- If there's a previous post, display it using the same markup included from - partials/post-card.hbs -->
+            
+                
+    <article class="post-card post-template">
+        
+            <a class="post-card-image-link" href="https://tools.engineer/gdc2018-procedural-world-generation-of-far-cry-5">
+                <div class="post-card-image" style="background-image: url(https://tools.engineer/assets/images/posts/gdc2018-procedural-world-generation-of-far-cry-5/clouds-1852955_1280.jpg)"></div>
+            </a>
+        
+        <div class="post-card-content">
+            <a class="post-card-content-link" href="https://tools.engineer/gdc2018-procedural-world-generation-of-far-cry-5">
+                <header class="post-card-header">
+                    
+                        
+                            
+                               <span class="post-card-tags">Gdc</span>
+                            
+                        
+                            
+                               <span class="post-card-tags">Procedural</span>
+                            
+                        
+                            
+                               <span class="post-card-tags">Visual-arts</span>
+                            
+                        
+                            
+                               <span class="post-card-tags">Level-art</span>
+                            
+                        
+                            
+                                <span class="post-card-tags">Level-design</span>
+                            
+                        
+                    
+
+                    <h2 class="post-card-title">Notes for "Procedural World Generation of 'Far Cry 5'" GDC2018</h2>
+                </header>
+                <section class="post-card-excerpt">
+                    <p>TLDW Summary: This talk is about how FC5 developers created a pipeline for generating a realistic game world using procedural recipes. The talk contains a high-level overview of the pipeline with two deep</p>
+                </section>
+            </a>
+            <footer class="post-card-meta">
+                
+                    
+                        
+                        <img class="author-profile-image" src="https://tools.engineer/assets/images/vstepano.png" alt="Victor Stepanov" />
+                        
+                        <span class="post-card-author">
+                            <a href="https://tools.engineer/author/vstepano/">Victor Stepanov</a>
+                        </span>
+                    
+                
+            </footer>
+        </div>
+    </article>
+
+            
+
+        </div>
+    </div>
+</aside>
+
+<!-- Floating header which appears on-scroll, included from includes/floating-header.hbs -->
+<div class="floating-header">
+    <div class="floating-header-logo">
+        <a href="https://tools.engineer/">
+            
+                <img src="https://tools.engineer/assets/images/favicon.png" alt="Victor Stepanov icon" />
+            
+            <span>Victor Stepanov</span>
+        </a>
+    </div>
+    <span class="floating-header-divider">&mdash;</span>
+    <div class="floating-header-title">Notes for 'What is USD: A Primer' SIGGRAPH 2019</div>
+    <div class="floating-header-share">
+        <div class="floating-header-share-label">Share this <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+    <path d="M7.5 15.5V4a1.5 1.5 0 1 1 3 0v4.5h2a1 1 0 0 1 1 1h2a1 1 0 0 1 1 1H18a1.5 1.5 0 0 1 1.5 1.5v3.099c0 .929-.13 1.854-.385 2.748L17.5 23.5h-9c-1.5-2-5.417-8.673-5.417-8.673a1.2 1.2 0 0 1 1.76-1.605L7.5 15.5zm6-6v2m-3-3.5v3.5m6-1v2"/>
+</svg>
+</div>
+        <a class="floating-header-share-tw" href="https://twitter.com/share?text=Notes+for+%27What+is+USD%3A+A+Primer%27+SIGGRAPH+2019&amp;url=https://tools.engineer/siggraph2019-what-is-usd-a-primer"
+            onclick="window.open(this.href, 'share-twitter', 'width=550,height=235');return false;">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32"><path d="M30.063 7.313c-.813 1.125-1.75 2.125-2.875 2.938v.75c0 1.563-.188 3.125-.688 4.625a15.088 15.088 0 0 1-2.063 4.438c-.875 1.438-2 2.688-3.25 3.813a15.015 15.015 0 0 1-4.625 2.563c-1.813.688-3.75 1-5.75 1-3.25 0-6.188-.875-8.875-2.625.438.063.875.125 1.375.125 2.688 0 5.063-.875 7.188-2.5-1.25 0-2.375-.375-3.375-1.125s-1.688-1.688-2.063-2.875c.438.063.813.125 1.125.125.5 0 1-.063 1.5-.25-1.313-.25-2.438-.938-3.313-1.938a5.673 5.673 0 0 1-1.313-3.688v-.063c.813.438 1.688.688 2.625.688a5.228 5.228 0 0 1-1.875-2c-.5-.875-.688-1.813-.688-2.75 0-1.063.25-2.063.75-2.938 1.438 1.75 3.188 3.188 5.25 4.25s4.313 1.688 6.688 1.813a5.579 5.579 0 0 1 1.5-5.438c1.125-1.125 2.5-1.688 4.125-1.688s3.063.625 4.188 1.813a11.48 11.48 0 0 0 3.688-1.375c-.438 1.375-1.313 2.438-2.563 3.188 1.125-.125 2.188-.438 3.313-.875z"/></svg>
+
+        </a>
+    </div>
+    <progress class="progress" value="0">
+        <div class="progress-container">
+            <span class="progress-bar"></span>
+        </div>
+    </progress>
+</div>
+
+
+<!-- /post -->
+
+<!-- The #contentFor helper here will send everything inside it up to the matching #block helper found in default.hbs -->
+
+
+        <!-- Previous/next page links - displayed on every page -->
+        
+
+        <!-- The footer at the very bottom of the screen -->
+        <footer class="site-footer outer">
+            <div class="site-footer-content inner">
+                <section class="copyright"><a href="https://tools.engineer/">Victor Stepanov</a> &copy; 2020</section>
+                <section class="poweredby">Proudly published with <a href="https://jekyllrb.com/">Jekyll</a> &
+                    <a href="https://pages.github.com/" target="_blank" rel="noopener">GitHub Pages</a> using
+                    <a href="https://github.com/jekyller/jasper2" target="_blank" rel="noopener">Jasper2</a></section>
+                <nav class="site-footer-nav">
+                    <a href="https://tools.engineer/">Latest Posts</a>
+                    
+                    <a href="https://twitter.com/VictorStepanov" target="_blank" rel="noopener">Twitter</a>
+                    <a href="https://www.linkedin.com/in/victor-stepanov-673aa18b/" target="_blank" rel="noopener">LinkedIn</a>
+                </nav>
+            </div>
+        </footer>
+
+    </div>
+
+    <!-- The big email subscribe modal content -->
+    
+
+    <!-- highlight.js -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.10.0/components/prism-abap.min.js"></script>
+    <script>$(document).ready(function() {
+      $('pre code').each(function(i, block) {
+        hljs.highlightBlock(block);
+      });
+    });</script>
+
+    <!-- jQuery + Fitvids, which makes all video embeds responsive -->
+    <script
+        src="https://code.jquery.com/jquery-3.2.1.min.js"
+        integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+        crossorigin="anonymous">
+    </script>
+    <script type="text/javascript" src="https://tools.engineer/assets/js/jquery.fitvids.js"></script>
+    <script type="text/javascript" src="https://demo.ghost.io/assets/js/jquery.fitvids.js?v=724281a32e"></script>
+
+
+    <!-- Paginator increased to "infinit" in _config.yml -->
+    <!-- if paginator.posts  -->
+    <!-- <script>
+        var maxPages = parseInt('');
+    </script>
+    <script src="https://tools.engineer/assets/js/infinitescroll.js"></script> -->
+    <!-- /endif -->
+
+    
+
+
+    <!-- Add Google Analytics  -->
+    <!-- Google Analytics Tracking code -->
+ <script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-115002546-1', 'auto');
+  ga('send', 'pageview');
+
+ </script>
+
+
+    <!-- The #block helper will pull in data from the #contentFor other template files. In this case, there's some JavaScript which we only want to use in post.hbs, but it needs to be included down here, after jQuery has already loaded. -->
+    
+        <script>
+
+// NOTE: Scroll performance is poor in Safari
+// - this appears to be due to the events firing much more slowly in Safari.
+//   Dropping the scroll event and using only a raf loop results in smoother
+//   scrolling but continuous processing even when not scrolling
+$(document).ready(function () {
+    // Start fitVids
+    var $postContent = $(".post-full-content");
+    $postContent.fitVids();
+    // End fitVids
+
+    var progressBar = document.querySelector('progress');
+    var header = document.querySelector('.floating-header');
+    var title = document.querySelector('.post-full-title');
+
+    var lastScrollY = window.scrollY;
+    var lastWindowHeight = window.innerHeight;
+    var lastDocumentHeight = $(document).height();
+    var ticking = false;
+
+    function onScroll() {
+        lastScrollY = window.scrollY;
+        requestTick();
+    }
+
+    function onResize() {
+        lastWindowHeight = window.innerHeight;
+        lastDocumentHeight = $(document).height();
+        requestTick();
+    }
+
+    function requestTick() {
+        if (!ticking) {
+            requestAnimationFrame(update);
+        }
+        ticking = true;
+    }
+
+    function update() {
+        var trigger = title.getBoundingClientRect().top + window.scrollY;
+        var triggerOffset = title.offsetHeight + 35;
+        var progressMax = lastDocumentHeight - lastWindowHeight;
+
+        // show/hide floating header
+        if (lastScrollY >= trigger + triggerOffset) {
+            header.classList.add('floating-active');
+        } else {
+            header.classList.remove('floating-active');
+        }
+
+        progressBar.setAttribute('max', progressMax);
+        progressBar.setAttribute('value', lastScrollY);
+
+        ticking = false;
+    }
+
+    window.addEventListener('scroll', onScroll, {passive: true});
+    window.addEventListener('resize', onResize, false);
+
+    update();
+});
+</script>
+
+    
+
+    <!-- Ghost outputs important scripts and data with this tag - it should always be the very last thing before the closing body tag -->
+    <!-- ghost_foot -->
+
+</body>
+</html>
