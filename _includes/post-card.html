@@ -2,7 +2,7 @@
     <article class="post-card {{ page.class }}{% unless post.cover %} no-image{% endunless %}">
         {% if post.cover %}
         {% if post.post_type == "forward"%}
-        <a class="post-card-image-link" href="{{ post.forward_url }}">
+        <a class="post-card-image-link" href="{{ post.forward_url }}" target="_blank" rel="noopener noreferrer">
         {% else %}
         <a class="post-card-image-link" href="{{ site.baseurl }}{{ post.url | remove_first: '/' }}">
         {% endif %}
@@ -11,7 +11,7 @@
         {% endif %}
         <div class="post-card-content">
             {% if post.post_type == "forward"%}
-                <a class="post-card-content-link" href="{{ post.forward_url }}">
+                <a class="post-card-content-link" href="{{ post.forward_url }}" target="_blank" rel="noopener noreferrer">
             {% else %}
             <a class="post-card-content-link" href="{{ site.baseurl }}{{ post.url | remove_first: '/' }}">
             {% endif %}
