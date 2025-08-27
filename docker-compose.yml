@@ -1,0 +1,49 @@
+services:
+  jekyll-site:
+    build: .
+    ports:
+      - "8080:80"
+    restart: unless-stopped
+    container_name: tools-engineer-site
+
+  # Build service to generate site files locally
+  jekyll-build:
+    image: ruby:3.1-slim
+    working_dir: /app
+    volumes:
+      - .:/app
+      - ./_site_output:/app/_site
+    command: >
+      bash -c "
+      apt-get update && 
+      apt-get install -y build-essential git curl &&
+      curl -fsSL https://deb.nodesource.com/setup_18.x | bash - &&
+      apt-get install -y nodejs &&
+      bundle install &&
+      npm install &&
+      npm run build || npx gulp build || echo 'Gulp build completed or skipped' &&
+      JEKYLL_ENV=production bundle exec jekyll build --destination ./_site
+      "
+    profiles:
+      - build
+
+  # Development service with live reload
+  jekyll-dev:
+    image: ruby:3.1-slim
+    working_dir: /app
+    volumes:
+      - .:/app
+    ports:
+      - "4000:4000"
+    command: >
+      bash -c "
+      apt-get update && 
+      apt-get install -y build-essential git curl &&
+      curl -fsSL https://deb.nodesource.com/setup_18.x | bash - &&
+      apt-get install -y nodejs &&
+      bundle install &&
+      npm install &&
+      bundle exec jekyll serve --host 0.0.0.0 --livereload
+      "
+    profiles:
+      - dev

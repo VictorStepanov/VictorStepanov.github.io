@@ -8,10 +8,505 @@
     
       
       <item>
-        <title>Notes for 'What is USD: A Primer' SIGGRAPH 2019</title>
+        <title>GDC 2025: Game Tools Developer Guide</title>
+        
+          <description>At GDC 2025, you’ll be able to explore more than 730 sessions, tutorials, and events. Since 340 of them mention “tool” or related terms, narrowing down the right ones can feel daunting.</description>
+        
+        <pubDate>Wed, 12 Feb 2025 10:00:00 +0000</pubDate>
+        <link>
+        /gdc-2025-toolsmiths-guide</link>
+        <guid isPermaLink="true">/gdc-2025-toolsmiths-guide</guid>
+      </item>
+      
+    
+      
+      <item>
+        <title>GDC 2024: Game Tools Developer Guide</title>
+        
+          <description>The GDC 2024 agenda spans more than 650 sessions, tutorials, and events. Of these, 350 highlight “tool” or similar concepts, which can make finding the ones that match your expertise a demanding task.</description>
+        
+        <pubDate>Sat, 24 Feb 2024 10:00:00 +0000</pubDate>
+        <link>
+        /gdc-2024-toolsmiths-guide</link>
+        <guid isPermaLink="true">/gdc-2024-toolsmiths-guide</guid>
+      </item>
+      
+    
+      
+      <item>
+        <title>GDC 2023: Game Tools Developer Guide</title>
+        
+          <description>With more than 700 sessions, tutorials, and events at GDC 2023 and 386 centered on “tool” or related topics it’s easy to feel adrift while searching for the right ones.</description>
+        
+        <pubDate>Fri, 17 Mar 2023 10:00:00 +0000</pubDate>
+        <link>
+        /gdc-2023-toolsmiths-guide</link>
+        <guid isPermaLink="true">/gdc-2023-toolsmiths-guide</guid>
+      </item>
+      
+    
+      
+      <item>
+        <title>GDC 2022: Game Tools Developer Guide</title>
+        
+          <description>There are around 600+ sessions/tutorials/events at GDC 2022, finding the sessions that a tools developer would be interested in takes time. Below you will find a list of sessions that can be used as a guide for your tools developer GDC 2022 experience, whether you plan on attending or you will be viewing after the fact.</description>
+        
+        <pubDate>Fri, 18 Mar 2022 10:00:00 +0000</pubDate>
+        <link>
+        /gdc-2022-toolsmiths-guide</link>
+        <guid isPermaLink="true">/gdc-2022-toolsmiths-guide</guid>
+      </item>
+      
+    
+      
+      <item>
+        <title>Notes for &apos;What is USD: A Primer&apos; SIGGRAPH 2019</title>
         
           <description>&lt;p&gt;&lt;strong&gt;TLDW Summary&lt;/strong&gt;: This talk is an intro to the key concepts and terminology of Universal Scene Description. The presentation shows examples of how USD is integrated into SideFX products.&lt;/p&gt;
 
+&lt;h2 id=&quot;key-terms&quot;&gt;Key Terms&lt;/h2&gt;
+&lt;div class=&quot;keyword-container&quot;&gt;
+&lt;ul class=&quot;keyword-container&quot;&gt;
+&lt;li&gt;Universal Scene Description&lt;/li&gt;
+&lt;li&gt;Scene Graph&lt;/li&gt;
+&lt;li&gt;Layer&lt;/li&gt;
+&lt;li&gt;Hydra&lt;/li&gt;
+&lt;li&gt;DCC&lt;/li&gt;
+&lt;/ul&gt;
+&lt;style&gt;
+    .keyword-container &gt; ul
+    {
+        font-size: 16px;
+        list-style-type: none;
+        padding:15px;
+    }
+    .keyword-container &gt; li
+    {
+        background-color:#f3f3f3;
+        display : inline;
+        padding:5px;
+        margin:2px;
+        margin-bottom: 100px;
+        border-radius: 5px;
+    }
+&lt;/style&gt;
+&lt;/div&gt;
+
+&lt;h2 id=&quot;presentation-time-stamps&quot;&gt;Presentation Time Stamps&lt;/h2&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://www.youtube.com/watch?v=Yp_TRVD3wjQ&quot; target=&quot;_blank&quot;&gt;Link&lt;/a&gt; to the talk on YouTube.&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;https://youtu.be/Yp_TRVD3wjQ?t=41&quot; target=&quot;_blank&quot;&gt;at minute 1&lt;/a&gt; What is USD?&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://youtu.be/Yp_TRVD3wjQ?t=237&quot; target=&quot;_blank&quot;&gt;at minute 4&lt;/a&gt; “Layer” term&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://youtu.be/Yp_TRVD3wjQ?t=253&quot; target=&quot;_blank&quot;&gt;at minute 4&lt;/a&gt; “Stage” term&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://youtu.be/Yp_TRVD3wjQ?t=285&quot; target=&quot;_blank&quot;&gt;at minute 4&lt;/a&gt; “Composition Arcs” term&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://youtu.be/Yp_TRVD3wjQ?t=339&quot; target=&quot;_blank&quot;&gt;at minute 5&lt;/a&gt; “SubLayers” term&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://youtu.be/Yp_TRVD3wjQ?t=434&quot; target=&quot;_blank&quot;&gt;at minute 7&lt;/a&gt; “Namespace” term&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://youtu.be/Yp_TRVD3wjQ?t=542&quot; target=&quot;_blank&quot;&gt;at minute 9&lt;/a&gt; “Opinions” term&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://youtu.be/Yp_TRVD3wjQ?t=694&quot; target=&quot;_blank&quot;&gt;at minute 11&lt;/a&gt; “Sublayering” term&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://youtu.be/Yp_TRVD3wjQ?t=749&quot; target=&quot;_blank&quot;&gt;at minute 12&lt;/a&gt; “References” term&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://youtu.be/Yp_TRVD3wjQ?t=879&quot; target=&quot;_blank&quot;&gt;at minute 14&lt;/a&gt; “Payload” term&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://youtu.be/Yp_TRVD3wjQ?t=1017&quot; target=&quot;_blank&quot;&gt;at minute 16&lt;/a&gt; “Instancing” term&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://youtu.be/Yp_TRVD3wjQ?t=1105&quot; target=&quot;_blank&quot;&gt;at minute 18&lt;/a&gt; “VariantSet” term&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://youtu.be/Yp_TRVD3wjQ?t=1318&quot; target=&quot;_blank&quot;&gt;at minute 22&lt;/a&gt; “Hydra” term&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://youtu.be/Yp_TRVD3wjQ?t=1429&quot; target=&quot;_blank&quot;&gt;at minute 23&lt;/a&gt; Q&amp;amp;A&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;key-concepts&quot;&gt;Key Concepts&lt;/h2&gt;
+
+&lt;p&gt;&lt;em&gt;the ‘more’ link will take you to the USD glossary&lt;/em&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;strong&gt;Layer&lt;/strong&gt;: a &lt;em&gt;file&lt;/em&gt; on disk (&lt;a href=&quot;https://graphics.pixar.com/usd/docs/USD-Glossary.html#USDGlossary-Layer&quot;&gt;find out more&lt;/a&gt;)&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Stage&lt;/strong&gt;: the resulting composition of the &lt;em&gt;layers&lt;/em&gt; (&lt;a href=&quot;https://graphics.pixar.com/usd/docs/USD-Glossary.html#USDGlossary-Stage&quot;&gt;find out more&lt;/a&gt;)&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Composition Arcs&lt;/strong&gt;: different ways to combine layers into a &lt;em&gt;stage&lt;/em&gt; (&lt;a href=&quot;https://graphics.pixar.com/usd/docs/USD-Glossary.html#USDGlossary-CompositionArcs&quot;&gt;find out more&lt;/a&gt;)&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;SubLayers&lt;/strong&gt;: the way to refer to other layers within a &lt;em&gt;layer&lt;/em&gt; (&lt;a href=&quot;https://graphics.pixar.com/usd/docs/USD-Glossary.html#USDGlossary-SubLayers&quot;&gt;find out more&lt;/a&gt;)&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Opinions&lt;/strong&gt;: a system for resolving conflicts when combining &lt;em&gt;layers&lt;/em&gt; (&lt;a href=&quot;https://graphics.pixar.com/usd/docs/USD-Glossary.html#USDGlossary-Opinions&quot;&gt;find out more&lt;/a&gt;)&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Namespace&lt;/strong&gt;: path to the primitives in the &lt;em&gt;scene graph&lt;/em&gt; (&lt;a href=&quot;https://graphics.pixar.com/usd/docs/USD-Glossary.html#USDGlossary-Namespace&quot;&gt;find out more&lt;/a&gt;)&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h1 id=&quot;the-problemschallenges&quot;&gt;The Problems/Challenges&lt;/h1&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Have a single standardized format for describing a 3D scene&lt;/li&gt;
+  &lt;li&gt;The format needs to be open for multiple parties to use and extend&lt;/li&gt;
+  &lt;li&gt;The format should be easy to implement&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h1 id=&quot;propositions&quot;&gt;Propositions&lt;/h1&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Start learning and using USD in your pipelines to take advantage of the built-in integration into popular DDC tools, commercial rendering engines, and commercial game engines.&lt;/li&gt;
+  &lt;li&gt;You will need a tool to visualize how USD composes the scene graphs to get the final result.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h1 id=&quot;arguments&quot;&gt;Arguments&lt;/h1&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Pixar developed USD&lt;/li&gt;
+  &lt;li&gt;USD is becoming an industry standard&lt;/li&gt;
+  &lt;li&gt;USD is open and actively developed&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h1 id=&quot;key-points&quot;&gt;Key Points&lt;/h1&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;USD is for assembling scene and editing 3D data&lt;/li&gt;
+  &lt;li&gt;USD is about enhancing the communication between Digital Content Creation tools&lt;/li&gt;
+  &lt;li&gt;Layer == Scene Graph == USD File&lt;/li&gt;
+  &lt;li&gt;USD can enable non-destructive editing of data from lower layers&lt;/li&gt;
+  &lt;li&gt;The concept of splitting the scene into multiple files allows the artist not to load the whole resulting scene, a.k.a. “Stage”&lt;/li&gt;
+  &lt;li&gt;Compositing USD files (referencing other USD files in a USD file) works like PhotoShop layers&lt;/li&gt;
+  &lt;li&gt;“opinions” are used to resolve scene graph composition conflicts. Layer on top will have a stronger “opinion” then the layer below that&lt;/li&gt;
+  &lt;li&gt;Need a standalone viewer/tool to understand how the scene is created
+    &lt;ul&gt;
+      &lt;li&gt;“This can get super confusing.”&lt;/li&gt;
+      &lt;li&gt;“This can get very complicated.”&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;hr /&gt;
+
+&lt;h1 id=&quot;notable-parts-of-the-talk&quot;&gt;Notable parts of the talk&lt;/h1&gt;
+
+&lt;h2 id=&quot;enabling-multiple-artist-work&quot;&gt;Enabling multiple artist work&lt;/h2&gt;
+&lt;p&gt;&lt;em&gt;timestamp: 2 minutes into the presentation&lt;/em&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;It allows multiple artists to work on the same scene
+    &lt;ul&gt;
+      &lt;li&gt;Every department can have its own USD file&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://tools.engineer/assets/images/posts/siggraph2019-what-is-usd-a-primer/Screen_Shot_at_3-51.png&quot; alt=&quot;Presentation Timestamp 3:53 USD basic structure&quot; width=&quot;700&quot; style=&quot;margin: .1em auto&quot; /&gt;
+  &lt;span style=&quot;font-size:50%;text-align:center;display:block&quot;&gt;Rob Stauffer. &lt;i&gt;What is USD: A Primer&lt;/i&gt;. July 2019, SIGGRAPH, &lt;a target=&quot;_blank&quot; href=&quot;https://youtu.be/Yp_TRVD3wjQ?t=233&quot;&gt; YouTube&lt;/a&gt;. Presentation Timestamp 3:53.&lt;/span&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;composing-multiple-usd-files&quot;&gt;Composing multiple USD files&lt;/h2&gt;
+&lt;p&gt;&lt;em&gt;timestamp: 4 minutes into the presentation&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://tools.engineer/assets/images/posts/siggraph2019-what-is-usd-a-primer/Screen_Shot_at_4-23.png&quot; alt=&quot;Presentation Timestamp 4:23 term stage&quot; width=&quot;700&quot; style=&quot;margin: .1em auto&quot; /&gt;
+  &lt;span style=&quot;font-size:50%;text-align:center;display:block&quot;&gt;Rob Stauffer. &lt;i&gt;What is USD: A Primer&lt;/i&gt;. July 2019, SIGGRAPH, &lt;a target=&quot;_blank&quot; href=&quot;https://youtu.be/Yp_TRVD3wjQ?t=267&quot;&gt; YouTube&lt;/a&gt;. Presentation Timestamp 4:23.&lt;/span&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;sublayering&quot;&gt;Sublayering&lt;/h2&gt;
+&lt;p&gt;&lt;em&gt;timestamp: 5 minutes into the presentation&lt;/em&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;An empty root layer creates an empty stage&lt;/li&gt;
+  &lt;li&gt;USD composition works by combining scene graphs (USD files/Layers)
+    &lt;ul&gt;
+      &lt;li&gt;a.k.a. sublayering&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://tools.engineer/assets/images/posts/siggraph2019-what-is-usd-a-primer/Screen_Shot_at_5-53.png&quot; alt=&quot;Presentation Timestamp 5:53 two USD files&quot; width=&quot;700&quot; style=&quot;margin: .1em auto&quot; /&gt;
+  &lt;span style=&quot;font-size:50%;text-align:center;display:block&quot;&gt;Rob Stauffer. &lt;i&gt;What is USD: A Primer&lt;/i&gt;. July 2019, SIGGRAPH, &lt;a target=&quot;_blank&quot; href=&quot;https://youtu.be/Yp_TRVD3wjQ?t=353&quot;&gt; YouTube&lt;/a&gt;. Presentation Timestamp 5:53.&lt;/span&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://tools.engineer/assets/images/posts/siggraph2019-what-is-usd-a-primer/Screen_Shot_at_8-00.png&quot; alt=&quot;Presentation Timestamp 8:00 two usd files&quot; width=&quot;700&quot; style=&quot;margin: .1em auto&quot; /&gt;
+  &lt;span style=&quot;font-size:50%;text-align:center;display:block&quot;&gt;Rob Stauffer. &lt;i&gt;What is USD: A Primer&lt;/i&gt;. July 2019, SIGGRAPH, &lt;a target=&quot;_blank&quot; href=&quot;https://youtu.be/Yp_TRVD3wjQ?t=480&quot;&gt; YouTube&lt;/a&gt;. Presentation Timestamp 8:00.&lt;/span&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;em&gt;opinions&lt;/em&gt; are used to resolve conflicts between scene graphs&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://tools.engineer/assets/images/posts/siggraph2019-what-is-usd-a-primer/Screen_Shot_at_11-25.png&quot; alt=&quot;Presentation Timestamp 11:25 composing USD files&quot; width=&quot;700&quot; style=&quot;margin: .1em auto&quot; /&gt;
+  &lt;span style=&quot;font-size:50%;text-align:center;display:block&quot;&gt;Rob Stauffer. &lt;i&gt;What is USD: A Primer&lt;/i&gt;. July 2019, SIGGRAPH, &lt;a target=&quot;_blank&quot; href=&quot;https://youtu.be/Yp_TRVD3wjQ?t=662&quot;&gt; YouTube&lt;/a&gt;. Presentation Timestamp 11:25.&lt;/span&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;references&quot;&gt;References&lt;/h2&gt;
+&lt;p&gt;&lt;em&gt;timestamp: 12 minutes into the presentation&lt;/em&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;“You reference one primitive from one file into the namespace of an existing primitive of a referencing scene graph”
+    &lt;ul&gt;
+      &lt;li&gt;You can make a primitive into a reference to a scene graph in another file&lt;/li&gt;
+      &lt;li&gt;You can define root primitives as default primitives
+        &lt;ul&gt;
+          &lt;li&gt;USD will look for default primitives&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+      &lt;li&gt;The idea is not to just graft a scene graph on top of the existing scene graph. The idea is to specify the location wherein the existing scene graph USD inserts the source scene graph.
+&lt;img src=&quot;https://tools.engineer/assets/images/posts/siggraph2019-what-is-usd-a-primer/Screen_Shot_at_14-14.png&quot; alt=&quot;Presentation Timestamp 14:14 referencing example&quot; width=&quot;700&quot; style=&quot;margin: .1em auto&quot; /&gt;
+&lt;span style=&quot;font-size:50%;text-align:center;display:block&quot;&gt;Rob Stauffer. &lt;i&gt;What is USD: A Primer&lt;/i&gt;. July 2019, SIGGRAPH, &lt;a target=&quot;_blank&quot; href=&quot;https://youtu.be/Yp_TRVD3wjQ?t=854&quot;&gt; YouTube&lt;/a&gt;. Presentation Timestamp 14:14.&lt;/span&gt;&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;payloads&quot;&gt;Payloads&lt;/h2&gt;
+&lt;p&gt;&lt;em&gt;timestamp: 14 minutes into the presentation&lt;/em&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Only load what you want
+&lt;img src=&quot;https://tools.engineer/assets/images/posts/siggraph2019-what-is-usd-a-primer/Screen_Shot_at_15-54.png&quot; alt=&quot;Presentation Timestamp 15-54 payload example full scene&quot; width=&quot;700&quot; style=&quot;margin: .1em auto&quot; /&gt;
+&lt;span style=&quot;font-size:50%;text-align:center;display:block&quot;&gt;Rob Stauffer. &lt;i&gt;What is USD: A Primer&lt;/i&gt;. July 2019, SIGGRAPH, &lt;a target=&quot;_blank&quot; href=&quot;https://youtu.be/Yp_TRVD3wjQ?t=954&quot;&gt; YouTube&lt;/a&gt;. Presentation Timestamp 15-54.&lt;/span&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://tools.engineer/assets/images/posts/siggraph2019-what-is-usd-a-primer/Screen_Shot_at_15-57.png&quot; alt=&quot;Presentation Timestamp 15-57 payload example full scene&quot; width=&quot;700&quot; style=&quot;margin: .1em auto&quot; /&gt;
+  &lt;span style=&quot;font-size:50%;text-align:center;display:block&quot;&gt;Rob Stauffer. &lt;i&gt;What is USD: A Primer&lt;/i&gt;. July 2019, SIGGRAPH, &lt;a target=&quot;_blank&quot; href=&quot;https://youtu.be/Yp_TRVD3wjQ?t=957&quot;&gt; YouTube&lt;/a&gt;. Presentation Timestamp 15-57.&lt;/span&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;3-ways-to-compose&quot;&gt;3 ways to compose&lt;/h2&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;There are 3 principal ways to bring a USD file into a scene graph
+    &lt;ul&gt;
+      &lt;li&gt;Layers
+        &lt;ul&gt;
+          &lt;li&gt;adding a USD file on top of an existing USD file&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+      &lt;li&gt;Referencing
+        &lt;ul&gt;
+          &lt;li&gt;adding a select primitive of another USD file into a specific location in the base USD file&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+      &lt;li&gt;Payload
+        &lt;ul&gt;
+          &lt;li&gt;a reference that you can load or not
+            &lt;ul&gt;
+              &lt;li&gt;done for memory management and processing time&lt;/li&gt;
+            &lt;/ul&gt;
+          &lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;variantset&quot;&gt;Variantset&lt;/h2&gt;
+&lt;p&gt;&lt;em&gt;timestamp: 18 minutes into the presentation&lt;/em&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;a non-destructive set of alternatives
+    &lt;ul&gt;
+      &lt;li&gt;examples:
+        &lt;ul&gt;
+          &lt;li&gt;dented models that are dented&lt;/li&gt;
+          &lt;li&gt;models with different textures materials applied&lt;/li&gt;
+          &lt;li&gt;models ageing over time&lt;/li&gt;
+          &lt;li&gt;storing LODs&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;The alternatives are chosen non-destructively by using the “opinion” layer stack&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;hydra&quot;&gt;Hydra&lt;/h2&gt;
+&lt;p&gt;&lt;em&gt;timestamp: 22 minutes into the presentation&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://tools.engineer/assets/images/posts/siggraph2019-what-is-usd-a-primer/Screen_Shot_at_23-08.png&quot; alt=&quot;Presentation Timestamp 23-08 what is Hydra&quot; width=&quot;700&quot; style=&quot;margin: .1em auto&quot; /&gt;
+  &lt;span style=&quot;font-size:50%;text-align:center;display:block&quot;&gt;Rob Stauffer. &lt;i&gt;What is USD: A Primer&lt;/i&gt;. July 2019, SIGGRAPH, &lt;a target=&quot;_blank&quot; href=&quot;https://youtu.be/Yp_TRVD3wjQ?t=1388&quot;&gt; YouTube&lt;/a&gt;. Presentation Timestamp 23-08.&lt;/span&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;notes-from-the-qa&quot;&gt;Notes from the Q&amp;amp;A&lt;/h2&gt;
+&lt;p&gt;&lt;em&gt;timestamp: 23 minutes into the presentation&lt;/em&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;in theory USD should make the interop between different DCC tools easier
+    &lt;ul&gt;
+      &lt;li&gt;it all depends on the way the given DCC supports USD&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;em&gt;previz&lt;/em&gt; in Virtual Production can be defined as a USD layer&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;USD can hold geometry
+    &lt;ul&gt;
+      &lt;li&gt;You can set up a USD scene in a way where:
+        &lt;ul&gt;
+          &lt;li&gt;Some USD files will contain the Scene Description and some USD files will contain the geometry
+            &lt;ul&gt;
+              &lt;li&gt;example: &lt;a href=&quot;https://graphics.pixar.com/usd/downloads.html&quot;&gt;Pixar USD Kitchen set&lt;/a&gt;&lt;/li&gt;
+            &lt;/ul&gt;
+          &lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;currently missing support for skeletal animation rigs&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;it is possible to define your own types to store different metadata&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;there isn’t a standard way to organize the USD layer files
+    &lt;ul&gt;
+      &lt;li&gt;some studios organize per department&lt;/li&gt;
+      &lt;li&gt;some organize everything in a flat file&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;you can support multiple renderers, but you might need to store multiple material definitions&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;Future work:
+    &lt;ul&gt;
+      &lt;li&gt;Making it easier to work with materials for different renderers
+        &lt;ul&gt;
+          &lt;li&gt;MaterialX&lt;/li&gt;
+          &lt;li&gt;MDL Material&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+      &lt;li&gt;Supporting shaders&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;hr /&gt;
+
+&lt;h1 id=&quot;thoughts&quot;&gt;Thoughts&lt;/h1&gt;
+
+&lt;h2 id=&quot;applications-in-game-dev&quot;&gt;Applications in Game dev&lt;/h2&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;The possibility of leveraging third-party DCCs tools that will use the same format to save levels
+    &lt;ul&gt;
+      &lt;li&gt;a seamless workflow between proprietary studio technologies and third-party tools&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;From what I understand you can use USD in 3 different ways:
+    &lt;ul&gt;
+      &lt;li&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;interchange&lt;/code&gt; - intermediate format to communicate between tools (buffer/temp files)
+        &lt;ul&gt;
+          &lt;li&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;low&lt;/code&gt; commitment to USD&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+      &lt;li&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;store&lt;/code&gt; - the authoritative persistent format that all the tools use and save (all your proprietary tools save into a USD file)
+        &lt;ul&gt;
+          &lt;li&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;medium&lt;/code&gt; commitment to USD&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+      &lt;li&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;render&lt;/code&gt; - implement the Hydra API to render from USD
+        &lt;ul&gt;
+          &lt;li&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;high&lt;/code&gt; commitment to USD&lt;/li&gt;
+          &lt;li&gt;a third-party DCC, that supports USD, can render using your proprietary render engine ( see &lt;a href=&quot;http://www.cgchannel.com/2020/07/see-blenders-cycles-renderer-running-in-the-houdini-viewport&quot; target=&quot;_blank&quot;&gt;Blender’s Cycles renderer running in the Houdini viewport&lt;/a&gt; )&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;practical-truths&quot;&gt;Practical Truths&lt;/h2&gt;
+
+&lt;p&gt;&lt;em&gt;General Tools Development Wisdom&lt;/em&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;strong&gt;Layers can power non-destructive workflows.&lt;/strong&gt; - layers are key for implementing non-destructive workflows.&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Communicating hierarchies is hard.&lt;/strong&gt; - it can be a challenge for a non-technical user to grasp hierarchies, especially if merging of hierarchies is a feature.&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Visualization is paramount.&lt;/strong&gt; - getting the visualization “right” can make all the difference.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;practical-principles&quot;&gt;Practical Principles&lt;/h2&gt;
+
+&lt;p&gt;&lt;em&gt;General Tools Development Principles&lt;/em&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;
+    &lt;p&gt;Make it easy for your users to visualize the internal data. Don’t just render the underlying data and call it a day. (see &lt;a href=&quot;https://tools.engineer//tools-tutorial-day-a-tale-of-three-data-schemas&quot; target=&quot;_blank&quot;&gt;GDC 2018 Notes for “A Tale of Three Data Schemas”&lt;/a&gt; )&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;em&gt;Layers&lt;/em&gt; are great for separating artists and department work.&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;questions-that-came-to-mind&quot;&gt;Questions that came to mind&lt;/h2&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Is there a good comparison of scene description file formats (open and not)?
+    &lt;ul&gt;
+      &lt;li&gt;&lt;a href=&quot;http://nickporcino.com/posts/last_mile_interchange.html&quot; target=&quot;_blank&quot;&gt;Article “Last mile interchange” by Nick Porcino&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href=&quot;https://all3dp.com/3d-file-format-3d-files-3d-printer-3d-cad-vrml-stl-obj/&quot; target=&quot;_blank&quot;&gt;The Most Common 3D File Formats (don’t have USD)&lt;/a&gt;&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;Who supports USD?
+    &lt;ul&gt;
+      &lt;li&gt;&lt;a href=&quot;https://docs.blender.org/manual/en/latest/files/import_export/usd.html&quot;&gt;Blender&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href=&quot;https://docs.unrealengine.com/en-US/Support/Builds/ReleaseNotes/4_24/index.html#new:liveuniversalscenedescriptionstage_beta_&quot;&gt;Unreal&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href=&quot;https://blogs.unity3d.com/2019/03/28/pixars-universal-scene-description-for-unity-out-in-preview/&quot;&gt;Unity&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href=&quot;https://github.com/Autodesk/maya-usd&quot;&gt;Maya&lt;/a&gt;&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;Why the “payload” functionality can’t be done via “composition arcs”?
+    &lt;ul&gt;
+      &lt;li&gt;&lt;a href=&quot;https://twitter.com/meshula&quot; target=&quot;_blank&quot;&gt;Nick Porcino&lt;/a&gt; answered:
+  Composition arcs is just a graph nomenclature. The “arc” expresses the relationship.
+        &lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;  level3 -&amp;gt; is_active_in -&amp;gt; world
+  lighting -&amp;gt; is_referenced_by -&amp;gt; level3
+  night_lighting -&amp;gt; overrides -&amp;gt; lighting
+  grunt -&amp;gt; extends -&amp;gt; player
+  red_costume -&amp;gt; is_referenced_by -&amp;gt; grunt
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;        &lt;/div&gt;
+        &lt;p&gt;The mesh in the costume is a payload. The lights in the night_lighting scene might be a payload. etc….&lt;/p&gt;
+      &lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;notes-from-the-vault-club&quot;&gt;Notes from the Vault Club&lt;/h2&gt;
+
+&lt;p&gt;During the discussion in the &lt;a href=&quot;http://thetoolsmiths.org/vault_club&quot; target=&quot;_blank&quot;&gt;Vault Club&lt;/a&gt;, I learned a lot. Here are some highlights.&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;some game dev studios are experimenting with proof-of-concept level editor that saves the scene graph as USD&lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;a href=&quot;https://twitter.com/eskilsteenberg&quot; target=&quot;_blank&quot;&gt;Eskil Steenberg&lt;/a&gt; pointed out that USD is more about managing interdepartmental workflows, then about what graphics engineer would look for in a format (polygons, pixels, shaders). “USD, assumes that its part of a pipeline of large DCC applications that supports formats like Alembic, OpenEXR, OpenVDB, OpenShadingLanguage to store the actual data.”&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://twitter.com/meshula&quot; target=&quot;_blank&quot;&gt;Nick Porcino&lt;/a&gt; mentioned that one of the possible names for USD was “Layered Scene Description”. :)&lt;/li&gt;
+  &lt;li&gt;The name “Hydra” - comes from the idea that you would implement your own rendering “head”.&lt;/li&gt;
+  &lt;li&gt;There might be an issue with the coupling between &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;blind data&lt;/code&gt; and &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;known data&lt;/code&gt;. Meaning that if an application creates custom data that is based on the USD data, we might break that custom data by modifying the USD data outside the current application.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;div style=&quot;background-color:#FFFF94;border-left: 18px solid #ffff48;padding-left: 50px;&quot;&gt;
+&lt;p&gt;&lt;/p&gt;
+&lt;p&gt;These notes are just the main ideas of the talk. They don’t contain anecdotes and examples. If you want to learn more, I would advise watching the talk on &lt;a target=&quot;_blank&quot; href=&quot;https://youtu.be/Yp_TRVD3wjQ&quot;&gt;YouTube&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;&lt;/p&gt;
+&lt;/div&gt;
+
+&lt;h2 id=&quot;the-toolsmiths&quot;&gt;The Toolsmiths&lt;/h2&gt;
+&lt;p&gt;&lt;img src=&quot;https://tools.engineer/assets/images/thetoolsmiths_cover_1000x2881.png&quot; alt=&quot;The Toolsmiths logo&quot; width=&quot;700&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;I took these notes as part of our little “Book Club” for Game Tools related videos &lt;a href=&quot;http://thetoolsmiths.org/vault_club&quot; target=&quot;_blank&quot;&gt;The Toolsmiths #vault club&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;Join us on &lt;a href=&quot;http://thetoolsmiths.org/join_slack_team&quot; target=&quot;_blank&quot;&gt;Slack&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;Join us on &lt;a href=&quot;https://twitter.com/thetoolsmiths&quot; target=&quot;_blank&quot;&gt;Twitter&lt;/a&gt;.&lt;/p&gt;
+
+&lt;h2 id=&quot;links&quot;&gt;Links&lt;/h2&gt;
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;https://youtu.be/Yp_TRVD3wjQ&quot; target=&quot;_blank&quot;&gt;What is USD: A Primer, Rob Stauffer, SIGGRAPH 2019&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;related-blog-links&quot;&gt;Related Blog Links&lt;/h2&gt;
+&lt;ul&gt;
+  &lt;li&gt;Notes for &lt;a href=&quot;https://tools.engineer//tools-tutorial-day-a-tale-of-three-data-schemas&quot;&gt;GDC 2018 Notes for “A Tale of Three Data Schemas”&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;related-talksvideos&quot;&gt;Related Talks\Videos&lt;/h2&gt;
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;https://www.youtube.com/watch?v=x9ikzGQW0ys&quot; target=&quot;_blank&quot;&gt;SIGGRAPH 2016 Real-Time Graphics in Pixar Film Production&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://developer.apple.com/videos/play/wwdc2017/610/&quot; target=&quot;_blank&quot;&gt;WWDC 2017 From Art to Engine with Model I/O&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://www.gdcvault.com/play/1026345/The-Future-of-Scene-Description&quot; target=&quot;_blank&quot;&gt;GDC 2019 The Future of Scene Description on ‘God of War’&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://www.youtube.com/playlist?list=PLNUaMVwYjKk8QDlM8gQSLbl8jxLRgc7d6&quot; target=&quot;_blank&quot;&gt;USD at UTS Animal Logic Academy video presentations&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;related-resources&quot;&gt;Related resources&lt;/h2&gt;
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;https://wiki.aswf.io/display/WGUSD/USD+Projects+and+Resources&quot; target=&quot;_blank&quot;&gt;USD Projects and Resources&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://github.com/vfxpro99/usd-resources&quot; target=&quot;_blank&quot;&gt;Resources USD&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;http://nickporcino.com/posts/last_mile_interchange.html&quot; target=&quot;_blank&quot;&gt;Article “Last mile interchange” by Nick Porcino&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;http://www.cgchannel.com/2020/07/see-blenders-cycles-renderer-running-in-the-houdini-viewport&quot; target=&quot;_blank&quot;&gt;See Blender’s Cycles renderer running in the Houdini viewport, CG Channel&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://marketplace.visualstudio.com/items?itemName=AnimalLogic.vscode-usda-syntax&quot; target=&quot;_blank&quot;&gt;VSCode USD Language support&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://github.com/quelsolaar/HxA&quot; target=&quot;_blank&quot;&gt;HxA 3D asset format, Eskil Steenberg&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://lesterbanks.com/2020/03/how-to-integrate-fx-using-usd-and-houdini-solaris&quot; target=&quot;_blank&quot;&gt;How to Integrate FX Using USD and Houdini Solaris - Lesterbanks&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://www.sidefx.com/products/houdini/solaris/&quot; target=&quot;_blank&quot;&gt;Solaris, SideFX&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://yoann01.github.io/blog/2019/10/01/USD.html&quot; target=&quot;_blank&quot;&gt;Intro to USD&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://www.alembic.io&quot; target=&quot;_blank&quot;&gt;Alembic - an open computer graphics interchange framework&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;credits&quot;&gt;Credits&lt;/h2&gt;
+
+&lt;p&gt;Post cover image by &lt;a target=&quot;_blank&quot; href=&quot;https://pixabay.com/users/AlexanderStein-45237/?utm_source=link-attribution&amp;amp;utm_medium=referral&amp;amp;utm_campaign=image&amp;amp;utm_content=182220&quot;&gt;Alexander Stein&lt;/a&gt; from &lt;a target=&quot;_blank&quot; href=&quot;https://pixabay.com/?utm_source=link-attribution&amp;amp;utm_medium=referral&amp;amp;utm_campaign=image&amp;amp;utm_content=182220&quot;&gt;Pixabay&lt;/a&gt;&lt;/p&gt;
 </description>
         
         <pubDate>Wed, 30 Sep 2020 01:00:00 +0000</pubDate>
@@ -23,10 +518,355 @@
     
       
       <item>
-        <title>Notes for &quot;Procedural World Generation of 'Far Cry 5'&quot; GDC2018</title>
+        <title>Notes for &quot;Procedural World Generation of &apos;Far Cry 5&apos;&quot; GDC2018</title>
         
           <description>&lt;p&gt;&lt;strong&gt;TLDW Summary&lt;/strong&gt;: This talk is about how FC5 developers created a pipeline for generating a realistic game world using procedural recipes. The talk contains a high-level overview of the pipeline with two deep dives into the details of the tools.&lt;/p&gt;
 
+&lt;h2 id=&quot;key-terms&quot;&gt;Key Terms&lt;/h2&gt;
+&lt;div class=&quot;keyword-container&quot;&gt;
+&lt;ul class=&quot;keyword-container&quot;&gt;
+&lt;li&gt;procedural workflow&lt;/li&gt;
+&lt;li&gt;an ecosystem of procedural tools&lt;/li&gt;
+&lt;li&gt;Houdini Engine&lt;/li&gt;
+&lt;li&gt;biome recipes&lt;/li&gt;
+&lt;li&gt;determinism&lt;/li&gt;
+&lt;li&gt;terrain&lt;/li&gt;
+&lt;li&gt;2d mask&lt;/li&gt;
+&lt;/ul&gt;
+&lt;style&gt;
+    .keyword-container &gt; ul
+    {
+        font-size: 16px;
+        list-style-type: none;
+        padding:15px;
+    }
+    .keyword-container &gt; li
+    {
+        background-color:#f3f3f3;
+        display : inline;
+        padding:5px;
+        margin:2px;
+        margin-bottom: 100px;
+        border-radius: 5px;
+    }
+&lt;/style&gt;
+&lt;/div&gt;
+
+&lt;h2 id=&quot;presentation-time-stamps&quot;&gt;Presentation Time Stamps&lt;/h2&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;https://www.gdcvault.com/play/1025215/Procedural-World-Generation-of-Far&quot; target=&quot;_blank&quot;&gt;at minute 2&lt;/a&gt; Introduction&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://www.gdcvault.com/play/1025215/Procedural-World-Generation-of-Far&quot; target=&quot;_blank&quot;&gt;at minute 2&lt;/a&gt; The goals of the procedural pipeline&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://www.gdcvault.com/play/1025215/Procedural-World-Generation-of-Far&quot; target=&quot;_blank&quot;&gt;at minute 6&lt;/a&gt; The tools that were developed&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://www.gdcvault.com/play/1025215/Procedural-World-Generation-of-Far&quot; target=&quot;_blank&quot;&gt;at minute 15&lt;/a&gt; The system from the user’s point of view&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://www.gdcvault.com/play/1025215/Procedural-World-Generation-of-Far&quot; target=&quot;_blank&quot;&gt;at minute 12&lt;/a&gt; How the pipeline is working under the hood&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://www.gdcvault.com/play/1025215/Procedural-World-Generation-of-Far&quot; target=&quot;_blank&quot;&gt;at minute 16&lt;/a&gt; The Cliff generation tool&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://www.gdcvault.com/play/1025215/Procedural-World-Generation-of-Far&quot; target=&quot;_blank&quot;&gt;at minute 25&lt;/a&gt; The Biome generation tool&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://www.gdcvault.com/play/1025215/Procedural-World-Generation-of-Far&quot; target=&quot;_blank&quot;&gt;at minute 46&lt;/a&gt; What changed during development&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://www.gdcvault.com/play/1025215/Procedural-World-Generation-of-Far&quot; target=&quot;_blank&quot;&gt;at minute 49&lt;/a&gt; Conclusion&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://www.gdcvault.com/play/1025215/Procedural-World-Generation-of-Far&quot; target=&quot;_blank&quot;&gt;at minute 52&lt;/a&gt; Q&amp;amp;A&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;key-concepts&quot;&gt;Key Concepts&lt;/h2&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;strong&gt;biome&lt;/strong&gt; : an area of a game world with distinct terrain, vegetation, and animal life.
+&lt;img src=&quot;assets/images/posts/gdc2018-procedural-world-generation-of-far-cry-5/slide_71_sub_biome.png&quot; alt=&quot;slide 71 sub biome&quot; width=&quot;700&quot; style=&quot;margin: .1em auto&quot; /&gt;
+    &lt;p style=&quot;font-size:50%&quot;&gt;Carrier, Etienne. &lt;i&gt;Procedural World Generation of &apos;Far Cry 5&apos;&lt;/i&gt;. Mar. 2018, GDC, &lt;a target=&quot;_blank&quot; href=&quot;https://www.gdcvault.com/play/1025557/Procedural-World-Generation-of-Far&quot;&gt; GDC Vault Slide Location&lt;/a&gt;. Presentation Slide #71.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;map&lt;/strong&gt; : parts of a game &lt;em&gt;world&lt;/em&gt; that are not loaded at the same time&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;section&lt;/strong&gt; : a part of a &lt;em&gt;map&lt;/em&gt; (256m X 256m)&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;sector&lt;/strong&gt; : a part of a &lt;em&gt;section&lt;/em&gt; (64m X 64m), the smallest part of a world that can be &lt;em&gt;baked&lt;/em&gt;
+&lt;img src=&quot;assets/images/posts/gdc2018-procedural-world-generation-of-far-cry-5/slide_34_sector.png&quot; alt=&quot;slide 34 sector&quot; width=&quot;700&quot; style=&quot;margin: .1em auto&quot; /&gt;
+    &lt;p style=&quot;font-size:50%&quot;&gt;Carrier, Etienne. &lt;i&gt;Procedural World Generation of &apos;Far Cry 5&apos;&lt;/i&gt;. Mar. 2018, GDC, &lt;a target=&quot;_blank&quot; href=&quot;https://www.gdcvault.com/play/1025557/Procedural-World-Generation-of-Far&quot;&gt; GDC Vault Slide Location&lt;/a&gt;. Presentation Slide #34.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;recipe&lt;/strong&gt; : a set of rules that given a set of inputs determines what &lt;em&gt;entities&lt;/em&gt; need to be placed at a given location&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;points of interest&lt;/strong&gt; : a &lt;em&gt;map&lt;/em&gt; &lt;em&gt;location&lt;/em&gt; reserved for user input and editing&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h1 id=&quot;the-problemschallenges&quot;&gt;The Problems/Challenges&lt;/h1&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Filling up empty space is easy, but filling it up so it looks &lt;em&gt;natural&lt;/em&gt; is a big challenge.&lt;/li&gt;
+  &lt;li&gt;The workflow required to fill up large open spaces beautifully, quickly, while maintaining the &lt;em&gt;flexibility&lt;/em&gt; for applying user input.
+    &lt;ul&gt;
+      &lt;li&gt;The workflow had to allow fine-tuning of smaller &lt;em&gt;locations&lt;/em&gt; to deliver &lt;em&gt;tight gameplay experiences&lt;/em&gt;.&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;&lt;em&gt;Terraforming&lt;/em&gt; can’t be locked at the start of the project
+    &lt;ul&gt;
+      &lt;li&gt;The terrain of the game would be constantly changing, and the &lt;em&gt;biomes&lt;/em&gt; would need to be constantly updated. Updating the biomes by hand wasn’t an option.&lt;/li&gt;
+      &lt;li&gt;The asset placement needs to be consistent with the terrain topology.&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;The pipeline needs to run without human intervention to regenerate the content in a &lt;em&gt;build farm&lt;/em&gt; setting.&lt;/li&gt;
+  &lt;li&gt;The pipeline needs to generate small &lt;em&gt;sections&lt;/em&gt; of the world separately.&lt;/li&gt;
+  &lt;li&gt;The parts of the world should be generated &lt;em&gt;deterministically&lt;/em&gt; to enable stitching parts together.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h1 id=&quot;propositions&quot;&gt;Propositions&lt;/h1&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;The biomes procedural system should be able to simulate &lt;em&gt;natural phenomena&lt;/em&gt;.
+&lt;img src=&quot;assets/images/posts/gdc2018-procedural-world-generation-of-far-cry-5/slide_80_natural.png&quot; alt=&quot;slide 80 natural phenomena&quot; width=&quot;700&quot; style=&quot;margin: .1em auto&quot; /&gt;
+    &lt;p style=&quot;font-size:50%&quot;&gt;Carrier, Etienne. &lt;i&gt;Procedural World Generation of &apos;Far Cry 5&apos;&lt;/i&gt;. Mar. 2018, GDC, &lt;a target=&quot;_blank&quot; href=&quot;https://www.gdcvault.com/play/1025557/Procedural-World-Generation-of-Far&quot;&gt; GDC Vault Slide Location&lt;/a&gt;. Presentation Slide #80.&lt;/p&gt;
+    &lt;p&gt;&lt;img src=&quot;assets/images/posts/gdc2018-procedural-world-generation-of-far-cry-5/slide_99_canopy.png&quot; alt=&quot;slide 99 natural phenomena&quot; width=&quot;700&quot; style=&quot;margin: .1em auto&quot; /&gt;&lt;/p&gt;
+    &lt;p style=&quot;font-size:50%&quot;&gt;Carrier, Etienne. &lt;i&gt;Procedural World Generation of &apos;Far Cry 5&apos;&lt;/i&gt;. Mar. 2018, GDC, &lt;a target=&quot;_blank&quot; href=&quot;https://www.gdcvault.com/play/1025557/Procedural-World-Generation-of-Far&quot;&gt; GDC Vault Slide Location&lt;/a&gt;. Presentation Slide #99.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;Build &lt;em&gt;biome recipes&lt;/em&gt; that react to the physical features of the land to ensure &lt;em&gt;coherence&lt;/em&gt; throughout the world
+&lt;img src=&quot;assets/images/posts/gdc2018-procedural-world-generation-of-far-cry-5/slide_89_physical_features.png&quot; alt=&quot;slide 89 natural phenomena&quot; width=&quot;700&quot; style=&quot;margin: .1em auto&quot; /&gt;
+    &lt;p style=&quot;font-size:50%&quot;&gt;Carrier, Etienne. &lt;i&gt;Procedural World Generation of &apos;Far Cry 5&apos;&lt;/i&gt;. Mar. 2018, GDC, &lt;a target=&quot;_blank&quot; href=&quot;https://www.gdcvault.com/play/1025557/Procedural-World-Generation-of-Far&quot;&gt; GDC Vault Slide Location&lt;/a&gt;. Presentation Slide #89.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;The iterative process is vital to the quality of the game&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;Use Houdini Engine to run the full map generation in a nightly build&lt;/li&gt;
+  &lt;li&gt;&lt;em&gt;same input&lt;/em&gt; = &lt;em&gt;same result&lt;/em&gt; (determinism matters)&lt;/li&gt;
+  &lt;li&gt;The ecosystem of tools needs to be user friendly
+    &lt;ul&gt;
+      &lt;li&gt;shelf tools&lt;/li&gt;
+      &lt;li&gt;be able to override procedural results&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;User must be able to bake data as they work&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h1 id=&quot;key-points&quot;&gt;Key Points&lt;/h1&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;They developed a sophisticated procedural pipeline for creating a realistic game world using Houdini and Houdini Engine&lt;/li&gt;
+  &lt;li&gt;Originally they just wanted to develop the &lt;em&gt;biome tool&lt;/em&gt;, but they ended up developing a suite of tools.&lt;/li&gt;
+  &lt;li&gt;The &lt;em&gt;heart&lt;/em&gt; of the pipeline is the &lt;em&gt;data exchange&lt;/em&gt; between the Houdini Engine and the Game Engine
+&lt;img src=&quot;assets/images/posts/gdc2018-procedural-world-generation-of-far-cry-5/slide_70_import_2d_data.png&quot; alt=&quot;slide 70 importing 2d data&quot; width=&quot;700&quot; style=&quot;margin: .1em auto&quot; /&gt;
+    &lt;p style=&quot;font-size:50%&quot;&gt;Carrier, Etienne. &lt;i&gt;Procedural World Generation of &apos;Far Cry 5&apos;&lt;/i&gt;. Mar. 2018, GDC, &lt;a target=&quot;_blank&quot; href=&quot;https://www.gdcvault.com/play/1025557/Procedural-World-Generation-of-Far&quot;&gt; GDC Vault Slide Location&lt;/a&gt;. Presentation Slide #70.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;They developed an &lt;em&gt;ecosystem of procedural tools&lt;/em&gt;, where one tool would provide the input to the next tool
+&lt;img src=&quot;assets/images/posts/gdc2018-procedural-world-generation-of-far-cry-5/slide_38_the_pipeline.png&quot; alt=&quot;slide 38 high-level pipeline overview&quot; width=&quot;700&quot; style=&quot;margin: .1em auto&quot; /&gt;
+    &lt;p style=&quot;font-size:50%&quot;&gt;Carrier, Etienne. &lt;i&gt;Procedural World Generation of &apos;Far Cry 5&apos;&lt;/i&gt;. Mar. 2018, GDC, &lt;a target=&quot;_blank&quot; href=&quot;https://www.gdcvault.com/play/1025557/Procedural-World-Generation-of-Far&quot;&gt; GDC Vault Slide Location&lt;/a&gt;. Presentation Slide #38.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;They regenerate the entire game world every night on special &lt;em&gt;build machines&lt;/em&gt;.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;hr /&gt;
+
+&lt;h1 id=&quot;notable-parts-of-the-talk&quot;&gt;Notable parts of the talk&lt;/h1&gt;
+
+&lt;hr /&gt;
+
+&lt;h2 id=&quot;user-iteration-workflow&quot;&gt;User Iteration Workflow&lt;/h2&gt;
+&lt;p&gt;&lt;em&gt;timestamp: 6 minutes into the presentation&lt;/em&gt;&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;Terraforming pass&lt;/li&gt;
+  &lt;li&gt;Define freshwater
+  &lt;img src=&quot;assets/images/posts/gdc2018-procedural-world-generation-of-far-cry-5/slide_22_fresh_water.png&quot; alt=&quot;slide 22 high-level pipeline overview&quot; width=&quot;700&quot; style=&quot;margin: .1em auto&quot; /&gt; &lt;span style=&quot;font-size:50%&quot;&gt;Carrier, Etienne. &lt;i&gt;Procedural World Generation of ‘Far Cry 5’&lt;/i&gt;. Mar. 2018, GDC, &lt;a target=&quot;_blank&quot; href=&quot;https://www.gdcvault.com/play/1025557/Procedural-World-Generation-of-Far&quot;&gt; GDC Vault Slide Location&lt;/a&gt;. Presentation Slide #22.&lt;/span&gt;&lt;/li&gt;
+  &lt;li&gt;Run the &lt;em&gt;cliff generation tool&lt;/em&gt; to create cliffs on steep terrain&lt;/li&gt;
+  &lt;li&gt;Use &lt;em&gt;Biome painter&lt;/em&gt; and run procedural generation to spawn the vegetation&lt;/li&gt;
+  &lt;li&gt;Setting up &lt;em&gt;Points of Interest&lt;/em&gt; (a.k.a. location)
+ &lt;img src=&quot;assets/images/posts/gdc2018-procedural-world-generation-of-far-cry-5/slide_26_point_of_interest.png&quot; alt=&quot;slide 26 high-level pipeline overview&quot; width=&quot;700&quot; style=&quot;margin: .1em auto&quot; /&gt; &lt;span style=&quot;font-size:50%&quot;&gt;Carrier, Etienne. &lt;i&gt;Procedural World Generation of ‘Far Cry 5’&lt;/i&gt;. Mar. 2018, GDC, &lt;a target=&quot;_blank&quot; href=&quot;https://www.gdcvault.com/play/1025557/Procedural-World-Generation-of-Far&quot;&gt; GDC Vault Slide Location&lt;/a&gt;. Presentation Slide #26.&lt;/span&gt;
+    &lt;ol&gt;
+      &lt;li&gt;Paint an area with the grass Biome&lt;/li&gt;
+      &lt;li&gt;Laying down a road spline&lt;/li&gt;
+      &lt;li&gt;Bake roads and refresh biome&lt;/li&gt;
+      &lt;li&gt;Add buildings, props&lt;/li&gt;
+      &lt;li&gt;Apply terrain texture&lt;/li&gt;
+      &lt;li&gt;Add more Trees with the forest sub-biome&lt;/li&gt;
+      &lt;li&gt;Bake/refresh biome&lt;/li&gt;
+      &lt;li&gt;Add fence spline&lt;/li&gt;
+      &lt;li&gt;Add power line spline
+        &lt;ol&gt;
+          &lt;li&gt;Snap power line connector to house&lt;/li&gt;
+          &lt;li&gt;Bake/refresh biome&lt;/li&gt;
+        &lt;/ol&gt;
+      &lt;/li&gt;
+    &lt;/ol&gt;
+  &lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;h2 id=&quot;user-non-destructive-workflow&quot;&gt;User Non-Destructive Workflow&lt;/h2&gt;
+&lt;p&gt;&lt;em&gt;timestamp: 11 minutes into the presentation&lt;/em&gt;&lt;/p&gt;
+&lt;ol&gt;
+  &lt;li&gt;Update level of terrain&lt;/li&gt;
+  &lt;li&gt;Bake/refresh biome
+ &lt;img src=&quot;assets/images/posts/gdc2018-procedural-world-generation-of-far-cry-5/slide_35_bake.png&quot; alt=&quot;slide 35 high-level pipeline overview&quot; width=&quot;700&quot; style=&quot;margin: .1em auto&quot; /&gt;
+    &lt;p style=&quot;font-size:50%&quot;&gt;Carrier, Etienne. &lt;i&gt;Procedural World Generation of &apos;Far Cry 5&apos;&lt;/i&gt;. Mar. 2018, GDC, &lt;a target=&quot;_blank&quot; href=&quot;https://www.gdcvault.com/play/1025557/Procedural-World-Generation-of-Far&quot;&gt; GDC Vault Slide Location&lt;/a&gt;. Presentation Slide #35.&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;h1 id=&quot;how-the-pipeline-is-working-under-the-hood&quot;&gt;How the pipeline is working under the hood&lt;/h1&gt;
+&lt;p&gt;&lt;em&gt;timestamp: 12 minutes into the presentation&lt;/em&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;At the heart of the pipeline is the data exchange between the Houdini Engine and the Game Engine&lt;/li&gt;
+  &lt;li&gt;Inputs for the pipeline are sent from the Game Engine to Houdini via a Python Script
+    &lt;ul&gt;
+      &lt;li&gt;world information&lt;/li&gt;
+      &lt;li&gt;spline &amp;amp; shapes&lt;/li&gt;
+      &lt;li&gt;file paths&lt;/li&gt;
+      &lt;li&gt;Terrain Sectors (Main input that the generation is linked to)&lt;/li&gt;
+      &lt;li&gt;heightmaps&lt;/li&gt;
+      &lt;li&gt;Biome painter&lt;/li&gt;
+      &lt;li&gt;2D terrain masks&lt;/li&gt;
+      &lt;li&gt;Houdini Geometry (that might have been generated by another procedural tool)&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;Outputs of Houdini
+    &lt;ul&gt;
+      &lt;li&gt;List of outputs
+        &lt;ul&gt;
+          &lt;li&gt;Entity point could
+  &lt;img src=&quot;assets/images/posts/gdc2018-procedural-world-generation-of-far-cry-5/slide_37_entity_point_cloud.png&quot; alt=&quot;slide 37 high-level pipeline overview&quot; width=&quot;700&quot; style=&quot;margin: .1em auto&quot; /&gt;&lt;/li&gt;
+        &lt;/ul&gt;
+        &lt;p style=&quot;font-size:50%&quot;&gt;Carrier, Etienne. &lt;i&gt;Procedural World Generation of &apos;Far Cry 5&apos;&lt;/i&gt;. Mar. 2018, GDC, &lt;a target=&quot;_blank&quot; href=&quot;https://www.gdcvault.com/play/1025557/Procedural-World-Generation-of-Far&quot;&gt; GDC Vault Slide Location&lt;/a&gt;. Presentation Slide #37.&lt;/p&gt;
+        &lt;ul&gt;
+          &lt;li&gt;Terrain texture layers&lt;/li&gt;
+          &lt;li&gt;Terrain heightmap layers&lt;/li&gt;
+          &lt;li&gt;2D terrain data&lt;/li&gt;
+          &lt;li&gt;Geometry&lt;/li&gt;
+          &lt;li&gt;Terrain logic zones&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+      &lt;li&gt;The data is saved onto a disk using temp “buffers”&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;The output of one tool influences the output of another tool
+    &lt;ul&gt;
+      &lt;li&gt;The tools use masks to communicate with each other&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h1 id=&quot;examples-of-tools&quot;&gt;Examples of tools&lt;/h1&gt;
+
+&lt;h2 id=&quot;cliffs-tool&quot;&gt;Cliffs tool&lt;/h2&gt;
+&lt;p&gt;&lt;em&gt;timestamp: 16 minutes into the presentation&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;assets/images/posts/gdc2018-procedural-world-generation-of-far-cry-5/slide_65_cliff_tool.png&quot; alt=&quot;slide 65 cliff tool&quot; width=&quot;700&quot; style=&quot;margin: .1em auto&quot; /&gt;&lt;/p&gt;
+&lt;p style=&quot;font-size:50%&quot;&gt;Carrier, Etienne. &lt;i&gt;Procedural World Generation of &apos;Far Cry 5&apos;&lt;/i&gt;. Mar. 2018, GDC, &lt;a target=&quot;_blank&quot; href=&quot;https://www.gdcvault.com/play/1025557/Procedural-World-Generation-of-Far&quot;&gt; GDC Vault Slide Location&lt;/a&gt;. Presentation Slide #65.&lt;/p&gt;
+
+&lt;h2 id=&quot;biomes-tool&quot;&gt;Biomes Tool&lt;/h2&gt;
+&lt;p&gt;&lt;em&gt;timestamp: 25 minutes into the presentation&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;assets/images/posts/gdc2018-procedural-world-generation-of-far-cry-5/slide_69_biome_tool.png&quot; alt=&quot;slide 69 biome tool&quot; width=&quot;700&quot; style=&quot;margin: .1em auto&quot; /&gt;&lt;/p&gt;
+&lt;p style=&quot;font-size:50%&quot;&gt;Carrier, Etienne. &lt;i&gt;Procedural World Generation of &apos;Far Cry 5&apos;&lt;/i&gt;. Mar. 2018, GDC, &lt;a target=&quot;_blank&quot; href=&quot;https://www.gdcvault.com/play/1025557/Procedural-World-Generation-of-Far&quot;&gt; GDC Vault Slide Location&lt;/a&gt;. Presentation Slide #69.&lt;/p&gt;
+
+&lt;h1 id=&quot;lessons-learned&quot;&gt;Lessons Learned&lt;/h1&gt;
+&lt;p&gt;&lt;em&gt;timestamp: 46 minutes into the presentation&lt;/em&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Making the steps of the &lt;em&gt;pipeline simple&lt;/em&gt;. Don’t require knowledge of when the underlying data is generated or how it affects the &lt;em&gt;downstream tasks&lt;/em&gt;.&lt;/li&gt;
+  &lt;li&gt;The &lt;em&gt;blending of biomes&lt;/em&gt; is a complicated feature for the users to use and the developers to debug.&lt;/li&gt;
+  &lt;li&gt;This level of customization and generation at this scale &lt;em&gt;can impact the gameplay&lt;/em&gt;.&lt;/li&gt;
+  &lt;li&gt;This is just a taste of what is possible to produce using this type of &lt;em&gt;procedural technology&lt;/em&gt;.&lt;/li&gt;
+  &lt;li&gt;You won’t get it right on your first try. Keep iterating and simplifying the pipeline. Be flexible - plans and requirements change.&lt;/li&gt;
+  &lt;li&gt;&lt;em&gt;Pay attention&lt;/em&gt; to how the users use the tools. If you think a feature will be useful it doesn’t mean that the users will use it.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;hr /&gt;
+
+&lt;h1 id=&quot;thoughts&quot;&gt;Thoughts&lt;/h1&gt;
+
+&lt;hr /&gt;
+
+&lt;h2 id=&quot;solved-problemschallenges&quot;&gt;Solved Problems/Challenges&lt;/h2&gt;
+
+&lt;p&gt;&lt;em&gt;Did they solve what they set out to solve?&lt;/em&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;They shipped FC5&lt;/li&gt;
+  &lt;li&gt;They developed suite of tools:
+    &lt;ul&gt;
+      &lt;li&gt;The freshwater tool&lt;/li&gt;
+      &lt;li&gt;Fences &amp;amp; power line tool&lt;/li&gt;
+      &lt;li&gt;Cliff generation tool&lt;/li&gt;
+      &lt;li&gt;Biome tool (to spawn vegetation)&lt;/li&gt;
+      &lt;li&gt;Fog tool&lt;/li&gt;
+      &lt;li&gt;World map tool (scatter trees on the world map)&lt;/li&gt;
+      &lt;li&gt;Power line tool
+        &lt;ul&gt;
+          &lt;li&gt;Auto snapping if a user made an error (with-in a given threshold distance)&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;The pipeline is automated and runs nightly&lt;/li&gt;
+  &lt;li&gt;The workflow allowed for quick &lt;strong&gt;iteration&lt;/strong&gt; and the ability to &lt;em&gt;“bake as you work”&lt;/em&gt;&lt;/li&gt;
+  &lt;li&gt;Use &lt;em&gt;biome recipes&lt;/em&gt; to define what vegetation will be placed in different parts of the map (near water, near cliffs, at high altitude)&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;practical-truths&quot;&gt;Practical Truths&lt;/h2&gt;
+
+&lt;p&gt;&lt;em&gt;General Tools Development Wisdom&lt;/em&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;strong&gt;“At first you won’t understand the problem”.&lt;/strong&gt; - You won’t get a system design “right” from the first attempt.&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;“You are not your users”.&lt;/strong&gt; - If you think something is a good feature, it doesn’t mean that the users will think so.&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;“Users don’t have to know the implementation details”.&lt;/strong&gt; - Users will not remember complicated cause-and-effect scenarios.&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;“Watch out for Hidden Cascade Effects”.&lt;/strong&gt; - In a fully automated system, a user might not see/ suspect that their changes are affecting another system that is out of view.&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;“The speed of iteration is vital to the quality of the game”.&lt;/strong&gt; - Don’t let the tools be the bottleneck of the iteration process.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;practical-principles&quot;&gt;Practical Principles&lt;/h2&gt;
+
+&lt;p&gt;&lt;em&gt;General Tools Development Principles&lt;/em&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Enable user input and &lt;em&gt;customization&lt;/em&gt; inside a procedural generation system.&lt;/li&gt;
+  &lt;li&gt;&lt;em&gt;Observe users&lt;/em&gt; to understand what is important for them.&lt;/li&gt;
+  &lt;li&gt;&lt;em&gt;K.I.S.S.&lt;/em&gt;: Keep It Stupid Simple&lt;/li&gt;
+  &lt;li&gt;Search for the balance between &lt;em&gt;control&lt;/em&gt; and &lt;em&gt;automation&lt;/em&gt;.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;questions-that-came-to-mind&quot;&gt;Questions that came to mind&lt;/h2&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;What are some websites/resources about good &lt;em&gt;Digital Content Creation tool&lt;/em&gt; architecture/patterns? Maybe even some checklists?
+    &lt;ul&gt;
+      &lt;li&gt;Like :
+        &lt;ul&gt;
+          &lt;li&gt;“Don’t forget to make a headless client for your tool”&lt;/li&gt;
+          &lt;li&gt;“Don’t forget to add python scripting”&lt;/li&gt;
+          &lt;li&gt;“Don’t forget to think about determinism when saving&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;Is there any alternative to Houdini? (not counting &lt;strong&gt;rolling your own&lt;/strong&gt;)&lt;/li&gt;
+  &lt;li&gt;How do they edit the road network that spans multiple &lt;strong&gt;maps&lt;/strong&gt; (parts of the &lt;strong&gt;world&lt;/strong&gt;)?&lt;/li&gt;
+  &lt;li&gt;How long into the future when level art for &lt;strong&gt;second class&lt;/strong&gt; points of interest will be fully defined by recipes? When will it be mainstream?&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;div style=&quot;background-color:#FFFF94;border-left: 18px solid #ffff48;padding-left: 50px;&quot;&gt;
+&lt;p&gt;&lt;/p&gt;
+&lt;p&gt;These notes are just the main ideas of the talk. They don’t contain anecdotes and examples. If you want to learn more, I would advise watching the talk on the &lt;a target=&quot;_blank&quot; href=&quot;https://www.gdcvault.com/play/1025215/Procedural-World-Generation-of-Far&quot;&gt;GDC Vault&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;&lt;/p&gt;
+&lt;/div&gt;
+
+&lt;h2 id=&quot;the-toolsmiths&quot;&gt;The Toolsmiths&lt;/h2&gt;
+&lt;p&gt;&lt;img src=&quot;https://tools.engineer/assets/images/thetoolsmiths_cover_1000x2881.png&quot; alt=&quot;The Toolsmiths logo&quot; width=&quot;700&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;I took these notes as part of our little “Book Club” for GDC Vault Videos &lt;a href=&quot;http://thetoolsmiths.org/vault_club&quot; target=&quot;_blank&quot;&gt;The Toolsmiths #vault club&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;Join us on &lt;a href=&quot;http://thetoolsmiths.org/join_slack_team&quot; target=&quot;_blank&quot;&gt;Slack&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;Join us on &lt;a href=&quot;https://twitter.com/thetoolsmiths&quot; target=&quot;_blank&quot;&gt;Twitter&lt;/a&gt;.&lt;/p&gt;
+
+&lt;h2 id=&quot;links&quot;&gt;Links&lt;/h2&gt;
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;https://www.gdcvault.com/play/1025557/Procedural-World-Generation-of-Far&quot; target=&quot;_blank&quot;&gt;Slides: 	Procedural World Generation of ‘Far Cry 5’&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;related-talksvideos&quot;&gt;Related Talks\Videos&lt;/h2&gt;
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;https://www.gdcvault.com/play/1024029/-Ghost-Recon-Wildlands-Terrain&quot; target=&quot;_blank&quot;&gt;GDC 2017 ‘Ghost Recon Wildlands’: Terrain Tools and Technology&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://www.gdcvault.com/browse/gdc-18/play/1025261/Terrain-Rendering-in-Far-Cry&quot; target=&quot;_blank&quot;&gt;GDC 2018 Terrain Rendering in ‘Far Cry 5’&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://www.gdcvault.com/browse/gdc-18/play/1025264/The-Asset-Build-System-of&quot; target=&quot;_blank&quot;&gt;GDC 2018 The Asset Build System of ‘Far Cry 5’&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://www.youtube.com/watch?v=OklvMqMCkc4&amp;amp;feature=youtu.be&quot; target=&quot;_blank&quot;&gt;GAT #69: River - 2k19 Edition&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;credits&quot;&gt;Credits&lt;/h2&gt;
+
+&lt;p&gt;Post cover image by &lt;a href=&quot;https://pixabay.com/users/Pexels-2286921/?utm_source=link-attribution&amp;amp;utm_medium=referral&amp;amp;utm_campaign=image&amp;amp;utm_content=1852955&quot;&gt;Pexels&lt;/a&gt; from &lt;a href=&quot;https://pixabay.com/?utm_source=link-attribution&amp;amp;utm_medium=referral&amp;amp;utm_campaign=image&amp;amp;utm_content=1852955&quot;&gt;Pixabay&lt;/a&gt;&lt;/p&gt;
 </description>
         
         <pubDate>Sun, 09 Aug 2020 01:00:00 +0000</pubDate>
@@ -38,10 +878,265 @@
     
       
       <item>
-        <title>Notes for &quot;Tools for 'Marvel's Spider-Man' Editing with Immutable Data&quot; GDC2019</title>
+        <title>Notes for &quot;Tools for &apos;Marvel&apos;s Spider-Man&apos; Editing with Immutable Data&quot; GDC2019</title>
         
           <description>&lt;p&gt;&lt;strong&gt;TLDW Summary&lt;/strong&gt;: This talk is a tour of the technologies that Insomniac Games developed to transition from their web based tools to their new desktop tools. Highlighting what challenges they encountered when replacing the tool chain in mid production.&lt;/p&gt;
 
+&lt;h2 id=&quot;keywords&quot;&gt;Keywords&lt;/h2&gt;
+&lt;div class=&quot;keyword-container&quot;&gt;
+&lt;ul class=&quot;keyword-container&quot;&gt;
+&lt;li&gt;Data Design&lt;/li&gt;
+&lt;li&gt;Immutable Data&lt;/li&gt;
+&lt;li&gt;Mid Production&lt;/li&gt;
+&lt;li&gt;Data Definition Language (DDL)&lt;/li&gt;
+&lt;li&gt;Porting&lt;/li&gt;
+&lt;/ul&gt;
+&lt;style&gt;
+    .keyword-container &gt; ul
+    {
+        font-size: 16px;
+        list-style-type: none;
+        padding:15px;
+    }
+    .keyword-container &gt; li
+    {
+        background-color:#f3f3f3;
+        display : inline;
+        padding:5px;
+        margin:2px;
+        margin-bottom: 100px;
+        border-radius: 5px;
+    }
+&lt;/style&gt;
+&lt;/div&gt;
+
+&lt;h2 id=&quot;presentation-time-stamps&quot;&gt;Presentation Time Stamps&lt;/h2&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;https://www.gdcvault.com/play/1026080/Tools-for-Marvel-s-Spider&quot;&gt;at min 1&lt;/a&gt; Background&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://www.gdcvault.com/play/1026080/Tools-for-Marvel-s-Spider&quot;&gt;at min 2&lt;/a&gt; Making Changes&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://www.gdcvault.com/play/1026080/Tools-for-Marvel-s-Spider&quot;&gt;at min 6&lt;/a&gt; Mission Directive&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://www.gdcvault.com/play/1026080/Tools-for-Marvel-s-Spider&quot;&gt;at min 15&lt;/a&gt; Implicitly shared data with Copy-on-write&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://www.gdcvault.com/play/1026080/Tools-for-Marvel-s-Spider&quot;&gt;at min 29&lt;/a&gt; Immutable Data&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://www.gdcvault.com/play/1026080/Tools-for-Marvel-s-Spider&quot;&gt;at min 32&lt;/a&gt; The Edit Loop&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://www.gdcvault.com/play/1026080/Tools-for-Marvel-s-Spider&quot;&gt;at min 41&lt;/a&gt; Hazards Encountered&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://www.gdcvault.com/play/1026080/Tools-for-Marvel-s-Spider&quot;&gt;at min 45&lt;/a&gt; Conclusion&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://www.gdcvault.com/play/1026080/Tools-for-Marvel-s-Spider&quot;&gt;at min 47&lt;/a&gt; Q&amp;amp;A&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h1 id=&quot;background&quot;&gt;Background&lt;/h1&gt;
+&lt;ul&gt;
+  &lt;li&gt;Insomniac Games started to develop Web-Based Tools in 2010 (written in JavaScript)
+    &lt;ul&gt;
+      &lt;li&gt;This lead to some issues and the engine team decided to go back to the regular desktop tools
+        &lt;ul&gt;
+          &lt;li&gt;for more see &lt;a href=&quot;http://www.gdcvault.com/play/1024465/Insomniac-s-Web-Tools-A&quot;&gt;GDC 2017 “Insomniac’s Web Tools: A Postmortem”&lt;/a&gt;&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+      &lt;li&gt;Insomniac Games  shipped 6 games with the web tools&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;This talk is about what happened after the “Insomniac’s Web Tools: A Postmortem”&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h1 id=&quot;making-changes&quot;&gt;Making Changes&lt;/h1&gt;
+&lt;p&gt;&lt;em&gt;timestamp: 2 min into the presentation&lt;/em&gt;&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;In 2015 the work started on the transition from JavaScript to C++ Qt with a 4 man team&lt;/li&gt;
+  &lt;li&gt;The refactoring had to be done while the tools were still in use&lt;/li&gt;
+  &lt;li&gt;Sunset Overdrive pushed the JS world editor to its limits and ‘Marvel’s Spider-Man’ Manhattan would be even bigger
+    &lt;ul&gt;
+      &lt;li&gt;&lt;img src=&quot;assets/images/posts/tools-for-marvels-spider-man-editing-with-immutable-data/map-scale.jpg&quot; alt=&quot;slide: Sunset Overdrive vs&apos;Marvel&apos;s Spider-Man&apos; Manhattan size&quot; width=&quot;700&quot; /&gt;&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;the team needed to port 12 editors from JS
+    &lt;ul&gt;
+      &lt;li&gt;&lt;img src=&quot;assets/images/posts/tools-for-marvels-spider-man-editing-with-immutable-data/world-editor.jpg&quot; alt=&quot;slide: world editor&quot; width=&quot;700&quot; /&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;img src=&quot;assets/images/posts/tools-for-marvels-spider-man-editing-with-immutable-data/animation-editor.jpg&quot; alt=&quot;slide: animation editor&quot; width=&quot;700&quot; /&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;img src=&quot;assets/images/posts/tools-for-marvels-spider-man-editing-with-immutable-data/cinematics-editor.jpg&quot; alt=&quot;slide: cinematics editor&quot; width=&quot;700&quot; /&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;img src=&quot;assets/images/posts/tools-for-marvels-spider-man-editing-with-immutable-data/vfx-editor.jpg&quot; alt=&quot;slide: vfx editor&quot; width=&quot;700&quot; /&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;img src=&quot;assets/images/posts/tools-for-marvels-spider-man-editing-with-immutable-data/12-editors.jpg&quot; alt=&quot;slide: 12 editors&quot; width=&quot;700&quot; /&gt;&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;the goals of the refactoring were
+    &lt;ul&gt;
+      &lt;li&gt;performance (being able to work with large data sets)
+        &lt;ul&gt;
+          &lt;li&gt;multi-threading support&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+      &lt;li&gt;easier to maintain&lt;/li&gt;
+      &lt;li&gt;type safety (JS “Uncaught TypeError: undefined is not a function”)&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h1 id=&quot;mission-directive&quot;&gt;Mission Directive&lt;/h1&gt;
+&lt;p&gt;&lt;em&gt;timestamp: 6 min into the presentation&lt;/em&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;the tool porting was planned to be done when a significant part of the content would have been created with the old tools
+    &lt;ul&gt;
+      &lt;li&gt;needed to provide an upgrade path or data compatibility&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;the C++ tools need to have the same UX and UI as the JS tools to make the switching between the tools as seamless as possible.
+    &lt;ul&gt;
+      &lt;li&gt;no feature requests were accepted to make it possible to finish on time&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;The tools were 100% data compatible
+    &lt;ul&gt;
+      &lt;li&gt;this enabled the users to fall back to the JS tools when they hit an issue with the C++ version&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;the JS tools were using a local client/server model
+    &lt;ul&gt;
+      &lt;li&gt;the local server was called LunaServer
+        &lt;ul&gt;
+          &lt;li&gt;for more check out the GDC2012 talk about &lt;a href=&quot;https://gdcvault.com/play/1015531/Developing-Imperfect-Software-How-to&quot;&gt;Developing Imperfect Software: How to Prepare for Development Pipeline Failure&lt;/a&gt;&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+      &lt;li&gt;LunaServer
+        &lt;ul&gt;
+          &lt;li&gt;stores its state in MongoDB&lt;/li&gt;
+          &lt;li&gt;responsible for file system IO&lt;/li&gt;
+          &lt;li&gt;responsible for Perforce operations&lt;/li&gt;
+          &lt;li&gt;sync changes to assets between tools&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;their own in-house DDL
+    &lt;ul&gt;
+      &lt;li&gt;made JSON type safe with a DDL compiler (ToolsDDL) that would compile the DDL into C++ code (set/get)&lt;/li&gt;
+      &lt;li&gt;tools use in memory JSON representation (to reduce complexity and the need to convert between C++ object)modification&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;to represent a game object, they use JSON trees which are the same as hash table of hash tables&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h1 id=&quot;implicitly-shared-data-with-copy-on-write&quot;&gt;Implicitly shared data with Copy-on-write&lt;/h1&gt;
+&lt;p&gt;&lt;em&gt;timestamp: 15 min into the presentation&lt;/em&gt;&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;a detailed explanation of the Implicitly shared data with Copy-on-write pattern at @ 15-36&lt;/li&gt;
+  &lt;li&gt;basic idea
+    &lt;ul&gt;
+      &lt;li&gt;a global state is implicitly shared between modules&lt;/li&gt;
+      &lt;li&gt;&lt;img src=&quot;assets/images/posts/tools-for-marvels-spider-man-editing-with-immutable-data/modify_worldNode_0.jpg&quot; alt=&quot;slide: modify worldNode step one&quot; width=&quot;700&quot; /&gt;&lt;/li&gt;
+      &lt;li&gt;when a module wants to update the global state, a copy is made&lt;/li&gt;
+      &lt;li&gt;&lt;img src=&quot;assets/images/posts/tools-for-marvels-spider-man-editing-with-immutable-data/modify_worldNode.jpg&quot; alt=&quot;slide: modify worldNode step two&quot; width=&quot;700&quot; /&gt;&lt;/li&gt;
+      &lt;li&gt;after the modification is done the rest of the modules get notified to fetch the pointer to the new object&lt;/li&gt;
+      &lt;li&gt;&lt;img src=&quot;assets/images/posts/tools-for-marvels-spider-man-editing-with-immutable-data/modify_worldNode_2.jpg&quot; alt=&quot;slide: modify worldNode step three&quot; width=&quot;700&quot; /&gt;&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;implicit sharing makes it easy to compute the diff of 2 JSON trees
+    &lt;ul&gt;
+      &lt;li&gt;this is because as soon as 2 subtrees point to the same shared subtree, you don’t need to traverse that part of the tree any further.&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h1 id=&quot;immutable-data&quot;&gt;Immutable Data&lt;/h1&gt;
+&lt;p&gt;&lt;em&gt;timestamp: 29 min into the presentation&lt;/em&gt;&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;the same idea of Implicitly shared data &lt;strong&gt;without&lt;/strong&gt; Copy-on-write
+    &lt;ul&gt;
+      &lt;li&gt;no setters&lt;/li&gt;
+      &lt;li&gt;&lt;img src=&quot;assets/images/posts/tools-for-marvels-spider-man-editing-with-immutable-data/Immutable_Data.jpg&quot; alt=&quot;slide: Immutable Data class&quot; width=&quot;700&quot; /&gt;&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;this makes it easier to reason about the code&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;div style=&quot;font-style: normal;font-size: 26px;margin-left: 32px;font-family: Consolas, &apos;Times New Roman&apos;, Verdana;border-left: 4px solid #3a5ebf;padding-left: 20px;&quot;&gt;
+&lt;p&gt;&lt;/p&gt;
+&quot;Immutable is not const. const only controls access, immutable is a guarantee.&quot;
+&lt;p&gt;&lt;/p&gt;
+&lt;/div&gt;
+&lt;p&gt;&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;they like to think about this as a step towards functional programming&lt;/li&gt;
+  &lt;li&gt;designing an API that is like a function that returns a new value based on the old value
+    &lt;ul&gt;
+      &lt;li&gt;without any
+        &lt;ul&gt;
+          &lt;li&gt;side effects&lt;/li&gt;
+          &lt;li&gt;preconditions&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h1 id=&quot;the-edit-loop&quot;&gt;The Edit Loop&lt;/h1&gt;
+&lt;p&gt;&lt;em&gt;timestamp: 32 min into the presentation&lt;/em&gt;&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;LunaEdit is the module that is responsible for editing asset
+    &lt;ul&gt;
+      &lt;li&gt;creating a new object from an object that was passed in&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;LunaEdit is also responsible for
+    &lt;ul&gt;
+      &lt;li&gt;handling Perforce checkout&lt;/li&gt;
+      &lt;li&gt;handling the undo system&lt;/li&gt;
+      &lt;li&gt;sending updates to the LunaServer (updating the DB and files on disk)&lt;/li&gt;
+      &lt;li&gt;broadcast changes all of the modules in the system (change/update)&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;all of the complexity of working with the data format is hidden in one place -  the LunaEdit module&lt;/li&gt;
+  &lt;li&gt;&lt;img src=&quot;assets/images/posts/tools-for-marvels-spider-man-editing-with-immutable-data/edit_loop.jpg&quot; alt=&quot;slide: The Edit Loop&quot; width=&quot;700&quot; /&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h1 id=&quot;hazards-encountered&quot;&gt;Hazards Encountered&lt;/h1&gt;
+&lt;p&gt;&lt;em&gt;timestamp: 41 min into the presentation&lt;/em&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;copying wide (flat) hash tables is expensive
+    &lt;ul&gt;
+      &lt;li&gt;prefer deep hash tables&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;don’t use QJsonObject
+    &lt;ul&gt;
+      &lt;li&gt;strings are stored as 8-bit and returned as 16-bit&lt;/li&gt;
+      &lt;li&gt;strings are not shared (issue with identical keys)&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;with multiple versions of data in flight
+    &lt;ul&gt;
+      &lt;li&gt;a module wants to change a piece of data that is in the process of being updated.&lt;/li&gt;
+      &lt;li&gt;this wasn’t an issue because the main thread is the only thread that can request a change&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;div style=&quot;background-color:#FFFF94;border-left: 18px solid #ffff48;padding-left: 50px;&quot;&gt;
+&lt;p&gt;&lt;/p&gt;
+&lt;p&gt;These notes are just the main ideas of the talk. They don’t contain anecdotes and examples. If you want to learn more, I would advise watching the talk on the &lt;a href=&quot;https://www.gdcvault.com/play/1026080/Tools-for-Marvel-s-Spider&quot;&gt;GDC Vault&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;&lt;/p&gt;
+&lt;/div&gt;
+
+&lt;h2 id=&quot;the-toolsmiths&quot;&gt;The Toolsmiths&lt;/h2&gt;
+&lt;p&gt;&lt;img src=&quot;https://tools.engineer/assets/images/thetoolsmiths_cover_1000x2881.png&quot; alt=&quot;The Toolsmiths logo&quot; width=&quot;700&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;I took these notes as part of our little “Book Club” for GDC Vault Videos &lt;a href=&quot;http://thetoolsmiths.org/vault_club&quot;&gt;The Toolsmiths #vault club&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;Join us on &lt;a href=&quot;http://thetoolsmiths.org/join_slack_team&quot;&gt;Slack&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;Join us on &lt;a href=&quot;https://twitter.com/thetoolsmiths&quot;&gt;Twitter&lt;/a&gt;.&lt;/p&gt;
+
+&lt;h2 id=&quot;links&quot;&gt;Links&lt;/h2&gt;
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;https://www.gdcvault.com/play/1026080/Tools-for-Marvel-s-Spider&quot;&gt;Tools for ‘Marvel’s Spider-Man’ Editing with Immutable Data&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;related-talks&quot;&gt;Related talks&lt;/h2&gt;
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;http://www.gdcvault.com/play/1024465/Insomniac-s-Web-Tools-A&quot;&gt;GDC 2017 “Insomniac’s Web Tools: A Postmortem”&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://gdcvault.com/play/1015531/Developing-Imperfect-Software-How-to&quot;&gt;GDC 2012 Developing Imperfect Software: How to Prepare for Development Pipeline Failure&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
 </description>
         
         <pubDate>Sun, 14 Jul 2019 01:00:00 +0000</pubDate>
@@ -53,10 +1148,260 @@
     
       
       <item>
-        <title>Notes for &quot;The Future of Scene Description on 'God of War'&quot; GDC2019</title>
+        <title>Notes for &quot;The Future of Scene Description on &apos;God of War&apos;&quot; GDC2019</title>
         
           <description>&lt;p&gt;&lt;strong&gt;TLDW Summary&lt;/strong&gt;: This talk sheds light on the decisions that were made by the Santa Monica Studio’s engine team while tackling the problems of time and complexity in transforming source data into game-ready data.&lt;/p&gt;
 
+&lt;h2 id=&quot;keywords&quot;&gt;Keywords&lt;/h2&gt;
+&lt;div class=&quot;keyword-container&quot;&gt;
+&lt;ul class=&quot;keyword-container&quot;&gt;
+&lt;li&gt;Data Design&lt;/li&gt;
+&lt;li&gt;Data Duality&lt;/li&gt;
+&lt;li&gt;Scene Description&lt;/li&gt;
+&lt;li&gt;Data Definition Language (DDL)&lt;/li&gt;
+&lt;li&gt;Nondeterminism&lt;/li&gt;
+&lt;/ul&gt;
+&lt;style&gt;
+    .keyword-container &gt; ul
+    {
+        font-size: 16px;
+        list-style-type: none;
+        padding:15px;
+    }
+    .keyword-container &gt; li
+    {
+        background-color:#f3f3f3;
+        display : inline;
+        padding:5px;
+        margin:2px;
+        margin-bottom: 100px;
+        border-radius: 5px;
+    }
+&lt;/style&gt;
+&lt;/div&gt;
+
+&lt;h2 id=&quot;presentation-time-stamps&quot;&gt;Presentation Time Stamps&lt;/h2&gt;
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;https://www.gdcvault.com/play/1025969/The-Future-of-Scene-Description&quot;&gt;at min 1&lt;/a&gt; Backgound: Game Content Pipeline&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://www.gdcvault.com/play/1025969/The-Future-of-Scene-Description&quot;&gt;at min 16&lt;/a&gt; Past: Redefining SmSchema&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://www.gdcvault.com/play/1025969/The-Future-of-Scene-Description&quot;&gt;at min 20&lt;/a&gt; Present: A view after years of investment&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://www.gdcvault.com/play/1025969/The-Future-of-Scene-Description&quot;&gt;at min 27&lt;/a&gt; Present: Connecting the parts of the design into one&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://www.gdcvault.com/play/1025969/The-Future-of-Scene-Description&quot;&gt;at min 37&lt;/a&gt; Looking into the future: many opportunities still remain&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://www.gdcvault.com/play/1025969/The-Future-of-Scene-Description&quot;&gt;at min 41&lt;/a&gt; Lessons we’ve learned&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://www.gdcvault.com/play/1025969/The-Future-of-Scene-Description&quot;&gt;at min 43&lt;/a&gt; Q&amp;amp;A&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;backgound-game-content-pipeline&quot;&gt;Backgound: Game Content Pipeline&lt;/h2&gt;
+&lt;p&gt;&lt;em&gt;timestamp: 1 min into the presentation&lt;/em&gt;&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;God of War data breakdown
+&lt;img src=&quot;assets/images/posts/the-future-of-scene-description-on-god-of-war\god-of-War-data-breakdown.jpg&quot; alt=&quot;slide: God of War data breakdown&quot; width=&quot;700&quot; /&gt;&lt;/li&gt;
+  &lt;li&gt;What Source Data and Run-time data have in common
+&lt;img src=&quot;assets/images/posts/the-future-of-scene-description-on-god-of-war\source-data-n-production-data.jpg&quot; alt=&quot;slide: What Source Data and Run-time data have in common&quot; width=&quot;700&quot; /&gt;&lt;/li&gt;
+  &lt;li&gt;The design philosophy was inspired by the scene description from the film industry&lt;/li&gt;
+  &lt;li&gt;Patch size was a common enemy
+    &lt;ul&gt;
+      &lt;li&gt;Nondeterminism made patch sizes huge
+        &lt;ul&gt;
+          &lt;li&gt;Patching was always an afterthought.&lt;/li&gt;
+          &lt;li&gt;Parts of the run-time was an afterthought.&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;Exploring data formats to find a better way&lt;/li&gt;
+  &lt;li&gt;2 types of explicit data formats
+    &lt;ul&gt;
+      &lt;li&gt;Low level: FlatBuffers, ProtocolBuffers&lt;/li&gt;
+      &lt;li&gt;Higher level: COLLADA and USD&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;None satisfied the requirements
+    &lt;ul&gt;
+      &lt;li&gt;This was the catalyst for the SmSchema Data Definition Language&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;The SmSchema proof of concept had 3 main parts
+    &lt;ul&gt;
+      &lt;li&gt;The definition itself&lt;/li&gt;
+      &lt;li&gt;C++ code generation with (Jinja Python)&lt;/li&gt;
+      &lt;li&gt;Sterilization into JSON&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;The first attempt to apply it to a real-world problem showed that the mental model that they had envisioned had missing parts
+&lt;img src=&quot;assets/images/posts/the-future-of-scene-description-on-god-of-war\smschema-interconnected-technologies.jpg&quot; alt=&quot;slide: missing interconnected technologies&quot; width=&quot;700&quot; /&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;past-redefining-smschema&quot;&gt;Past: Redefining SmSchema&lt;/h2&gt;
+&lt;p&gt;&lt;em&gt;timestamp: 16 min into the presentation&lt;/em&gt;&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;Decided to use the serialization as an anchor point to design around&lt;/li&gt;
+  &lt;li&gt;The redesign started with laying down the foundation with &lt;a href=&quot;https://fs.blog/2018/04/first-principles/&quot;&gt;first-prenciples&lt;/a&gt;
+&lt;img src=&quot;assets/images/posts/the-future-of-scene-description-on-god-of-war\first-principles.jpg&quot; alt=&quot;slide: first-prenciples used in the design&quot; width=&quot;700&quot; /&gt;&lt;/li&gt;
+  &lt;li&gt;Wanted to get away from a JSON-based Language&lt;/li&gt;
+  &lt;li&gt;Issues with Maya scalability brought more questions that needed answers
+&lt;img src=&quot;assets/images/posts/the-future-of-scene-description-on-god-of-war\new-insight.jpg&quot; alt=&quot;slide: questions that needed answers&quot; width=&quot;700&quot; /&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;present-a-view-after-years-of-investment&quot;&gt;Present: A view after years of investment&lt;/h2&gt;
+&lt;p&gt;&lt;em&gt;timestamp: 20 min into the presentation&lt;/em&gt;&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;&lt;img src=&quot;assets/images/posts/the-future-of-scene-description-on-god-of-war\smschema-interconnected-technologies-2.jpg&quot; alt=&quot;slide: SmSchema architecture high level&quot; width=&quot;700&quot; /&gt;&lt;/li&gt;
+  &lt;li&gt;The DDL was inspired by &lt;a href=&quot;https://gdcvault.com/play/1015531/Developing-Imperfect-Software-How-to&quot;&gt;Insomniac’s DDL&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;Used &lt;a href=&quot;https://www.antlr.org/&quot;&gt;ANTLR&lt;/a&gt; for language definition&lt;/li&gt;
+  &lt;li&gt;Process of code generation
+    &lt;ul&gt;
+      &lt;li&gt;Used special Compile-Time Type Info (CTTI) to decouple the DDL and the code generation&lt;/li&gt;
+      &lt;li&gt;Used a functional approach to make it easier to generate code to any current or future target&lt;/li&gt;
+      &lt;li&gt;Used special metadata in the form of annotations to enable user-driven code generation without making changes in the parser&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;&lt;img src=&quot;assets/images/posts/the-future-of-scene-description-on-god-of-war\code-gen-1.jpg&quot; alt=&quot;slide: Code Generation with CTTI info&quot; width=&quot;700&quot; /&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;img src=&quot;assets/images/posts/the-future-of-scene-description-on-god-of-war\code-gen-2.jpg&quot; alt=&quot;slide: Code Generation with CTTI flexibility&quot; width=&quot;700&quot; /&gt;&lt;/li&gt;
+  &lt;li&gt;Serialization formats
+    &lt;ul&gt;
+      &lt;li&gt;JSON - Human readable for merging, diffing and fixing issues
+        &lt;ul&gt;
+          &lt;li&gt;Leverage open source tools and libs&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+      &lt;li&gt;Binary - For performance &amp;amp; compression&lt;/li&gt;
+      &lt;li&gt;Experimenting with MsgPack to encode large assets&lt;/li&gt;
+      &lt;li&gt;X3D scene loader increased performance by an order of magnitude while saving and loading&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;present-connecting-the-parts-of-the-design-into-one&quot;&gt;Present: connecting the parts of the design into one&lt;/h2&gt;
+&lt;p&gt;&lt;em&gt;timestamp: 27 min into the presentation&lt;/em&gt;&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;The defining structure of SmSchema that brings all of the parts together is called the document.&lt;/li&gt;
+  &lt;li&gt;The Document is a “Section of data with a header”
+    &lt;ul&gt;
+      &lt;li&gt;Defining the semantics of pointers used in the referencing solution. Used to reference other documents.&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;Pointers was a common request for SmSchema
+    &lt;ul&gt;
+      &lt;li&gt;See details on the implementation of pointer @ min 28&lt;/li&gt;
+      &lt;li&gt;The pointer had to provide
+        &lt;ul&gt;
+          &lt;li&gt;Ownership semantics: unique, weak&lt;/li&gt;
+          &lt;li&gt;Locality semantics: local, section, external&lt;/li&gt;
+          &lt;li&gt;Used Frozen/Alive concept to determine if the reference is loaded&lt;/li&gt;
+          &lt;li&gt;The concept of the section was introduced to SmSchema
+            &lt;ul&gt;
+              &lt;li&gt;A document is segmented into several memory blocks&lt;/li&gt;
+              &lt;li&gt;These memory blocks are called sections and are used for storing things like debug data or GPU data&lt;/li&gt;
+            &lt;/ul&gt;
+          &lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;&lt;img src=&quot;assets/images/posts/the-future-of-scene-description-on-god-of-war\sections.jpg&quot; alt=&quot;slide: Sections of the SmSchema Doc&quot; width=&quot;700&quot; /&gt;&lt;/li&gt;
+  &lt;li&gt;With the Document structure, they were able to design workflows with a minimum amount of transformations from the source data to the run-time data
+    &lt;ul&gt;
+      &lt;li&gt;The document could be
+        &lt;ul&gt;
+          &lt;li&gt;Shipping streaming resource&lt;/li&gt;
+          &lt;li&gt;A string hash look-up table&lt;/li&gt;
+          &lt;li&gt;A source X3D scene graph&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;&lt;img src=&quot;assets/images/posts/the-future-of-scene-description-on-god-of-war\data-transform.jpg&quot; alt=&quot;slide: Transforming data from source to run-time&quot; width=&quot;700&quot; /&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;looking-into-the-future-many-opportunities-still-remain&quot;&gt;Looking into the future: many opportunities still remain&lt;/h2&gt;
+&lt;p&gt;&lt;em&gt;timestamp: 37 min into the presentation&lt;/em&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Current and future research
+&lt;img src=&quot;assets/images/posts/the-future-of-scene-description-on-god-of-war\wip.jpg&quot; alt=&quot;slide: SmSchema architecture high level Final&quot; width=&quot;700&quot; /&gt;&lt;/li&gt;
+  &lt;li&gt;Challenges with external pointer resolution
+    &lt;ul&gt;
+      &lt;li&gt;Who is responsible for resolving? 
+&lt;img src=&quot;assets/images/posts/the-future-of-scene-description-on-god-of-war\external-pointers.jpg&quot; alt=&quot;slide: Frozen external pointers&quot; width=&quot;700&quot; /&gt;&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;This led to the creation of a data structure for arbitrating external pointer resolution called the “document store”
+    &lt;ul&gt;
+      &lt;li&gt;The document arbitration takes a form of transaction
+&lt;img src=&quot;assets/images/posts/the-future-of-scene-description-on-god-of-war\document-store.jpg&quot; alt=&quot;slide: Document store transactions&quot; width=&quot;700&quot; /&gt;&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;The combination of the Document Store and Streaming Policies could produce complex decision-making behavior for streaming resources&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;div style=&quot;font-style: normal;font-size: 26px;margin-left: 32px;font-family: Consolas, &apos;Times New Roman&apos;, Verdana;border-left: 4px solid #3a5ebf;padding-left: 20px;&quot;&gt;
+&lt;p&gt;&lt;/p&gt;
+&quot;Solutions have to be driven by use case, introduced with scrutiny, and solve a domain of problems evidently and clearly.&quot;
+&lt;p&gt;&lt;/p&gt;
+&lt;/div&gt;
+
+&lt;h2 id=&quot;lessons-weve-learned&quot;&gt;Lessons we’ve learned&lt;/h2&gt;
+&lt;p&gt;&lt;em&gt;timestamp: 41 min into the presentation&lt;/em&gt;&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;While answering what is the future of Scene Description on “God of War”
+    &lt;ul&gt;
+      &lt;li&gt;They understood that there are other questions that they need to answer before answering the original question
+        &lt;ul&gt;
+          &lt;li&gt;What are the primitives used in the design of
+            &lt;ul&gt;
+              &lt;li&gt;The engine&lt;/li&gt;
+              &lt;li&gt;The workflows&lt;/li&gt;
+              &lt;li&gt;The formats&lt;/li&gt;
+            &lt;/ul&gt;
+          &lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;div style=&quot;font-style: normal;font-size: 26px;margin-left: 32px;font-family: Consolas, &apos;Times New Roman&apos;, Verdana;border-left: 4px solid #3a5ebf;padding-left: 20px;&quot;&gt;
+&lt;p&gt;&lt;/p&gt;
+&quot;Our goal was never to predispose ourselves to a particulate design. The future of scene description is not a data structure, it’s not a design pattern; it’s a set of questions that we need to be able to answer about our content.&quot;
+&lt;p&gt;&lt;/p&gt;
+&lt;/div&gt;
+
+&lt;p&gt;&lt;img src=&quot;assets/images/posts/the-future-of-scene-description-on-god-of-war\takeaway.jpg&quot; alt=&quot;slide: takeaway&quot; width=&quot;700&quot; /&gt;&lt;/p&gt;
+
+&lt;div style=&quot;background-color:#FFFF94;border-left: 18px solid #ffff48;padding-left: 50px;&quot;&gt;
+&lt;p&gt;&lt;/p&gt;
+&lt;p&gt;These notes are just the main ideas of the talk. They don’t contain anecdotes and examples. If you want to learn more, I would advise watching the talk on the &lt;a href=&quot;https://www.gdcvault.com/play/1025969/The-Future-of-Scene-Description&quot;&gt;GDC Vault&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;&lt;/p&gt;
+&lt;/div&gt;
+
+&lt;h2 id=&quot;the-toolsmiths&quot;&gt;The Toolsmiths&lt;/h2&gt;
+&lt;p&gt;&lt;img src=&quot;https://tools.engineer/assets/images/thetoolsmiths_cover_1000x2881.png&quot; alt=&quot;The Toolsmiths logo&quot; width=&quot;700&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;I took these notes as part of our little “Book Club” for GDC Vault Videos &lt;a href=&quot;http://thetoolsmiths.org/vault_club&quot;&gt;The Toolsmiths #vault club&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Koray Hagen&lt;/strong&gt; is a member of the &lt;a href=&quot;http://thetoolsmiths.org/&quot;&gt;Toolsmiths&lt;/a&gt; community. The Toolsmiths are a community of Game Tool Developers that are passionate about improving the way people make games.&lt;/p&gt;
+
+&lt;p&gt;Join us on &lt;a href=&quot;http://thetoolsmiths.org/join_slack_team&quot;&gt;Slack&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;Join us on &lt;a href=&quot;https://twitter.com/thetoolsmiths&quot;&gt;Twitter&lt;/a&gt;.&lt;/p&gt;
+
+&lt;h2 id=&quot;links&quot;&gt;Links&lt;/h2&gt;
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;https://www.gdcvault.com/play/1025969/The-Future-of-Scene-Description&quot;&gt;The Future of Scene Description on ‘God of War’&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;Slides for &lt;a href=&quot;https://www.gdcvault.com/play/1026345/The-Future-of-Scene-Description&quot;&gt;The Future of Scene Description on ‘God of War’&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;related-blog-links&quot;&gt;Related Blog Links&lt;/h2&gt;
+&lt;ul&gt;
+  &lt;li&gt;Notes for &lt;a href=&quot;https://tools.engineer//2018-10-07-tools-tutorial-day-a-tale-of-three-data-schemas&quot;&gt;GDC 2018 Tools Tutorial Day: A Tale of Three Data Schemas&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;related-talks&quot;&gt;Related talks&lt;/h2&gt;
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;https://www.gdcvault.com/play/1025284/Tools-Tutorial-Day-A-Tale&quot;&gt;GDC 2018 Tools Tutorial Day: A Tale of Three Data Schemas&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://gdcvault.com/play/1015531/Developing-Imperfect-Software-How-to&quot;&gt;GDC 2012 Developing Imperfect Software: How to Prepare for Development Pipeline Failure&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
 </description>
         
         <pubDate>Sun, 16 Jun 2019 01:00:00 +0000</pubDate>
@@ -68,10 +1413,196 @@
     
       
       <item>
-        <title>Notes for &quot;Bungie's Force Multipliers - Production Engineers&quot; GDC2019</title>
+        <title>Notes for &quot;Bungie&apos;s Force Multipliers - Production Engineers&quot; GDC2019</title>
         
           <description>&lt;p&gt;&lt;strong&gt;TLDW Summary&lt;/strong&gt;: How Bungie organized a dedicated task force of engineers to stay on top of production challenges, blocking issues and shielding Tech-Artists and Engineers from random support requests.&lt;/p&gt;
 
+&lt;h2 id=&quot;keywords&quot;&gt;Keywords&lt;/h2&gt;
+&lt;div class=&quot;keyword-container&quot;&gt;
+&lt;ul class=&quot;keyword-container&quot;&gt;
+&lt;li&gt;Support&lt;/li&gt;
+&lt;li&gt;Tools Role&lt;/li&gt;
+&lt;li&gt;Production&lt;/li&gt;
+&lt;/ul&gt;
+&lt;style&gt;
+    .keyword-container &gt; ul
+    {
+        font-size: 16px;
+        list-style-type: none;
+        padding:15px;
+    }
+    .keyword-container &gt; li
+    {
+        background-color:#f3f3f3;
+        display : inline;
+        padding:5px;
+        margin:2px;
+        margin-bottom: 100px;
+        border-radius: 5px;
+    }
+&lt;/style&gt;
+&lt;/div&gt;
+
+&lt;h2 id=&quot;presentation-table-of-contents&quot;&gt;Presentation Table of Contents&lt;/h2&gt;
+&lt;p&gt;&lt;img src=&quot;assets/images/posts/Bungie-s-Force-Multipliers-Production/toc.jpg&quot; alt=&quot;slide: achieving the development vision&quot; width=&quot;700&quot; /&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;presentation-timestamps&quot;&gt;Presentation Timestamps&lt;/h2&gt;
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;https://www.gdcvault.com/play/1025970/Bungie-s-Force-Multipliers-Production&quot;&gt;at min 1&lt;/a&gt; What is a Production Engineer (PE)?&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://www.gdcvault.com/play/1025970/Bungie-s-Force-Multipliers-Production&quot;&gt;at min 6&lt;/a&gt; History&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://www.gdcvault.com/play/1025970/Bungie-s-Force-Multipliers-Production&quot;&gt;at min 10&lt;/a&gt; Training &amp;amp; Specializations&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://www.gdcvault.com/play/1025970/Bungie-s-Force-Multipliers-Production&quot;&gt;at min 13&lt;/a&gt; Day-to-Day&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://www.gdcvault.com/play/1025970/Bungie-s-Force-Multipliers-Production&quot;&gt;at min 33&lt;/a&gt; Hiring a Production Engineer&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://www.gdcvault.com/play/1025970/Bungie-s-Force-Multipliers-Production&quot;&gt;at min 37&lt;/a&gt; Conclusion &amp;amp; Takeaways&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://www.gdcvault.com/play/1025970/Bungie-s-Force-Multipliers-Production&quot;&gt;at min 38&lt;/a&gt; Q&amp;amp;A&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;what-is-a-production-engineer-pe&quot;&gt;What is a Production Engineer (PE)?&lt;/h2&gt;
+&lt;p&gt;&lt;em&gt;timestamp: 1 min into the presentation&lt;/em&gt;&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;PE is a dedicated engineering role that comes to the rescue when a content creator hits an issue that blocks his/her work.&lt;/li&gt;
+  &lt;li&gt;PEs also track down the root cause of an issue and bring the issue up to the teams that can fix it.&lt;/li&gt;
+  &lt;li&gt;PEs are aware of all of the current issues that are blocking developers in the studio
+    &lt;ul&gt;
+      &lt;li&gt;they know how to fix the issue&lt;/li&gt;
+      &lt;li&gt;they know how to work around the issue&lt;/li&gt;
+      &lt;li&gt;they know who is fixing the issue&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;The skill set of a PE is a combination of an Engineer, Tech Artis, Tester, and a Producer&lt;/li&gt;
+  &lt;li&gt;PEs look for possible inefficiencies in the workflows of devs that are getting blocked&lt;/li&gt;
+  &lt;li&gt;PEs spot workflow automation potential&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;history&quot;&gt;History&lt;/h2&gt;
+&lt;p&gt;&lt;em&gt;timestamp: 6 min into the presentation&lt;/em&gt;&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;the PE role was formed from a need to have a dedicated person help with random technical issues on the development team&lt;/li&gt;
+  &lt;li&gt;there were several gaps in the production knowledge base:
+    &lt;ul&gt;
+      &lt;li&gt;missing tools documentation&lt;/li&gt;
+      &lt;li&gt;missing workflow documentation&lt;/li&gt;
+      &lt;li&gt;&lt;img src=&quot;assets/images/posts/Bungie-s-Force-Multipliers-Production/no-docs-for-tools.jpg&quot; alt=&quot;slide: Gap: No Docs for tools&quot; width=&quot;700&quot; /&gt;&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;when the PE team was formed there were about 3-4 PEs&lt;/li&gt;
+  &lt;li&gt;Bungie tries to keep the PE ratio to 1:20 users&lt;/li&gt;
+  &lt;li&gt;PEs should have the following traits
+    &lt;ul&gt;
+      &lt;li&gt;&lt;img src=&quot;assets/images/posts/Bungie-s-Force-Multipliers-Production/unique-experiences.jpg&quot; alt=&quot;slide: Unique Experiences&quot; width=&quot;700&quot; /&gt;&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;Diverse Backgrounds
+    &lt;ul&gt;
+      &lt;li&gt;&lt;img src=&quot;assets/images/posts/Bungie-s-Force-Multipliers-Production/diverse-background-sills.jpg&quot; alt=&quot;slide: diverse background sills&quot; width=&quot;700&quot; /&gt;&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;training--specializations&quot;&gt;Training &amp;amp; Specializations&lt;/h2&gt;
+&lt;p&gt;&lt;em&gt;timestamp: 10 min into the presentation&lt;/em&gt;&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;PEs have a training regimen for new hires
+    &lt;ul&gt;
+      &lt;li&gt;a PEs from different teams train the new hire&lt;/li&gt;
+      &lt;li&gt;&lt;img src=&quot;assets/images/posts/Bungie-s-Force-Multipliers-Production/pe-training.jpg&quot; alt=&quot;slide: pe training&quot; width=&quot;700&quot; /&gt;&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;a PE is a generalist but usually will specialize in a particular area of the game production&lt;/li&gt;
+  &lt;li&gt;PEs are also responsible for bringing up to speed new hires in the “users” team&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;day-to-day&quot;&gt;Day-to-Day&lt;/h2&gt;
+&lt;p&gt;&lt;em&gt;timestamp: 13 min into the presentation&lt;/em&gt;&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;there is usually a PE in walking distance from a Content Creator&lt;/li&gt;
+  &lt;li&gt;details on managing Special Email Support list and issue tickets &lt;a href=&quot;https://www.gdcvault.com/play/1025970/Bungie-s-Force-Multipliers-Production&quot;&gt;at min 15&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;about 15% of issues need to be escalated beyond the PE team&lt;/li&gt;
+  &lt;li&gt;PEs help Tech-Artists and Engineers focus on their primary work duties, thus maximize the effectiveness of those teams
+    &lt;ul&gt;
+      &lt;li&gt;&lt;img src=&quot;assets/images/posts/Bungie-s-Force-Multipliers-Production/a-tas-time.jpg&quot; alt=&quot;slide: a TA&apos;s time&quot; width=&quot;700&quot; /&gt;&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;PEs can temporarily act as a substitute of a Content Creator and step into that role knowing the process and workflows&lt;/li&gt;
+  &lt;li&gt;PEs are in a constant search for the underlying issue
+    &lt;ul&gt;
+      &lt;li&gt;is it workflow related?&lt;/li&gt;
+      &lt;li&gt;is it tool related?&lt;/li&gt;
+      &lt;li&gt;is there enough staff?&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;20% of a PE’s time is spent in projects that solve small to mid-sized issues that the engineers don’t have time to address
+    &lt;ul&gt;
+      &lt;li&gt;examples:
+        &lt;ul&gt;
+          &lt;li&gt;BungieLauncher&lt;/li&gt;
+          &lt;li&gt;Cleanup of old and not used content&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;hiring-a-production-engineer&quot;&gt;Hiring a Production Engineer&lt;/h2&gt;
+&lt;p&gt;&lt;em&gt;timestamp: 33 min into the presentation&lt;/em&gt;&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;key skills
+    &lt;ul&gt;
+      &lt;li&gt;&lt;img src=&quot;assets/images/posts/Bungie-s-Force-Multipliers-Production/what-to-look-for-when-hiring-a-pe.jpg&quot; alt=&quot;slide: what to look for when hiring a pe&quot; width=&quot;700&quot; /&gt;&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;“foot in the door” type of a position - not a bad thing&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;qa&quot;&gt;Q&amp;amp;A&lt;/h2&gt;
+&lt;p&gt;&lt;em&gt;timestamp: 38 min into the presentation&lt;/em&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;it is part of a PE’s job to drive cultural change
+    &lt;ul&gt;
+      &lt;li&gt;like documentation&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;when the PE team was set up the hiring was done internally&lt;/li&gt;
+  &lt;li&gt;PE’s time is organized depending on the situation&lt;/li&gt;
+  &lt;li&gt;it is vital for a PE to attend retrospectives&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;div style=&quot;background-color:#FFFF94;border-left: 18px solid #ffff48;padding-left: 50px;&quot;&gt;
+&lt;p&gt;&lt;/p&gt;
+&lt;p&gt;These notes are just the main ideas of the talk. They don’t contain anecdotes and examples. If you want to learn more, I would advise watching the talk on the &lt;a href=&quot;https://www.gdcvault.com/play/1025969/The-Future-of-Scene-Description&quot;&gt;GDC Vault&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;&lt;/p&gt;
+&lt;/div&gt;
+
+&lt;h2 id=&quot;the-toolsmiths&quot;&gt;The Toolsmiths&lt;/h2&gt;
+&lt;p&gt;&lt;img src=&quot;https://tools.engineer/assets/images/thetoolsmiths_cover_1000x2881.png&quot; alt=&quot;The Toolsmiths logo&quot; width=&quot;700&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;I took these notes as part of our little “Book Club” for GDC Vault Videos &lt;a href=&quot;http://thetoolsmiths.org/vault_club&quot;&gt;The Toolsmiths #vault club&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Jo King-Yost&lt;/strong&gt; is a member of the &lt;a href=&quot;http://thetoolsmiths.org/&quot;&gt;Toolsmiths&lt;/a&gt; community. The Toolsmiths are a community of Game Tool Developers that are passionate about improving the way people make games.&lt;/p&gt;
+
+&lt;p&gt;Join us on &lt;a href=&quot;http://thetoolsmiths.org/join_slack_team&quot;&gt;Slack&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;Join us on &lt;a href=&quot;https://twitter.com/thetoolsmiths&quot;&gt;Twitter&lt;/a&gt;.&lt;/p&gt;
+
+&lt;h2 id=&quot;links&quot;&gt;Links&lt;/h2&gt;
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;https://www.gdcvault.com/play/1025970/Bungie-s-Force-Multipliers-Production&quot;&gt;GDC 2019 Bungie’s Force Multipliers: Production Engineers&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;Slides for &lt;a href=&quot;https://www.gdcvault.com/play/1026530/Bungie-s-Force-Multipliers-Production&quot;&gt;GDC 2019 Bungie’s Force Multipliers: Production Engineers&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;related-blog-links&quot;&gt;Related Blog Links&lt;/h2&gt;
+&lt;ul&gt;
+  &lt;li&gt;Notes for &lt;a href=&quot;https://tools.engineer//gdc2019-pipeline-support-for-feature-branches-in-destiny&quot;&gt;GDC 2019 Pipeline Support for Feature Branches in ‘Destiny’&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;related-talks&quot;&gt;Related talks&lt;/h2&gt;
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;https://www.gdcvault.com/play/1025992/Pipeline-Support-for-Feature-Branches&quot;&gt;GDC 2019 Pipeline Support for Feature Branches in ‘Destiny’&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://www.gdcvault.com/browse/gdc-19/play/1025807&quot;&gt;GDC 2019 Tools Tutorial Day: Tooling for Small Team Workflows&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://www.gdcvault.com/browse/gdc-18/play/1025252/Teams-Are-Stronger-Than-Heroes&quot;&gt;GDC 2018 Teams Are Stronger Than Heroes: Bungie Development Evolved&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://www.gdcvault.com/browse/gdc-18/play/1025116/Epic-Sync-Wrangling-the-Work&quot;&gt;GDC 2018 Epic Sync: Wrangling the Work of Highly Interdependent Dev Teams at Bungie&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
 </description>
         
         <pubDate>Sun, 26 May 2019 01:00:00 +0000</pubDate>
@@ -83,11 +1614,234 @@
     
       
       <item>
-        <title>Notes for &quot;Pipeline Support for Feature Branches in 'Destiny'&quot; GDC2019</title>
+        <title>Notes for &quot;Pipeline Support for Feature Branches in &apos;Destiny&apos;&quot; GDC2019</title>
         
           <description>&lt;h2 id=&quot;tldw-summary&quot;&gt;TLDW Summary:&lt;/h2&gt;
 &lt;p&gt;How Bungie created an ecosystem of tools and workflows to allow small teams to quickly iterate on changes without worrying about breaking and blocking other teams.&lt;/p&gt;
 
+&lt;h2 id=&quot;keywords&quot;&gt;Keywords&lt;/h2&gt;
+&lt;div class=&quot;keyword-container&quot;&gt;
+&lt;ul class=&quot;keyword-container&quot;&gt;
+&lt;li&gt;Game Data Merging&lt;/li&gt;
+&lt;li&gt;Version Control System&lt;/li&gt;
+&lt;li&gt;Branch Integration &lt;/li&gt;
+&lt;/ul&gt;
+&lt;style&gt;
+    .keyword-container &gt; ul
+    {
+        font-size: 16px;
+        list-style-type: none;
+        padding:15px;
+    }
+    .keyword-container &gt; li
+    {
+        background-color:#f3f3f3;
+        display : inline;
+        padding:5px;
+        margin:2px;
+        margin-bottom: 100px;
+        border-radius: 5px;
+    }
+&lt;/style&gt;
+&lt;/div&gt;
+
+&lt;h2 id=&quot;intro&quot;&gt;Intro&lt;/h2&gt;
+&lt;ul&gt;
+  &lt;li&gt;Each P4 branch is about 4 Tb&lt;/li&gt;
+  &lt;li&gt;Up to 350 content creators, designers, and engineers working in one branch&lt;/li&gt;
+  &lt;li&gt;They use a pre-commit build pipeline - “the Gauntlet”
+    &lt;ul&gt;
+      &lt;li&gt;Pete Kugler did a talk at &lt;a href=&quot;https://drive.google.com/file/d/1FeZGA-MeuI31Wan9ZVlXmSZ-JrSLgIL2/view?usp=sharing&quot;&gt;GDC2016: Developing a pipeline for managing game stability&lt;/a&gt;
+        &lt;ul&gt;
+          &lt;li&gt;Pipeline for managing game stability&lt;/li&gt;
+          &lt;li&gt;Describes the reason they put the pre-commit system in place&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;They pick stability over iteration speed
+    &lt;ul&gt;
+      &lt;li&gt;&lt;img src=&quot;assets/images/posts/pipeline-support-for-feature-branches/initial-destiny-2-challenges.jpg&quot; alt=&quot;slide: initial Destiny 2 challenges&quot; width=&quot;700&quot; /&gt;&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;Had technical limitations of just simply adding more feature branches
+    &lt;ul&gt;
+      &lt;li&gt;Not supported by tools&lt;/li&gt;
+      &lt;li&gt;More pressure on integration&lt;/li&gt;
+      &lt;li&gt;More pressure on build pipeline&lt;/li&gt;
+      &lt;li&gt;Couldn’t merge game data&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;Definition &lt;strong&gt;“Feature Branch”&lt;/strong&gt; - Branch created for teams to work in without interfering with the stability of the main branch&lt;/li&gt;
+  &lt;li&gt;Definition &lt;strong&gt;“Small Team”&lt;/strong&gt; -  group of cross-discipline developer working collaboratively on shared features (strike teams? )&lt;/li&gt;
+  &lt;li&gt;The development team was in an environment that would not allow risky feature prototype and development
+    &lt;ul&gt;
+      &lt;li&gt;Long pre-commit build pipeline throughput&lt;/li&gt;
+      &lt;li&gt;Thurow QA testing&lt;/li&gt;
+      &lt;li&gt;Fear of creating blockers&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;Vision
+    &lt;ul&gt;
+      &lt;li&gt;&lt;img src=&quot;assets/images/posts/pipeline-support-for-feature-branches/auto-integration.jpg&quot; alt=&quot;slide: auto-integration&quot; width=&quot;400&quot; /&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;img src=&quot;assets/images/posts/pipeline-support-for-feature-branches/small-team-development-vision.jpg&quot; alt=&quot;slide: small team development vision&quot; width=&quot;700&quot; /&gt;&lt;/li&gt;
+      &lt;li&gt;QA had the option to use stabilization branch to shield from the auto integrations that were happening&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;Had 3 main challenges:
+    &lt;ul&gt;
+      &lt;li&gt;&lt;img src=&quot;assets/images/posts/pipeline-support-for-feature-branches/achieving-the-development-vision.jpg&quot; alt=&quot;slide: achieving the development vision&quot; width=&quot;700&quot; /&gt;
+        &lt;ul&gt;
+          &lt;li&gt;Focused on semantically merge content to make the lives of content creators easier&lt;/li&gt;
+          &lt;li&gt;Focused on making a simple as possible to keep branches in-sync and stable (management tools)&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;Developers became accustomed to workflow build around having multiple branches per workspace
+    &lt;ul&gt;
+      &lt;li&gt;Because of the release cycles (having multiple features in progress)&lt;/li&gt;
+      &lt;li&gt;Expected to have immediate access to things that are mapped in the workspace&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;Source &lt;a href=&quot;http://thetoolsmiths.org/codex/glossary/&quot;&gt;DCC&lt;/a&gt; assets in the same location as the game data
+    &lt;ul&gt;
+      &lt;li&gt;This made for build branches&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;Moving to a streamed depot was a risk that the dev team didn’t want to take
+    &lt;ul&gt;
+      &lt;li&gt;Compromise by adapting the current system to behave like Streams&lt;/li&gt;
+      &lt;li&gt;Had plans to move to Streams for next project&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;scaling-the-infrastructure&quot;&gt;Scaling the Infrastructure&lt;/h2&gt;
+&lt;ul&gt;
+  &lt;li&gt;Needed to implement Centralized Branch Authority
+    &lt;ul&gt;
+      &lt;li&gt;Which was available as part P4 Stream&lt;/li&gt;
+      &lt;li&gt;Used the build farm DB to be the Branch Authority&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;Needed to implement a way to make the branches available on the build farm machines&lt;/li&gt;
+  &lt;li&gt;Asset pipeline changes
+    &lt;ul&gt;
+      &lt;li&gt;For details checkout Brandon Moro’s talk: &lt;a href=&quot;https://www.gdcvault.com/play/1025430/Tools-Tutorial-Day-Bungie-s&quot;&gt;GDC 2018 Tools Tutorial Day: Bungie’s Asset Pipeline: ‘Destiny 2’ and Beyond&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;Need to enable the scaling of the Asset Cache
+        &lt;ul&gt;
+          &lt;li&gt;Used to be one/two machine(s) per branch&lt;/li&gt;
+          &lt;li&gt;Decoupled storage HW from the service HW&lt;/li&gt;
+          &lt;li&gt;The service was made stateless
+            &lt;ul&gt;
+              &lt;li&gt;So service could handle different branches&lt;/li&gt;
+              &lt;li&gt;The state management was moved into Redis&lt;/li&gt;
+              &lt;li&gt;Logging was moved into elasticsearch&lt;/li&gt;
+            &lt;/ul&gt;
+          &lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;To setup, branch used a lazy copy of that branch
+    &lt;ul&gt;
+      &lt;li&gt;The branch was 4 Tb&lt;/li&gt;
+      &lt;li&gt;On the backend use deduplication to not store the same data&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;implementing-content-merging&quot;&gt;Implementing Content Merging&lt;/h2&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Propper game data merging
+    &lt;ul&gt;
+      &lt;li&gt;Needs to know the semantics of the data&lt;/li&gt;
+      &lt;li&gt;Used C# for the content merge tool (some screenshots &lt;a href=&quot;https://www.gdcvault.com/play/1025992/Pipeline-Support-for-Feature-Branches&quot;&gt;at min 40&lt;/a&gt;)
+        &lt;ul&gt;
+          &lt;li&gt;&lt;img src=&quot;assets/images/posts/pipeline-support-for-feature-branches/content-merge-tool.jpg&quot; alt=&quot;slide: content merge tool&quot; width=&quot;400&quot; /&gt;&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+      &lt;li&gt;Tracked auto-resolve\ conflict ratio&lt;/li&gt;
+      &lt;li&gt;Used TDD and recorded mergers that produced conflict to analyze&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://www.gdcvault.com/play/1025992/Pipeline-Support-for-Feature-Branches&quot;&gt;at min 31&lt;/a&gt; notes on how to implement merging of game data&lt;/li&gt;
+  &lt;li&gt;Were able to reach 80% auto-conflict resolution rate&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;flow-of-changes&quot;&gt;Flow of changes&lt;/h2&gt;
+&lt;ul&gt;
+  &lt;li&gt;Created custom tool “Team Sync” to view of a users branch state
+    &lt;ul&gt;
+      &lt;li&gt;&lt;img src=&quot;assets/images/posts/pipeline-support-for-feature-branches/team-sync.jpg&quot; alt=&quot;slide: Team Sync tool&quot; width=&quot;400&quot; /&gt;&lt;/li&gt;
+      &lt;li&gt;Shows
+        &lt;ul&gt;
+          &lt;li&gt;Check-ins&lt;/li&gt;
+          &lt;li&gt;Bugs&lt;/li&gt;
+          &lt;li&gt;Builds in progress/finished&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+      &lt;li&gt;For more info see &lt;a href=&quot;https://www.gdcvault.com/browse/gdc-19/play/1025807&quot;&gt;GDC 2019 Tools Tutorial Day: Tooling for Small Team Workflows&lt;/a&gt;&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;Had a special process for automatically integrating into the main branch
+    &lt;ul&gt;
+      &lt;li&gt;Via a build farm worker&lt;/li&gt;
+      &lt;li&gt;Had a special local conflict resolution workflow (when conflicts happened during an integration)&lt;/li&gt;
+      &lt;li&gt;After conflict resolution, automated testing would occur
+        &lt;ul&gt;
+          &lt;li&gt;If something was broken, the team had the ability to login to a remote worker and fix the issue
+            &lt;ul&gt;
+              &lt;li&gt;The worker would have all the dev tools ready&lt;/li&gt;
+            &lt;/ul&gt;
+          &lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;All in all, Pete says that this was a great investment for the dev team&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;div style=&quot;background-color:#FFFF94;border-left: 18px solid #ffff48;padding-left: 50px;&quot;&gt;
+&lt;p&gt;&lt;/p&gt;
+&lt;p&gt;These notes are just the main ideas of the talk. They don’t contain anecdotes and examples. If you want to learn more, I would advise watching the talk on the &lt;a href=&quot;https://www.gdcvault.com/play/1025969/The-Future-of-Scene-Description&quot;&gt;GDC Vault&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;&lt;/p&gt;
+&lt;/div&gt;
+
+&lt;h2 id=&quot;the-toolsmiths&quot;&gt;The Toolsmiths&lt;/h2&gt;
+&lt;p&gt;&lt;img src=&quot;https://tools.engineer/assets/images/thetoolsmiths_cover_1000x2881.png&quot; alt=&quot;The Toolsmiths logo&quot; width=&quot;700&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;I took these notes as part of our little “Book Club” for GDC Vault Videos &lt;a href=&quot;http://thetoolsmiths.org/vault_club&quot;&gt;The Toolsmiths #vault club&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Pete Kugler&lt;/strong&gt; is a member of the &lt;a href=&quot;http://thetoolsmiths.org/&quot;&gt;Toolsmiths&lt;/a&gt; community. The Toolsmiths are a community of Game Tool Developers that are passionate about improving the way people make games.&lt;/p&gt;
+
+&lt;p&gt;Join us on &lt;a href=&quot;http://thetoolsmiths.org/join_slack_team&quot;&gt;Slack&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;Join us on &lt;a href=&quot;https://twitter.com/thetoolsmiths&quot;&gt;Twitter&lt;/a&gt;.&lt;/p&gt;
+
+&lt;h2 id=&quot;links&quot;&gt;Links&lt;/h2&gt;
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;https://www.gdcvault.com/play/1025992/Pipeline-Support-for-Feature-Branches&quot;&gt;GDC 2019 Pipeline Support for Feature Branches in ‘Destiny’&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;related-blog-links&quot;&gt;Related Blog Links&lt;/h2&gt;
+&lt;ul&gt;
+  &lt;li&gt;Notes for &lt;a href=&quot;https://tools.engineer//gdc2019-bungie-s-force-multipliers-production-engineers&quot;&gt;GDC 2019 Bungie’s Force Multipliers: Production Engineers&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;related-talks&quot;&gt;Related talks&lt;/h2&gt;
+&lt;ul&gt;
+  &lt;li&gt;2016 talk by Pete Kugler - &lt;a href=&quot;https://drive.google.com/file/d/1FeZGA-MeuI31Wan9ZVlXmSZ-JrSLgIL2/view?usp=sharing&quot;&gt;GDC 2016 Developing a pipeline for managing game stability&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://www.gdcvault.com/browse/gdc-19/play/1025807&quot;&gt;GDC 2019 Tools Tutorial Day: Tooling for Small Team Workflows&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://www.gdcvault.com/play/1025380/Tools-Tutorial-Day-Shipping-Call&quot;&gt;GDC 2018 Tools Tutorial Day: Shipping ‘Call of Duty’&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://www.gdcvault.com/play/1025430/Tools-Tutorial-Day-Bungie-s&quot;&gt;GDC 2018 Tools Tutorial Day: Bungie’s Asset Pipeline: ‘Destiny 2’ and Beyond&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://www.youtube.com/watch?v=7KXVox0-7lU&quot;&gt;HandmadeCon 2016 - Asset Systems and Scalability&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://www.gdcvault.com/play/1025970/Bungie-s-Force-Multipliers-Production&quot;&gt;GDC 2019 Bungie’s Force Multipliers: Production Engineers&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://www.gdcvault.com/browse/gdc-18/play/1025252/Teams-Are-Stronger-Than-Heroes&quot;&gt;GDC 2018 Teams Are Stronger Than Heroes: Bungie Development Evolved&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://www.gdcvault.com/browse/gdc-18/play/1025116/Epic-Sync-Wrangling-the-Work&quot;&gt;GDC 2018 Epic Sync: Wrangling the Work of Highly Interdependent Dev Teams at Bungie&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
 </description>
         
         <pubDate>Sun, 05 May 2019 01:00:00 +0000</pubDate>
@@ -116,6 +1870,23 @@
         
           <description>&lt;p&gt;After finishing the work on the first draft of the &lt;a href=&quot;http://thetoolsmiths.org/codex/learning_paths/tools_engineer_learning_path&quot;&gt;Tools Engineer Learning Path&lt;/a&gt;, I decided to write a short story behind the learning path and the thought process I went through when I was creating this resource.&lt;/p&gt;
 
+&lt;p&gt;When I got into game development as a TE (Tools Engineer), I didn’t have a special education to suit the needs of this profession. I was hungry for knowledge and trying to find as much information I could, about tools and game development in general. It wasn’t easy to find information about tools in games. Maybe I wasn’t searching for the right things. Anyway, about one or two years into my career in games one of my colleagues introduced me to the &lt;a href=&quot;http://thetoolsmiths.org&quot;&gt;Toolsmiths website&lt;/a&gt; and the &lt;a href=&quot;http://thetoolsmiths.org/join_slack_team&quot;&gt;Toolsmiths Slack channel&lt;/a&gt;. I was thrilled with the amount of information I got from the &lt;a href=&quot;http://thetoolsmiths.org/archive&quot;&gt;Toolsmiths blog archive&lt;/a&gt; and the Slack conversations.&lt;/p&gt;
+
+&lt;p&gt;One day while I was exploring the Toolsmiths website I found out that &lt;a href=&quot;https://twitter.com/gorlak&quot;&gt;Geoff Evans&lt;/a&gt; and &lt;a href=&quot;https://twitter.com/davidlightbown&quot;&gt;David Lightbown&lt;/a&gt; did &lt;a href=&quot;http://thetoolsmiths.org/podcast&quot;&gt;Toolsmiths podcast&lt;/a&gt;. On one of the episodes, Geoff was talking about the GDC Tools Roundtable that he hosted. He talked about starting a number of initiatives for the Toolsmiths community, one which was a Game Tools Development Wiki that would contain information, links to articles and videos about game tools development. To say that I was excited would be an understatement especially knowing that this podcast aired four years ago. I was thinking that someone was working on this treasure trove of information for four years. Not long after I found out that no one executed on starting to gather knowledge into this Wiki. I thought to myself that this would be an excellent opportunity to help the tools community and learn at the same time. Around this time Geoff was porting the Toolsmiths’s website from some other blogging framework (I believe it was WordPress) to the GitHub static pages. Geoff finished the port and published it on &lt;a href=&quot;https://github.com/TheToolsmiths/TheToolsmiths.github.io&quot;&gt;GitHub&lt;/a&gt;. I started to help him with the website. The default theme of the to Toolsmiths website was lost during the port, and I decided to bring back the original look of the site. When I was done with that, I decided to start working on the Toolsmiths Wiki which is now known as the to &lt;a href=&quot;http://thetoolsmiths.org/codex/&quot;&gt;Toolsmiths Codex&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;Finishing the first version of the &lt;a href=&quot;http://thetoolsmiths.org/2018/03/16/toolsmiths-codex-launch/&quot;&gt;Codex about a year ago&lt;/a&gt;. I wasn’t 100% satisfied with it. I was feeling that something was missing. The Codex was a big collection of interesting articles videos and GDC links, but they were organized only by a couple of categories. While going through the recruiting process at Infinity Ward, I learned of Geoff’s &lt;a href=&quot;http://software.gorlak.org/recruiting/2018/07/13/tools-engineer-faq&quot;&gt;recruiting FAQ&lt;/a&gt; and the &lt;a href=&quot;https://gist.github.com/gorlak/1a0747efe88c5e3998144c5787d090ec&quot;&gt;Tools Engineer Checklist&lt;/a&gt;. Geoff divided the Tool Engineering role into three main disciplines: Content Editing Workflow, Content Build Pipeline, Reliability &amp;amp; Infrastructure. He had also created the Tools Engineering Checklist that contains subjects of interest that TEs should pursue to become masters of their trade. This got me thinking about which parts of the Codex and which parts of the checklist would map to which TE discipline. I started to create a mind map of all of the skills that a TE would need. The main categories  included: core software development skills, core computer science skills, core game developer skills, and core game tools development skills. This list of subjects would make the base of what a TE would need. Connecting all of these dots formed the first draft of the &lt;a href=&quot;http://thetoolsmiths.org/codex/learning_paths/tools_engineer_learning_path&quot;&gt;Tools Engineer Learning Path&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;I plan to continue to updated polish it and improve it over the following years to create the ultimate resource for TEs. I’m sure that a TE at any level can find interesting nuggets of information that would help them become a better version of themselves.&lt;/p&gt;
+
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;links&quot;&gt;Links&lt;/h2&gt;
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;http://thetoolsmiths.org/codex/learning_paths/tools_engineer_learning_path&quot;&gt;Tools Engineer Learning Path&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;http://software.gorlak.org/recruiting/2018/07/13/tools-engineer-faq&quot;&gt;Tools Engineer Recruiting FAQ&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://gist.github.com/gorlak/1a0747efe88c5e3998144c5787d090ec&quot;&gt;Tools Engineer Checklist&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;http://thetoolsmiths.org/2018/03/16/toolsmiths-codex-launch/&quot;&gt;The Toolsmiths Codex&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
 </description>
         
         <pubDate>Thu, 28 Feb 2019 01:00:00 +0000</pubDate>
@@ -130,6 +1901,102 @@
         <title>Roles in Game Tools Development</title>
         
           <description>&lt;p&gt;Today in Game Development there are several roles that take part in creating new Game Tools and developing the existing ones. Depending on the number of people in a Game Development team multiple roles may be assigned to one responsible person. It would be challenging if not impossible to find a studio/company that has a dedicated person assigned to each of the roles listed. In this post, I will list the main roles and give them a short definition.&lt;/p&gt;
+
+&lt;div style=&quot;background-color:#FFFF94;border-left: 6px solid #ffff48;&quot;&gt; 
+DISCLAIMER: definitions in this post were produced from personal experience, GDC talks, blog posts, looking at job postings and talking with experts. They might differ from your own definitions. 
+&lt;/div&gt;
+
+&lt;h2 id=&quot;game-tools-engineering&quot;&gt;Game Tools Engineering&lt;/h2&gt;
+&lt;p&gt;The roles involved in creating and maintaining the internal implementations of in-house digital content creation (DCC) tools, the content build pipeline, and the studio infrastructure. Usually, the work that these roles do doesn’t leave the studio’s walls.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;assets/images/posts/tool_development_roles/tool_engineer_roles.jpg&quot; alt=&quot;Tools Engineering Roles&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;i&gt;Generalist Engine Programmer&lt;/i&gt; - in a small team setting the Generalist Engine Programmer knows the engine best and this is the best person to know how to integrate DCC tools and set up the pipeline.&lt;/p&gt;
+
+&lt;p&gt;&lt;i&gt;Tools Engineer&lt;/i&gt; - dedicated engineering role responsible for maintaining the tools and pipelines that the game development team uses.&lt;/p&gt;
+
+&lt;p&gt;&lt;i&gt;Pipeline Engineer&lt;/i&gt; - responsible for maintaining/evolving the tools and technologies part of the content development pipeline. Collaborating with Technical Artists to create the user-facing parts of the pipeline.&lt;/p&gt;
+
+&lt;p&gt;&lt;i&gt;Infrastructure Tools Engineer&lt;/i&gt; - responsible for maintaining/evolving studio services part of Continuous Integration, database health, Version Control and workstation configuration.&lt;/p&gt;
+
+&lt;p&gt;&lt;i&gt;DCC Tools Engineer&lt;/i&gt; - responsible for maintaining/evolving the Game Engine Toolset. Working with Content Creators, Tech Artists, Tech Designers, and the Tool UX team to create the most optimal workflows possible.&lt;/p&gt;
+
+&lt;p&gt;&lt;i&gt;Tools Support Specialist&lt;/i&gt; / &lt;i&gt;Production Engineer&lt;/i&gt; - first-line support for tool/pipeline user issues. Knowledge base of known issues, best practises and issue workarounds. The firefighter of game development.&lt;/p&gt;
+
+&lt;h2 id=&quot;technical-art&quot;&gt;Technical Art&lt;/h2&gt;
+&lt;p&gt;The part of the Game Development Team that bridges the gap between Engineering and Art.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;assets/images/posts/tool_development_roles/tech_art_team_roles.jpg&quot; alt=&quot;Tech Art Roles&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;i&gt;Technical Artist&lt;/i&gt; - Responsible for tackling technical challenges that an art team can come across. Enables the artists to focus on creating art and not solving technical problems. Use great communication skills to bridge the gap between engineering and art.&lt;/p&gt;
+
+&lt;p&gt;&lt;i&gt;VFX Technical Artist&lt;/i&gt; - Technical artist that focuses on helping the VFX team with VFX tools and workflows. Masters of real-time effects, lighting, and shaders. Coordinates with the Tools User Experience team to provide the best experience possible. Provides feedback to the Render Team.&lt;/p&gt;
+
+&lt;p&gt;&lt;i&gt;Pipeline Technical Artist&lt;/i&gt; - Works on streamlining the content build pipeline and workflows within the pipeline. Closely coordinates with the Tools Team to set up efficient asset creation processes.&lt;/p&gt;
+
+&lt;p&gt;&lt;i&gt;Technical Animator&lt;/i&gt; - Tech Artist that specializes in development and support of rigging and animation technologies. Closely works with the Tools User Experience team to improve workflows and efficiency.&lt;/p&gt;
+
+&lt;h2 id=&quot;technical-design&quot;&gt;Technical Design&lt;/h2&gt;
+&lt;p&gt;The part of the Game Development Team that bridges the gap between Engineering and Design.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;assets/images/posts/tool_development_roles/tech_design_team_roles.jpg&quot; alt=&quot;Tech Design Roles&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;i&gt;Tech Designer&lt;/i&gt; - the tech-savvy designer that helps bridge the gap between design and code. Help define pipelines and workflows for developing game mechanic related content. Talor tool feature request to better suit the non-technical designers.&lt;/p&gt;
+
+&lt;p&gt;&lt;i&gt;Tech UI/UX Designer&lt;/i&gt; - Technical Designer that focuses on helping the UI team tackle technical problems of creating menus, navigation, and HUD.&lt;/p&gt;
+
+&lt;p&gt;&lt;i&gt;Tech Audio Designer&lt;/i&gt; - Technical Designer that is focused on helping the audio team maintain and develop the audio system of the game engine. Coordinates with the Tools User Experience team to provide the best experience in the audio tools.&lt;/p&gt;
+
+&lt;p&gt;&lt;i&gt;Tech Level Designer&lt;/i&gt; - work closely with the Level Design, Tools and Tools UX Teams to create a sublime level editing experience in the engine level editor.&lt;/p&gt;
+
+&lt;h2 id=&quot;game-tools-uiux-and-design&quot;&gt;Game Tools UI/UX and Design&lt;/h2&gt;
+
+&lt;p&gt;The part of the Tools Team that make the Engineers/ Tech Designers/Tech Artists more efficient, the Artist/Designers happier and budget have fewer drains.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;assets/images/posts/tool_development_roles/ux_team_roles.jpg&quot; alt=&quot;UI/UX and Design Roles&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;i&gt;Tools Designer&lt;/i&gt; - Helping the Tools Team concentrate on the engineering side of the tools and pipeline. Spending time at users desks analyzing workflows and pointing out the “best bang for the buck” improvements to the Tools Engineers, Tech Designers, and Tech Artists.&lt;/p&gt;
+
+&lt;p&gt;&lt;i&gt;User Experience Designer&lt;/i&gt; - create and design UI/Workflows for in-house tools. Collaborate with Users and Tech Artists/Tech Designers/Tools Engineers to make the best UX possible.&lt;/p&gt;
+
+&lt;p&gt;&lt;i&gt;User Researcher&lt;/i&gt; - design and conduct research studies on experience and workflow for in-house tools. Outline, communicate research results and provide recommendations.&lt;/p&gt;
+
+&lt;p&gt;&lt;i&gt;Tools UI Designer&lt;/i&gt; - responsibilities include: work on the design of Tool UIs; Maintain the Tools UI style guide; Verify that the style guide is properly implemented;&lt;/p&gt;
+
+&lt;p&gt;&lt;i&gt;Tech Writer&lt;/i&gt; - the keeper of the studios knowledge base. Enabling quick new hire ramp ups.&lt;/p&gt;
+
+&lt;p&gt;&lt;i&gt;Data Analytics Engineer / Tools Analytics&lt;/i&gt; - responsible for setting up Tool statistic gathering and statistical data analysis of tool usage. Coordinates with User Researcher to understand the reasons behind the user’s behaviors and actions.&lt;/p&gt;
+
+&lt;h2 id=&quot;ad-hoc-tool-development&quot;&gt;Ad-hoc Tool Development&lt;/h2&gt;
+&lt;p&gt;There is always a lot of work to go around when it comes to tools. When there aren’t enough resources in the Tools/Tech Design/Tech Art Teams other programmers come to help. 
+&lt;img src=&quot;assets/images/posts/tool_development_roles/ad_hoc_team_roles.jpg&quot; alt=&quot;Ad-hoc Tools Roles&quot; /&gt;&lt;/p&gt;
+
+&lt;div style=&quot;background-color:#FFFF94;border-left: 6px solid #ffff48;&quot;&gt; 
+ Some might think Ad-hoc Tool Development is always a bad thing with issues like coordination/communication, redundant work, bus factor, new tool frameworks to support... But I would disagree. If this is done &lt;b&gt;right&lt;/b&gt; these issues can be avoided and this can be a &lt;b&gt;big help&lt;/b&gt; to the Tools/Tech Design/Tech Art Teams. 
+&lt;/div&gt;
+
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;summary&quot;&gt;Summary&lt;/h2&gt;
+
+&lt;p&gt;This turned out a bit of a laundry list. Anyway, this is a good high-level overview of the game development roles that are involved in creating tools for building amazing interactive experiences. I believe this could be an excellent reference for people that are just starting out in the industry.&lt;/p&gt;
+
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;links&quot;&gt;Links&lt;/h2&gt;
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;https://gorlak.dev/recruiting/2018/07/13/tools-engineer-faq&quot;&gt;Tools Engineer Recruiting FAQ&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;http://wiki.polycount.com/wiki/Technical_Art&quot;&gt;Polycount wiki - Technical Art&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://www.gdcvault.com/play/1022337/Tools-Development-at-Ubisoft-Building&quot;&gt;GDC 2015: Tools Development at Ubisoft: Building a Shared Vision to Improve the User Experience&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;http://thetoolsmiths.org/2009/02/03/the-problem-with-ad-hoc-tools-teams/&quot;&gt;The Problem With Ad-Hoc Tools Teams&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;http://thetoolsmiths.org/2009/02/16/best-of-comments-ad-hoc-and-gdc/&quot;&gt;Best of Comments: Ad-hoc and GDC&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://www.gdcvault.com/play/1014087/How-to-Train-your-Technical&quot;&gt;GDC 2010: How to Train your Technical Artist&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://technicalgamedesign.blogspot.com/2012/07/what-is-technical-game-designer.html&quot;&gt;What is a technical game designer?&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;ps&quot;&gt;P.S.&lt;/h2&gt;
+
+&lt;p&gt;If you have a better definition to any of the above or you think I missed a role. Please feel free to DM me on &lt;a href=&quot;https://twitter.com/VictorStepanov&quot;&gt;twitter&lt;/a&gt; or leave a commnet here.&lt;/p&gt;
 
 </description>
         
@@ -146,6 +2013,247 @@
         
           <description>&lt;p&gt;GDC 2018, Tools Tutorial Day, Ludovic Chabant, Senior Software Engineer @ Electronic Arts Vancouver shared the know-how of the Frostbite engine team when it comes to designing the game’s data.&lt;/p&gt;
 
+&lt;div style=&quot;background-color:#FFFF94;border-left: 6px solid #ffff48;&quot;&gt;
+These are my notes that I wrote down from watching Ludovic&apos;s presentation. If you like what you read I hight recommend getting a GDC Vault subscription and watching the full talk &lt;a href=&quot;https://www.gdcvault.com/play/1025284/Tools-Tutorial-Day-A-Tale&quot;&gt;link to talk&lt;/a&gt;.
+&lt;/div&gt;
+&lt;p style=&quot;margin-bottom: 1em;&quot;&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;main-takeaway&quot;&gt;Main Takeaway&lt;/h2&gt;
+&lt;p&gt;The same data is used in different ways. Optimizing the data’s logical representation for different usage scenarios is key in achieving great performance, efficient use of storage and a sublime user experience. The way that an artist thinks of the data that he or she sees in the editor window might not be the best way to represent the data to load it as fast as possible into the game or might not be the best way to store it on disk. Different data consumption scenarios demand different optimization. Off course maintaining more than one data layout isn’t free but it is worth the investment.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;assets/images/posts/tale_of_3_data_schemas/different_data_schemas_different_problems.png&quot; alt=&quot;different data schemas to solve different problems&quot; /&gt;&lt;/p&gt;
+&lt;div align=&quot;center&quot;&gt;
+&lt;i&gt;&lt;small&gt;a picture of a side from Ludovic Chabant&apos;s GDC 2018 presentation&lt;/small&gt;&lt;/i&gt;
+&lt;/div&gt;
+&lt;p style=&quot;margin-bottom: 1em;&quot;&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;data-schema&quot;&gt;Data Schema&lt;/h2&gt;
+
+&lt;p&gt;&lt;strong&gt;Definition:&lt;/strong&gt; a data schema is the formal description of the structures a system is working with.&lt;/p&gt;
+
+&lt;h3 id=&quot;examples-of-data-schemas&quot;&gt;Examples of data schemas&lt;/h3&gt;
+&lt;ul&gt;
+  &lt;li&gt;Public properties of script components in Unity&lt;/li&gt;
+  &lt;li&gt;Decorated public properties of a UClass in Unreal Engine&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://knowledge.autodesk.com/support/maya/downloads/caas/CloudHelp/cloudhelp/2018/ENU/Maya-Modeling/files/GUID-6B2E2B87-C990-416F-B772-D0CED101F5E6-htm.html&quot;&gt;Blind Data&lt;/a&gt; in Maya&lt;/li&gt;
+  &lt;li&gt;Table columns in a database management system&lt;/li&gt;
+  &lt;li&gt;Frostbite DDF (Data Definition Format)&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;basic-idea&quot;&gt;Basic idea&lt;/h3&gt;
+
+&lt;p style=&quot;margin-bottom: 0;&quot;&gt;A data schema is a for communicating about the existence of a &lt;i&gt;type of something&lt;/i&gt; which has:&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;properties like
+    &lt;ul&gt;
+      &lt;li&gt;ints&lt;/li&gt;
+      &lt;li&gt;floats&lt;/li&gt;
+      &lt;li&gt;etc.&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;references to other types&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;usage-scenarios&quot;&gt;Usage scenarios&lt;/h3&gt;
+
+&lt;p style=&quot;margin-bottom: 0;&quot;&gt;A data schema is used to:&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;display a type’s properties in an editor context.&lt;/li&gt;
+  &lt;li&gt;store the type on disk.&lt;/li&gt;
+  &lt;li&gt;load the type at runtime.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;designing-a-data-schema&quot;&gt;Designing a data schema&lt;/h2&gt;
+&lt;p&gt;&lt;img src=&quot;assets/images/posts/tale_of_3_data_schemas/designing_data_schemas.png&quot; alt=&quot;Designing data schemas requires consideration&quot; /&gt;&lt;/p&gt;
+&lt;div align=&quot;center&quot;&gt;
+&lt;i&gt;&lt;small&gt;a picture of a side from Ludovic Chabant&apos;s GDC 2018 presentation&lt;/small&gt;&lt;/i&gt;
+&lt;/div&gt;
+&lt;p&gt;&lt;br /&gt;
+If you design a data schema with a &lt;strong&gt;programmer bias&lt;/strong&gt; you will get a data schema that will be great for loading at runtime.&lt;/p&gt;
+
+&lt;p style=&quot;margin-bottom: 0;&quot;&gt;It will be:&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;flat and packed&lt;/li&gt;
+  &lt;li&gt;optimized for loading&lt;/li&gt;
+  &lt;li&gt;unintelligible for designers and artists&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;If you design a data schema with a &lt;strong&gt;content creator bias&lt;/strong&gt; you will get a data schema that will be great for human understanding and iteration.&lt;/p&gt;
+
+&lt;p style=&quot;margin-bottom: 0;&quot;&gt;It will be:&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;easy to use and edit by multiple people&lt;/li&gt;
+  &lt;li&gt;not cache friendly&lt;/li&gt;
+  &lt;li&gt;not efficiently laid out in memory&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;three-different-data-schemas&quot;&gt;Three different data schemas&lt;/h2&gt;
+&lt;p&gt;&lt;img src=&quot;assets/images/posts/tale_of_3_data_schemas/not_just_one_data_schema.png&quot; alt=&quot;Not just one data schema&quot; /&gt;&lt;/p&gt;
+&lt;div align=&quot;center&quot;&gt;
+&lt;i&gt;&lt;small&gt;a picture of a side from Ludovic Chabant&apos;s GDC 2018 presentation&lt;/small&gt;&lt;/i&gt;
+&lt;/div&gt;
+&lt;p style=&quot;margin-bottom: 1em;&quot;&gt;&lt;/p&gt;
+
+&lt;h3 id=&quot;runtime-data-schema&quot;&gt;Runtime data schema&lt;/h3&gt;
+&lt;p style=&quot;margin-bottom: 0;&quot;&gt;&lt;strong&gt;used by&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;the game for loading the data into memory&lt;/li&gt;
+  &lt;li&gt;the programmers in the code&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p style=&quot;margin-bottom: 0;&quot;&gt;&lt;strong&gt;purpose&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;performance&lt;/li&gt;
+  &lt;li&gt;patching&lt;/li&gt;
+  &lt;li&gt;loading&lt;/li&gt;
+  &lt;li&gt;nicely packed in memory&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p style=&quot;margin-bottom: 0;&quot;&gt;&lt;strong&gt; optimized for&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;reading&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;storage-data-schema&quot;&gt;Storage data schema&lt;/h3&gt;
+&lt;p&gt;&lt;em&gt;the tools backend&lt;/em&gt;
+&lt;strong&gt;a.k.a disk version&lt;/strong&gt;&lt;/p&gt;
+
+&lt;div style=&quot;background-color:#FFFF94;border-left: 6px solid #ffff48;&quot;&gt;
+Tools usually use this to save what the user is working on (the logical peace of data).
+Not to be confused with a data format like XML, JSON or YAML.
+&lt;/div&gt;
+&lt;p style=&quot;margin-bottom: 1em;&quot;&gt;&lt;/p&gt;
+&lt;p style=&quot;margin-bottom: 0;&quot;&gt;&lt;strong&gt;used by&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;tools to save users work on some form of persistent storage&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p style=&quot;margin-bottom: 0;&quot;&gt;&lt;strong&gt;purpose&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;can be versioned and easily merged in revision control&lt;/li&gt;
+  &lt;li&gt;can be used by tools for automation&lt;/li&gt;
+  &lt;li&gt;supports multi-user editing (splitting into different parts)
+    &lt;ul&gt;
+      &lt;li&gt;for example, the runtime data schema doesn’t need this&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p style=&quot;margin-bottom: 0;&quot;&gt;&lt;strong&gt; optimized for&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;writing to disk&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;tool-data-schema&quot;&gt;Tool data schema&lt;/h3&gt;
+&lt;p&gt;&lt;em&gt;the tools frontend&lt;/em&gt;&lt;/p&gt;
+
+&lt;div style=&quot;background-color:#FFFF94;border-left: 6px solid #ffff48;&quot;&gt;
+How the content creators see it in their minds. How the game data is displayed in an editor as a graph, property grid or a gizmo.
+You can think of this as a subset of UX. Usually, very Object Oriented.
+&lt;/div&gt;
+&lt;p style=&quot;margin-bottom: 1em;&quot;&gt;&lt;/p&gt;
+&lt;p style=&quot;margin-bottom: 0;&quot;&gt;&lt;strong&gt;used by&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;content creators for content creation&lt;/li&gt;
+  &lt;li&gt;engineers for analysis and decision making&lt;/li&gt;
+  &lt;li&gt;tools developers for creating a great editing experience&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p style=&quot;margin-bottom: 0;&quot;&gt;&lt;strong&gt;purpose&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;better understanding by humans&lt;/li&gt;
+  &lt;li&gt;better UX&lt;/li&gt;
+  &lt;li&gt;workflow and iteration oriented&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p style=&quot;margin-bottom: 0;&quot;&gt;&lt;strong&gt; optimized for&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;editing&lt;/li&gt;
+  &lt;li&gt;iteration&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;frostbite-engine-tails&quot;&gt;Frostbite Engine tails&lt;/h3&gt;
+
+&lt;p&gt;Ludovic brings up 4 tails about how the 3 data schemas are used in the Frostbite Engine.&lt;/p&gt;
+
+&lt;p style=&quot;margin-bottom: 0;&quot;&gt;The main points of the tails:&lt;/p&gt;
+&lt;ol&gt;
+  &lt;li&gt;Use a more user-friendly data schema for user editing, but keep an eye out for where you do the conversion from one data schema to another.&lt;/li&gt;
+  &lt;li&gt;Use different data schemas to solve different problems, and optimize for different use cases.&lt;/li&gt;
+  &lt;li&gt;UX and Data Schemas have a strong relationship. Changing one might affect the other.&lt;/li&gt;
+  &lt;li&gt;Use conditional compilation to include tools/storage data schemas in the runtime data schemas. Conditionally include appropriate pipeline code in the runtime to transform data on the fly during live-edit.&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;h3 id=&quot;the-most-important-data-schema&quot;&gt;The most important Data Schema&lt;/h3&gt;
+&lt;p&gt;The &lt;strong&gt;Storage Data Schema&lt;/strong&gt; is the most important Data Schema.
+It is only Data Schema that is persistent.&lt;/p&gt;
+&lt;div style=&quot;background-color:#FFFF94;border-left: 6px solid #ffff48;&quot;&gt;
+it the most expensive to change, because it is persistent
+&lt;/div&gt;
+&lt;p style=&quot;margin-bottom: 1em;&quot;&gt;&lt;/p&gt;
+
+&lt;h3 id=&quot;designing-data-schemas&quot;&gt;Designing Data Schemas&lt;/h3&gt;
+&lt;ol&gt;
+  &lt;li&gt;Start with designing the Storage Data Schema&lt;/li&gt;
+  &lt;li&gt;Build your Tools around the Storage Data Schema&lt;/li&gt;
+  &lt;li&gt;Implement your Runtime Code around the Storage Data Schema
+    &lt;ul&gt;
+      &lt;li&gt;if it is obvious that the Storage Schema is not performant enough go to the next subsection to find out how to deal with it&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;h4 id=&quot;dealing-with-performance-issues&quot;&gt;Dealing with performance issues&lt;/h4&gt;
+&lt;p style=&quot;margin-bottom: 0;&quot;&gt;If the Runtime Data Schema is not performant enough&lt;/p&gt;
+&lt;ol&gt;
+  &lt;li&gt;Adjust the Runtime Data Schema and the code&lt;/li&gt;
+  &lt;li&gt;Write the pipeline code to convert from the Storage Schema to the Runtime Schema&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;h4 id=&quot;mixing-data-schemas&quot;&gt;Mixing Data Schemas&lt;/h4&gt;
+&lt;p&gt;If your engine does not formally support different types of data schemas, use conditional compilation to have ways to remove the Tools/Storage Data Schemas from the production build.&lt;/p&gt;
+
+&lt;h3 id=&quot;what-we-have-learned&quot;&gt;What we have learned&lt;/h3&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;There are different ways to organize the same logical data (Tools, Storage, Runtime)&lt;/li&gt;
+  &lt;li&gt;Use more user-friendly data organization for the users of your Tools and a more performant way of data organization for your Runtime&lt;/li&gt;
+  &lt;li&gt;With this way of organizing data, you can solve different problems without a lot of sacrifices&lt;/li&gt;
+  &lt;li&gt;Always remember that a change in a Data Schema can lead to a change in the UX of a tool and vice versa&lt;/li&gt;
+  &lt;li&gt;Have a pipeline in place to convert from the Storage Schema to the Runtime Schema&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;h3 id=&quot;personal-notes&quot;&gt;Personal notes&lt;/h3&gt;
+&lt;p&gt;This reminded me of &lt;a href=&quot;https://youtu.be/rX0ItVEVjHc?t=1394&quot;&gt;Mike Acton’s Data-Oriented Design talk&lt;/a&gt; where every problem in programming is a data transformation problem.&lt;/p&gt;
+
+&lt;h2 id=&quot;mindmap--mental-representation&quot;&gt;Mindmap / Mental Representation&lt;/h2&gt;
+
+&lt;iframe src=&quot;https://www.xmind.net/embed/THiC/&quot; width=&quot;750px&quot; height=&quot;450px&quot; frameborder=&quot;0&quot; scrolling=&quot;no&quot; allowfullscreen=&quot;true&quot;&gt;&lt;/iframe&gt;
+&lt;p&gt;&lt;a href=&quot;https://www.xmind.net/m/THiC/&quot;&gt;Click to see it in fullscreen&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://www.dropbox.com/s/v9o5opk5llrqmvp/Data%20Schemas.xmind?dl=0&quot;&gt;Link to mindmap source&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;You can open the file with &lt;a href=&quot;https://github.com/xmindltd/xmind&quot;&gt;XMind&lt;/a&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;the-toolsmiths&quot;&gt;The Toolsmiths&lt;/h2&gt;
+&lt;p&gt;&lt;img src=&quot;https://tools.engineer/assets/images/thetoolsmiths_cover_1000x2881.png&quot; alt=&quot;The Toolsmiths logo&quot; /&gt;
+&lt;strong&gt;Ludovic Chabant&lt;/strong&gt; is a member of the &lt;a href=&quot;http://thetoolsmiths.org/&quot;&gt;Toolsmiths&lt;/a&gt; community. The Toolsmiths are a community of Game Tool Developers that are passionate about improving the way people make games.&lt;/p&gt;
+
+&lt;p&gt;Join us on &lt;a href=&quot;http://thetoolsmiths.org/join_slack_team&quot;&gt;Slack&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;Join us on &lt;a href=&quot;https://twitter.com/thetoolsmiths&quot;&gt;Twitter&lt;/a&gt;.&lt;/p&gt;
+
+&lt;h2 id=&quot;links&quot;&gt;Links&lt;/h2&gt;
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;https://www.ea.com/frostbite/news/a-tale-of-three-data-schemas&quot;&gt;Slides: A Tale of Three Data Schemas&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://www.gdcvault.com/play/1025284/Tools-Tutorial-Day-A-Tale&quot;&gt;GDC Vault Video: A Tale of Three Data Schemas&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://twitter.com/ludovicchabant?lang=en&quot;&gt;Ludovic Chabant on Twitter&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;related-blog-links&quot;&gt;Related Blog Links&lt;/h2&gt;
+&lt;ul&gt;
+  &lt;li&gt;Notes for &lt;a href=&quot;https://tools.engineer//2019-06-16-gdc2019-the-future-of-scene-description-on-god-of-war&quot;&gt;GDC2019 “The Future of Scene Description on ‘God of War’”&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
 </description>
         
         <pubDate>Sun, 07 Oct 2018 01:00:00 +0000</pubDate>
@@ -161,6 +2269,103 @@
         
           <description>&lt;p&gt;&lt;em&gt;Last Update on July 22nd, 2018&lt;/em&gt;&lt;/p&gt;
 
+&lt;h2 id=&quot;game-tools-as-an-investment&quot;&gt;Game Tools as an investment&lt;/h2&gt;
+
+&lt;p&gt;Having a Game Tools Development Team (GTDT) is an investment and when you are investing you want to get as much Return On Investment (ROI) as you possibly can. This means the GTDT should be working on the “right” issues of the production pipeline. It is not always clear what the “right” issues are.&lt;/p&gt;
+
+&lt;p&gt;The GTDT investment is made by the time resource that the team has. Apart from the time spent on bug fixes the GTDT spends a significant portion of its resource on improving the production pipeline. We need some way to measure the efficiency of the time spent on improving different parts of the pipeline.&lt;/p&gt;
+
+&lt;h2 id=&quot;is-it-worth-the-time&quot;&gt;“Is it worth the time”&lt;/h2&gt;
+
+&lt;p&gt;As a young programmer, I used to have a mindset of “I can write a program for this” at almost any problem that I would encounter. Automating things is great but automating every single task I would encounter would be a waste of time, especially if the task that I wanted to automate would need to be done only once a year or so. A number of years ago I found an excellent resource that could answer the question should I automate this. This resource was an &lt;a href=&quot;https://xkcd.com/1205/&quot;&gt;xkcd “Is it worth the time” comic&lt;/a&gt; [1]. I usually reference it to stop myself from automating everything with Python.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://imgs.xkcd.com/comics/is_it_worth_the_time.png&quot; alt=&quot;Is It Worth the Time?&quot; /&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;mapping-the-table-to-game-tools-development&quot;&gt;Mapping the table to Game Tools Development&lt;/h2&gt;
+
+&lt;p&gt;When you are in a GTDT most of your work is aimed at improving the workflows of others on the production team. Projecting the table onto the work of a GTDT and you get a table that can be used to calculate the efficiency ratio of the Tool Developers.&lt;/p&gt;
+
+&lt;p&gt;The original table is used for saving the time of the single person that is using the table. When working on an improvement for a tool, the Tool Developer is improving the workflow of multiple people. Meaning that the time saved is multiplied by the number of users that will benefit from the improvement to the tool.&lt;/p&gt;
+
+&lt;p&gt;Here are some examples of how the efficiency table can look like:&lt;/p&gt;
+&lt;div style=&quot;background-color:#FFFF94;border-left: 6px solid #ffff48;&quot;&gt;
+I&apos;ll make some assumptions:
+&lt;ul&gt;
+  &lt;li&gt;a 3-year game production;  &lt;/li&gt;
+  &lt;li&gt;5-day work week; 8-hour work day;  &lt;/li&gt;
+  &lt;li&gt;260 work days in a year;  &lt;/li&gt;
+  &lt;li&gt;52 work weeks;  &lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+
+&lt;h3 id=&quot;how-long-can-you-work-on-an-improvement-of-a-tool-that-will-benefit-2-users&quot;&gt;How long can you work on an improvement of a tool that will benefit 2 users:&lt;/h3&gt;
+&lt;p&gt;&lt;img src=&quot;assets/images/roi_for_tool_impruvment_2_users.png&quot; alt=&quot;Table for 2&quot; /&gt;&lt;/p&gt;
+
+&lt;h3 id=&quot;how-long-can-you-work-on-an-improvement-of-a-tool-that-will-benefit-10-users&quot;&gt;How long can you work on an improvement of a tool that will benefit 10 users:&lt;/h3&gt;
+&lt;p&gt;&lt;img src=&quot;assets/images/roi_for_tool_impruvment_10_users.png&quot; alt=&quot;Table for 10&quot; /&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;how-to-use-the-efficiency-table&quot;&gt;How to use the efficiency table&lt;/h2&gt;
+
+&lt;p&gt;The ratio of the time that it will take to implement the improvement, to the time savings can be used to determine how efficient the usage of the GTDT resources will be. The calculated ratio can determine how efficient it would be to implement this improvement to the tool. The smaller the ratio the better.&lt;/p&gt;
+
+&lt;p&gt;Depending on the process used for developing improvements in the tools the ratio can look like this:
+&lt;img src=&quot;assets/images/game_tool_efficienct_ratio.png&quot; alt=&quot;the efficiency ratio&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;If an improvement will take longer to implement than the total time saved - it doesn’t mean that the improvement isn’t worth implementing. It just means that there might be another improvement that will be more efficient to implement in the current circumstance. This might be due to the fact that there are not enough users that can benefit from the improvement.&lt;/p&gt;
+
+&lt;p&gt;Another thing to consider is the sanity of the user of the tool. &lt;a href=&quot;https://twitter.com/srekel&quot;&gt;Anders Elfgren&lt;/a&gt; brought up this point in one of the many interesting conversations in the &lt;a href=&quot;http://thetoolsmiths.org/join_slack_team&quot;&gt;Toolsmiths Slack&lt;/a&gt;. &lt;img src=&quot;assets/images/sanity.png&quot; alt=&quot;don&apos;t forget about the sanity&quot; /&gt; Even if it isn’t efficient to implement the improvement, helping save the user’s mental state is something to keep in mind when deciding what to do.&lt;/p&gt;
+
+&lt;h2 id=&quot;game-tools-ux-angle&quot;&gt;Game Tools UX angle&lt;/h2&gt;
+
+&lt;p&gt;It may seem that saving a second or two is not that much. However, when an operation is performed by many users a hundred times per day the savings can be significant over the lifetime of the production or tool. &lt;a href=&quot;https://twitter.com/RYStorm&quot;&gt;Robin-Yann Storm&lt;/a&gt; touches on this point at his &lt;a href=&quot;https://www.gdcvault.com/play/1025287/Tools-Tutorial-Day-UX-Microtalks&quot;&gt;GDC UX micro talk&lt;/a&gt;[3], where he explores the UX features of an editor Gizmo. The Gizmo is one of the most day-to-day used features of any Level Editor.&lt;/p&gt;
+
+&lt;p&gt;Every second counts when it comes to optimizing commonly used tool functionality. If you don’t believe me, you can use the Human Factors &lt;a href=&quot;http://www.humanfactors.com/coolstuff/roi_increase_productivity.asp&quot;&gt;“Increased productivity ROI calculator”&lt;/a&gt;[2, 4] where you can see how even the smallest savings in time can save a lot of money for the production.&lt;/p&gt;
+
+&lt;p&gt;If you are interested in topics like these, I would recommend reading &lt;a href=&quot;https://www.crcpress.com/Designing-the-User-Experience-of-Game-Development-Tools/Lightbown/p/book/9781482240191&quot;&gt;David Lightbown’s book&lt;/a&gt;[2]. David covers a range of topics about how to improve game development tools from the UX point of view. Here is an example of how focusing on the right users can maximize the improvement while keeping the investment to a minimum.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;assets/images/Fig3_3page_31_Designing_the_User_Experience_of_Game_Development_Tools.png&quot; alt=&quot;Designing the User Experience of Game Development Tools, (p. 31, Figure 3.3), David Lightbown&quot; /&gt;
+&lt;em&gt;A figure about maximizing the improvement while keeping the investment to a minimum from the “Designing the User Experience of Game Development Tools” book [2.1]. Used with permission from David Lightbown.&lt;/em&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;final-thoughts&quot;&gt;Final thoughts&lt;/h2&gt;
+
+&lt;p&gt;Of course, the tool and the improvement in the tool will live longer than the project production time. However, this ratio is more of measuring how efficient are the GTDT resources spent during the production life cycle of a game.&lt;/p&gt;
+
+&lt;p&gt;It is important to note that this table can only be used for a part of the GTDT responsibilities. There are other essential maintenance and validation tasks that can’t be simply measured in terms of how efficient the tools team is used. We will need to think of some other way to measure those Tool Team activities. I’ll write down some thoughts on maintenance and validation improvements in a future post.&lt;/p&gt;
+
+&lt;h2 id=&quot;make-your-own-table&quot;&gt;Make your own table&lt;/h2&gt;
+&lt;p&gt;If you want to make your own table for estimating the profits that you can reap from optimizing the development process you can go ahead and punch in your own numbers:&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://www.dropbox.com/s/eg1yy26dmi9b12v/Tool%20Team%20efficiency%20%2810%20Users%29.xlsx?dl=0&quot;&gt;link to spreadsheet&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;The primary variables in the spreadsheet are:&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;the number of years the project will be worked on&lt;/li&gt;
+  &lt;li&gt;the number of users that will reap the benefits from the improvements to the tool&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;img src=&quot;assets/images/editing_the_roi_table.png&quot; alt=&quot;Location on the spreadsheet that can be edited&quot; /&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;update-07222018&quot;&gt;Update 07/22/2018&lt;/h2&gt;
+&lt;p&gt;Some insightful comments from the &lt;a href=&quot;http://thetoolsmiths.org/join_slack_team&quot;&gt;Toolsmiths&lt;/a&gt;:&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;a href=&quot;https://twitter.com/srekel&quot;&gt;Anders Elfgren&lt;/a&gt; writes:
+&lt;img src=&quot;assets/images/efficiency_ratio_comment1.png&quot; alt=&quot;Toolsmiths Slack post comment 1&quot; /&gt;&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;a href=&quot;https://twitter.com/RYStorm&quot;&gt;Robin-Yann Storm&lt;/a&gt; writes:
+&lt;img src=&quot;assets/images/efficiency_ratio_comment2.png&quot; alt=&quot;Toolsmiths Slack post comment 2&quot; /&gt;&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;references&quot;&gt;References&lt;/h2&gt;
+&lt;ol&gt;
+  &lt;li&gt;&lt;a href=&quot;https://xkcd.com/1205/?utm_source=feedly&quot;&gt;Is It Worth the Time?, xkcd, Randall Munroe&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://www.crcpress.com/Designing-the-User-Experience-of-Game-Development-Tools/Lightbown/p/book/9781482240191&quot;&gt;Designing the User Experience of Game Development Tools, David Lightbown&lt;/a&gt;
+2.1 &lt;a href=&quot;https://www.crcpress.com/Designing-the-User-Experience-of-Game-Development-Tools/Lightbown/p/book/9781482240191&quot;&gt;Designing the User Experience of Game Development Tools, (pp. 30-32), David Lightbown&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://www.gdcvault.com/play/1025287/Tools-Tutorial-Day-UX-Microtalks&quot;&gt;Tools Tutorial Day: UX Microtalks, Part 1, GDC 2018, David Lightbown, Nikoline Høgh, Robin-Yann Storm&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;http://www.humanfactors.com/coolstuff/roi_increase_productivity.asp&quot;&gt;Increased productivity ROI calculator, Human Factors International&lt;/a&gt;&lt;/li&gt;
+&lt;/ol&gt;
 </description>
         
         <pubDate>Wed, 18 Jul 2018 01:00:00 +0000</pubDate>
@@ -174,7 +2379,7 @@
       <item>
         <title>The Toolsmiths Codex Launch</title>
         
-          <description>It’s not always easy to find information regarding Game Tools Development on the Internet. There isn't just one place where you can go and find information regarding a particular topic. With the insight and knowledge of The Toolsmiths Community, with developers from around the world, we have made an excellent online resource for Game Tools Developers, and it is called The Toolsmiths Codex.</description>
+          <description>It’s not always easy to find information regarding Game Tools Development on the Internet. There isn&apos;t just one place where you can go and find information regarding a particular topic. With the insight and knowledge of The Toolsmiths Community, with developers from around the world, we have made an excellent online resource for Game Tools Developers, and it is called The Toolsmiths Codex.</description>
         
         <pubDate>Fri, 16 Mar 2018 01:00:00 +0000</pubDate>
         <link>
@@ -187,7 +2392,7 @@
       <item>
         <title>Toolsmiths GDC 2018 Guide</title>
         
-          <description>There are around 650+ sessions at this year's GDC, and it isn't easy to find sessions that you as a tools developer might enjoy. I have tried to find and collect most of the talks that a tools developer would be interested in attending or watching after the fact.</description>
+          <description>There are around 650+ sessions at this year&apos;s GDC, and it isn&apos;t easy to find sessions that you as a tools developer might enjoy. I have tried to find and collect most of the talks that a tools developer would be interested in attending or watching after the fact.</description>
         
         <pubDate>Sun, 25 Feb 2018 10:00:00 +0000</pubDate>
         <link>
